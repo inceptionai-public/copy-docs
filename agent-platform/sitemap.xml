@@ -26,16 +26,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.kore.ai/agent-platform/ai-agents/ai-for-service/</loc>
-         <lastmod>2025-09-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.kore.ai/agent-platform/ai-agents/ai-for-work/</loc>
-         <lastmod>2025-09-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.kore.ai/agent-platform/ai-agents/create-agent/</loc>
          <lastmod>2025-09-23</lastmod>
          <changefreq>daily</changefreq>
@@ -612,11 +602,6 @@
     </url>
     <url>
          <loc>https://docs.kore.ai/agent-platform/getting-started/introduction/</loc>
-         <lastmod>2025-09-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.kore.ai/agent-platform/getting-started/sign-up-sign-in/</loc>
          <lastmod>2025-09-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
