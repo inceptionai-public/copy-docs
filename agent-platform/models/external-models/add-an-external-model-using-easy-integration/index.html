@@ -6482,7 +6482,7 @@
 <p>You can easily connect Amazon Bedrock models to the Agent Platform using a guided setup flow. This process enables secure role-based access using your own AWS credentials.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Customers must create an IAM role within their AWS account with the necessary permissions in their AWS account (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Kore Agent Platform’s AWS principal (or a designated IAM role in a Kore AWS account) to assume it. For more information, see <a href="../configuring-aws/" target="_blank">Configuring Amazon Bedrock models</a>.</p>
+<p>Customers must create an IAM role within their AWS account with the necessary permissions in their AWS account (e.g., access to AWS Bedrock APIs). This role must include a trust policy that allows the Agent Platform’s AWS principal (or a designated IAM role in an AWS account) to assume it. For more information, see <a href="../configuring-aws/" target="_blank">Configuring Amazon Bedrock models</a>.</p>
 </div>
 <p>Steps to add Amazon Bedrock models using easy integration:</p>
 <p><font size="4"><strong>1. Start the Integration</strong></font> </p>
@@ -6503,7 +6503,7 @@
 <ul>
 <li><strong>Identity Access Management (IAM) Role ARN</strong>: Enter the full ARN of your IAM role that has permission to invoke Amazon Bedrock models. This role allows secure cross-account access following least-privilege principles.<br>
 For more information, see <a href="../configuring-aws/#step-1-setting-up-credentials-and-trust-policy-iam-role-and-sts">Setting Up Credentials and Trust Policy (IAM Role &amp; STS)</a>.</li>
-<li><strong>Trusted Principal ARN (Kore Platform)</strong>: The ARN of the AWS IAM principal (from the Kore Platform) used to assume your IAM role. It’s pre-populated, read-only, and fetched securely — manual input is not required.</li>
+<li><strong>Trusted Principal ARN</strong>: The ARN of the AWS IAM principal (from the Platform) used to assume your IAM role. It’s pre-populated, read-only, and fetched securely — manual input is not required.</li>
 </ul>
 </li>
 <li>
