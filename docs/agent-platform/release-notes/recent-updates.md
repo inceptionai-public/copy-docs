@@ -2,6 +2,68 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.
 
+## v1.2.0 September 27, 2025
+
+<u> Minor Release </u>
+
+​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, and structured output support for open-source models.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Introducing Knowledge Base Test Tool**
+
+The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/knowledge/manage-knowledge-tools.md#test-the-knowledge-base)
+
+**Enhanced Context Management**
+
+The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/app-profile.md)
+
+
+<font size="4">No-code & Pro-Code Tools</font>
+
+**Improved Workflow Tool Testing Experience**
+
+The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#test-a-workflow-tool)
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Custom Model Support**
+
+The Platform now supports seamless integration of custom models in Agentic Apps and Agents through API endpoints. To ensure compatibility, custom models must support tool calling and adhere to the request and response structures as per the API reference of Anthropic or OpenAI.  Custom model integrations with Default model settings are currently not supported in Agentic Apps. The platform provides standardized API integration, performance monitoring, and security controls to ensure consistent and secure usage.
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#custom-model-support-in-agentic-apps){:target="_blank"}
+
+
+**Structured Output Support for Open-Source Models**
+
+Inception-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.
+
+* Supported on the v2/chat/completions endpoint (default for new deployments).
+* Works with most open-source models (see the documentation for the full [list of supported models](../models/supported-models.md#supported-models-for-structured-output).
+* Not supported for fine-tuned models, Hugging Face imports, CT2-optimized models, or locally imported models.
+* The schema editor automatically appears in AI nodes when a supported model is selected.
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md#supported-models-for-structured-output){:target="_blank"}
+
+
+**Expanded Model Support**
+
+The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.
+
+* OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest
+* Anthropic Model: claude-opus-4-1-20250805
+
+   [Learn more :octicons-arrow-right-24:](../models/supported-models.md){:target="_blank"} 
+
+<hr>
+
 ## v1.0.11 September 9, 2025
 
 <u> Minor Release </u>
@@ -619,7 +681,7 @@ You can now easily track conversations with the Agentic app using the new timeli
 
 **Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements**
 
-Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
+Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, Search AI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. 
 
 <font size="4">Other Improvements</font>
 
@@ -702,7 +764,7 @@ This update includes new features, enhancements, and bug fixes summarized below.
 
 **Knowledge Integration with Agent Platform**
 
-The Agent Platform now integrates with AI for Service (XO) search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
+The Agent Platform now integrates with AI for Service search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.
 
 Key features
 
@@ -867,20 +929,20 @@ Key benefits
 * Ability to combine and orchestrate cross-platform agent capabilities.
 
 
-**Integration with XO Platform**
+**Integration with AI for Service**
 
-Agent Platform now seamlessly integrates with the XO Platform. This integration simplifies the creation of highly contextual, self-service automation experiences from XO using multi-agent orchestration powered by Agentic Apps.
+Agent Platform now seamlessly integrates with AI for Service. This integration simplifies the creation of highly contextual, self-service automation experiences from AI for Service using multi-agent orchestration powered by Agentic Apps.
 
 Key benefits
 
-* Ability to integrate fully autonomous applications from the XO Platform.
-* Leverage XO Platform's channel integrations while using Agent Platform capabilities.
+* Ability to integrate fully autonomous applications from the AI for Service.
+* Leverage AI for Service channel integrations while using Agent Platform capabilities.
 * Streamlined user experience with shared authentication and session management.
 
 
 **Voice Integration in Agentic Apps**
 
-The XO Platform and the Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
+AI for Service and Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.
 
 Key features
 

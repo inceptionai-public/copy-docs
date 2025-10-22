@@ -1,4 +1,4 @@
-# Network Orchestration Pattern
+# Adaptive Network Orchestration Pattern
 
 The Network (Delegation) Orchestration Pattern is an architectural approach for designing agentic applications where specialized AI agents dynamically transfer control and context of a task to one another based on the task's requirements. This pattern operates in a decentralized manner, allowing agents to evaluate tasks and hand them off to the most suitable agent with relevant expertise. It creates a seamless, sequential workflow optimized for tasks requiring specialized knowledge across multiple domains.
 
@@ -102,7 +102,7 @@ Configure the delegation rules for all the agents in the app:
     7. Select the fallback agent or event from the list. 
     8. Set the condition under which it should be triggered. 
 
-    **Note**: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via XO, the fallback will trigger that specific behavior.
+    **Note**: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via AI for Service, the fallback triggers that specific behavior.
 
 
 ## Passing Information Between Agents
