@@ -452,6 +452,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -851,6 +868,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6101,6 +6139,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6135,6 +6193,30 @@
       Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-create-iam-role-and-configure-trust-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Create IAM Role and Configure Trust Policy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-raise-a-support-ticket-to-register-your-iam-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Raise a Support Ticket to Register your IAM Role
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6183,8 +6265,11 @@
 <li>Test the configuration and map the output.</li>
 </ol>
 <h3 id="step-1-setting-up-credentials-and-trust-policy-iam-role-and-sts">Step 1. Setting Up Credentials and Trust Policy (IAM Role and STS)<a class="headerlink" href="#step-1-setting-up-credentials-and-trust-policy-iam-role-and-sts" title="Permanent link">¶</a></h3>
+<h4 id="a-create-iam-role-and-configure-trust-policy">A. Create IAM Role and Configure Trust Policy<a class="headerlink" href="#a-create-iam-role-and-configure-trust-policy" title="Permanent link">¶</a></h4>
+<p>To begin, you must create an IAM role in your AWS account that allows Agent platform to securely access Amazon Bedrock models. This role defines permissions and establishes a trust relationship so that the platform can assume the role via AWS STS.</p>
+<p>Follow the steps below to configure the IAM role and trust policy:</p>
 <p><strong>1. Create the IAM Role in Your AWS Account</strong></p>
-<p>Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf. </p>
+<p>Create a new IAM role in your AWS account that grants access to invoke Amazon Bedrock models. This role will be assumed by the platform to make Bedrock API calls on your behalf.</p>
 <p>You can follow the IAM role creation setup in the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html">AWS IAM documentation</a>.</p>
 <p>For best practices on setting up IAM policies for Bedrock, see the
 <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id-based-policy-examples.html">AWS policy examples guide</a>. </p>
@@ -6225,7 +6310,15 @@
 <p>For example:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>https://sts.us-east-1.amazonaws.com/
 </span></code></pre></div>
-<p>Ensure the STS region matches the region of your IAM role — <strong>not necessarily the region of the model</strong>. </p>
+<p>Ensure the STS region matches the region of your IAM role — <strong>not necessarily the region of the model</strong>.</p>
+<h4 id="b-raise-a-support-ticket-to-register-your-iam-role">B. Raise a Support Ticket to Register your IAM Role<a class="headerlink" href="#b-raise-a-support-ticket-to-register-your-iam-role" title="Permanent link">¶</a></h4>
+<p>After creating the IAM role in your AWS account, create a support ticket to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.</p>
+<p>To complete the registration:</p>
+<ol>
+<li>Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.</li>
+<li>Wait for confirmation from Support that the role has been registered.</li>
+</ol>
+<p><strong>Note</strong>: Without this step, the platform cannot assume your IAM role. Both your AWS account and Inception's environment must explicitly trust each other for secure cross-account access.</p>
 <h3 id="step-2-finding-the-right-model-id-and-region">Step 2. Finding the Right Model ID and Region<a class="headerlink" href="#step-2-finding-the-right-model-id-and-region" title="Permanent link">¶</a></h3>
 <p>Amazon Bedrock supports different model ID formats depending on how the model is deployed. This section outlines how to find the correct values for each case.</p>
 <p><strong>1. Base Foundation Models</strong></p>

@@ -458,6 +458,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ai-agents/agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -708,6 +725,15 @@
       On this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v120-september-27-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.2.0 September 27, 2025
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v1011-september-9-2025" class="md-nav__link">
@@ -1017,6 +1043,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-agents/adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6267,6 +6314,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-agents/agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6294,6 +6361,15 @@
       On this Page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v120-september-27-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      v1.2.0 September 27, 2025
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v1011-september-9-2025" class="md-nav__link">
@@ -6423,6 +6499,42 @@
 
 <h1 id="agent-platform-release-notes">Agent Platform Release Notes<a class="headerlink" href="#agent-platform-release-notes" title="Permanent link">¶</a></h1>
 <p>This document provides information on the feature updates and enhancements introduced in the recent Agent Platform releases.</p>
+<h2 id="v120-september-27-2025">v1.2.0 September 27, 2025<a class="headerlink" href="#v120-september-27-2025" title="Permanent link">¶</a></h2>
+<p><u> Minor Release </u></p>
+<p>​​This update includes a new knowledge base test tool for real-time validation, rolling context windows for better conversation management, and support for the latest GPT-5 family and other leading AI models. Additional improvements include streamlined workflow testing, custom model integration, and structured output support for open-source models.</p>
+<p><font size="4">Multi-Agent Orchestration</font></p>
+<p><strong>Introducing Knowledge Base Test Tool</strong></p>
+<p>The new test feature at the app level allows users to enter queries directly and receive real-time responses from connected Search AI sources within the knowledge base. This enables quick validation and optimization of knowledge base content before deployment.</p>
+<p><a href="../../ai-agents/knowledge/manage-knowledge-tools/#test-the-knowledge-base">Learn more <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></a></p>
+<p><strong>Enhanced Context Management</strong></p>
+<p>The Agent Platform now provides enhanced context handling for conversations with rolling context windows. Configure the number of recent messages to use as conversation context by setting a message count limit. When this limit is reached, the oldest messages are automatically removed to make room for new ones. This prevents context overflow and keeps conversations focused on relevant, up-to-date information.</p>
+<p><a href="../../ai-agents/agentic-apps/app-profile/">Learn more <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></a></p>
+<p><font size="4">No-code &amp; Pro-Code Tools</font></p>
+<p><strong>Improved Workflow Tool Testing Experience</strong></p>
+<p>The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardised output format.</p>
+<p><a href="../../ai-agents/create-agent/#test-a-workflow-tool">Learn more <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></a></p>
+<p><font size="4">AI Engineering Tools</font></p>
+<p><strong>Custom Model Support</strong></p>
+<p>The Platform now supports seamless integration of custom models in Agentic Apps and Agents through API endpoints. To ensure compatibility, custom models must support tool calling and adhere to the request and response structures as per the API reference of Anthropic or OpenAI.  Custom model integrations with Default model settings are currently not supported in Agentic Apps. The platform provides standardized API integration, performance monitoring, and security controls to ensure consistent and secure usage.</p>
+<p><a href="../../models/supported-models/#custom-model-support-in-agentic-apps" target="_blank">Learn more <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></a></p>
+<p><strong>Structured Output Support for Open-Source Models</strong></p>
+<p>Inception-hosted open-source models now support structured JSON output through the response_format parameter, aligned with OpenAI’s schema style. This enables schema-based responses across Prompts and Tools.</p>
+<ul>
+<li>Supported on the v2/chat/completions endpoint (default for new deployments).</li>
+<li>Works with most open-source models (see the documentation for the full <a href="../../models/supported-models/#supported-models-for-structured-output">list of supported models</a>.</li>
+<li>Not supported for fine-tuned models, Hugging Face imports, CT2-optimized models, or locally imported models.</li>
+<li>The schema editor automatically appears in AI nodes when a supported model is selected.</li>
+</ul>
+<p><a href="../../models/supported-models/#supported-models-for-structured-output" target="_blank">Learn more <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></a></p>
+<p><strong>Expanded Model Support</strong></p>
+<p>The Agent Platform now supports additional AI models, providing greater flexibility for various use cases. These models include comprehensive platform integration with System Prompts, Tool Calling, Prompt Studio, Evaluation Studio, Tools, Parallel Tool Calling, Model Analytics, Audit Logs, Model Traces, Agentic Apps, and Image-to-Text Support.</p>
+<ul>
+<li>OpenAI Models GPT-5 Family: gpt-5-2025-08-07, gpt-5-mini-2025-08-07, gpt-5-nano-2025-08-07, and gpt-5-chat-latest</li>
+<li>Anthropic Model: claude-opus-4-1-20250805</li>
+</ul>
+<p><a href="../../models/supported-models/" target="_blank">Learn more <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></a> </p>
+<hr>
+
 <h2 id="v1011-september-9-2025">v1.0.11 September 9, 2025<a class="headerlink" href="#v1011-september-9-2025" title="Permanent link">¶</a></h2>
 <p><u> Minor Release </u></p>
 <p>This release focuses on reliability and control, introducing Agent Diagnostics for pre-deployment issue resolution, new workflow tools like a Human Review node, data type validation for scripts, support for Gemini 2.5 and Llama models, improved debugging, and enhanced API integration.</p>
@@ -6840,7 +6952,7 @@
 <p><strong>Improved Agentic Evaluation with Timeline View for Session Evaluators</strong></p>
 <p>You can now easily track conversations with the Agentic app using the new timeline format, which clearly marks distinct dates in chat transcripts, making it ideal for following extended conversations that span multiple days.</p>
 <p><strong>Improved Model Evaluation via Ground Truth Columns and Search AI Enhancements</strong></p>
-<p>Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, SearchAI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. </p>
+<p>Users can add empty, inline-editable columns in model evaluations to manually input ground truth for RAGAS scoring, supporting both text and numeric values with customizable names. Multiple such columns can be added as needed. Additionally, Search AI responses now include enhanced answers and context fields in the output JSON for improved clarity and analysis. </p>
 <p><font size="4">Other Improvements</font></p>
 <p><strong>Enhanced Workspace Switcher</strong></p>
 <p>The Workspace switcher in the Agent Platform has been enhanced, allowing users to view workspaces with a clear understanding of their roles. Users can easily distinguish between their workspaces and others' workspaces, along with the workspace owner's information.</p>
@@ -6890,7 +7002,7 @@ Permissions and access levels for creating, deleting, updating, testing, and dis
 <p>This update includes new features, enhancements, and bug fixes summarized below.</p>
 <p><font size="4">Agentic Apps</font></p>
 <p><strong>Knowledge Integration with Agent Platform</strong></p>
-<p>The Agent Platform now integrates with AI for Service (XO) search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.</p>
+<p>The Agent Platform now integrates with AI for Service search capabilities, offering a RAG-based knowledge solution that enables users to leverage knowledge from multiple sources through agents easily. With this integration, users can easily link one or more knowledge bases to an agent and access them as Knowledge Tools. The agent can then leverage these tools to provide accurate and relevant responses to user queries, enhancing overall performance.</p>
 <p>Key features</p>
 <ul>
 <li>Users can create a new Search AI app or link it to an existing app in the same workspace, streamlining knowledge management.</li>
@@ -6996,16 +7108,16 @@ Permissions and access levels for creating, deleting, updating, testing, and dis
 <li>Consistent user experience when interacting with different agent systems.</li>
 <li>Ability to combine and orchestrate cross-platform agent capabilities.</li>
 </ul>
-<p><strong>Integration with XO Platform</strong></p>
-<p>Agent Platform now seamlessly integrates with the XO Platform. This integration simplifies the creation of highly contextual, self-service automation experiences from XO using multi-agent orchestration powered by Agentic Apps.</p>
+<p><strong>Integration with AI for Service</strong></p>
+<p>Agent Platform now seamlessly integrates with AI for Service. This integration simplifies the creation of highly contextual, self-service automation experiences from AI for Service using multi-agent orchestration powered by Agentic Apps.</p>
 <p>Key benefits</p>
 <ul>
-<li>Ability to integrate fully autonomous applications from the XO Platform.</li>
-<li>Leverage XO Platform's channel integrations while using Agent Platform capabilities.</li>
+<li>Ability to integrate fully autonomous applications from the AI for Service.</li>
+<li>Leverage AI for Service channel integrations while using Agent Platform capabilities.</li>
 <li>Streamlined user experience with shared authentication and session management.</li>
 </ul>
 <p><strong>Voice Integration in Agentic Apps</strong></p>
-<p>The XO Platform and the Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.</p>
+<p>AI for Service and Agent Platform now support real-time voice interactions through the Voice Gateway using multi-modal language models, enabling low-latency, contextual, and real-time voice interaction experiences for customers.</p>
 <p>Key features</p>
 <ul>
 <li>Real-time Voice Streaming: Enables real-time voice interactions when the Voice Gateway is selected as the channel.</li>

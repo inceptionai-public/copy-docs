@@ -458,6 +458,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -857,6 +874,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6288,6 +6326,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6446,50 +6504,49 @@
 
 
 <h1 id="integration-with-third-party-services">Integration with Third-party Services<a class="headerlink" href="#integration-with-third-party-services" title="Permanent link">¶</a></h1>
-<p>The <strong>Integrations</strong> feature allows you to connect the Agent Platform to third-party services and use their features seamlessly within your account. This extends the platform’s capabilities to leverage these services and build high-quality AI applications. Once you add a connection for an integration, you can link it to the <strong>Integration node</strong> in the Tool Flow canvas. This allows you to seamlessly use third-party services while building your tool automation. <a href="../../../ai-agents/tools/tool-flows/types-of-nodes/integration-node/" target="_blank">Learn more</a> about the <strong>Integration</strong> node.</p>
-<p>The Agent Platform supports over 120 integrations across various categories. Each integration is secured by an authorization mechanism supported by the third-party service, which validates the user’s identity before accessing account resources, such as apps or files. The primary auth methods supported for integrations include:</p>
+<p>The <strong>Integrations</strong> feature connects the Agent Platform to third-party services, streamlining access to external tools and automating workflows. Once connected, you can use these integrations from the Tool Flow canvas to build high-quality AI applications. <a href="../../../ai-agents/tools/tool-flows/types-of-nodes/integration-node/" target="_blank">Learn more</a> about the <strong>Integration</strong> node.</p>
+<p>The Agent Platform supports 120+ integrations with various authorization mechanisms. Each integration uses the third party's authentication to verify users before granting access to account resources. Main authentication methods are:</p>
 <ul>
-<li><strong>API</strong>: A simple token is passed in the request (usually in headers or query parameters) to authenticate the user or app trying to access an API.</li>
+<li><strong>API</strong>: Authenticate by passing a token (usually in headers or query parameters). Used for API Key or Access Token integrations.</li>
 <li><strong>OAuth2</strong>: Uses the OAuth2 industry-standard authorization framework to grant limited access to resources on a service without sharing passwords. The auth method uses the following concepts:<ul>
 <li><strong>Access Token</strong>: A temporary token that the app uses to access the user’s resources.</li>
-<li><strong>Scopes</strong>: Permissions tied to the token (e.g., "read email", "write files").</li>
-<li><strong>Expires</strong>: Tokens often have a time limit for security.</li>
-<li><strong>Refresh Token</strong>: A token used to get a new access token when the old one expires.</li>
+<li><strong>Scopes</strong>: Specific permissions attached to the token. For example, a token may have a 'read email' scope, which allows an app to access your email data, or a 'write files' scope, which allows it to upload or edit files.</li>
+<li><strong>Expires</strong>: Tokens often have a time limit to increase security, meaning they become invalid after a set time period.</li>
+<li><strong>Refresh Token</strong>: Allows the app to obtain a new access token when the old one expires. No need to log in again.</li>
 </ul>
 </li>
-<li><strong>Bearer</strong>: <strong>API authentication</strong> where the client sends a <strong>token</strong> (called a <em>bearer token</em>) in the request header to access protected resources after a successful login or authorization (usually via OAuth 2.0). The server checks the token to verify if the request is allowed.</li>
-<li><strong>Basic Auth</strong>: The client sends a username and password in the request header. The server checks the credentials and either allows the request or returns a 401 Unauthorized error if they’re invalid. The user stays authenticated as long as the connection is active. This method doesn’t track user sessions, credentials are sent with every request. The Agent Platform supports <strong>Basic Auth</strong> for Service Now, Freshdesk, Snowflake,Amplitude, and Mixpanel integrations.</li>
+<li><strong>Bearer</strong>: Use a bearer token in the request header, usually within an OAuth2 workflow, to access protected resources. The server validates the token before granting access.</li>
+<li><strong>Basic Auth</strong>: Authenticate using username and password in the request header. Credentials are sent with each request. Supported for ServiceNow, Freshdesk, Snowflake, Amplitude, and Mixpanel integrations.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p></p><ul><li>Other authentication methods supported for specific integrations include <b>Basic</b>, <b>Basic with JWT</b>, <b>OAuth1</b>, and <b>custom authentication</b> defined by the service provider.</li>
-<li>Some providers may support <b>multiple authentication methods</b>, allowing flexibility based on your integration needs</li></ul><p></p>
+<p></p><ul><li>Other authentication methods for certain integrations include: <b>Basic</b>, <b>Basic with JWT</b>, <b>OAuth1</b>, and <b>custom authentication</b> defined by the service provider.</li>
+<li>Some providers may support <b>multiple authentication methods</b>, allowing flexibility based on your integration needs.</li></ul><p></p>
 </div>
 
 <h2 id="access-integrations">Access Integrations<a class="headerlink" href="#access-integrations" title="Permanent link">¶</a></h2>
-<p>To access the feature, follow the step belows:</p>
+<p>To access the feature, follow the steps below:</p>
 <ol>
 <li>
-<p>Log in to your account and click <strong>Autonomous Agents</strong> under <strong>Agent Platform Modules</strong>.
+<p>Log in → In Agent Platform Modules → Click <strong>Autonomous Agents</strong>.
    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/navigate-to-users.png" data-desc-position="bottom"><img src="../images/navigate-to-users.png" alt="navigate home page" title="navigate home page" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Settings</strong> on the top navigation bar.</p>
+<p>Click <strong>Settings</strong> → On the left navigation menu → Click <strong>Integrations</strong>.
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/access-integrations.png" data-desc-position="bottom"><img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
-<li>Click <strong>Integrations</strong> on the left navigation menu.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/access-integrations.png" data-desc-position="bottom"><img src="../images/access-integrations.png" alt="access integrations" title="access integrations" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ol>
 <h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">¶</a></h2>
 <p>The features supported on the <strong>Integrations</strong> page include:</p>
 <ul>
 <li>
 <p><strong>All Integrations and Connected Tabs</strong></p>
-<p>Click the <strong>All Integrations</strong> tab to view the list of available integrations based on the category you choose, and add a connection using the supported auth method. Some of the AI-based integrations include <a href="../integrate-with-s3-bucket/" target="_blank">AWS S3 Bucket</a>, <a href="../integrate-with-wandb/" target="_blank">Weight &amp; Biases</a>, and <a href="../enable-hugging-face/" target="_blank">Hugging Face</a>.</p>
-<p>Once a service connection is configured and established, the integration appears in the <strong>Connected</strong> section and is removed from the <strong>All Integrations</strong> list. If you delete the connection, the integration will be listed again under <strong>All Integrations</strong>.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/all-integrations-tab.png" data-desc-position="bottom"><img src="../images/all-integrations-tab.png" alt="all integrations" title="all integrations" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>Click the <strong>All Integrations</strong> tab to see available integrations grouped by category. You can add a connection to these integrations using a supported authentication method, such as API, OAuth2, Bearer Token, or Basic Auth. AI-based integrations you can connect to include <a href="../integrate-with-s3-bucket/" target="_blank">AWS S3 Bucket</a>, <a href="../integrate-with-wandb/" target="_blank">Weight &amp; Biases</a>, and <a href="../enable-hugging-face/" target="_blank">Hugging Face</a>. The category you select filters which integrations are shown in this list.</p>
+<p>Once you configure and connect to a third-party service, that integration appears in the <strong>Connected</strong> section and is no longer visible in the <strong>All Integrations</strong> list. If you delete the connection, the integration will return to the <strong>All Integrations</strong> list, allowing you to reconnect in the future.
+ <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/all-integrations-tab.png" data-desc-position="bottom"><img src="../images/all-integrations-tab.png" alt="all integrations" title="all integrations" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p><strong>Search Integration</strong>: Enter the integration name in the <strong>Search</strong> field to find it in the list. Results will appear for both full and partial matches.
+<p><strong>Search Integration</strong>: Enter the name in the <strong>Search</strong> field for full or partial matches.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/search-integration.png" data-desc-position="bottom"><img src="../images/search-integration.png" alt="search integration" title="search integration" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
@@ -6497,7 +6554,7 @@
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/select-category-of-integration.png" data-desc-position="bottom"><img src="../images/select-category-of-integration.png" alt="change category" title="change category" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p><strong>Authorization Dropdown List</strong>: The available types for authentication methods are API, OAuth2, Bearer, and Basic Auth. Refer to the <a href="./#add-a-connection-to-set-up-integration" target="_blank">overview</a> section for more details. Select the required option(s) and click <strong>Apply</strong> to view the relevant integrations.
+<p><strong>Authorization Dropdown List</strong>: The available types for authentication methods are API, OAuth2, Bearer, and Basic Auth. Refer to the introduction of this article for more details. Select the required option(s) and click <strong>Apply</strong> to view the relevant integrations.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/select-category-integration.png" data-desc-position="bottom"><img src="../images/select-category-integration.png" alt="select auth" title="select auth" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
@@ -7765,7 +7822,7 @@
    </td>
   </tr>
   <tr>
-   <td>SearchAI
+   <td>Search AI
    </td>
    <td>Connect to your users' SearchAssist setup.
    </td>
@@ -8154,12 +8211,13 @@
 </div>
 
 <ol>
-<li><a href="./#access-integrations" target="_blank">Access</a> the <strong>Integrations</strong> page.</li>
+<li><a href="./#access-integrations" target="_blank">Access</a> <strong>Integrations</strong>.</li>
 <li>
-<p><strong>Case 1</strong>: To select a service provider connection for the first time, follow these steps:</p>
+<p>The next steps depend on whether you are setting up a connection for the first time or want to use an existing connection.
+    <strong>Case 1</strong>: For a first-time connection, follow these steps:</p>
 <ul>
 <li>(Optional) In the <strong>All Integrations</strong> tab, select the <strong>Category</strong> and <strong>Authorization</strong> from the respective lists to filter the integration options.</li>
-<li>Click the required integration tile/listing from the <a href="./#supported-integrations" target="_blank">available options</a>.</li>
+<li>Click the required integration from the <a href="./#supported-integrations" target="_blank">available options</a>.</li>
 </ul>
 <p><strong>Case 2</strong>: To select an existing/connected provider, click the <strong>Connected</strong> tab, and click the required provider.</p>
 </li>
@@ -8183,7 +8241,7 @@
 </div><p></p>
 <ul>
 <li>
-<p>The <strong>Pre-authorize the integration</strong> option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as <em>OAuth2</em>, <em>Bearer</em>, or <em>Basic Auth</em> from the available options to configure the credentials. </p>
+<p>The <strong>Pre-authorize the integration</strong> option is auto-selected, indicating that you must provide authentication credentials to interact with the tool or service. You can select the preferred authentication method, such as <em>OAuth2</em>, <em>Bearer</em>, or <em>Basic Auth</em>, from the available options to configure the credentials. </p>
 </li>
 <li>
 <p>Based on the selected authorization method, the relevant configuration fields automatically appear under each corresponding authorization type.</p>
@@ -8191,12 +8249,12 @@
 </ul>
 <p><strong>OAuth2</strong></p>
 <ul>
-<li>Provide the connection name and select the configured <strong>Auth Profile</strong> from the list in the <strong>Custom</strong> window to associate it with the integration for authentication. <a href="../../security-and-control/authorization-profile/#add-authorization-profile" target="_blank">Learn more</a> about setting up auth profiles in your account. If no auth profiles are configured, you can add one by selecting <strong>+ Create new</strong> and following the steps mentioned <a href="../../security-and-control/authorization-profile/#add-authorization-profile" target="_blank">here</a>.</li>
-<li><strong>Custom auth</strong> allows you to use your custom-configured authentication flow by selecting an <strong>Auth Profile</strong> on the Agent Platform, instead of using third-party authentication.</li>
+<li>Provide the connection name and select the configured <strong>Auth Profile</strong> in the <strong>Custom</strong> for authentication by the integration. <a href="../../security-and-control/authorization-profile/#add-authorization-profile" target="_blank">Learn more</a> about adding an auth profile to your account.</li>
+<li><strong>Custom auth</strong>: Allows you to use a tailored authentication process, set up in the Agent Platform, to connect to a service. This is an alternative to using any standard authentication flows like API or OAuth2 provided by the service.</li>
 <li>Once an Auth Profile is selected, all its credentials are fetched and automatically populate the corresponding fields such as <strong>Redirect URL</strong>, <strong>Scopes</strong>, <strong>Base URL</strong>, and more.</li>
-<li>You don’t need to re-authenticate as long as the <strong>authorization profile</strong> remains in your account (i.e., it hasn’t been deleted).</li>
-<li>If you attempt to connect to a provider using a deleted auth profile, an error will occur.</li>
-<li>When configuring a connection after an auth profile has been deleted, it will no longer appear in the <strong>Custom</strong> window.</li>
+<li>No need to re-authenticate unless the authorization profile is deleted from your account.</li>
+<li>Connecting to a provider with a deleted auth profile results in an error.</li>
+<li>Deleted auth profiles no longer display in the <strong>Custom</strong> window during configuration</li>
 <li>Click <strong>Authorize</strong> to test the integration for the selected Auth profile.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/click-authorize.png" data-desc-position="bottom"><img src="../images/click-authorize.png" alt="click authorize" title="click authorize" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ul>
@@ -8204,7 +8262,7 @@
 <ul>
 <li>When you select this auth type, you must enter the bearer token along with related information such as the <em>Base URL</em>, <em>API Key</em>, <em>Bot Token</em>, or other relevant credentials.</li>
 <li>The required fields depend on the bearer authentication framework supported by the selected service provider.</li>
-<li>You can retrieve (copy and paste) these values from the Admin console &gt; Settings section of your account on the provider’s site. </li>
+<li>Retrieve these values from the provider’s Admin console &gt; <strong>Settings</strong> section.</li>
 <li>Click <strong>Test</strong> to validate the connection. A success message is displayed once the connection is set up.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/click-test-oauth.png" data-desc-position="bottom"><img src="../images/click-test-oauth.png" alt="test oauth" title="test oauth" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ul>
@@ -8212,7 +8270,7 @@
 <ul>
 <li>When you select this type, you must enter the <strong>API Key</strong> or <strong>Access Token</strong> for the service provider. </li>
 <li>Additional field inputs may be required based on the specific parameters needed to configure the provider.</li>
-<li>You can retrieve (copy and paste) these values from the admin console &gt; Settings section of your account on the provider’s site.</li>
+<li>Retrieve these values from the Admin console &gt; <strong>Settings</strong> of your provider’s site.</li>
 <li>Click <strong>Test</strong> to validate the connection.  A success message is displayed once the connection is set up.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/test-validation.png" data-desc-position="bottom"><img src="../images/test-validation.png" alt="test validation" title="test validation" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ul>
@@ -8225,7 +8283,7 @@
 <p><strong>Basic Auth</strong></p>
 <ul>
 <li>When you select this auth type, you must provide the required configuration values. For example, an <strong>Amplitude</strong> project requires an <em>API key</em> and <em>API secret</em>.</li>
-<li>You can retrieve (copy and paste) these values from the <em>Admin console</em> of your account on the provider’s site.</li>
+<li>Retrieve these values from the Admin console &gt; <strong>Settings</strong> of your provider’s site.</li>
 <li>
 <p>Click <strong>Test</strong> to validate the connection. A success message is displayed once the connection is set up.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/basic-auth-set-up.png" data-desc-position="bottom"><img src="../images/basic-auth-set-up.png" alt="test validation for basic auth" title="test validation for basic auth" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -8233,19 +8291,19 @@
 </ul>
 </li>
 </ol>
-<ol start="5"><li>Click <b>Save</b>.</li>
+<ol start="5"><li>Click <b>Save</b> after successfully testing the connection.</li>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <b>Save</b> button will not appear until all required inputs have been provided.</p>
 </div></ol>
 
-<p>Once the connection is set up, a success message is displayed.</p>
+<p>A success message appears after setup.</p>
 <p>You will be redirected to the following page, where all the connections for the provider are listed.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/integration-summary.png" data-desc-position="bottom"><img src="../images/integration-summary.png" alt="integration summary" title="integration summary" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="manage-connection-errors">Manage Connection Errors<a class="headerlink" href="#manage-connection-errors" title="Permanent link">¶</a></h3>
 <ul>
 <li>
-<p>During or after setting up a connection, errors may occur while testing. These errors are often caused by invalid credentials provided during the configuration (<a href="./#add-a-connection-to-set-up-integration" target="_blank">add a connection</a> step). </p>
+<p>During or after setting up a connection, errors may occur due to invalid credentials when <a href="./#add-a-connection-to-set-up-integration" target="_blank">adding a connection</a>. </p>
 </li>
 <li>
 <p><strong>View the error</strong></p>
@@ -8290,34 +8348,31 @@
 </div>
 
 <ol>
-<li><a href="./#access-integrations" target="_blank">Access</a> the <strong>Integrations</strong> page.</li>
-<li>Click the <strong>Connected</strong> tab and select a connection.</li>
+<li><a href="./#access-integrations" target="_blank">Access</a> <strong>Integrations</strong> → Click <strong>Connected</strong> → Select a connection.</li>
 <li>
-<p>Click the <strong>Ellipses</strong> icon for the required connection.
+<p>For the connection, click the <strong>Ellipses</strong> icon → Select <strong>Edit</strong>.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/select-edit-int.png" data-desc-position="bottom"><img src="../images/select-edit-int.png" alt="select edit integration" title="select edit integration" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p>Select <strong>Edit</strong>.</p>
+<p>In the configuration window, modify the required fields in the <strong>Authorization Details</strong> section.</p>
 </li>
-<li>In the configuration window, modify the required fields in the <strong>Authorization Details</strong> section.</li>
 <li>(Optional) Click <strong>Test</strong> to validate the connection.</li>
-<li>Click <strong>Save</strong>.</li>
-</ol>
+<li>
+<p>Click <strong>Save</strong>.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/save-edited-integration.png" data-desc-position="bottom"><img src="../images/save-edited-integration.png" alt="save edited integration" title="save edited integration" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>A success message is displayed once the connection is updated.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/edit-success-msg.png" data-desc-position="bottom"><img src="../images/edit-success-msg.png" alt="edit success message" title="edit success message" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ol>
+<p>A success message is displayed once the connection is updated.</p>
 <h3 id="delete-integration">Delete Integration<a class="headerlink" href="#delete-integration" title="Permanent link">¶</a></h3>
 <p>To delete an integration, follow the steps below:</p>
 <ol>
-<li><a href="./#access-integrations" target="_blank">Access</a> the <strong>Integrations</strong> page.</li>
-<li>Click the <strong>Connected</strong> tab and select a connection.</li>
-<li>Click the <strong>Ellipses</strong> icon for the required connection.</li>
+<li><a href="./#access-integrations" target="_blank">Access</a> <strong>Integrations</strong> → Click <strong>Connected</strong> → Select a connection.</li>
 <li>
-<p>Select <strong>Delete</strong>.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/select-delete-integration.png" data-desc-position="bottom"><img src="../images/select-delete-integration.png" alt="select delete" title="select delete" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>Click the <strong>Ellipses</strong> icon → Select <strong>Delete</strong>.
+   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/select-delete-integration.png" data-desc-position="bottom"><img src="../images/select-delete-integration.png" alt="select delete" title="select delete" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Delete</strong> in the confirmation dialog.</p>
+<p>Click <strong>Delete</strong>.</p>
 </li>
 </ol>
 <div class="admonition warning">
@@ -8328,17 +8383,16 @@
 <h3 id="test-connection">Test Connection<a class="headerlink" href="#test-connection" title="Permanent link">¶</a></h3>
 <p>To test a configured connection, follow the steps below:</p>
 <ol>
-<li><a href="./#access-integrations" target="_blank">Access</a> the <strong>Integrations</strong> page.</li>
-<li>Click the <strong>Connected</strong> tab and select a connection.</li>
-<li>Click the <strong>Play</strong> icon for the required connection.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/action-play-icon.png" data-desc-position="bottom"><img src="../images/action-play-icon.png" alt="test action" title="test action" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li><a href="./#access-integrations" target="_blank">Access</a> <strong>Integrations</strong> → Click <strong>Connected</strong> → Select a connection.</li>
+<li>Click <strong>Play</strong> for the connection.
+   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/action-play-icon.png" data-desc-position="bottom"><img src="../images/action-play-icon.png" alt="test action" title="test action" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ol>
 <p>The connection is validated in the background, and any errors are highlighted with a <strong>warning</strong> icon. <a href="./#manage-connection-errors" target="_blank">Learn more</a> about managing errors.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/manage-integration-error.png" data-desc-position="bottom"><img src="../images/manage-integration-error.png" alt="manage error" title="manage error" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>If there are no errors, a success message is displayed when the connection is established.</p>
 <h3 id="enable-or-disable-connection">Enable or Disable Connection<a class="headerlink" href="#enable-or-disable-connection" title="Permanent link">¶</a></h3>
 <p>Enabling a connection makes it available for <strong>user authentication</strong> with the service provider. It also becomes accessible for use in the <strong>Integration node</strong> on the Tool Flow canvas. </p>
-<p>Use the <strong>toggle switch</strong> to enable (default setting) or disable the connection as needed.
+<p>Use the toggle switch to enable (default setting) or disable the connection as needed.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/enable-integration.png" data-desc-position="bottom"><img src="../images/enable-integration.png" alt="enable integration" title="enable integration" style="border: 1px solid gray; zoom:75%;"></a></p>
 
 

@@ -458,6 +458,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -857,6 +874,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -4023,6 +4061,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="API Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structured-output-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Output Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6192,6 +6245,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6226,6 +6299,21 @@
       API Endpoint
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="API Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structured-output-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Output Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6279,6 +6367,26 @@
 <p>Click the <strong>Deployment history</strong> tab on the Deploy page to view the history. This can be particularly useful for auditing and accountability purpose.</p>
 </div>
 <p>You can either embed the curl or the code that is generated into your own applications or use it externally. </p>
+<h3 id="structured-output-support">Structured Output Support<a class="headerlink" href="#structured-output-support" title="Permanent link">¶</a></h3>
+<p>Open-source models can return responses in a structured JSON format using the <code>response_format</code> parameter, aligned with OpenAI schema style.</p>
+<p>You can use this capability in two ways:</p>
+<ul>
+<li>Through API calls: Add the response_format parameter to the model endpoint when calling the deployed model externally.</li>
+<li>Within the Tool builder canvas: Define the schema directly in the builder. The platform automatically attaches it as the response_format parameter for structured output.</li>
+</ul>
+<p>This capability is supported on v2/chat/completions endpoints for selected open-source models. Older endpoints (v1/completions) do not support structured output. For the list of models that support structured output, see <a href="../../supported-models/#supported-models-for-structured-output">Supported Models for Structured Output</a>.</p>
+<p>Supported schema data types include: string, number, boolean, integer, object, array, enum, and anyOf.</p>
+<p><strong>How it works</strong>:</p>
+<ul>
+<li>Add a <code>response_format</code> field to your request body.</li>
+<li>If provided, the model attempts to return a response in JSON object matching the defined schema.</li>
+<li>If not provided, the model responds with standard text output.</li>
+</ul>
+<p>For an example of how a model returns data in a structured schema, see <a href="../structured-output-example/">Structured Output Example</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a model supports both tool calls and JSON Schema, tool calls take precedence, and the schema will be ignored.</p>
+</div>
 <h2 id="deployment-history">Deployment History<a class="headerlink" href="#deployment-history" title="Permanent link">¶</a></h2>
 <p>After deploying a model, you can modify its parameters and redeploy the updated version. The deployment history table tracks the complete life cycle of the model, offering detailed information for each version. This includes the deployment name, the timestamp when it was deployed, the deployment duration, the individual who performed the deployment, and other relevant details. </p>
 <p>Additionally, the system automatically appends a version number to the deployment name and increments it with each subsequent redeployment, ensuring a clear and organized record of all model versions and their respective changes.</p>

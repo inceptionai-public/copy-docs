@@ -458,6 +458,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -865,6 +882,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6236,6 +6274,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6343,7 +6401,7 @@
 <li>
 <p>Provide the MCP server configuration on the following page.<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/mcp-config.png" data-desc-position="bottom"><img alt="MCP Config" src="../images/mcp/mcp-config.png" title="MCP Config"></a></p>
 <ol>
-<li><strong>Name</strong>- Provide a unique name for the MCP server. </li>
+<li><strong>Name</strong>- Provide a unique name for the MCP server.</li>
 <li><strong>Description</strong>- Provide a description of the capabilities/tools offered by the server. </li>
 <li><strong>Request Definition</strong> - Define how the platform should send a request to the MCP server to fetch available tools. Click <strong>Configure</strong> and provide the MCP server configuration details. <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/mcp-config-type.png" data-desc-position="bottom"><img alt="MCP Config" src="../images/mcp/mcp-config-type.png" title="MCP Config"></a><ol>
 <li>Select the MCP server configuration type - HTTP or SSE. </li>
@@ -6356,7 +6414,7 @@
 <li>
 <p>Click the <strong>Test</strong> button to fetch tool metadata from the MCP server. </p>
 </li>
-<li>Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click <strong>Add Selected</strong> to add the tools to the agent. </li>
+<li>Upon successful connection, the platform displays the list of all the tools offered by the MCP server. Select the required tools and click Add Selected to add the tools to the agent. </li>
 </ol>
 <h2 id="tool-naming-convention">Tool Naming Convention<a class="headerlink" href="#tool-naming-convention" title="Permanent link">¶</a></h2>
 <p>To avoid naming conflicts and help identify the source, imported tool names are automatically <strong>prefixed with the MCP server name</strong>. </p>
@@ -6375,17 +6433,17 @@
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/tool-preview.png" data-desc-position="bottom"><img alt="Preview" src="../images/mcp/tool-preview.png" title="Preview"></a></p>
 </li>
 <li>
-<p>Enter sample values for the inputs and click <strong>Confirm</strong> to initiate a request to the MCP server. 
+<p>Enter sample values for the inputs and click <strong>Execute</strong> to initiate a request to the MCP server. 
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/test-mcp.png" data-desc-position="bottom"><img alt="Test" src="../images/mcp/test-mcp.png" title="Test MCP tool"></a></p>
 </li>
 <li>The request is sent to the MCP server, and the resulting output is displayed in the <strong>Sample Response</strong> section.</li>
 </ol>
 <h2 id="updatingreconfiguring-the-mcp-server">Updating/Reconfiguring the MCP server<a class="headerlink" href="#updatingreconfiguring-the-mcp-server" title="Permanent link">¶</a></h2>
-<p>Whenever there are any updates to the tools hosted via the MCP server or, reconfigure the MCP server in the Agentic App for the changes to reflect. </p>
+<p>Whenever there are any updates to the tools hosted via the MCP server, reconfigure the MCP server in the Agentic App for the changes to reflect. </p>
 <p>Use the <strong>refresh</strong> icon to fetch updated content from the MCP server. </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/refresh.png" data-desc-position="bottom"><img alt="Refresh MCP" src="../images/mcp/refresh.png" title="Refresh MCP"></a></p>
-<p>To modify the configuration of the MCP server, click on the ellipsis in the right corner of the MCP server and click <strong>Edit Server</strong>. Make the necessary changes and save. </p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/modify-mcp.png" data-desc-position="bottom"><img alt="MCP Config" src="../images/mcp/modify-mcp.png" title="Modify MCP Config"></a></p>
+<p>To edit the MCP server configuration, select the More options menu in the top-right corner of the MCP server card, and then select Edit Server. Make the required changes and Save.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcp/edit-mcp.png" data-desc-position="bottom"><img alt="MCP Config" src="../images/mcp/edit-mcp.png" title="Modify MCP Config"></a></p>
 <h2 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">¶</a></h2>
 <p>If the MCP server includes pre-authorized tools that access Personally Identifiable Information (PII), avoid sharing the Agentic app that uses those tools. Sharing the app could grant others access to sensitive data stored on the connected servers.</p>
 <h2 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">¶</a></h2>
@@ -6394,7 +6452,7 @@
 <p><strong>Can I manage multiple MCP servers within an Agentic App?</strong></p>
 <p>Yes, an agentic app can be configured to connect to one or more MCP servers, each exposing its own set of tools.</p>
 <p><strong>Does Agent Platform automatically fetch the latest set of tools from the MCP server?</strong></p>
-<p>Currently, the agent platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.</p>
+<p>Currently, the Agent Platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.</p>
 
 
 

@@ -458,6 +458,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -865,6 +882,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -1840,11 +1878,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#steps-to-add-and-configure-the-node" class="md-nav__link">
+  <a href="#add-and-configure-an-image-to-text-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Steps to Add and Configure the Node
+      Add and Configure an Image to Text Node
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Add and Configure an Image to Text Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-open-flow-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Open Flow Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-the-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add the Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-configure-the-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Configure the Node
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6236,6 +6307,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6301,11 +6392,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#steps-to-add-and-configure-the-node" class="md-nav__link">
+  <a href="#add-and-configure-an-image-to-text-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Steps to Add and Configure the Node
+      Add and Configure an Image to Text Node
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Add and Configure an Image to Text Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-open-flow-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Open Flow Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-the-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add the Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-configure-the-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Configure the Node
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6362,47 +6486,47 @@
 <p>The <strong>Image to Text</strong> node integrates smoothly into your tool flows by accepting image file URLs and generating descriptive or structured text output for downstream nodes. You can configure the node by selecting a supported model and providing a valid image URL in PNG, JPEG, or JPG format. Use the System Prompt to define the model’s role (e.g., insurance evaluator), and the Prompt to specify the task, such as answering a question or extracting details. Prompts support dynamic context variables, enabling flexible, data-driven automation scenarios.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/how-image-to-text-works.png" data-desc-position="bottom"><img src="../images/how-image-to-text-works.png" alt="how image to text works" title="how image to text works" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>In this document, you will learn how to add the node to your flows, configure it with supported models, define system and user prompts, handle image inputs via URL, and pass the generated responses to downstream nodes for further processing.</p>
-<h2 id="steps-to-add-and-configure-the-node">Steps to Add and Configure the Node<a class="headerlink" href="#steps-to-add-and-configure-the-node" title="Permanent link">¶</a></h2>
-<p>To add and configure the node, follow the steps below:</p>
-<p><strong>NOTE</strong></p>
-<p>Before proceeding, you must add an external LLM to your account using either <a href="../../../../../models/external-models/add-an-external-model-using-easy-integration/" target="_blank">Easy Integration</a> or <a href="../../../../../models/external-models/add-an-external-model-using-api-integration/" target="_blank">Custom API Integration</a>.</p>
-<ol>
+<h2 id="add-and-configure-an-image-to-text-node">Add and Configure an Image to Text Node<a class="headerlink" href="#add-and-configure-an-image-to-text-node" title="Permanent link">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding, you must add an external LLM to your account.</p>
+</div>
+
+<h3 id="step-1-open-flow-builder">Step 1: Open Flow Builder<a class="headerlink" href="#step-1-open-flow-builder" title="Permanent link">¶</a></h3>
+<ul>
 <li>
-<p>Log in to your account and click <strong>Tools</strong> under <strong>Agent Platform Modules</strong>.
+<p>Log in → In Agent Platform Modules → Click <strong>Tools</strong>.
    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/access-tools-module.png" data-desc-position="bottom"><img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
-<p>Click the <strong>Tools</strong> tab on the top navigation bar, and select the tool to which you want to add the node. The Tool flow page is displayed.
-   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/click-agent-name.png" data-desc-position="bottom"><img src="../images/click-agent-name.png" alt="click tool name" title="click tool name" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>Select your tool → Click <strong>Go to Flow</strong>.</p>
 </li>
-<li>
-<p>Click <strong>Go to flow</strong> to edit the in-development version of the flow.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/access-af.png" data-desc-position="bottom"><img src="../images/access-af.png" alt="access tool flow" title="access tool flow" style="border: 1px solid gray; zoom:75%;"></a>   </p>
-</li>
-<li>
-<p>In the flow builder, click the <strong>+</strong> icon for <strong>Image to Text</strong> under <strong>AI</strong> in the <strong>Assets</strong> panel. Alternatively, drag the node from the panel onto the canvas. You can also click <strong>AI</strong> in the pop-up menu and click <strong>Image to text</strong>.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/access-image-to-text-node.png" data-desc-position="bottom"><img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 1px solid gray; zoom:75%;"></a></p>
-</li>
+</ul>
+<h3 id="step-2-add-the-node">Step 2: Add the Node<a class="headerlink" href="#step-2-add-the-node" title="Permanent link">¶</a></h3>
+<ul>
+<li>Click the "<strong>+</strong>" icon for <strong>Image to Text</strong> under <strong>AI</strong> in the <strong>Assets</strong> panel. Alternatively, drag the node from the panel onto the canvas. You can also click <strong>AI</strong> in the pop-up menu and click <strong>Image to text</strong>.
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/access-image-to-text-node.png" data-desc-position="bottom"><img src="../images/access-image-to-text-node.png" alt="access node" title="access node" style="border: 1px solid gray; zoom:75%;"></a></li>
+</ul>
+<h3 id="step-3-configure-the-node">Step 3: Configure the Node<a class="headerlink" href="#step-3-configure-the-node" title="Permanent link">¶</a></h3>
+<ul>
 <li>
 <p>Click the added node to open its properties dialog box. The <strong>General Settings</strong> for the node are displayed.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/properties-panel-open.png" data-desc-position="bottom"><img src="../images/properties-panel-open.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;"></a></p>
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/properties-panel-open.png" data-desc-position="bottom"><img src="../images/properties-panel-open.png" alt="properties panel" title="properties panel" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
 <p>Enter or select the following <strong>General Settings</strong>:</p>
-</li>
-</ol>
-<ul><li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”</li>
-<li>Select a model from the list of configured models.</li></ul>
-
-<div class="admonition note">
+<ul>
+<li><b>Node Name</b>: Enter an appropriate name for the node. For example, “<i>InsuranceEvaluation</i>.”</li>
+<li>Select a model from the list of configured models.</li>
+</ul>
+<p></p><div class="admonition note">
    <p class="admonition-title">Note</p>
    <p>Only the <b>OpenAI (gpt-4o and gpt-4o-mini)</b> and <b>Anthropic (Claude Sonnet Vision)</b> models are supported.</p>
-   </div>
-
+   </div><p></p>
 <ul>
 <li>Provide the <code>File URL</code> of the public repository where your image file exists or is returned by the Upload File API at the tool endpoint.</li>
 </ul>
-<div class="admonition note">
+<p></p><div class="admonition note">
   <p class="admonition-title">Key Considerations</p>
   <p></p><ul><li>The user can provide only one file URL at a time for processing.</li>
   <li>The file source url must be valid for the node to function properly.</li>
@@ -6410,29 +6534,36 @@
   <li>Except for image input handling, the OCR node functions like the existing AI node.</li>
   <li>Sending images and related settings are handled by the <a href="../../../../../apis/apis-list/upload-file-api" target="_blank">File Upload API</a>.</li>
   <li>Image input preprocessing is supported in the following formats:</li>
-    <ul><li>Binary, base64-encoded for Anthropic models.</li>
-    <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul></ul><p></p>
-   </div>
+ <ul><li>Binary, base64-encoded for Anthropic models.</li>
+ <li>Both binary, base64-encoded, and image URLs for OpenAI models.</li></ul><p></p></ul></div><p></p>
+</li>
+<li>
+<p><b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."</p>
+</li>
+<li>
+<p><b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</p></li>
+         <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/configuration-set.png" data-desc-position="bottom"><img src="../images/configuration-set.png" alt="configurations tab" title="configurations tab" style="border: 1px solid gray; zoom:75%;"></a><p></p>
 
-<ul><li><b>System Prompt</b>: System prompts guide the model’s behavior and response style. Enter a system prompt to define its role for your use case. For example: "<i>You are a vehicle insurance assistant that analyzes uploaded vehicle images to assess damage and estimate repair costs in USD</i>."</li>
-<li><b>Prompt</b>: User prompts define specific questions or requests for the model. Provide clear instructions for the model to follow, using context variables for dynamic inputs in the syntax: <code>{{context.variable_name}}</code>. <b>Example:</b> "<i>Check the image provided for the damaged parts in the car and select what parts are affected from the list below - <code>{{context.parts_list}}</code></i>."</li>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/configuration-set.png" data-desc-position="bottom"><img src="../images/configuration-set.png" alt="configurations tab" title="configurations tab" style="border: 1px solid gray; zoom:75%;"></a>
-</ul>
-
+<li>
+<p><strong>Response JSON schema</strong>:  Define a JSON schema for structured responses. This step is optional and depends on the selected model.   </p>
+<p>You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.</p>
+<p>Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: <a href="../../perform-other-actions-on-the-flow-builder/defining-json/" target="_blank">Defining JSON schema</a>. </p>
+<p>If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.  </p>
+<p>For more information about how the model parses the response and separates keys from the content body, see: <a href="../../perform-other-actions-on-the-flow-builder/model_response_parsing/" target="_blank">Structured Response Parsing and Context Sharing in Workflows</a>.</p>
+</li>
+<li>
+<p>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/connections-configuration.png" data-desc-position="bottom"><img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;"></a></p>
 <ul>
-<li><strong>Response JSON schema</strong>:  Define a JSON schema for structured responses. This step is optional and depends on the selected model. <br>
-    You can define a JSON schema to structure the model's response if the chosen model supports the response format. By default, if no schema is provided, the model will respond with plain text.
-    Supported JSON schema types include: String, Boolean, Number, Integer, Object, Array, Enum, and anyOf. Ensure the schema follows the standard outlined here: <a href="../../perform-other-actions-on-the-flow-builder/defining-json/" target="_blank">Defining JSON schema</a>. 
-    If the schema is invalid or mismatched, errors will be logged, and you must resolve them before proceeding.<br>
-    For more information about how the model parses the response and separates keys from the content body, see: <a href="../../perform-other-actions-on-the-flow-builder/model_response_parsing/" target="_blank">Structured Response Parsing and Context Sharing in Workflows</a>.</li>
+<li><b>On Success</b> &gt; <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
+<li><b>On Failure</b> &gt; <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.</li>
 </ul>
-<ol start="7"><li>Click the <b>Connections</b> icon and select the <b>Go to Node</b> for success and failure conditions.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/connections-configuration.png" data-desc-position="bottom"><img src="../images/connections-configuration.png" alt="connections tab" title="connections tab" style="border: 1px solid gray; zoom:75%;"></a></li>
-<ul><li><b>On Success</b> &gt; <b>Go to Node</b>: After the current node is successfully executed, go to a selected node in the flow to execute next, such as an AI node, Function node, Condition node, API node, or End node.</li>
-<li><b>On Failure</b> &gt; <b>Go to Node</b>: If the execution of the current node fails, go to the End node to display any custom error message from the <b>Image to Text</b> node.</li></ul>
-<li>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/click-run.png" data-desc-position="bottom"><img src="../images/click-run.png" alt="click run" title="click run" style="border: 1px solid gray; zoom:75%;"></a></li></ol>
-
+</li>
+<li>
+<p>Finally, test the flow and fix any issues found. Click the <b>Run Flow</b> button at the top-right corner of the flow builder and follow the onscreen instructions.
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/click-run.png" data-desc-position="bottom"><img src="../images/click-run.png" alt="click run" title="click run" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ul>
 <div class="admonition failure">
 <p class="admonition-title">Standard Error</p>
 <p>When the Model is not selected, the prompt details are not provided, or both, the following error message is displayed: “Proper data needs to be provided in the LLM node”.</p>

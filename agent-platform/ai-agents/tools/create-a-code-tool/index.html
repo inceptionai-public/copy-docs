@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-a-code-tool" class="md-skip">
+        <a href="#create-a-code-tool" class="md-skip">
           Skip to content
         </a>
       
@@ -455,6 +455,23 @@
   
 
     
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
   
 
       
@@ -865,6 +882,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6200,6 +6238,26 @@ return booking_confirmation(source, destination)
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6261,13 +6319,13 @@ return booking_confirmation(source, destination)
   
 
 
-<h1 id="creating-a-code-tool">Creating a Code Tool<a class="headerlink" href="#creating-a-code-tool" title="Permanent link">¶</a></h1>
+<h1 id="create-a-code-tool">Create a Code Tool<a class="headerlink" href="#create-a-code-tool" title="Permanent link">¶</a></h1>
 <p>To create a code tool, click <strong>+Create Tool</strong> in the <strong>Tools</strong> page while creating the agent and select <strong>Code Tool</strong>. Provide the following details for the tool.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/codetools/add-code-tool.png" data-desc-position="bottom"><img alt="Add a Code Tool" src="../images/codetools/add-code-tool.png" title="Add a code tool"></a></p>
 <p><strong>Name</strong></p>
 <p>Enter a <strong>unique and descriptive name</strong> for the tool to help identify its purpose. </p>
 <p><strong>Example</strong>: SQL Query Processor</p>
-<p>Do not add special characters or spaces. Only alphabets, numbers, and underscores are allowed in the name. </p>
+<p>Don't add special characters or spaces. Only alphabets, numbers, and underscores are allowed in the name. </p>
 <hr>
 <p><strong>Description</strong></p>
 <p>Provide a <strong>clear and detailed description</strong> of the tool’s functionality. This helps the agent understand:</p>
@@ -6286,13 +6344,13 @@ return booking_confirmation(source, destination)
 <li><strong>Name:</strong> A unique identifier for the parameter.</li>
 <li><strong>Description:</strong> Explains the parameter’s purpose to help the agent extract relevant data from user input.</li>
 <li>
-<p><strong>Type:</strong> The expected data type. The following types are currently supported: </p>
+<p><strong>Type:</strong> The expected data type. The following types are supported: </p>
 <ul>
 <li><strong>string</strong>: sequence of characters</li>
 <li><strong>number</strong>: An integer value</li>
 <li><strong>boolean</strong>: true or false</li>
 <li>
-<p><strong>list of values</strong>: A restricted set of predefined values. This type is useful when the input must be one of a specific set of options. For this type of field, add all the values that the parameter can take. For example, a parameter priority of type enum might accept values like "low", "medium", or "high".  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/codetools/enum-type.png" data-desc-position="bottom"><img alt="alt_text" src="../images/codetools/enum-type.png" title="image_tooltip"></a></p>
+<p><strong>list of values</strong>: A restricted set of predefined values. This type is useful when the input must be one of a specific set of options. For this type of field, add all the values that the parameter can take. For example, a parameter priority of type enum might accept values like "low," "medium," or "high."  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/codetools/enum-type.png" data-desc-position="bottom"><img alt="alt_text" src="../images/codetools/enum-type.png" title="image_tooltip"></a></p>
 </li>
 <li>
 <p><strong>object</strong>. A structured data type that includes one or more nested parameters. Use this when multiple related values must be grouped. For example, a location object might include fields like building,  city, and zip code. An object type can have a nested structure. Adhere to the <strong>Sample Schema</strong> for detailed structure and formatting guidelines.</p>
@@ -6348,7 +6406,7 @@ return booking_confirmation(source, destination)
 <li>
 <p><strong>isMandatory</strong>: Indicates whether this input parameter is mandatory or not. </p>
 </li>
-<li><strong>Default value of the parameter</strong>: Enable this option to assign a default value to the parameter. This default value is used whenever the parameter value is not found in the input. The data type for the default value must be same as that of the parameter itself.  For instance, if the priority is not specified in the user input, the default value of Medium is used when configured as shown below. 
+<li><strong>Default value of the parameter</strong>: Enable this option to assign a default value to the parameter. This default value is used whenever the parameter value isn't found in the input. The data type for the default value must be same as that of the parameter itself. For instance, if the priority isn't specified in the user input, the default value of Medium is used when configured as shown below. 
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/codetools/default-value.png" data-desc-position="bottom"><img alt="alt_text" src="../images/codetools/default-value.png" title="image_tooltip"></a></li>
 </ul>
 <hr>

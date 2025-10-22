@@ -452,6 +452,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -851,6 +868,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6101,6 +6139,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6403,12 +6461,7 @@
 
 
 <h1 id="file-upload-api">File Upload API<a class="headerlink" href="#file-upload-api" title="Permanent link">¶</a></h1>
-<p>The API can upload a file to the local server for seamless usage in multimodal nodes and across the Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> as the response, which can be used to take further action on the file. </p>
-<p>The following file upload modes are supported:</p>
-<ul>
-<li><a href="./#mode-1-upload-a-single-file-as-is" target="_blank">Mode 1 - Upload a single file as is</a>: For files smaller than 25 MB.</li>
-<li><a href="./#mode-2-upload-a-file-in-chunks" target="_blank">Mode 2 - Upload a file in chunks</a>: For files larger than 25 MB.</li>
-</ul>
+<p>The API uploads a file to the local server for seamless usage in multimodal nodes and across the Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.</p>
 <p>The following file extensions are currently supported:</p>
 <ul>
 <li>M4a</li>
@@ -6423,9 +6476,15 @@
 <li>WEBP (.webp)</li>
 <li>GIF (.gif)</li>
 </ul>
-<p><strong>Where can I find the API key?</strong> <a href="../../overview/#how-to-create-the-api-key" target="_blank">Learn more</a>.</p>
+<p><strong>Where can I find the API key?</strong></p>
+<p>To use the API, you will need an API key. <a href="../../overview/#how-to-create-the-api-key" target="_blank">Learn more</a>.</p>
+<p>The following file upload modes are supported:</p>
+<ul>
+<li><a href="./#mode-1-upload-a-single-file-as-is" target="_blank">Mode 1 - Upload a single file as is</a>: Use this mode if your file is smaller than 25 MB.</li>
+<li><a href="./#mode-2-upload-a-file-in-chunks" target="_blank">Mode 2 - Upload a file in chunks</a>: Use this mode if your file is larger than 25 MB. Ensure you start the session for chunk uploads before proceeding.</li>
+</ul>
 <h2 id="mode-1-upload-a-single-file-as-is">Mode 1: Upload a Single File As Is<a class="headerlink" href="#mode-1-upload-a-single-file-as-is" title="Permanent link">¶</a></h2>
-<p>This method directly hits the endpoint and returns the <code>fileId</code> and <code>fileURL</code> in the response.</p>
+<p>This method directly calls the endpoint and returns the <code>fileId</code> and <code>fileURL</code> in the response.</p>
 <table>
   <tbody><tr>
    <td><strong>Method</strong>
@@ -6552,14 +6611,14 @@
 </tbody></table>
 
 <h2 id="mode-2-upload-a-file-in-chunks">Mode 2: Upload a File in Chunks<a class="headerlink" href="#mode-2-upload-a-file-in-chunks" title="Permanent link">¶</a></h2>
-<p>This method requires three APIs to upload a large file. The key steps include:</p>
+<p>This method requires the following three APIs to upload a large file:</p>
 <ol>
 <li><a href="./#start-session-api" target="_blank">Start the file upload session</a>.</li>
 <li><a href="./#chunk-upload-api" target="_blank">Upload in chunks</a>, and </li>
 <li><a href="./#complete-the-process" target="_blank">Merge the chunks to complete the process</a>.</li>
 </ol>
 <h3 id="start-session-api">Start Session API<a class="headerlink" href="#start-session-api" title="Permanent link">¶</a></h3>
-<p>The API initializes the file upload process and returns a <code>session ID</code>, which will be used in the next steps. The file to be uploaded is divided into chunks associated with the <code>session ID</code>. These chunks will be merged and uploaded as a single file in the subsequent APIs.</p>
+<p>This API starts the upload process, returning a <code>session ID</code>. The file is split into chunks linked to this ID, which are then merged and uploaded through other APIs.</p>
 <table>
   <tbody><tr>
    <td><strong>Method</strong>
@@ -6766,7 +6825,7 @@
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-pplatform.domain.ai</code>
+   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
    </td>
    <td>String
    </td>
@@ -6861,7 +6920,7 @@
 </tbody></table>
 
 <h3 id="complete-the-process">Complete The Process<a class="headerlink" href="#complete-the-process" title="Permanent link">¶</a></h3>
-<p>This API merges the uploaded chunks and finalizes the process using the <code>session Id</code> from the <a href="./#start-session-api" target="_blank">Start Session</a> API. It returns the <strong><code>file URL</code></strong> and <strong><code>file ID</code></strong> in the response. Any missing chunk numbers are identified after the merge.</p>
+<p>This API merges the uploaded chunks and finalizes the process using the <code>session Id</code> from the <a href="./#start-session-api" target="_blank">Start Session</a> API. It returns the <code>file URL</code> and <code>file ID</code>. Missing chunk numbers are identified after the merge.</p>
 <table>
   <tbody><tr>
    <td><strong>Method</strong>

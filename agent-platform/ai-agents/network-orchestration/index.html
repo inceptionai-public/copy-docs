@@ -17,7 +17,7 @@
     
     
       
-        <title>Network Orchestration Pattern - Inceptionai Docs</title>
+        <title>Adaptive Network Orchestration Pattern - Inceptionai Docs</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#network-orchestration-pattern" class="md-skip">
+        <a href="#adaptive-network-orchestration-pattern" class="md-skip">
           Skip to content
         </a>
       
@@ -228,7 +228,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Network Orchestration Pattern
+              Adaptive Network Orchestration Pattern
             
           </span>
         </div>
@@ -449,6 +449,23 @@
   
 
     
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../agentic-apps/marketplace/" class="md-tabs__link">
+        
+  
+    
+  
+  Marketplace
+
+      </a>
+    </li>
   
 
       
@@ -851,6 +868,27 @@
   
   <span class="md-ellipsis">
     Supervisor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adaptive-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adaptive Network
   </span>
   
 
@@ -6101,6 +6139,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic-apps/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -6234,7 +6292,7 @@
   
 
 
-<h1 id="network-orchestration-pattern">Network Orchestration Pattern<a class="headerlink" href="#network-orchestration-pattern" title="Permanent link">¶</a></h1>
+<h1 id="adaptive-network-orchestration-pattern">Adaptive Network Orchestration Pattern<a class="headerlink" href="#adaptive-network-orchestration-pattern" title="Permanent link">¶</a></h1>
 <p>The Network (Delegation) Orchestration Pattern is an architectural approach for designing agentic applications where specialized AI agents dynamically transfer control and context of a task to one another based on the task's requirements. This pattern operates in a decentralized manner, allowing agents to evaluate tasks and hand them off to the most suitable agent with relevant expertise. It creates a seamless, sequential workflow optimized for tasks requiring specialized knowledge across multiple domains.</p>
 <p>This pattern is particularly effective for scenarios where tasks evolve dynamically and the optimal agent isn't known upfront, such as in customer support, IT service desks, or multi-step problem-solving. By enabling agents to pass control while preserving conversation context, the pattern ensures efficient task resolution and a cohesive user experience without requiring a central orchestrator.</p>
 <h2 id="key-capabilities">Key Capabilities<a class="headerlink" href="#key-capabilities" title="Permanent link">¶</a></h2>
@@ -6324,7 +6382,7 @@
 <li>Select the fallback agent or event from the list. </li>
 <li>Set the condition under which it should be triggered. </li>
 </ol>
-<p><strong>Note</strong>: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via XO, the fallback will trigger that specific behavior.</p>
+<p><strong>Note</strong>: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via AI for Service, the fallback triggers that specific behavior.</p>
 </li>
 </ol>
 <h2 id="passing-information-between-agents">Passing Information Between Agents<a class="headerlink" href="#passing-information-between-agents" title="Permanent link">¶</a></h2>
