@@ -6312,13 +6312,13 @@
 </span></code></pre></div>
 <p>Ensure the STS region matches the region of your IAM role — <strong>not necessarily the region of the model</strong>.</p>
 <h4 id="b-raise-a-support-ticket-to-register-your-iam-role">B. Raise a Support Ticket to Register your IAM Role<a class="headerlink" href="#b-raise-a-support-ticket-to-register-your-iam-role" title="Permanent link">¶</a></h4>
-<p>After creating the IAM role in your AWS account, you need to raise a support ticket with Kore.ai to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.</p>
+<p>After creating the IAM role in your AWS account, create a support ticket to update the trust policy with your IAM Role ARN. This allows the platform to assume the role and invoke Bedrock.</p>
 <p>To complete the registration:</p>
 <ol>
 <li>Raise a support ticket with your IAM role ARN, requesting that it be added to the trust policy.</li>
 <li>Wait for confirmation from Support that the role has been registered.</li>
 </ol>
-<p><strong>Note</strong>: Without this step, the platform cannot assume your IAM role. Both your AWS account and Kore.ai’s environment must explicitly trust each other for secure cross-account access.</p>
+<p><strong>Note</strong>: Without this step, the platform cannot assume your IAM role. Both your AWS account and Inception's environment must explicitly trust each other for secure cross-account access.</p>
 <h3 id="step-2-finding-the-right-model-id-and-region">Step 2. Finding the Right Model ID and Region<a class="headerlink" href="#step-2-finding-the-right-model-id-and-region" title="Permanent link">¶</a></h3>
 <p>Amazon Bedrock supports different model ID formats depending on how the model is deployed. This section outlines how to find the correct values for each case.</p>
 <p><strong>1. Base Foundation Models</strong></p>

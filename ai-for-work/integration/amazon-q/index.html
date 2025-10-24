@@ -3429,19 +3429,19 @@
 <h3 id="key-benefits">Key Benefits<a class="headerlink" href="#key-benefits" title="Permanent link">¶</a></h3>
 <ul>
 <li>Data Sovereignty: Maintain data indexing within the AWS cloud using Amazon Q, eliminating the need for partner cloud storage.</li>
-<li>Unified, Context-aware search: Retrieve insights and documents from 90+ enterprise connectors (<a href="https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/">Connectors</a> + <a href="https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html">Amazon Q Connectors</a>), including AWS and non-AWS systems.</li>
+<li>Unified, Context-aware search: Retrieve insights and documents from 90+ enterprise connectors Connectors + <a href="https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html">Amazon Q Connectors</a>, including AWS and non-AWS systems.</li>
 <li>Agentic actions, not just Search: Automate workflows—schedule meetings, update records, generate presentations—all with your search context.</li>
 <li>Flexible routing: AI-driven query routing uses intent recognition to send requests to the right retriever.</li>
 <li>Security and Permissions: E2E data encryption both at rest and transit, cross-account connectivity with granular access control.</li>
-<li>Simplified user authentication : Amazon Q index provides a <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/using-apps-with-trusted-token-issuer.html">Trusted Token Issuer</a> (TTI) mechanism to issue their own security tokens. Users just need to login once from Kore.ai to get answers from Q index, without the need for authenticating a second time.</li>
+<li>Simplified user authentication : Amazon Q index provides a <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/using-apps-with-trusted-token-issuer.html">Trusted Token Issuer</a> (TTI) mechanism to issue their own security tokens. Users just need to login once to get answers from Q index, without the need for authenticating a second time.</li>
 </ul>
 <h2 id="how-is-amazon-q-different-from-rag-search-solution">How is Amazon Q different from RAG Search Solution<a class="headerlink" href="#how-is-amazon-q-different-from-rag-search-solution" title="Permanent link">¶</a></h2>
-<p><a href="https://kore.ai/agent-platform/search-data-ai/">Search and Data AI</a> Solution comes with <a href="https://docs.kore.ai/xo/searchai/content-sources/connectors/connector-directory/">70+ connectors</a> and the flexibility to build custom ones, giving enterprises deep control over how data is ingested, extracted, and configured. This allows users to experiment, fine-tune, and choose the indexing and retrieval methods that best fit their unique business needs.</p>
+<p>Search and Data AI Solution comes with 70+ connectors  and the flexibility to build custom ones, giving enterprises deep control over how data is ingested, extracted, and configured. This allows users to experiment, fine-tune, and choose the indexing and retrieval methods that best fit their unique business needs.</p>
 <p>Amazon Q, on the other hand, provides <a href="https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connectors-list.html">40+ connectors</a> with a strong focus on simplicity and accuracy. It delivers a managed, standardized indexing and retrieval experience designed to meet enterprise-grade accuracy benchmarks without requiring extensive customization.</p>
 <h2 id="augmenting-search-in-ai-for-work-with-amazon-q-index">Augmenting search in AI for Work with Amazon Q index<a class="headerlink" href="#augmenting-search-in-ai-for-work-with-amazon-q-index" title="Permanent link">¶</a></h2>
 <p>Amazon Q can be integrated with AI for Work through two configuration approaches, each suited to different needs and data architectures.</p>
-<p>When Amazon Q Index is the primary knowledge source, it can be set as the default search destination in <a href="../../custom-agents/enterprise-knowledge/">Enterprise Knowledge</a> to deliver a consistent search experience across the organization. This involves creating a Q Index application in AWS with the necessary data sources, enabling Kore as the data accessor, and providing these details when configuring an active Amazon Q Source.</p>
-<p>Alternatively, Amazon Q can be leveraged as a specialized search tool alongside other knowledge sources by creating a Q Index application in AWS, enabling Kore as the data accessor, and using those details to configure a search agent within the desired workspace.</p>
+<p>When Amazon Q Index is the primary knowledge source, it can be set as the default search destination in <a href="../../custom-agents/enterprise-knowledge/">Enterprise Knowledge</a> to deliver a consistent search experience across the organization. This involves creating a Q Index application in AWS with the necessary data sources, enabling Inception as the data accessor, and providing these details when configuring an active Amazon Q Source.</p>
+<p>Alternatively, Amazon Q can be leveraged as a specialized search tool alongside other knowledge sources by creating a Q Index application in AWS, enabling Inception as the data accessor, and using those details to configure a search agent within the desired workspace.</p>
 <h3 id="enterprise-knowledge">Enterprise Knowledge<a class="headerlink" href="#enterprise-knowledge" title="Permanent link">¶</a></h3>
 <p>When configured as the primary enterprise knowledge source, Amazon Q Index serves as the default fallback for queries that don't match specific agents. This configuration is recommended when Q Index is your main search index in AI for Work. For more information, refer <a href="../../custom-agents/enterprise-knowledge/">Enterprise Knowledge</a>.</p>
 <h3 id="search-agent">Search Agent<a class="headerlink" href="#search-agent" title="Permanent link">¶</a></h3>
@@ -3528,7 +3528,7 @@ Complete the following fields with information from your AWS setup:<ul>
 </li>
 </ol>
 <h2 id="how-to-configure-amazon-q-business-application">How to Configure Amazon Q Business Application<a class="headerlink" href="#how-to-configure-amazon-q-business-application" title="Permanent link">¶</a></h2>
-<p>To enable Kore.ai's AI for Work to connect with your Amazon Q Business application, you need to complete a one-time configuration using Trusted Token Issuer (TTI). This setup establishes a secure handshake between your Identity Provider (IdP) and AWS Identity Center, allowing ISVs to access your Amazon Q index.</p>
+<p>To enable Inception's AI for Work to connect with your Amazon Q Business application, you need to complete a one-time configuration using Trusted Token Issuer (TTI). This setup establishes a secure handshake between your Identity Provider (IdP) and AWS Identity Center, allowing ISVs to access your Amazon Q index.</p>
 <p>For detailed reference, see the<a href="https://aws.amazon.com/blogs/machine-learning/configuring-amazon-q-business-with-aws-iam-identity-center-trusted-identity-propagation/"> AWS configuration blog</a>.</p>
 <h3 id="required-permissions">Required Permissions<a class="headerlink" href="#required-permissions" title="Permanent link">¶</a></h3>
 <p>Before starting the configuration, ensure your AWS setup includes the following permissions:</p>
@@ -3545,7 +3545,7 @@ Complete the following fields with information from your AWS setup:<ul>
 <li>Go to <strong>Settings</strong> → <strong>Authentication</strong> tab.</li>
 <li>Under <strong>Trusted token issuers</strong>, click <strong>Create trusted token issuer.</strong></li>
 <li>Configure the following:<ul>
-<li><strong>Issuer URL</strong>: Enter <code>https://work.kore.ai</code> (this must match the <code>iss</code> claim in JWT).</li>
+<li><strong>Issuer URL</strong>: Enter <code>https://dev-productivity.inceptionai.app</code> (this must match the <code>iss</code> claim in JWT).</li>
 <li><strong>Display name</strong>: Provide a descriptive name for identification.</li>
 <li><strong>User attributes</strong>: Map the required user attributes according to your organization's needs.</li>
 </ul>
@@ -3606,8 +3606,8 @@ Complete the following fields with information from your AWS setup:<ul>
 <li><strong>Configure data source connections</strong> following the <a href="https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/isv-creating-index.html">AWS documentation</a></li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AmazonQ_9.png" data-desc-position="bottom"><img src="../images/AmazonQ_9.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;"></a></p>
-<p>Step 6: Add Kore.ai as a Data Accessor</p>
-<p>This final step completes the integration by configuring Kore.ai as a data accessor using the Tenant ID provided during the AI for Work setup.</p>
+<p>Step 6: Add Inception as a Data Accessor</p>
+<p>This final step completes the integration by configuring Inception as a data accessor using the Tenant ID provided during the AI for Work setup.</p>
 <p><strong>Data Accessor Configuration Process</strong></p>
 <ol>
 <li>
@@ -3618,9 +3618,9 @@ Complete the following fields with information from your AWS setup:<ul>
 </ul>
 </li>
 <li>
-<p><strong>Select Kore.ai as the data accessor</strong>:</p>
+<p><strong>Select data accessor</strong>:</p>
 <ul>
-<li>Choose <strong>Kore.ai</strong> from the available data accessor options.
+<li>Choose Inception from the available data accessor options.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AmazonQ_11.png" data-desc-position="bottom"><img src="../images/AmazonQ_11.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;"></a></li>
 </ul>
 </li>
@@ -3642,8 +3642,8 @@ Complete the following fields with information from your AWS setup:<ul>
 <li>
 <p><strong>Set Data Source Access permissions</strong>:</p>
 <ul>
-<li><strong>All data sources</strong>: Grant Kore.ai access to all current and future data sources.</li>
-<li><strong>Specific data sources</strong>: Select only the data sources that Kore.ai should access.
+<li><strong>All data sources</strong>: Grant Inception access to all current and future data sources.</li>
+<li><strong>Specific data sources</strong>: Select only the data sources that Inception should access.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AmazonQ_13.png" data-desc-position="bottom"><img src="../images/AmazonQ_13.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;"></a></li>
 </ul>
 </li>
@@ -3651,7 +3651,7 @@ Complete the following fields with information from your AWS setup:<ul>
 <p><strong>Configure User Access</strong>:</p>
 <ul>
 <li><strong>All Users</strong>: Grant access to all users (ensure they are properly added to the application).</li>
-<li><strong>Specific Users</strong>: Select individual users who should have access through Kore.ai.</li>
+<li><strong>Specific Users</strong>: Select individual users who should have access through Inception.</li>
 </ul>
 </li>
 <li><strong>Complete the integration</strong>:<ul>
@@ -3665,7 +3665,7 @@ Complete the following fields with information from your AWS setup:<ul>
 <h3 id="integration-architecture">Integration Architecture<a class="headerlink" href="#integration-architecture" title="Permanent link">¶</a></h3>
 <p>The architecture comprises several interconnected components that facilitate secure cross-account data access while maintaining strict access controls.</p>
 <p>At the infrastructure level, the solution leverages AWS Identity and Access Management (IAM) for authentication and authorization, with AWS Security Token Service (STS) serving as the credential broker. The core components include Amazon Q Index (which stores vector embeddings and metadata), Application code (which handles API routing and token exchange), and the AI for Work application layer (which manages user interactions and business logic). These components communicate via HTTPS using RESTful APIs with AWS Signature Version 4 (SigV4) for request signing.</p>
-<p>When processing queries, the data flow begins with user input at the AI4W application layer, which routes to either Kore's native retrievers or Amazon Q Index based on predefined routing rules. For Q Index requests, the architecture implements cross-account API calls using OAuth 2.0 tokens that undergo transformation into temporary AWS credentials. </p>
+<p>When processing queries, the data flow begins with user input at the AI4W application layer, which routes to either Inception's native retrievers or Amazon Q Index based on predefined routing rules. For Q Index requests, the architecture implements cross-account API calls using OAuth 2.0 tokens that undergo transformation into temporary AWS credentials. </p>
 <p>Query responses from Q Index contain relevant document snippets with source references rather than complete documents, maintaining both security and performance optimization.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/AmazonQ_1.png" data-desc-position="bottom"><img src="../images/AmazonQ_1.png" alt="AI for Work Architecture" title="AI for Work Architecture" style="border: 0px solid gray; zoom:100%;"></a></p>
 <h3 id="security-and-user-authentication">Security and User Authentication<a class="headerlink" href="#security-and-user-authentication" title="Permanent link">¶</a></h3>
