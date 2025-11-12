@@ -431,12 +431,6 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
         <a href="../../apis/agentic-apps/overview/" class="md-tabs__link">
           
@@ -445,9 +439,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -2426,7 +2417,7 @@
         
   
   <span class="md-ellipsis">
-    Configure a Tool
+    Manage your Tool
   </span>
   
 
@@ -2464,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/import-a-tool/#import-tool-as-a-version" class="md-nav__link">
+      <a href="../tools/import-a-tool-as-a-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3247,6 +3238,48 @@
   
   <span class="md-ellipsis">
     Pass Attachments to External Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic-apps/howto/initiate-live-agent-handoff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initiate Live Agent Handoff from Agentic Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic-apps/howto/use-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Metadata passed via APIs in Agentic Apps
   </span>
   
 
@@ -5724,6 +5757,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../settings/security-and-control/encryption-key-mgmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../settings/security-and-control/api-scopes/" class="md-nav__link">
         
   
@@ -5958,46 +6012,6 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1">
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Agentic Apps
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Agentic Apps
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../apis/agentic-apps/overview/" class="md-nav__link">
         
@@ -6012,75 +6026,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../apis/agentic-apps/overview/#apis-list" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    APIs List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tools
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -6110,7 +6055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../apis/overview/#apis-list" class="md-nav__link">
+      <a href="../../apis/list-of-apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6119,14 +6064,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6314,7 +6251,7 @@
 <li><strong>Response Delivery</strong>: The agent shares the response directly with the user. </li>
 </ol>
 <h2 id="difference-between-the-supervisor-pattern-and-the-delegation-pattern">Difference between the Supervisor Pattern and the Delegation Pattern<a class="headerlink" href="#difference-between-the-supervisor-pattern-and-the-delegation-pattern" title="Permanent link">¶</a></h2>
-<p>In the <strong>Supervisor pattern</strong>, a central Supervisor mediates every interaction between agents or between an agent and the user. The Supervisor handles decision-making, task routing, and overall flow coordination. Agents do not need to be aware of other agents' roles or specializations. This allows the Supervisor to invoke multiple agents in parallel, but introduces latency since every interaction happens via the Supervisor.</p>
+<p>In the <strong>Supervisor pattern</strong>, a central Supervisor mediates every interaction between agents or between an agent and the user. The Supervisor handles decision-making, task routing, and overall flow coordination. Agents don't need to be aware of other agents' roles or specializations. This allows the Supervisor to invoke multiple agents in parallel, but introduces latency since every interaction happens via the Supervisor.</p>
 <p>In contrast, the <strong>Network pattern</strong> has agents aware of other agents' specializations. They can directly hand off tasks to the most suitable agent or interact with the user themselves. The responsibility of routing lies with the agents based on their understanding of the task, rather than relying on a central coordinator. The flow is usually sequential, where one agent evaluates the task and delegates it to another specialized agent as needed.</p>
 <h2 id="when-to-use-the-network-pattern">When to Use the Network Pattern<a class="headerlink" href="#when-to-use-the-network-pattern" title="Permanent link">¶</a></h2>
 <ul>
@@ -6335,7 +6272,7 @@
 <li>The Welcome Agent receives the query.</li>
 <li>It analyzes the intent and context.</li>
 <li>Based on indicators (“can’t access”) and delegation rules, the query is initially routed to the IT Assistant.</li>
-<li>The IT Assistant checks for technical issues (login problems, system errors). It interacts with the user for additional information. If the issue is not IT-related, the task is re-delegated to the Finance Assistant.</li>
+<li>The IT Assistant checks for technical issues (login problems, system errors). It interacts with the user for additional information. If the issue isn't IT-related, the task is re-delegated to the Finance Assistant.</li>
 <li>The Finance Assistant verifies the payroll system, identifies access restrictions, and resolves the issue by granting proper access or sending the payslip directly.</li>
 </ol>
 <h2 id="implementing-the-network-pattern">Implementing the Network Pattern<a class="headerlink" href="#implementing-the-network-pattern" title="Permanent link">¶</a></h2>
@@ -6376,13 +6313,13 @@
 <p>For example, the following agent can delegate tasks to three specialized agents—Finance Assistant, HR Assistant, and IT Assistant —depending on the nature of the task.  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/network/example.png" data-desc-position="bottom"><img alt="Delegation Rules" src="../images/network/example.png" title="Delegation Rules"></a></p>
 </li>
 <li>
-<p><strong>Fallback Behavior</strong>: Select an agent or event to take over the conversation when this agent cannot complete a task itself and cannot identify any other agent that can complete the task. You can configure another agent or event to automatically take over the conversation. This ensures that unresolved tasks are always routed to the correct fallback, and no task or conversation remains unresolved. </p>
+<p><strong>Fallback Behavior</strong>: Select an agent or event to take over the conversation when this agent can't complete a task itself and can't identify any other agent that can complete the task. You can configure another agent or event to automatically take over the conversation. This ensures that unresolved tasks are always routed to the correct fallback, and no task or conversation remains unresolved. </p>
 <ol>
 <li>Click on <strong>Add Fallback Delegation</strong>.</li>
 <li>Select the fallback agent or event from the list. </li>
 <li>Set the condition under which it should be triggered. </li>
 </ol>
-<p><strong>Note</strong>: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via AI for Service, the fallback triggers that specific behavior.</p>
+<p><strong>Note</strong>: When an event is selected as the fallback delegation, subsequent request handling depends on the event configuration. For example, if an agent handoff event is set up to escalate to a human agent via (In)Business Customer Experience, the fallback triggers that specific behavior.</p>
 </li>
 </ol>
 <h2 id="passing-information-between-agents">Passing Information Between Agents<a class="headerlink" href="#passing-information-between-agents" title="Permanent link">¶</a></h2>
@@ -6521,8 +6458,6 @@
     
     
       <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

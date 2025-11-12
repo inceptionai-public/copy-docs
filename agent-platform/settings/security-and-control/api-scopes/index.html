@@ -10,7 +10,7 @@
         <link rel="canonical" href="https://docs.kore.ai/agent-platform/settings/security-and-control/api-scopes/">
       
       
-        <link rel="prev" href="../authorization-profile/">
+        <link rel="prev" href="../encryption-key-mgmt/">
       
       
         <link rel="next" href="../../billing/billing-and-usage/">
@@ -437,12 +437,6 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
         <a href="../../../apis/agentic-apps/overview/" class="md-tabs__link">
           
@@ -451,9 +445,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -2432,7 +2423,7 @@
         
   
   <span class="md-ellipsis">
-    Configure a Tool
+    Manage your Tool
   </span>
   
 
@@ -2470,7 +2461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ai-agents/tools/import-a-tool/#import-tool-as-a-version" class="md-nav__link">
+      <a href="../../../ai-agents/tools/import-a-tool-as-a-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3253,6 +3244,48 @@
   
   <span class="md-ellipsis">
     Pass Attachments to External Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/howto/initiate-live-agent-handoff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initiate Live Agent Handoff from Agentic Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/howto/use-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Metadata passed via APIs in Agentic Apps
   </span>
   
 
@@ -5749,6 +5782,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../encryption-key-mgmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -6127,46 +6181,6 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1">
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Agentic Apps
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Agentic Apps
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../apis/agentic-apps/overview/" class="md-nav__link">
         
@@ -6181,75 +6195,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/agentic-apps/overview/#apis-list" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    APIs List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tools
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -6279,7 +6224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/overview/#apis-list" class="md-nav__link">
+      <a href="../../../apis/list-of-apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6288,14 +6233,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6468,7 +6405,7 @@
 
 
 <h1 id="manage-scopes-and-keys-for-api-apps">Manage Scopes and Keys for API Apps<a class="headerlink" href="#manage-scopes-and-keys-for-api-apps" title="Permanent link">¶</a></h1>
-<p>Agent Platform introduces <strong>API scopes</strong> in the <strong>Settings</strong> console, moving from unrestricted management API keys to more secure, scoped API key-based application management.</p>
+<p>(In)Agent Platform introduces <strong>API scopes</strong> in the <strong>Settings</strong> console, moving from unrestricted management API keys to more secure, scoped API key-based application management.</p>
 <p>Users can select specific scopes for managing tools, models, and guardrails. This allows for the creation of internal applications with restricted access to only the necessary API endpoints. By limiting API access, this feature reduces security risks, allowing administrators to generate multiple API keys and ensure secure, controlled access for authorized personnel.</p>
 <p><strong>Important Considerations for API Keys</strong></p>
 <ul>
@@ -6528,7 +6465,7 @@
   <tr>
    <td>Import Model
    </td>
-   <td> Import a model in chunks into the Agent Platform environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
+   <td> Import a model in chunks into the (In)Agent Platform environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
@@ -6567,7 +6504,7 @@
 <p>To access this feature, follow the steps below:</p>
 <ol>
 <li>
-<p>Log in to your account and click <strong>Autonomous Agents</strong> under <strong>Agent Platform Modules</strong>.
+<p>Log in to your account and click <strong>Autonomous Agents</strong> under <strong>(In)Agent Platform Modules</strong>.
    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/navigate-to-users.png" data-desc-position="bottom"><img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
@@ -6805,7 +6742,7 @@ A success message is displayed once the app is edited. The changes are updated i
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../authorization-profile/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authorization Profile">
+          <a href="../encryption-key-mgmt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Key Management">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -6815,7 +6752,7 @@ A success message is displayed once the app is edited. The changes are updated i
                 Previous
               </span>
               <div class="md-ellipsis">
-                Authorization Profile
+                Key Management
               </div>
             </div>
           </a>
@@ -6866,8 +6803,6 @@ A success message is displayed once the app is edited. The changes are updated i
     
     
       <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

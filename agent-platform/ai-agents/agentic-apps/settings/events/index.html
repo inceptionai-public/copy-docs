@@ -437,12 +437,6 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
         <a href="../../../../apis/agentic-apps/overview/" class="md-tabs__link">
           
@@ -451,9 +445,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -2449,7 +2440,7 @@
         
   
   <span class="md-ellipsis">
-    Configure a Tool
+    Manage your Tool
   </span>
   
 
@@ -2487,7 +2478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/import-a-tool/#import-tool-as-a-version" class="md-nav__link">
+      <a href="../../../tools/import-a-tool-as-a-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3356,6 +3347,48 @@
   
   <span class="md-ellipsis">
     Pass Attachments to External Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/initiate-live-agent-handoff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initiate Live Agent Handoff from Agentic Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../howto/use-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Metadata passed via APIs in Agentic Apps
   </span>
   
 
@@ -5833,6 +5866,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../settings/security-and-control/encryption-key-mgmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../settings/security-and-control/api-scopes/" class="md-nav__link">
         
   
@@ -6067,46 +6121,6 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1">
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Agentic Apps
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Agentic Apps
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../../apis/agentic-apps/overview/" class="md-nav__link">
         
@@ -6121,75 +6135,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../apis/agentic-apps/overview/#apis-list" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    APIs List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tools
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -6219,7 +6164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../apis/overview/#apis-list" class="md-nav__link">
+      <a href="../../../../apis/list-of-apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6228,14 +6173,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6344,8 +6281,8 @@
 <h1 id="system-events">System Events<a class="headerlink" href="#system-events" title="Permanent link">¶</a></h1>
 <p>Events in the Agentic App signify critical moments within a user's conversation journey. These events are essential for managing important transitions, including the initiation and conclusion of conversations, as well as the handoff to human agents. By capturing these natural dialogue transitions, these system events aim to enhance clarity, consistency, and control over the conversational flow. By standardizing how conversations begin, evolve, and conclude, the app facilitates a seamless user experience.</p>
 <p>Events are automatically triggered by the application at specific points in the conversation, based on the conditions described in each event’s <strong>description</strong> field. These descriptions define the conversational context or user action that causes the event to fire.
-The Agent Platform enables developers to configure and customize the app’s behavior in response to these events, allowing tailored responses, workflows, or actions that align with the intent and flow of the conversation.</p>
-<p>Currently, Agent Platform supports the following three system events. By default, all the events are disabled. Go to the <em>Events</em> page under Settings, click on the <em>edit</em> icon to enable and configure them.</p>
+The (In)Agent Platform enables developers to configure and customize the app’s behavior in response to these events, allowing tailored responses, workflows, or actions that align with the intent and flow of the conversation.</p>
+<p>Currently, (In)Agent Platform supports the following three system events. By default, all the events are disabled. Go to the <em>Events</em> page under Settings, click on the <em>edit</em> icon to enable and configure them.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/events/home.png" data-desc-position="bottom"><img alt="Events" src="../images/events/home.png" title="Events Page"></a></p>
 <h2 id="welcome-event">Welcome Event<a class="headerlink" href="#welcome-event" title="Permanent link">¶</a></h2>
 <p>By default, the Welcome Event is triggered automatically when a new session begins with the application. It is used to deliver personalized greetings and establish the initial context, helping users understand the app's capabilities. This event is triggered only once per session, at the start of the interaction. </p>
@@ -6360,7 +6297,7 @@ The Agent Platform enables developers to configure and customize the app’s beh
 <p>By default, this event is triggered when an agent handoff is requested in a conversation. Use the Description field of the event to configure the detection of this event. Use the following properties to configure the event. </p>
 <ul>
 <li><strong>Status</strong> - Enable this to allow the agent to trigger this event. </li>
-<li><strong>Invoke Human Agent</strong> - Currently, Agent Handoff can be handled only through the Automation Node in AI for Service. When the event is triggered, the Agent Platform sends session information via the variables listed below to the specified automation node within the AI for Service flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.</li>
+<li><strong>Invoke Human Agent</strong> - Currently, Agent Handoff can be handled only through the Automation Node in (In)Business Customer Experience. When the event is triggered, the (In)Agent Platform sends session information via the variables listed below to the specified automation node within the (In)Business Customer Experience flows. The automation node subsequently processes the agent transfer request according to the connection rules established for the transfer in the node.</li>
 <li><strong>LLM Collected Event Parameters</strong>: Define one or more fields to capture key details from the conversation when this event is triggered. This feature leverages the LLM to extract relevant information from the conversation context and populate the defined fields. These fields can then be passed to an agent during handoff. For example, you might configure a field to capture an interaction summary, which the agent can use for context during live support. To configure these parameters, specify the parameter name and describe the expected content in the field. The application uses the LLM to infer and fill in these fields based on the ongoing conversation.</li>
 <li><strong>System Defined Parameters</strong>: Use this option to define fields that capture specific details from the conversation, which must be passed to an external system. Unlike LLM-collected parameters, these do not rely on the LLM. Instead, they are directly retrieved from the existing context or memory.
 These fields are useful for passing data, such as user IDs, user choices, etc, that is already available during the conversation. To configure system-defined parameters:</li>
@@ -6580,8 +6517,6 @@ These fields are useful for passing structured values, such as user IDs, user ch
     
     
       <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

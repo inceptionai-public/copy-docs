@@ -13,7 +13,7 @@
         <link rel="prev" href="../single-sign-on/">
       
       
-        <link rel="next" href="../api-scopes/">
+        <link rel="next" href="../encryption-key-mgmt/">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -437,12 +437,6 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
         <a href="../../../apis/agentic-apps/overview/" class="md-tabs__link">
           
@@ -451,9 +445,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -2432,7 +2423,7 @@
         
   
   <span class="md-ellipsis">
-    Configure a Tool
+    Manage your Tool
   </span>
   
 
@@ -2470,7 +2461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ai-agents/tools/import-a-tool/#import-tool-as-a-version" class="md-nav__link">
+      <a href="../../../ai-agents/tools/import-a-tool-as-a-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3253,6 +3244,48 @@
   
   <span class="md-ellipsis">
     Pass Attachments to External Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/howto/initiate-live-agent-handoff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initiate Live Agent Handoff from Agentic Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/howto/use-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Metadata passed via APIs in Agentic Apps
   </span>
   
 
@@ -5923,6 +5956,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../encryption-key-mgmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../api-scopes/" class="md-nav__link">
         
   
@@ -6163,46 +6217,6 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1">
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Agentic Apps
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Agentic Apps
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../apis/agentic-apps/overview/" class="md-nav__link">
         
@@ -6217,75 +6231,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/agentic-apps/overview/#apis-list" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    APIs List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tools
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -6315,7 +6260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/overview/#apis-list" class="md-nav__link">
+      <a href="../../../apis/list-of-apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6324,14 +6269,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6540,9 +6477,9 @@
 
 
 <h1 id="secure-account-access-using-authorization-profiles">Secure Account Access Using Authorization Profiles<a class="headerlink" href="#secure-account-access-using-authorization-profiles" title="Permanent link">¶</a></h1>
-<p>The Agent Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring <strong>Authorization (Auth) Profiles</strong>, users can enforce access control policies while ensuring data privacy and regulatory compliance.</p>
+<p>The (In)Agent Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring <strong>Authorization (Auth) Profiles</strong>, users can enforce access control policies while ensuring data privacy and regulatory compliance.</p>
 <p>Whether connecting to external or commercial models via custom APIs or integrating tools through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.</p>
-<p>Key capabilities of managing Auth Profiles on the Agent Platform include:</p>
+<p>Key capabilities of managing Auth Profiles on the (In)Agent Platform include:</p>
 <ul>
 <li><strong>Defining Authorization Rules</strong>
 Specify auth methods and requirements, such as passwords, token fields, and custom authorization parameters.</li>
@@ -6557,7 +6494,7 @@ Verify that identity and authorization tokens are correctly passed to external s
 <p>To access the feature, follow the steps below:</p>
 <ol>
 <li>
-<p>Log in to your account and click <strong>Autonomous Agents</strong> under <strong>Agent Platform Modules</strong>.
+<p>Log in to your account and click <strong>Autonomous Agents</strong> under <strong>(In)Agent Platform Modules</strong>.
    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/navigate-to-users.png" data-desc-position="bottom"><img src="../images/navigate-to-users.png" alt="access settings" title="access settings" style="border: 1px solid gray; zoom:75%;"></a></p>
 </li>
 <li>
@@ -6869,7 +6806,7 @@ Example: <code>read_profile</code>.
 <p>The new field is added to the additional fields list. You can edit or delete this custom field.
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/new-additional-field.png" data-desc-position="bottom"><img src="../images/new-additional-field.png" alt="new additional field" title="new additional field" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h2 id="add-authorization-field">Add Authorization Field<a class="headerlink" href="#add-authorization-field" title="Permanent link">¶</a></h2>
-<p>Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in the Agent Platform.</p>
+<p>Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in the (In)Agent Platform.</p>
 <p>To add auth fields, follow the steps below:</p>
 <ol>
 <li>
@@ -6893,7 +6830,7 @@ Example: <code>read_profile</code>.
   <tr>
    <td>Field Type
    </td>
-   <td>Defines how authorization data is sent and verified in an API request within the Agent Platform for token-based authorization. The supported types include:
+   <td>Defines how authorization data is sent and verified in an API request within the (In)Agent Platform for token-based authorization. The supported types include:
 <ul>
 
 <li><strong>Header</strong>: Used to send authorization credentials, such as API tokens.</li>
@@ -6942,7 +6879,7 @@ Example: <code>read_profile</code>.
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/auth-profile-summary.png" data-desc-position="bottom"><img src="../images/auth-profile-summary.png" alt="auth profile summary" title="auth profile summary" style="border: 1px solid gray; zoom:75%;"></a>  </p>
 <h2 id="test-the-auth-profile">Test the Auth Profile<a class="headerlink" href="#test-the-auth-profile" title="Permanent link">¶</a></h2>
 <p>The <strong>Test</strong> button is enabled when you provide all the fields in the <strong>New authorization mechanism</strong> window. To validate the connection using the configured mechanism, click <strong>Test</strong>.</p>
-<p>A new window appears where the Agent Platform tries to establish a connection with the external service through the configured auth profile.</p>
+<p>A new window appears where the (In)Agent Platform tries to establish a connection with the external service through the configured auth profile.</p>
 <p>A successful connection is shown below:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/successful-oauth-connection.png" data-desc-position="bottom"><img src="../images/successful-oauth-connection.png" alt="successful connection" title="successful connection" style="border: 1px solid gray; zoom:50%;"></a>  </p>
 <p>If the connection fails, edit the auth profile with the correct information and test the connection again. </p>
@@ -7111,13 +7048,13 @@ Example: <code>read_profile</code>.
         
         
           
-          <a href="../api-scopes/" class="md-footer__link md-footer__link--next" aria-label="Next: API Scopes">
+          <a href="../encryption-key-mgmt/" class="md-footer__link md-footer__link--next" aria-label="Next: Key Management">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                API Scopes
+                Key Management
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -7155,8 +7092,6 @@ Example: <code>read_profile</code>.
     
     
       <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

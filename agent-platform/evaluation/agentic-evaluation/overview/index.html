@@ -437,12 +437,6 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
         <a href="../../../apis/agentic-apps/overview/" class="md-tabs__link">
           
@@ -451,9 +445,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -2432,7 +2423,7 @@
         
   
   <span class="md-ellipsis">
-    Configure a Tool
+    Manage your Tool
   </span>
   
 
@@ -2470,7 +2461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ai-agents/tools/import-a-tool/#import-tool-as-a-version" class="md-nav__link">
+      <a href="../../../ai-agents/tools/import-a-tool-as-a-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3253,6 +3244,48 @@
   
   <span class="md-ellipsis">
     Pass Attachments to External Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/howto/initiate-live-agent-handoff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initiate Live Agent Handoff from Agentic Apps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-agents/agentic-apps/howto/use-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Metadata passed via APIs in Agentic Apps
   </span>
   
 
@@ -5820,6 +5853,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../settings/security-and-control/encryption-key-mgmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Key Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../settings/security-and-control/api-scopes/" class="md-nav__link">
         
   
@@ -6054,46 +6108,6 @@
   
   
   
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1">
-        
-          
-          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Agentic Apps
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            Agentic Apps
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../apis/agentic-apps/overview/" class="md-nav__link">
         
@@ -6108,75 +6122,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../apis/agentic-apps/overview/#apis-list" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    APIs List
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tools
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Tools
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -6206,7 +6151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../apis/overview/#apis-list" class="md-nav__link">
+      <a href="../../../apis/list-of-apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6215,14 +6160,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6329,15 +6266,15 @@
 
 
 <h1 id="about-agentic-evaluation">About Agentic Evaluation<a class="headerlink" href="#about-agentic-evaluation" title="Permanent link">¶</a></h1>
-<p>Agentic Evaluation is a comprehensive framework for systematically analyzing AI agent performance in real-world production scenarios. It enables structured evaluation of complete AI agent trajectories across entire sessions and individual decision points within traces, offering both high-level and granular insights into how AI agents reason, act, and interact over time.</p>
-<p>In an Agentic app, when a user submits a query, the supervisor/orchestrator coordinates the response by selecting and invoking the appropriate agents. These agents may then call tools or external systems to fulfill the task. Agentic evaluation evaluates the inputs and outputs at each stage across the supervisor, agents, and tools.</p>
-<p>Using a suite of automated evaluators, Agentic Evaluation scores AI agent behavior, measures action effectiveness, and highlights areas for improvement. Users can import live session data and assess performance across the supervisor, agent, and tool layers through an interactive interface. </p>
+<p>Agentic Evaluation is a comprehensive framework for systematically analyzing AI agent performance in real-world production scenarios. It enables structured evaluation of complete AI agent trajectories across entire sessions and individual decision points within traces. This provides both high-level and granular insights into how AI agents reason, act, and interact over time.</p>
+<p>In an Agentic app, when a user submits a query, the supervisor (or orchestrator) coordinates the response by selecting and invoking the appropriate agents. These agents may call tools or external systems to complete tasks. Agentic evaluation measures inputs and outputs at each stage across supervisors, agents, and tools.</p>
+<p>To assess performance, Agentic Evaluation uses a suite of automated evaluators that scores AI agent behavior, measures action effectiveness, and highlights areas for improvement. Users can import live session data and assess performance across the supervisor, agent, and tool layers through an interactive interface.</p>
 <p>The Agentic Evaluation framework supports various evaluation types that collectively provide a comprehensive view of AI agent behavior. These evaluations span high-level outcomes to step-by-step decision-making, helping users diagnose issues, measure effectiveness, and optimize Agentic app performance. For more information on the different types of evaluators, see <a href="../configure-evaluators/#types-of-evaluators">Types of Evaluators</a>.</p>
 <h2 id="key-features">Key Features<a class="headerlink" href="#key-features" title="Permanent link">¶</a></h2>
 <p>Agentic Evaluation enables you to analyze the real-world performance of deployed Agentic apps using production data. It helps ensure your supervisors, agents, and tools work together efficiently and deliver high-quality outcomes.</p>
 <ul>
-<li><strong>Model Trace Analysis</strong>: Import and evaluate app sessions and traces from deployed apps using filters like app version, environment, and time range. </li>
-<li><strong>Multi-level Evaluation</strong>: Assess AI behavior across different layers—sessions (e.g., goal achievement, tone), traces (e.g., agent selection, tool usage), and specific interactions. </li>
+<li><strong>Model Trace Analysis</strong>: Import and evaluate app sessions and traces from deployed apps using filters like app version, environment, and time range.</li>
+<li><strong>Multi-level Evaluation</strong>: Assess AI behavior across different layers—sessions (for example, goal achievement or tone), traces (for example, agent selection or tool usage), and specific interactions.</li>
 <li><strong>Evaluator Library</strong>: Apply predefined evaluators to assess the quality and effectiveness of agentic app behavior.</li>
 <li><strong>Interactive Scorecards</strong>: Visualize scores and drill into specific sessions or traces using clickable cards and detailed views.</li>
 <li><strong>Trace Tree Visualization</strong>: Navigate the full execution path—supervisor, agent, and tool—to pinpoint errors, inefficiencies, or optimization opportunities.</li>
@@ -6351,15 +6288,15 @@
 <li><strong>Stronger Agentic Design</strong>: Gain visibility into how supervisors, agents, and tools interact, allowing you to design more robust, reliable, and context-aware agentic applications.</li>
 </ul>
 <h2 id="agentic-evaluation-user-journey">Agentic Evaluation User Journey<a class="headerlink" href="#agentic-evaluation-user-journey" title="Permanent link">¶</a></h2>
-<p>The following outlines the key actions at each stage of the Agentic Evaluation user journey in Agent Platform:</p>
+<p>The following outlines the key actions at each stage of the Agentic Evaluation user journey in (In)Agent Platform:</p>
 <ol>
-<li><a href="../create-project/"><strong>Create a project</strong></a>: Log in to the Agent Platform, navigate to Evaluation Studio, and create a new project for your AI agent evaluation.</li>
+<li><a href="../create-project/"><strong>Create a project</strong></a>: Log in to the (In)Agent Platform, navigate to Evaluation Studio, and create a new project for your AI agent evaluation.</li>
 <li><a href="../create-evaluation/"><strong>Create an evaluation</strong></a>: After setting up a project, create an evaluation to organize and analyze imported session data.</li>
 <li><a href="../import-production-data/"><strong>Import production data</strong></a>: Import live session data from your deployed Agentic apps. You can filter by various parameters such as app version, environment, and time range to focus on specific datasets for evaluation.</li>
 <li><a href="../configure-evaluators/"><strong>Configure evaluators</strong></a>: Select from predefined evaluators to assess various aspects of AI agent performance.</li>
 <li><a href="../run-evaluation/"><strong>Run the evaluation</strong></a>: Trigger the evaluation to run across the imported production sessions or traces. The system automatically computes evaluation scores for each session and its underlying traces, with evaluators running in parallel to ensure efficiency.</li>
 <li><a href="../view-evaluation-result/"><strong>View evaluation results</strong></a>: View the results in an interactive analysis interface. Evaluation results are displayed in a session grid with scores and visual indicators for each evaluator.</li>
-<li><a href="../analyze-evaluation/"><strong>Analyze evaluation results</strong></a>: Use drill-down capabilities to examine scores at different levels - supervisor, agent, and tool interactions -  and identify areas for improvement.</li>
+<li><a href="../analyze-evaluation/"><strong>Analyze evaluation results</strong></a>: Use drill-down capabilities to examine scores at different levels - supervisor, agent, and tool interactions - and identify areas for improvement.</li>
 </ol>
 
 
@@ -6532,8 +6469,6 @@
     
     
       <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
