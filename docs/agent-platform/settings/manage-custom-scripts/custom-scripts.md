@@ -1,6 +1,6 @@
 # Deploy, Execute, and Manage Custom Scripts for Tool Automation
 
-The Agent Platform now allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
+The (In)Agent Platform now allows admins to import, deploy, and manage custom scripts directly from the **Settings** console. 
 
 A powerful script deployment wizard enables users to easily upload, configure, and deploy custom scripts in isolated containers. By leveraging container isolation, this feature enhances security while providing flexibility in configuring runtime and scaling settings.
 
@@ -41,7 +41,7 @@ The key steps in managing custom scripts are:
 
 To access the custom scripts wizard, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.
@@ -721,7 +721,7 @@ To [deploy the script](../manage-custom-scripts/custom-scripts.md/#import-and-de
 
 ## API Keys
 
-Agent Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
+(In)Agent Platform provides secure access to deployed scripts through authenticated requests. You must create an API key to manage access to a deployed script’s endpoint across the platform. 
  
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -812,6 +812,6 @@ To add a deployed custom script via the endpoint into the API node, follow the s
 
     ## Related Links
     
-    * **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
+    * **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other (In)Agent Platform admin features.
     * **API Node** - [Learn more](../../ai-agents/tools/tool-flows/types-of-nodes/api-node.md){:target="_blank"} about configuring the API node via endpoint.
 

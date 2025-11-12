@@ -4,7 +4,7 @@
 
 
 ## API Endpoint
-After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in Agent Platform. 
+After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in (In)Agent Platform. 
 
 The API endpoint is available in 3 formats.
 
@@ -46,7 +46,6 @@ Supported schema data types include: string, number, boolean, integer, object, a
 * If provided, the model attempts to return a response in JSON object matching the defined schema.
 * If not provided, the model responds with standard text output.
 
-For an example of how a model returns data in a structured schema, see [Structured Output Example](../open-source-models/structured-output-example.md).
 
 !!! note
 

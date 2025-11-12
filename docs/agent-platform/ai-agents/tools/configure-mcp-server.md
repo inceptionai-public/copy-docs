@@ -26,11 +26,11 @@ Format:
 <MCP server name>__<Tool name as exposed by the server>
 ```
 
-For instance, if the tool name is GMAIL_DELETE_DRAFT and the MCP server name is “GoogleMCP”, the tool name will be listed as GoogleMCP__GMAIL_DELETE_DRAFT.
+For instance, if the tool name is GMAIL_DELETE_DRAFT and the MCP server name is “GoogleMCP,” the tool name will be listed as GoogleMCP__GMAIL_DELETE_DRAFT.
 
 ### Tool Testing
 
-Once an MCP server is configured, preview and test the tools to ensure they are functioning as expected. 
+Once an MCP server is configured, preview and test the tools to ensure they're functioning as expected. 
 
 Testing the tools is essential as it helps validate their functionality, confirms the formats of requests and responses, identifies any issues, and ultimately builds confidence in the tools’ reliability.
 
@@ -64,14 +64,14 @@ If the MCP server includes pre-authorized tools that access Personally Identifia
 
 ## FAQs
 
-**What are MCP tools in the context of the Agent Platform?**
+**What are MCP tools in the context of the (In)Agent Platform?**
 
-In Agent Platform, MCP Tools refer to the tools exposed by MCP servers.
+In (In)Agent Platform, MCP Tools refer to the tools exposed by MCP servers.
 
 **Can I manage multiple MCP servers within an Agentic App?**
 
 Yes, an agentic app can be configured to connect to one or more MCP servers, each exposing its own set of tools.
 
-**Does Agent Platform automatically fetch the latest set of tools from the MCP server?**
+**Does (In)Agent Platform automatically fetch the latest set of tools from the MCP server?**
 
-Currently, the Agent Platform does not automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.
+The (In)Agent Platform doesn't automatically refresh or sync tools from the MCP server. If tools are added, removed, or updated on the server, manually reconfigure the MCP server to get the latest tool definitions.

@@ -1,12 +1,12 @@
 # Manage Account Billing and Usage
 
-The **Billing** section helps you monitor and analyze your Agent Platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, guardrails, and custom script deployments to make data-driven decisions about your resource utilization.
+The **Billing** section helps you monitor and analyze your (In)Agent Platform expenses through detailed usage metrics and cost breakdowns. You can track computational costs across tools, models, guardrails, and custom script deployments to make data-driven decisions about your resource utilization.
 
 ## Accessing Usage Information
 
 Steps to access the Usage page:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** under **(In)Agent Platform Modules**.
    <img src="../images/navigate-to-users.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;">
 
 2. Click **Settings** on the top navigation bar.

@@ -1,6 +1,6 @@
 # Real Time Voice Integration
 
-Agent Platform supports **real-time voice interaction** powered by advanced Voice AI models. This feature allows users to engage in natural conversations with AI agents through voice, as spoken input is recognized, processed, and responded to with minimal delay.
+(In)Agent Platform supports **real-time voice interaction** powered by advanced Voice AI models. This feature allows users to engage in natural conversations with AI agents through voice, as spoken input is recognized, processed, and responded to with minimal delay.
 
 ## Enabling Voice Support
 
@@ -10,7 +10,7 @@ Navigate to the Agentic app’s Configuration and enable Realtime Voice. This fe
 
 Click the settings icon to customize the configuration of the AI model. 
 
-* Voice AI Model: This model is responsible for interpreting user queries and generating spoken responses. Currently, Agent Platform supports only OpenAI models. Refer to[ this to learn more about adding an external model to Agent Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
+* Voice AI Model: This model is responsible for interpreting user queries and generating spoken responses. Currently, (In)Agent Platform supports only OpenAI models. Refer to[ this to learn more about adding an external model to (In)Agent Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
 * Temperature: This config controls the randomness and creativity of the responses. The value for this field can range from 0 to 1.2
     * Lower values (e.g., 0.2–0.6) produce more focused, deterministic answers.
     * Higher values (e.g., 1–1.2) make responses more creative and varied.
@@ -25,4 +25,4 @@ Click the settings icon to customize the configuration of the AI model.
     * Silence Duration: Duration of silence before the application considers the user’s message has ended
     * Type: Select the type of voice activity detection to use
 
-When an agentic app is integrated with an AI for Service application through the Automation Node for voice integration, the Voice Gateway utilizes the voice capabilities of the model set up in the agentic app.
+When an agentic app is integrated with an (In)Business Customer Experience application through the Automation Node for voice integration, the Voice Gateway utilizes the voice capabilities of the model set up in the agentic app.

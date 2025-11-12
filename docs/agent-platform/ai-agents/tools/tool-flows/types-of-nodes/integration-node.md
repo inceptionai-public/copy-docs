@@ -42,7 +42,7 @@ In this document, you will learn how to add Integration Nodes to your flows, con
 
 ### Step 1: Open Flow Builder
 
-* Log in → In Agent Platform Modules → Click **Tools**.
+* Log in → In (In)Agent Platform Modules → Click **Tools**.
      <img src="../images/access-tools-module.png" alt="access tools" title="access tools" style="border: 1px solid gray; zoom:75%;">
 
 * Select your tool → Click **Go to Flow**.
@@ -199,6 +199,6 @@ The node’s output is stored in a context variable. You can access the variable
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
-<p>Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see available variables and nodes, including the nodes' outputs.</p>
+<p>(In)Agent Platform can automatically recognize variables and outputs. To do so, type "<code>context.steps.</code>" and you will see available variables and nodes, including the nodes' outputs.</p>
 </div>
 

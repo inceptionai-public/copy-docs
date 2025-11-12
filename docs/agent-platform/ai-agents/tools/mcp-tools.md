@@ -32,7 +32,7 @@ The following key features make MCP a powerful solution for connecting AI models
 MCP provides a standardized communication layer between AI agents and external tools. It follows a client-server architecture, where:
 
 * **The MCP server** exposes specific capabilities through tools.
-* **The host or MCP client** (in this case, Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent interactions. The language model within the client or host application decides when to invoke the tools exposed by the server.
+* **The host or MCP client** (in this case, (In)Agent Platform) connects to the server, discovers available tools, and invokes them as part of agent interactions. The language model within the client or host application decides when to invoke the tools exposed by the server.
 * **The MCP protocol** is the communication layer between these two components, defining how requests and responses are structured and exchanged. 
 
 ![MCP At Play](images/mcp/mcp-atplay.png "MCP")
@@ -88,12 +88,12 @@ This decoupling of the MCP server from the client allows for greater flexibility
 8. The LLM generates a final natural language response.
  *"The weather in Dubai today is partly cloudy with a temperature of 36°C and light winds from the northwest."*
 
-[Learn More.](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
+[Learn More.](https://docs.anthropic.com/en/docs/agents-and-tools/mcp){:target="_blank"} 
 
 Agentic Apps enable seamless integration with the MCP server, allowing the apps to use the tools hosted by the MCP server. 
 
 **Key Points:**
 
 * Currently, only **tool discovery and invocation** from MCP servers are supported. 
-* Currently, dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, are not automatically reflected in the Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
-* Agent Platform supports both **SSE-based and HTTP-based MCP server endpoint configurations**.
+* Currently, dynamic updates from the MCP server, such as changes to tool definitions or newly added tools, aren't automatically reflected in the (In)Agent Platform. Developers must manually reconfigure the MCP server and reselect the tools to apply updates. 
+* (In)Agent Platform supports both **SSE-based and HTTP-based MCP server endpoint configurations**.
