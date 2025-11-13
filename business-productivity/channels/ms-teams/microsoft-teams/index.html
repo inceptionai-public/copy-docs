@@ -239,8 +239,8 @@
       </div> -->
       <!-- <h1>Kore ai test</h1> -->
       <div class="logo">
-        <a href="https://docs.kore.ai" class="logo-img">
-          <img width="228" height="58" src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2022/03/01074614/Kore.ai_logo-latest.svg" class="attachment-large size-large" alt="kore ai">
+        <a href="https://inceptionai.ai/" class="logo-img">
+          <img width="228" height="58" src="https://inceptionai-public.github.io/platform-docs/business-productivity/home/assets/inception-fulldark-rgb.svg" class="attachment-large size-large" alt="Company logo">
           <span class="logo-title">DOCUMENTATION</span>
         </a>
       </div>
@@ -3154,7 +3154,7 @@
 
 
 <h1 id="microsoft-teams-and-copilot-integration-overview">Microsoft Teams and Copilot Integration - Overview<a class="headerlink" href="#microsoft-teams-and-copilot-integration-overview" title="Permanent link">¶</a></h1>
-<p>AI for Work integrates seamlessly with Microsoft Teams, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by allowing users to perform work-related tasks, receive proactive notifications, and utilize Copilot features all within Microsoft Teams. The following guide provides step-by-step instructions for deploying AI for Work as a custom Microsoft Teams application, covering Azure Bot Service setup, authentication, configuration, and organizational rollout.</p>
+<p>(In)Business Productivity integrates seamlessly with Microsoft Teams, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by allowing users to perform work-related tasks, receive proactive notifications, and utilize Copilot features all within Microsoft Teams. The following guide provides step-by-step instructions for deploying (In)Business Productivity as a custom Microsoft Teams application, covering Azure Bot Service setup, authentication, configuration, and organizational rollout.</p>
 <h2 id="when-to-use-microsoft-teams-integration">When to Use Microsoft Teams Integration<a class="headerlink" href="#when-to-use-microsoft-teams-integration" title="Permanent link">¶</a></h2>
 <p>The Microsoft Teams integration is designed for organizations seeking to embed AI capabilities directly into their existing collaboration workflows without requiring users to switch between applications or learn new interfaces. This integration is particularly valuable for teams that rely heavily on Microsoft Teams as their primary communication and collaboration platform.</p>
 <h3 id="ideal-implementation-scenarios">Ideal Implementation Scenarios<a class="headerlink" href="#ideal-implementation-scenarios" title="Permanent link">¶</a></h3>
@@ -3183,11 +3183,11 @@
 <li>Teams requiring specialized AI assistance that complements existing Copilot functionality.</li>
 </ul>
 <h2 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">¶</a></h2>
-<p>The integration between AI for Work and Microsoft Teams follows a bot-based architecture using Azure Bot Service as the communication bridge:</p>
-<p><code>[AI for Work Platform] ↔ [Azure Bot Service] ↔ [Microsoft  Teams]</code></p>
+<p>The integration between (In)Business Productivity and Microsoft Teams follows a bot-based architecture using Azure Bot Service as the communication bridge:</p>
+<p><code>[(In)Business Productivity Platform] ↔ [Azure Bot Service] ↔ [Microsoft  Teams]</code></p>
 <p>Key Components:</p>
 <ul>
-<li><strong>AI for Work Platform</strong>: Core AI service that processes user requests.</li>
+<li><strong>(In)Business Productivity Platform</strong>: Core AI service that processes user requests.</li>
 <li><strong>Azure Bot Service</strong>: Microsoft's cloud-based bot framework that handles message routing.</li>
 <li><strong>Microsoft Teams</strong>: The application where users interact with the AI bot.</li>
 <li><strong>Azure App Registration</strong>: Manages authentication and permissions for the bot.</li>
@@ -3197,14 +3197,14 @@
 <ul>
 <li><strong>Azure Subscription</strong> – Active subscription with administrative privileges.</li>
 <li><strong>Microsoft Teams Admin Access</strong> – Permission to upload and manage custom apps in the Microsoft Team Admin Center.</li>
-<li><strong>AI for Work Account</strong> – Active subscription with access to the Admin Console.</li>
+<li><strong>(In)Business Productivity Account</strong> – Active subscription with access to the Admin Console.</li>
 </ul>
 <h2 id="integration-flow">Integration Flow<a class="headerlink" href="#integration-flow" title="Permanent link">¶</a></h2>
 <p>The integration process follows these sequential steps:</p>
 <ol>
-<li><strong>Webhook Configuration</strong> – Copy the Webhook URL from AI for Work.</li>
+<li><strong>Webhook Configuration</strong> – Copy the Webhook URL from (In)Business Productivity.</li>
 <li><strong>Azure Bot Creation</strong> – Create and configure the Azure Bot Service.</li>
-<li><strong>Credential Exchange</strong> – Securely transfer credentials between AI for Work and Azure.</li>
+<li><strong>Credential Exchange</strong> – Securely transfer credentials between (In)Business Productivity and Azure.</li>
 <li><strong>Manifest Generation</strong> – Generate the Microsoft Team application manifest file.</li>
 <li><strong>Microsoft Team Deployment</strong> – Upload manifest to Microsoft Team Admin Center.</li>
 <li><strong>User Approval</strong> – Configure user access and permissions.</li>

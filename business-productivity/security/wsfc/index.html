@@ -239,8 +239,8 @@
       </div> -->
       <!-- <h1>Kore ai test</h1> -->
       <div class="logo">
-        <a href="https://docs.kore.ai" class="logo-img">
-          <img width="228" height="58" src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2022/03/01074614/Kore.ai_logo-latest.svg" class="attachment-large size-large" alt="kore ai">
+        <a href="https://inceptionai.ai/" class="logo-img">
+          <img width="228" height="58" src="https://inceptionai-public.github.io/platform-docs/business-productivity/home/assets/inception-fulldark-rgb.svg" class="attachment-large size-large" alt="Company logo">
           <span class="logo-title">DOCUMENTATION</span>
         </a>
       </div>
@@ -2680,9 +2680,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-windows-azure-for-ai-for-work-sso" class="md-nav__link">
+  <a href="#setting-up-windows-azure-for-inbusiness-productivity-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up Windows Azure for AI for Work SSO
+      Setting up Windows Azure for (In)Business Productivity SSO
     </span>
   </a>
   
@@ -2722,9 +2722,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-adfs-for-ai-for-work-sso" class="md-nav__link">
+  <a href="#setting-up-adfs-for-inbusiness-productivity-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up ADFS for AI for Work SSO
+      Setting up ADFS for (In)Business Productivity SSO
     </span>
   </a>
   
@@ -3187,9 +3187,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-windows-azure-for-ai-for-work-sso" class="md-nav__link">
+  <a href="#setting-up-windows-azure-for-inbusiness-productivity-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up Windows Azure for AI for Work SSO
+      Setting up Windows Azure for (In)Business Productivity SSO
     </span>
   </a>
   
@@ -3229,9 +3229,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-adfs-for-ai-for-work-sso" class="md-nav__link">
+  <a href="#setting-up-adfs-for-inbusiness-productivity-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up ADFS for AI for Work SSO
+      Setting up ADFS for (In)Business Productivity SSO
     </span>
   </a>
   
@@ -3279,7 +3279,7 @@
 <h2 id="identity-provider-configurations">Identity Provider Configurations<a class="headerlink" href="#identity-provider-configurations" title="Permanent link">¶</a></h2>
 <p>Choose from the supported identity providers or use a custom WS-Federation configuration. Each provider offers specific features and integration capabilities to match your security requirements.</p>
 <h3 id="windows-azure-configuration">Windows Azure Configuration<a class="headerlink" href="#windows-azure-configuration" title="Permanent link">¶</a></h3>
-<p>Windows Azure Active Directory (now Microsoft Entra ID) provides comprehensive identity federation capabilities with seamless integration for Azure-based organizations. Configure these essential fields to establish secure communication between Azure and AI for Work.</p>
+<p>Windows Azure Active Directory (now Microsoft Entra ID) provides comprehensive identity federation capabilities with seamless integration for Azure-based organizations. Configure these essential fields to establish secure communication between Azure and (In)Business Productivity.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/wsfc_azure.png" data-desc-position="bottom"><img src="../images/wsfc_azure.png" alt="open-id-connect" title="open-id-connect" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h4 id="configuration-fields">Configuration Fields<a class="headerlink" href="#configuration-fields" title="Permanent link">¶</a></h4>
 <table>
@@ -3294,7 +3294,7 @@
   <tr>
    <td>Azure AD Sign-On Endpoint URL
    </td>
-   <td>The URL that AI for Work must use for sign-on and sign-off/out requests using Azure. This is the WS-Federation passive endpoint. (e.g., https://login.microsoftonline.com/&lt;tenant-id&gt;/wsfed)
+   <td>The URL that (In)Business Productivity must use for sign-on and sign-off/out requests using Azure. This is the WS-Federation passive endpoint. (e.g., https://login.microsoftonline.com/&lt;tenant-id&gt;/wsfed)
    </td>
    <td>Yes
    </td>
@@ -3326,9 +3326,9 @@
 </ul>
 </li>
 </ol>
-<h4 id="setting-up-windows-azure-for-ai-for-work-sso">Setting up Windows Azure for AI for Work SSO<a class="headerlink" href="#setting-up-windows-azure-for-ai-for-work-sso" title="Permanent link">¶</a></h4>
-<p>To set up the AI for Work application in your Microsoft Entra ID (formerly Azure AD) environment using WS-Federation, you need to register a relying party trust and configure federation settings.</p>
-<p><strong>Prerequisites</strong>: You must have Microsoft Entra ID administrator privileges and have already selected Windows Azure as a WS-Federation provider in the AI for Work Admin Console.</p>
+<h4 id="setting-up-windows-azure-for-inbusiness-productivity-sso">Setting up Windows Azure for (In)Business Productivity SSO<a class="headerlink" href="#setting-up-windows-azure-for-inbusiness-productivity-sso" title="Permanent link">¶</a></h4>
+<p>To set up the (In)Business Productivity application in your Microsoft Entra ID (formerly Azure AD) environment using WS-Federation, you need to register a relying party trust and configure federation settings.</p>
+<p><strong>Prerequisites</strong>: You must have Microsoft Entra ID administrator privileges and have already selected Windows Azure as a WS-Federation provider in the (In)Business Productivity Admin Console.</p>
 <p><strong>Steps to configure Windows Azure</strong>:</p>
 <ol>
 <li><strong>Access Azure Portal</strong>:<ul>
@@ -3349,7 +3349,7 @@
 <li>Navigate to <strong>Enterprise applications &gt; New application</strong>.</li>
 <li>Select <strong>Create your own application</strong>.</li>
 <li>Choose <strong>Integrate any other application you don't find in the gallery</strong>.</li>
-<li>Enter "AI for Work" as the application name.</li>
+<li>Enter "(In)Business Productivity" as the application name.</li>
 <li>Click <strong>Create</strong>.</li>
 </ul>
 </li>
@@ -3357,9 +3357,9 @@
 <li>In the application overview, go to <strong>Single sign-on</strong>.</li>
 <li>Select <strong>WS-Fed</strong> as the single sign-on method.</li>
 <li>Configure the following:<ul>
-<li><strong>Identifier (Entity ID)</strong>: Provided by AI for Work</li>
-<li><strong>Reply URL</strong>: Provided by AI for Work</li>
-<li><strong>Sign-on URL</strong>: Your AI for Work instance URL</li>
+<li><strong>Identifier (Entity ID)</strong>: Provided by (In)Business Productivity</li>
+<li><strong>Reply URL</strong>: Provided by (In)Business Productivity</li>
+<li><strong>Sign-on URL</strong>: Your (In)Business Productivity instance URL</li>
 </ul>
 </li>
 </ul>
@@ -3367,12 +3367,12 @@
 <li><strong>Configure User Assignment</strong>:<ul>
 <li>Go to <strong>Users and groups</strong>.</li>
 <li>Click <strong>Add user/group</strong>.</li>
-<li>Select users or groups that should have access to AI for Work.</li>
+<li>Select users or groups that should have access to (In)Business Productivity.</li>
 <li>Click <strong>Assign</strong>.</li>
 </ul>
 </li>
 <li><strong>Copy Configuration Details</strong>:<ul>
-<li>From the endpoints page, copy the following to AI for Work:<ul>
+<li>From the endpoints page, copy the following to (In)Business Productivity:<ul>
 <li><strong>WS-Federation Sign-On Endpoint</strong> → <strong>Azure AD Sign-On Endpoint URL</strong></li>
 <li><strong>Federation Metadata Document</strong> URL → <strong>Azure AD Federation Metadata Document</strong></li>
 </ul>
@@ -3384,7 +3384,7 @@
 <li>Ensure all users assigned to the application can authenticate.</li>
 </ul>
 </li>
-<li><strong>Save</strong> the configuration in AI for Work.</li>
+<li><strong>Save</strong> the configuration in (In)Business Productivity.</li>
 </ol>
 <h3 id="other-generic-ws-federation-provider">Other (Generic WS-Federation Provider)<a class="headerlink" href="#other-generic-ws-federation-provider" title="Permanent link">¶</a></h3>
 <p>Use this option for any WS-Federation compliant identity provider not specifically listed above, including on-premises Active Directory Federation Services (ADFS) deployments. This flexible configuration supports custom enterprise identity solutions and third-party WS-Federation providers.</p>
@@ -3402,7 +3402,7 @@
   <tr>
    <td>AD Sign-On Endpoint URL
    </td>
-   <td>The URL that AI for Work must use for sign-on and sign-off/out requests using the WS-Federation identity provider. This is the WS-Federation passive endpoint. (e.g., <code>https://adfs.yourcompany.com/adfs/ls/</code>)
+   <td>The URL that (In)Business Productivity must use for sign-on and sign-off/out requests using the WS-Federation identity provider. This is the WS-Federation passive endpoint. (e.g., <code>https://adfs.yourcompany.com/adfs/ls/</code>)
    </td>
    <td>Yes
    </td>
@@ -3434,9 +3434,9 @@
 </ul>
 </li>
 </ol>
-<h4 id="setting-up-adfs-for-ai-for-work-sso">Setting up ADFS for AI for Work SSO<a class="headerlink" href="#setting-up-adfs-for-ai-for-work-sso" title="Permanent link">¶</a></h4>
-<p>To set up the AI for Work application with Active Directory Federation Services (ADFS), you need to add a relying party trust and configure claim rules.</p>
-<p><strong>Prerequisites</strong>: You must have ADFS administrator access and have already selected Other as a WS-Federation provider in the AI for Work Admin Console.</p>
+<h4 id="setting-up-adfs-for-inbusiness-productivity-sso">Setting up ADFS for (In)Business Productivity SSO<a class="headerlink" href="#setting-up-adfs-for-inbusiness-productivity-sso" title="Permanent link">¶</a></h4>
+<p>To set up the (In)Business Productivity application with Active Directory Federation Services (ADFS), you need to add a relying party trust and configure claim rules.</p>
+<p><strong>Prerequisites</strong>: You must have ADFS administrator access and have already selected Other as a WS-Federation provider in the (In)Business Productivity Admin Console.</p>
 <p><strong>Steps to configure ADFS</strong>:</p>
 <ol>
 <li><strong>Open ADFS Management Console</strong>:<ul>
@@ -3452,7 +3452,7 @@
 </ul>
 </li>
 <li><strong>Configure Display Name</strong>:<ul>
-<li>Enter "AI for Work" as the display name.</li>
+<li>Enter "(In)Business Productivity" as the display name.</li>
 <li>Optionally add notes about the application.</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
@@ -3469,12 +3469,12 @@
 </li>
 <li><strong>Configure URLs</strong>:<ul>
 <li>Check <strong>Enable support for the WS-Federation Passive protocol</strong>.</li>
-<li>Enter the <strong>Relying party WS-Federation Passive protocol URL</strong> (provided by AI for Work).</li>
+<li>Enter the <strong>Relying party WS-Federation Passive protocol URL</strong> (provided by (In)Business Productivity).</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
 </li>
 <li><strong>Add Relying Party Trust Identifier</strong>:<ul>
-<li>Enter the relying party trust identifier (provided by AI for Work).</li>
+<li>Enter the relying party trust identifier (provided by (In)Business Productivity).</li>
 <li>Click <strong>Add</strong>.</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
@@ -3530,7 +3530,7 @@
 </ul>
 </li>
 <li><strong>Copy Configuration Details</strong>:<ul>
-<li>Copy the following to AI for Work:<ul>
+<li>Copy the following to (In)Business Productivity:<ul>
 <li>Full WS-Federation endpoint URL → <strong>AD Sign-On Endpoint URL</strong></li>
 <li>Full federation metadata URL → <strong>AD Federation Metadata Document URL</strong></li>
 </ul>
@@ -3540,10 +3540,10 @@
 <li><strong>Test Metadata Accessibility</strong>:<ul>
 <li>Open the federation metadata URL in a browser.</li>
 <li>Verify that the XML document loads correctly.</li>
-<li>Ensure it's accessible from the network where AI for Work is hosted.</li>
+<li>Ensure it's accessible from the network where (In)Business Productivity is hosted.</li>
 </ul>
 </li>
-<li><strong>Save</strong> the configuration in AI for Work.</li>
+<li><strong>Save</strong> the configuration in (In)Business Productivity.</li>
 </ol>
 
 

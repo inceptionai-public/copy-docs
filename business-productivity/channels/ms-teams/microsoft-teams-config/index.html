@@ -239,8 +239,8 @@
       </div> -->
       <!-- <h1>Kore ai test</h1> -->
       <div class="logo">
-        <a href="https://docs.kore.ai" class="logo-img">
-          <img width="228" height="58" src="https://kore-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2022/03/01074614/Kore.ai_logo-latest.svg" class="attachment-large size-large" alt="kore ai">
+        <a href="https://inceptionai.ai/" class="logo-img">
+          <img width="228" height="58" src="https://inceptionai-public.github.io/platform-docs/business-productivity/home/assets/inception-fulldark-rgb.svg" class="attachment-large size-large" alt="Company logo">
           <span class="logo-title">DOCUMENTATION</span>
         </a>
       </div>
@@ -2478,9 +2478,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-6-configure-ai-for-work-platform" class="md-nav__link">
+  <a href="#phase-6-configure-inbusiness-productivity-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      Phase 6: Configure AI for Work Platform
+      Phase 6: Configure (In)Business Productivity Platform
     </span>
   </a>
   
@@ -2496,9 +2496,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-8-user-access-configuration-options-in-ai-for-work" class="md-nav__link">
+  <a href="#phase-8-user-access-configuration-options-in-inbusiness-productivity" class="md-nav__link">
     <span class="md-ellipsis">
-      Phase 8: User Access Configuration Options in AI for Work
+      Phase 8: User Access Configuration Options in (In)Business Productivity
     </span>
   </a>
   
@@ -3185,9 +3185,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-6-configure-ai-for-work-platform" class="md-nav__link">
+  <a href="#phase-6-configure-inbusiness-productivity-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      Phase 6: Configure AI for Work Platform
+      Phase 6: Configure (In)Business Productivity Platform
     </span>
   </a>
   
@@ -3203,9 +3203,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-8-user-access-configuration-options-in-ai-for-work" class="md-nav__link">
+  <a href="#phase-8-user-access-configuration-options-in-inbusiness-productivity" class="md-nav__link">
     <span class="md-ellipsis">
-      Phase 8: User Access Configuration Options in AI for Work
+      Phase 8: User Access Configuration Options in (In)Business Productivity
     </span>
   </a>
   
@@ -3244,12 +3244,12 @@
 
 
 <h1 id="microsoft-teams-and-copilot-integration-configuration">Microsoft Teams and Copilot Integration - Configuration<a class="headerlink" href="#microsoft-teams-and-copilot-integration-configuration" title="Permanent link">¶</a></h1>
-<p>This document provides detailed step-by-step instructions for implementing AI for Work integration with Microsoft Teams. Follow these phases sequentially to ensure proper deployment and functionality.</p>
+<p>This document provides detailed step-by-step instructions for implementing (In)Business Productivity integration with Microsoft Teams. Follow these phases sequentially to ensure proper deployment and functionality.</p>
 <h2 id="step-by-step-implementation-guide">Step-by-Step Implementation Guide<a class="headerlink" href="#step-by-step-implementation-guide" title="Permanent link">¶</a></h2>
 <h3 id="phase-1-initial-setup-and-webhook-configuration">Phase 1: Initial Setup and Webhook Configuration<a class="headerlink" href="#phase-1-initial-setup-and-webhook-configuration" title="Permanent link">¶</a></h3>
-<p><strong>Objective:</strong> Establish communication between AI for Work and Azure Bot Service.</p>
+<p><strong>Objective:</strong> Establish communication between (In)Business Productivity and Azure Bot Service.</p>
 <ol>
-<li>Log in to the AI for Work's <strong>Admin Console</strong>.</li>
+<li>Log in to the (In)Business Productivity's <strong>Admin Console</strong>.</li>
 <li>Navigate to <strong>Channels</strong> → <strong>Microsoft Teams and Copilot</strong>.</li>
 <li>Copy the <strong>Webhook URL</strong> (you will use this in Azure Bot configuration).</li>
 </ol>
@@ -3273,7 +3273,7 @@
 <p><strong>Configure Bot Resource</strong></p>
 <ol>
 <li>After deployment completes, click <strong>Go to resource</strong> and navigate to <strong>Configuration</strong> in the left sidebar.</li>
-<li>Paste the webhook URL copied from the AI for Work platform into the <strong>Messaging endpoint</strong> field and click <strong>Apply</strong> to save the configuration.</li>
+<li>Paste the webhook URL copied from the (In)Business Productivity platform into the <strong>Messaging endpoint</strong> field and click <strong>Apply</strong> to save the configuration.</li>
 </ol>
 <h3 id="phase-3-authentication-and-security-setup">Phase 3: Authentication and Security Setup<a class="headerlink" href="#phase-3-authentication-and-security-setup" title="Permanent link">¶</a></h3>
 <p>This phase varies based on your chosen App Type (MultiTenant vs SingleTenant).</p>
@@ -3292,10 +3292,10 @@
 <p>Enter description and expiry → <strong>Add</strong>.</p>
 </li>
 <li>Copy the <strong>Value</strong> of the client secret (App Password).</li>
-<li>Record the <strong>Microsoft App ID</strong> and <strong>App Password</strong> for AI for Work configuration.</li>
+<li>Record the <strong>Microsoft App ID</strong> and <strong>App Password</strong> for (In)Business Productivity configuration.</li>
 </ol>
 <p><strong>For Single-Tenant Applications</strong></p>
-<p>Follow the steps for Multi-Tenant setup. Also, note the Tenant ID for AI for Work configuration.</p>
+<p>Follow the steps for Multi-Tenant setup. Also, note the Tenant ID for (In)Business Productivity configuration.</p>
 <h3 id="phase-4-enable-microsoft-teams-channel-integration">Phase 4: Enable Microsoft Teams Channel Integration<a class="headerlink" href="#phase-4-enable-microsoft-teams-channel-integration" title="Permanent link">¶</a></h3>
 <p>Configure the bot to communicate with Microsoft Teams and enable Copilot integration.</p>
 <ol>
@@ -3342,14 +3342,14 @@
 <p>Grant <strong>Admin Consent.</strong></p>
 </li>
 <li>Generate a <strong>Client Secret</strong> and note down <strong>App ID</strong>, <strong>Directory (Tenant) ID</strong></li>
-<li>Configure these values in AI for Work under <strong>Microsoft Teams &amp; Copilot Channel Settings</strong>.</li>
+<li>Configure these values in (In)Business Productivity under <strong>Microsoft Teams &amp; Copilot Channel Settings</strong>.</li>
 <li>Generate a <strong>JWT token</strong> for secure communication.</li>
 </ol>
-<h3 id="phase-6-configure-ai-for-work-platform">Phase 6: Configure AI for Work Platform<a class="headerlink" href="#phase-6-configure-ai-for-work-platform" title="Permanent link">¶</a></h3>
-<p>Provide Azure Bot credentials to the AI for Work platform to establish secure communication.</p>
-<p><strong>Access AI for Work Configuration:</strong></p>
+<h3 id="phase-6-configure-inbusiness-productivity-platform">Phase 6: Configure (In)Business Productivity Platform<a class="headerlink" href="#phase-6-configure-inbusiness-productivity-platform" title="Permanent link">¶</a></h3>
+<p>Provide Azure Bot credentials to the (In)Business Productivity platform to establish secure communication.</p>
+<p><strong>Access (In)Business Productivity Configuration:</strong></p>
 <ol>
-<li>Navigate to your AI for Work Admin Console.</li>
+<li>Navigate to your (In)Business Productivity Admin Console.</li>
 <li>Locate <strong>Channels</strong> on the left pane.</li>
 <li>Select <strong>Microsoft Teams and Copilot</strong>.</li>
 <li>
@@ -3372,18 +3372,18 @@
 </li>
 </ol>
 <p><strong>Customization Options</strong></p>
-<p>By default, the Microsoft Teams app appears with the name <strong>AI for Work</strong>, the standard AI for Work logo, and the default description. Administrators can customize the application before publishing to Microsoft Teams:</p>
+<p>By default, the Microsoft Teams app appears with the name <strong>(In)Business Productivity</strong>, the standard (In)Business Productivity logo, and the default description. Administrators can customize the application before publishing to Microsoft Teams:</p>
 <ul>
 <li><strong>App Name</strong> – Choose a custom display name for Microsoft Teams.</li>
 <li><strong>Logo</strong> – Upload an organization-specific logo.</li>
 <li><strong>Description</strong> – Provide a tailored description that reflects organizational context.</li>
 </ul>
 <p><strong>Copilot Enablement</strong></p>
-<p>During configuration, you will be prompted to <strong>Enable Copilot Integration</strong>. It is recommended to enable this option to ensure that Microsoft Teams users can access AI for Work features through Copilot.</p>
+<p>During configuration, you will be prompted to <strong>Enable Copilot Integration</strong>. It is recommended to enable this option to ensure that Microsoft Teams users can access (In)Business Productivity features through Copilot.</p>
 <h3 id="phase-7-microsoft-teams-application-deployment">Phase 7: Microsoft Teams Application Deployment<a class="headerlink" href="#phase-7-microsoft-teams-application-deployment" title="Permanent link">¶</a></h3>
-<p>Deploy the AI for Work application to Microsoft Teams for user access.</p>
+<p>Deploy the (In)Business Productivity application to Microsoft Teams for user access.</p>
 <p><strong>Generate Application Manifest</strong></p>
-<p><strong>Download Manifest</strong>: Upon configuring credentials in the AI for Work platform, generate and download the Microsoft Teams application manifest file. This manifest file contains all the necessary configurations for integrating with Microsoft Teams.</p>
+<p><strong>Download Manifest</strong>: Upon configuring credentials in the (In)Business Productivity platform, generate and download the Microsoft Teams application manifest file. This manifest file contains all the necessary configurations for integrating with Microsoft Teams.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/teams_8.png" data-desc-position="bottom"><img src="../images/teams_8.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;"></a></p>
 <p><strong>Upload to Microsoft Teams Admin Center</strong></p>
 <p><strong>Prerequisites Verification</strong>: Ensure you have <strong>Upload Custom App</strong> permissions in the Microsoft Teams Admin Center. Verify organizational policies allow custom app installations.</p>
@@ -3395,27 +3395,27 @@
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/teams_9.png" data-desc-position="bottom"><img src="../images/teams_9.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;"></a></p>
 </li>
 <li>
-<p>Select the downloaded manifest file from AI for Work.</p>
+<p>Select the downloaded manifest file from (In)Business Productivity.</p>
 </li>
 <li>Wait for upload and validation to complete.</li>
 </ol>
 <p><strong>Configure App Permissions and Policies</strong></p>
 <p><strong>App Approval</strong>: Review the uploaded application details and configure app permission policies as needed. Set up app setup policies for automatic installation (optional).</p>
 <p>After uploading, configure app permission and setup policies.</p>
-<h3 id="phase-8-user-access-configuration-options-in-ai-for-work">Phase 8: User Access Configuration Options in AI for Work<a class="headerlink" href="#phase-8-user-access-configuration-options-in-ai-for-work" title="Permanent link">¶</a></h3>
-<p>You can decide how to distribute the AI for Work app in Microsoft Teams:</p>
+<h3 id="phase-8-user-access-configuration-options-in-inbusiness-productivity">Phase 8: User Access Configuration Options in (In)Business Productivity<a class="headerlink" href="#phase-8-user-access-configuration-options-in-inbusiness-productivity" title="Permanent link">¶</a></h3>
+<p>You can decide how to distribute the (In)Business Productivity app in Microsoft Teams:</p>
 <ul>
 <li>
 <p><strong>Add App for All Users</strong> (Recommended)</p>
 <ul>
-<li>Automatically adds the AI for Work app for all employees in the organization.</li>
+<li>Automatically adds the (In)Business Productivity app for all employees in the organization.</li>
 <li>All users receive a notification in Microsoft Teams and a <strong>welcome message</strong> when the app is added.</li>
 </ul>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Users must also be provisioned in the <strong>AI for Work Account Hub</strong> to access the app.</p>
+<p>Users must also be provisioned in the <strong>(In)Business Productivity Account Hub</strong> to access the app.</p>
 </div>
 <ul>
 <li>
@@ -3470,7 +3470,7 @@
 <li>Verify that the notification app registration client secret is valid.</li>
 <li>Ensure JWT token generation is working correctly.</li>
 </ul>
-<p>This integration enables seamless access to AI for Work capabilities within Microsoft Teams, providing users with powerful AI assistance without leaving their collaborative environment. The bot-based architecture ensures secure, scalable communication while maintaining compliance with organizational security policies.</p>
+<p>This integration enables seamless access to (In)Business Productivity capabilities within Microsoft Teams, providing users with powerful AI assistance without leaving their collaborative environment. The bot-based architecture ensures secure, scalable communication while maintaining compliance with organizational security policies.</p>
 <p>Regular maintenance of credentials and permissions, along with proper monitoring, will ensure the continued reliable operation of the integration.</p>
 
 
