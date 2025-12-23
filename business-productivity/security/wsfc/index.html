@@ -2680,9 +2680,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-windows-azure-for-inbusiness-productivity-sso" class="md-nav__link">
+  <a href="#setting-up-windows-azure-for-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up Windows Azure for (In)Business Productivity SSO
+      Setting up Windows Azure for SSO
     </span>
   </a>
   
@@ -2722,9 +2722,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-adfs-for-inbusiness-productivity-sso" class="md-nav__link">
+  <a href="#setting-up-adfs-for-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up ADFS for (In)Business Productivity SSO
+      Setting up ADFS for SSO
     </span>
   </a>
   
@@ -3187,9 +3187,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-windows-azure-for-inbusiness-productivity-sso" class="md-nav__link">
+  <a href="#setting-up-windows-azure-for-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up Windows Azure for (In)Business Productivity SSO
+      Setting up Windows Azure for SSO
     </span>
   </a>
   
@@ -3229,9 +3229,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setting-up-adfs-for-inbusiness-productivity-sso" class="md-nav__link">
+  <a href="#setting-up-adfs-for-sso" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up ADFS for (In)Business Productivity SSO
+      Setting up ADFS for SSO
     </span>
   </a>
   
@@ -3294,7 +3294,7 @@
   <tr>
    <td>Azure AD Sign-On Endpoint URL
    </td>
-   <td>The URL that (In)Business Productivity must use for sign-on and sign-off/out requests using Azure. This is the WS-Federation passive endpoint. (e.g., https://login.microsoftonline.com/&lt;tenant-id&gt;/wsfed)
+   <td>The URL that platform must use for sign-on and sign-off/out requests using Azure. This is the WS-Federation passive endpoint. (e.g., https://login.microsoftonline.com/&lt;tenant-id&gt;/wsfed)
    </td>
    <td>Yes
    </td>
@@ -3326,9 +3326,9 @@
 </ul>
 </li>
 </ol>
-<h4 id="setting-up-windows-azure-for-inbusiness-productivity-sso">Setting up Windows Azure for (In)Business Productivity SSO<a class="headerlink" href="#setting-up-windows-azure-for-inbusiness-productivity-sso" title="Permanent link">¶</a></h4>
-<p>To set up the (In)Business Productivity application in your Microsoft Entra ID (formerly Azure AD) environment using WS-Federation, you need to register a relying party trust and configure federation settings.</p>
-<p><strong>Prerequisites</strong>: You must have Microsoft Entra ID administrator privileges and have already selected Windows Azure as a WS-Federation provider in the (In)Business Productivity Admin Console.</p>
+<h4 id="setting-up-windows-azure-for-sso">Setting up Windows Azure for SSO<a class="headerlink" href="#setting-up-windows-azure-for-sso" title="Permanent link">¶</a></h4>
+<p>To set up the application in your Microsoft Entra ID (formerly Azure AD) environment using WS-Federation, you need to register a relying party trust and configure federation settings.</p>
+<p><strong>Prerequisites</strong>: You must have Microsoft Entra ID administrator privileges and have already selected Windows Azure as a WS-Federation provider in the Admin Console.</p>
 <p><strong>Steps to configure Windows Azure</strong>:</p>
 <ol>
 <li><strong>Access Azure Portal</strong>:<ul>
@@ -3349,7 +3349,7 @@
 <li>Navigate to <strong>Enterprise applications &gt; New application</strong>.</li>
 <li>Select <strong>Create your own application</strong>.</li>
 <li>Choose <strong>Integrate any other application you don't find in the gallery</strong>.</li>
-<li>Enter "(In)Business Productivity" as the application name.</li>
+<li>Enter the application name.</li>
 <li>Click <strong>Create</strong>.</li>
 </ul>
 </li>
@@ -3357,9 +3357,9 @@
 <li>In the application overview, go to <strong>Single sign-on</strong>.</li>
 <li>Select <strong>WS-Fed</strong> as the single sign-on method.</li>
 <li>Configure the following:<ul>
-<li><strong>Identifier (Entity ID)</strong>: Provided by (In)Business Productivity</li>
-<li><strong>Reply URL</strong>: Provided by (In)Business Productivity</li>
-<li><strong>Sign-on URL</strong>: Your (In)Business Productivity instance URL</li>
+<li><strong>Identifier (Entity ID)</strong>: Provided by the application</li>
+<li><strong>Reply URL</strong>: Provided by the application</li>
+<li><strong>Sign-on URL</strong>: Your application's instance URL</li>
 </ul>
 </li>
 </ul>
@@ -3367,12 +3367,12 @@
 <li><strong>Configure User Assignment</strong>:<ul>
 <li>Go to <strong>Users and groups</strong>.</li>
 <li>Click <strong>Add user/group</strong>.</li>
-<li>Select users or groups that should have access to (In)Business Productivity.</li>
+<li>Select users or groups that should have access to the application.</li>
 <li>Click <strong>Assign</strong>.</li>
 </ul>
 </li>
 <li><strong>Copy Configuration Details</strong>:<ul>
-<li>From the endpoints page, copy the following to (In)Business Productivity:<ul>
+<li>From the endpoints page, copy the following to the application:<ul>
 <li><strong>WS-Federation Sign-On Endpoint</strong> → <strong>Azure AD Sign-On Endpoint URL</strong></li>
 <li><strong>Federation Metadata Document</strong> URL → <strong>Azure AD Federation Metadata Document</strong></li>
 </ul>
@@ -3384,7 +3384,7 @@
 <li>Ensure all users assigned to the application can authenticate.</li>
 </ul>
 </li>
-<li><strong>Save</strong> the configuration in (In)Business Productivity.</li>
+<li><strong>Save</strong> the configuration.</li>
 </ol>
 <h3 id="other-generic-ws-federation-provider">Other (Generic WS-Federation Provider)<a class="headerlink" href="#other-generic-ws-federation-provider" title="Permanent link">¶</a></h3>
 <p>Use this option for any WS-Federation compliant identity provider not specifically listed above, including on-premises Active Directory Federation Services (ADFS) deployments. This flexible configuration supports custom enterprise identity solutions and third-party WS-Federation providers.</p>
@@ -3402,7 +3402,7 @@
   <tr>
    <td>AD Sign-On Endpoint URL
    </td>
-   <td>The URL that (In)Business Productivity must use for sign-on and sign-off/out requests using the WS-Federation identity provider. This is the WS-Federation passive endpoint. (e.g., <code>https://adfs.yourcompany.com/adfs/ls/</code>)
+   <td>The URL that application must use for sign-on and sign-off/out requests using the WS-Federation identity provider. This is the WS-Federation passive endpoint. (e.g., <code>https://adfs.yourcompany.com/adfs/ls/</code>)
    </td>
    <td>Yes
    </td>
@@ -3434,9 +3434,9 @@
 </ul>
 </li>
 </ol>
-<h4 id="setting-up-adfs-for-inbusiness-productivity-sso">Setting up ADFS for (In)Business Productivity SSO<a class="headerlink" href="#setting-up-adfs-for-inbusiness-productivity-sso" title="Permanent link">¶</a></h4>
-<p>To set up the (In)Business Productivity application with Active Directory Federation Services (ADFS), you need to add a relying party trust and configure claim rules.</p>
-<p><strong>Prerequisites</strong>: You must have ADFS administrator access and have already selected Other as a WS-Federation provider in the (In)Business Productivity Admin Console.</p>
+<h4 id="setting-up-adfs-for-sso">Setting up ADFS for SSO<a class="headerlink" href="#setting-up-adfs-for-sso" title="Permanent link">¶</a></h4>
+<p>To set up the application with Active Directory Federation Services (ADFS), you need to add a relying party trust and configure claim rules.</p>
+<p><strong>Prerequisites</strong>: You must have ADFS administrator access and have already selected Other as a WS-Federation provider in the Admin Console.</p>
 <p><strong>Steps to configure ADFS</strong>:</p>
 <ol>
 <li><strong>Open ADFS Management Console</strong>:<ul>
@@ -3452,7 +3452,7 @@
 </ul>
 </li>
 <li><strong>Configure Display Name</strong>:<ul>
-<li>Enter "(In)Business Productivity" as the display name.</li>
+<li>Enter the display name.</li>
 <li>Optionally add notes about the application.</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
@@ -3469,12 +3469,12 @@
 </li>
 <li><strong>Configure URLs</strong>:<ul>
 <li>Check <strong>Enable support for the WS-Federation Passive protocol</strong>.</li>
-<li>Enter the <strong>Relying party WS-Federation Passive protocol URL</strong> (provided by (In)Business Productivity).</li>
+<li>Enter the <strong>Relying party WS-Federation Passive protocol URL</strong> (provided by the application).</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
 </li>
 <li><strong>Add Relying Party Trust Identifier</strong>:<ul>
-<li>Enter the relying party trust identifier (provided by (In)Business Productivity).</li>
+<li>Enter the relying party trust identifier (provided by the application).</li>
 <li>Click <strong>Add</strong>.</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
@@ -3530,7 +3530,7 @@
 </ul>
 </li>
 <li><strong>Copy Configuration Details</strong>:<ul>
-<li>Copy the following to (In)Business Productivity:<ul>
+<li>Copy the following to the application:<ul>
 <li>Full WS-Federation endpoint URL → <strong>AD Sign-On Endpoint URL</strong></li>
 <li>Full federation metadata URL → <strong>AD Federation Metadata Document URL</strong></li>
 </ul>
@@ -3540,10 +3540,10 @@
 <li><strong>Test Metadata Accessibility</strong>:<ul>
 <li>Open the federation metadata URL in a browser.</li>
 <li>Verify that the XML document loads correctly.</li>
-<li>Ensure it's accessible from the network where (In)Business Productivity is hosted.</li>
+<li>Ensure it's accessible from the network where the application is hosted.</li>
 </ul>
 </li>
-<li><strong>Save</strong> the configuration in (In)Business Productivity.</li>
+<li><strong>Save</strong> the configuration in the application.</li>
 </ol>
 
 
@@ -3554,81 +3554,49 @@
 
 
 
-    
   
-  
-  
-    <style>
-      .feedback-container {
-        text-align: center;
-      }
-      [kore-feedback-link] {
-        display: block;
-        padding: 5px 5px 5px 5px;
-        border: 1px solid #eee;
-        width: 168px;
-        margin: auto;
-      }
-      [kore-feedback-link]:hover {
-        background-color: #e9f0fe;
-      }
-      .md-feedback__inner{
-        height: 25px;
-      }
-    </style>
-    <div class="feedback-container">
-      <form class="md-feedback" name="feedback" hidden>
-        <fieldset>
-          <legend class="md-feedback__title">
-            Was this page helpful?
-          </legend>
-          <div class="md-feedback__inner">
-            <div class="md-feedback__list">
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
-                </button>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
-                </button>
+                
               
+              Thanks for your feedback!
             </div>
-            <!-- <div class="md-feedback__note">
+          
+            <div data-md-value="0" hidden>
               
-                <div data-md-value="1" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!
-                </div>
               
-                <div data-md-value="0" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!            
-                </div>
+                
               
-            </div> -->
-          </div>
-        </fieldset>
-      </form>
-      <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Send Feedback</a>
-    </div>
-  
+              Thanks for your feedback!            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 

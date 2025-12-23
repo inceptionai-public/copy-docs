@@ -2825,9 +2825,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#grant-access-permissions-to-our-application" class="md-nav__link">
+  <a href="#grant-access-permissions-to-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Grant access permissions to our application
+      Grant access permissions to the application
     </span>
   </a>
   
@@ -3086,9 +3086,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#grant-access-permissions-to-our-application" class="md-nav__link">
+  <a href="#grant-access-permissions-to-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Grant access permissions to our application
+      Grant access permissions to the application
     </span>
   </a>
   
@@ -3133,9 +3133,13 @@
 <p>To enable our application to operate within your Azure environment, you need to grant it access by registering it as a service principal. Follow these steps:</p>
 <ol>
 <li><strong>Sign in to the Azure portal</strong> using an account with Global Administrator privileges for your tenant.</li>
-<li><strong>Grant admin consent</strong> using one of the following methods: </li>
-<li><strong>Option A: Admin Consent URL</strong> Navigate to the following URL in your browser after logging in as Global Administrator, replacing <code>&amp;lt;your-tenant-id&gt;</code> with your tenant ID (found in <strong>Microsoft Entra ID</strong> &gt; <strong>Properties</strong>): <code>https://login.microsoftonline.com/&lt;your-tenant-id&gt;/adminconsent?client_id=&lt;our-app-client-id&gt;</code></li>
-<li><strong>Option B: Azure CLI</strong> Run the following command as Global Administrator, replacing <code>&amp;lt;our-app-client-id&gt;</code> with our application's client ID (provided by our team): <code>az ad sp create --id '&lt;our-app-client-id&gt;'</code></li>
+<li>
+<p><strong>Grant admin consent</strong> using one of the following methods: </p>
+</li>
+<li>
+<p><strong>Option A: Admin Consent URL</strong> Navigate to the following URL in your browser after logging in as Global Administrator, replacing <code>&lt;your-tenant-id&gt;</code> with your tenant ID (found in <strong>Microsoft Entra ID</strong> &gt; <strong>Properties</strong>): <code>https://login.microsoftonline.com/&lt;your-tenant-id&gt;/adminconsent?client_id=&lt;our-app-client-id&gt;</code>.</p>
+</li>
+<li><strong>Option B: Azure CLI</strong> Run the following command as Global Administrator, replacing <code>&lt;our-app-client-id&gt;</code> with our application's client ID (provided by our team): <code>az ad sp create --id '&lt;our-app-client-id&gt;'</code>.</li>
 </ol>
 <p>This step registers our application in your tenant, enabling it to interact with your Key Vault securely.</p>
 <h2 id="configure-your-key-vault-and-encryption-key">Configure your Key Vault and encryption key<a class="headerlink" href="#configure-your-key-vault-and-encryption-key" title="Permanent link">¶</a></h2>
@@ -3143,16 +3147,16 @@
 <ol>
 <li><strong>Ensure you have a Key Vault and RSA Key</strong> prepared in your Azure subscription.</li>
 <li><strong>Note the following details</strong> that you'll share with our team:<ul>
-<li><strong>Key Vault URI</strong>: The vault's URI (e.g., <code>https://&amp;lt;your-vault-name&gt;.vault.azure.net/</code>)</li>
-<li><strong>Key Identifier</strong>: The full URI of the key, including its name and optional version (e.g., <code>https://&amp;lt;your-vault-name&gt;.vault.azure.net/keys/&amp;lt;key-name&gt;/&amp;lt;key-version&gt;</code>)</li>
+<li><strong>Key Vault URI</strong>: The vault's URI (e.g., <code>https://&lt;your-vault-name&gt;.vault.azure.net/</code>).</li>
+<li><strong>Key Identifier</strong>: The full URI of the key, including its name and optional version (e.g., <code>https://&lt;your-vault-name&gt;.vault.azure.net/keys/&lt;key-name&gt;/&lt;key-version&gt;</code>).</li>
 </ul>
 </li>
 </ol>
-<h2 id="grant-access-permissions-to-our-application">Grant access permissions to our application<a class="headerlink" href="#grant-access-permissions-to-our-application" title="Permanent link">¶</a></h2>
-<p>Authorize our application to perform cryptographic operations with your key by assigning the appropriate roles.</p>
+<h2 id="grant-access-permissions-to-the-application">Grant access permissions to the application<a class="headerlink" href="#grant-access-permissions-to-the-application" title="Permanent link">¶</a></h2>
+<p>Authorize the application to perform cryptographic operations with your key by assigning the appropriate roles.</p>
 <ol>
 <li><strong>Navigate to your Key Vault</strong> in the Azure portal and select <strong>Access control (IAM)</strong>.</li>
-<li><strong>Add role assignments</strong> by selecting <strong>Add role assignment</strong> and choosing the appropriate roles for our application's service principal (search by our application name or service principal):<ul>
+<li><strong>Add role assignments</strong> by selecting <strong>Add role assignment</strong> and choosing the appropriate roles for our application's service principal (search application name or service principal):<ul>
 <li><strong>Key Vault Crypto User</strong>: Allows cryptographic operations like wrapping and unwrapping keys, required for BYOK functionality</li>
 <li><strong>Key Vault Reader</strong>: Allows reading metadata about the Key Vault and its resources</li>
 </ul>
@@ -3161,20 +3165,20 @@
 </ol>
 <h2 id="complete-the-integration-setup">Complete the integration setup<a class="headerlink" href="#complete-the-integration-setup" title="Permanent link">¶</a></h2>
 <p>Finalize the integration by sharing the required information and approving network connections.</p>
-<p><strong>Share required information</strong></p>
+<p>Share required information:</p>
 <p>Provide our team with the following details to complete the integration:</p>
 <ul>
-<li>Your <strong>Tenant ID</strong> (found in <strong>Microsoft Entra ID</strong> &gt; <strong>Properties</strong> in the Azure portal)</li>
-<li>The <strong>Key Vault URI</strong> from step 2</li>
-<li>The <strong>Key Name</strong> for the specific key we'll use</li>
+<li>Your <strong>Tenant ID</strong> (found in <strong>Microsoft Entra ID</strong> &gt; <strong>Properties</strong> in the Azure portal).</li>
+<li>The <strong>Key Vault URI</strong> from step 2.</li>
+<li>The <strong>Key Name</strong>.</li>
 </ul>
-<p><strong>Approve the private endpoint connection</strong></p>
+<p>Approve the private endpoint connection:</p>
 <p>After we configure the connection on our end:</p>
 <ol>
-<li><strong>Navigate to your Key Vault</strong> &gt; <strong>Networking</strong> &gt; <strong>Private endpoint connections</strong></li>
-<li><strong>Find and approve</strong> our pending connection request</li>
+<li>Navigate to your <strong>Key Vault</strong> &gt; <strong>Networking</strong> &gt; <strong>Private endpoint connections</strong>.</li>
+<li>Find and approve the pending connection request.</li>
 </ol>
-<p>These steps ensure our application can securely access your Key Vault key for BYOK functionality without requiring your credentials or compromising security.</p>
+<p>These steps ensure the application can securely access your Key Vault key for BYOK functionality without requiring your credentials or compromising security.</p>
 
 
 
@@ -3184,81 +3188,49 @@
 
 
 
-    
   
-  
-  
-    <style>
-      .feedback-container {
-        text-align: center;
-      }
-      [kore-feedback-link] {
-        display: block;
-        padding: 5px 5px 5px 5px;
-        border: 1px solid #eee;
-        width: 168px;
-        margin: auto;
-      }
-      [kore-feedback-link]:hover {
-        background-color: #e9f0fe;
-      }
-      .md-feedback__inner{
-        height: 25px;
-      }
-    </style>
-    <div class="feedback-container">
-      <form class="md-feedback" name="feedback" hidden>
-        <fieldset>
-          <legend class="md-feedback__title">
-            Was this page helpful?
-          </legend>
-          <div class="md-feedback__inner">
-            <div class="md-feedback__list">
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
-                </button>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
-                </button>
+                
               
+              Thanks for your feedback!
             </div>
-            <!-- <div class="md-feedback__note">
+          
+            <div data-md-value="0" hidden>
               
-                <div data-md-value="1" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!
-                </div>
               
-                <div data-md-value="0" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!            
-                </div>
+                
               
-            </div> -->
-          </div>
-        </fieldset>
-      </form>
-      <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Send Feedback</a>
-    </div>
-  
+              Thanks for your feedback!            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 

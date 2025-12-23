@@ -3301,12 +3301,12 @@
 </li>
 </ol>
 <h4 id="setting-up-google-for-inbusiness-productivity-sso">Setting up Google for (In)Business Productivity SSO<a class="headerlink" href="#setting-up-google-for-inbusiness-productivity-sso" title="Permanent link">¶</a></h4>
-<p>To set up the (In)Business Productivity application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.</p>
-<p><strong>Prerequisites</strong>: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the (In)Business Productivity Admin Console.</p>
+<p>To set up the application in your Google Workspace environment, you need to create a service account and configure domain-wide delegation.</p>
+<p><strong>Prerequisites</strong>: You must have Google Workspace administrator privileges and have already selected Google as an OpenID Connect provider in the Admin Console.</p>
 <p><strong>Steps to configure Google</strong>:</p>
 <ol>
 <li><strong>Create Service Account</strong>:<ul>
-<li>Log in to<a href="https://console.cloud.google.com/"> Google Cloud Console</a>.</li>
+<li>Log in to<a href="https://console.cloud.google.com/">Google Cloud Console</a>.</li>
 <li>Navigate to <strong>IAM &amp; Admin &gt; Service Accounts</strong>.</li>
 <li>Click <strong>Create Service Account</strong>.</li>
 <li>Provide a service account name and description.</li>
@@ -3328,7 +3328,7 @@
 </ul>
 </li>
 <li><strong>Configure G Suite Admin Console</strong>:<ul>
-<li>Log in to<a href="https://admin.google.com/"> Google Admin Console</a>.</li>
+<li>Log in to<a href="https://admin.google.com/">Google Admin Console</a>.</li>
 <li>Go to <strong>Security &gt; API Controls &gt; Domain-wide Delegation</strong>.</li>
 <li>Click <strong>Add new</strong>.</li>
 <li>Enter the <strong>Client ID</strong> from the service account.</li>
@@ -3337,7 +3337,7 @@
 </ul>
 </li>
 <li><strong>Copy Configuration Details</strong>:<ul>
-<li>From the downloaded JSON key file, copy the following to (In)Business Productivity:<ul>
+<li>From the downloaded JSON key file, copy the following to the platform:<ul>
 <li><strong>client_email</strong> → <strong>Client Email</strong> field</li>
 <li><strong>private_key</strong> → <strong>Private Key</strong> field</li>
 </ul>
@@ -3345,45 +3345,60 @@
 <li>Enter your G Suite admin email in the <strong>Admin Email</strong> field.</li>
 </ul>
 </li>
-<li><strong>Save</strong> the configuration in (In)Business Productivity.</li>
+<li><strong>Save</strong> the configuration.</li>
 </ol>
 <h3 id="microsoft-azure-configuration">Microsoft Azure Configuration<a class="headerlink" href="#microsoft-azure-configuration" title="Permanent link">¶</a></h3>
 <p>Microsoft Azure Active Directory (now Microsoft Entra ID) provides comprehensive identity and access management with robust security features. This configuration enables secure authentication for your organization's users.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/oidc_overview_3.png" data-desc-position="bottom"><img src="../images/oidc_overview_3.png" alt="open-id-connect" title="open-id-connect" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h4 id="configuration-steps_1">Configuration Steps<a class="headerlink" href="#configuration-steps_1" title="Permanent link">¶</a></h4>
 <ol>
-<li><strong>Select Identity Provider</strong>:<ul>
+<li>
+<p><strong>Select Identity Provider</strong>:</p>
+<ul>
 <li>In the <strong>Configure</strong> section, select <strong>Microsoft Azure</strong>.</li>
 </ul>
 </li>
-<li><strong>Configure Custom Application</strong>:<ul>
-<li><strong>Use Your Microsoft Entra ID App for SSO Login</strong>: Instead of approving the default system-provided app in Microsoft Admin, you can create and configure your own app. Once set up, this app will be used for SSO login for users in your account.</li>
+<li>
+<p><strong>Configure Custom Application</strong>:</p>
+<ul>
+<li>
+<p><strong>Use Your Microsoft Entra ID App for SSO Login</strong>: Instead of approving the default system-provided app in Microsoft Admin, you can create and configure your own app. Once set up, this app will be used for SSO login for users in your account.</p>
+</li>
+<li>
+<p><strong>Redirect URL</strong>: The system displays the Redirect URL required for creating your Microsoft Entra ID App. Copy this URL using the copy icon and use it when configuring your app in the Microsoft Azure portal.</p>
+</li>
 </ul>
 </li>
-<li><strong>Save Configuration</strong>:<ul>
-<li>Click <strong>Save</strong>.</li>
-<li>The <em>Identity Provider information successfully updated</em> message is displayed at the top of the page.</li>
+<li>
+<p><strong>Save Configuration</strong>:</p>
+<ul>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>The <em>Identity Provider information successfully updated</em> message is displayed at the top of the page.</p>
+</li>
 </ul>
 </li>
 </ol>
 <h4 id="setting-up-microsoft-azure-for-inbusiness-productivity-sso">Setting up Microsoft Azure for (In)Business Productivity SSO<a class="headerlink" href="#setting-up-microsoft-azure-for-inbusiness-productivity-sso" title="Permanent link">¶</a></h4>
-<p>To set up the (In)Business Productivity application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.</p>
-<p><strong>Prerequisites</strong>: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the (In)Business Productivity Admin Console.</p>
+<p>To set up the application in your Microsoft Entra ID (formerly Azure AD) environment, you need to register an application and configure authentication settings.</p>
+<p><strong>Prerequisites</strong>: You must have Microsoft Entra ID administrator privileges and have already selected Microsoft Azure as an OpenID Connect provider in the Admin Console.</p>
 <p><strong>Steps to configure Microsoft Azure</strong>:</p>
 <ol>
 <li><strong>Register Application in Microsoft Entra ID</strong>:<ul>
 <li>Log in to <a href="https://portal.azure.com/">Azure Portal</a>.</li>
 <li>Navigate to <strong>Microsoft Entra ID &gt; App registrations</strong>.</li>
 <li>Click <strong>New registration</strong>.</li>
-<li>Provide an application name (e.g., "(In)Business Productivity SSO").</li>
+<li>Provide an application name.</li>
 <li>Select the appropriate supported account types.</li>
-<li>Configure the redirect URI (this will be provided by (In)Business Productivity).</li>
+<li>Configure the redirect URI.</li>
 <li>Click <strong>Register</strong>.</li>
 </ul>
 </li>
 <li><strong>Configure Authentication</strong>:<ul>
 <li>In the registered app, go to <strong>Authentication</strong>.</li>
-<li>Add the redirect URI provided by (In)Business Productivity.</li>
+<li>Add the redirect URI provided by the platform.</li>
 <li>Configure token configuration settings as required.</li>
 <li>Enable <strong>ID tokens</strong> under the Implicit grant and hybrid flows.</li>
 <li>Click <strong>Save</strong>.</li>
@@ -3411,11 +3426,11 @@
 <li><strong>Directory (tenant) ID</strong></li>
 </ul>
 </li>
-<li>Copy these values along with the client secret to configure in (In)Business Productivity.</li>
+<li>Copy these values along with the client secret to configure in the platform.</li>
 </ul>
 </li>
-<li><strong>Complete Configuration in (In)Business Productivity</strong>: Create and Register App in Microsoft Entra ID.</li>
-<li><strong>Save</strong> the configuration in (In)Business Productivity.</li>
+<li><strong>Complete Configuration</strong>: Create and Register App in Microsoft Entra ID.</li>
+<li><strong>Save</strong> the configuration.</li>
 </ol>
 
 
@@ -3426,81 +3441,49 @@
 
 
 
-    
   
-  
-  
-    <style>
-      .feedback-container {
-        text-align: center;
-      }
-      [kore-feedback-link] {
-        display: block;
-        padding: 5px 5px 5px 5px;
-        border: 1px solid #eee;
-        width: 168px;
-        margin: auto;
-      }
-      [kore-feedback-link]:hover {
-        background-color: #e9f0fe;
-      }
-      .md-feedback__inner{
-        height: 25px;
-      }
-    </style>
-    <div class="feedback-container">
-      <form class="md-feedback" name="feedback" hidden>
-        <fieldset>
-          <legend class="md-feedback__title">
-            Was this page helpful?
-          </legend>
-          <div class="md-feedback__inner">
-            <div class="md-feedback__list">
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
-                </button>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
-                </button>
+                
               
+              Thanks for your feedback!
             </div>
-            <!-- <div class="md-feedback__note">
+          
+            <div data-md-value="0" hidden>
               
-                <div data-md-value="1" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!
-                </div>
               
-                <div data-md-value="0" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!            
-                </div>
+                
               
-            </div> -->
-          </div>
-        </fieldset>
-      </form>
-      <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Send Feedback</a>
-    </div>
-  
+              Thanks for your feedback!            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 

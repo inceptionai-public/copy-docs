@@ -3114,7 +3114,25 @@
 </li>
 <li>
 <p>Configure Autonomous Agent: The configuration step establishes the technical foundation of your agent through API integration.  </p>
-<p>Define API fields as per the details below:</p>
+<p>Define API fields as per the details below: In the Define Autonomous API section, select between <strong>Sync Mode</strong> and <strong>Async Mode</strong>, depending on the requirements of your interactions.</p>
+<ol>
+<li>
+<p><strong>Sync Mode</strong>: In sync mode, users receive immediate responses. This
+    mode doesn’t require a POST URL or access token, making it simple for
+    quick interactions. However, sync mode includes a 60-second timeout, so
+    it’s best suited for autonomous that can be completed within that
+    timeframe.</p>
+</li>
+<li>
+<p><strong>Async Mode:</strong> In async mode, the setup is more flexible and is ideal
+    for cases that may take longer than 60 seconds. This mode requires a
+    POST URL and the agent’s access token to be specified in the Autonomous agent
+    endpoint. Once the agent completes its process, Autonomous posts the response
+    back to the specified endpoint.</p>
+</li>
+</ol>
+<p>For Async Mode, enter the <strong>POST URL</strong> and <strong>Access token</strong>.
+ <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/async.png" data-desc-position="bottom"><img src="../images/async.png" alt="Admin Console" title="Admin Console" style="border: 1px solid gray; zoom:70%;"></a></p>
 <ul>
 <li>
 <p><strong>URL</strong>: Enter the endpoint URL of the agent obtained from the Agentic Platform.</p>
@@ -3135,7 +3153,7 @@
 <p><strong>Content Type</strong>: Enter a specific label that tells the API what kind of data you are sending.</p>
 </li>
 </ul>
-<p>Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment.md#create-an-environment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from (In)Agent Platform.</p>
+<p>Curl Import: For existing APIs, use the CURL Import functionality to automatically populate API configuration, refer <a href="../../agent-platform/ai-agents/agentic-apps/deployment/app-deployment" target="_blank">Environment</a> to learn more about retrieving cURL of AI Agent from Agent Platform.</p>
 <ol>
 <li>Click <strong>Curl Import</strong> to open the import interface.</li>
 <li>Paste your CURL command into the text box.</li>
@@ -3184,7 +3202,7 @@
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You cannot directly import agents exported from the (In)Agent Platform. Only Autonomous Agents that were originally created and exported from (In)Business Productivity can be imported using this feature.</p>
+<p>You cannot directly import agents exported from the (In)Agent Platform. Only Autonomous Agents that were originally created and exported from application can be imported using this feature.</p>
 </div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
 <p>Autonomous Agents integrate seamlessly with the (In)Agent Platform to provide intelligent, automated assistance for business tasks. You can trigger an agent from the <strong>Compose bar &gt; Agents &gt; agent tab</strong>. Here's how they operate in practice:</p>
@@ -3199,81 +3217,49 @@
 
 
 
-    
   
-  
-  
-    <style>
-      .feedback-container {
-        text-align: center;
-      }
-      [kore-feedback-link] {
-        display: block;
-        padding: 5px 5px 5px 5px;
-        border: 1px solid #eee;
-        width: 168px;
-        margin: auto;
-      }
-      [kore-feedback-link]:hover {
-        background-color: #e9f0fe;
-      }
-      .md-feedback__inner{
-        height: 25px;
-      }
-    </style>
-    <div class="feedback-container">
-      <form class="md-feedback" name="feedback" hidden>
-        <fieldset>
-          <legend class="md-feedback__title">
-            Was this page helpful?
-          </legend>
-          <div class="md-feedback__inner">
-            <div class="md-feedback__list">
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
-                </button>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
-                </button>
+                
               
+              Thanks for your feedback!
             </div>
-            <!-- <div class="md-feedback__note">
+          
+            <div data-md-value="0" hidden>
               
-                <div data-md-value="1" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!
-                </div>
               
-                <div data-md-value="0" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!            
-                </div>
+                
               
-            </div> -->
-          </div>
-        </fieldset>
-      </form>
-      <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Send Feedback</a>
-    </div>
-  
+              Thanks for your feedback!            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 

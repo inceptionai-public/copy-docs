@@ -3761,7 +3761,7 @@
 <p><a href="#step-6-publish">Step 6: Publish the Agent.</a></p>
 <p>Prerequisites:</p>
 <ul>
-<li>Administrator access to (In)Business Productivity and the system you want to integrate.</li>
+<li>Administrator access and the system you want to integrate.</li>
 <li>API documentation for Schema API and Action API of the system.</li>
 <li>Curl commands for the ID resolver and the meta resolver of the system.</li>
 </ul>
@@ -3874,7 +3874,7 @@ You can navigate through records using the "Prev field" and "Next field" options
 </ol>
 <p><strong>Field Options</strong>: Field Options are predefined choices for single-select or multi-select fields, helping users filter and retrieve data accurately. These options are activated when a field is identified as single-select or multi-select and are typically fetched from the schema API.</p>
 <p>Each option includes a label, value, display order, and visibility status. This structure allows for flexible and customizable presentation of choices to the user.</p>
-<p><strong>A crucial feature of Field Options is the mapping between user-friendly labels and technical keys required for API requests</strong>. For example, while a user might see a "Priority" field with options like "High," "Medium," and "Low," the API might use corresponding numerical or string values. This mapping ensures accurate data retrieval by configuring what is displayed to the user and what is sent in API requests.</p>
+<p>A crucial feature of Field Options is the mapping between user-friendly labels and technical keys required for API requests. For example, while a user might see a "Priority" field with options like "High," "Medium," and "Low," the API might use corresponding numerical or string values. This mapping ensures accurate data retrieval by configuring what is displayed to the user and what is sent in API requests.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This field is applicable only if the Field Type is Single Select or Multi Select.</p>
@@ -3959,13 +3959,8 @@ You can navigate through records using the "Prev field" and "Next field" options
 <li>
 <p>Click <strong>Pool data into the dictionary</strong>. The preview tab is displayed.</p>
 </li>
-<li>
-<p>On the Preview tab, the pooled data is displayed.
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/agent(18).png" data-desc-position="bottom"><img src="../images/agent(18).png" alt="API Agent" title="" style="border: 1px solid gray; zoom:70%;"></a></p>
-</li>
-<li>
-<p>Click <strong>Done</strong>. The dictionary is saved.</p>
-</li>
+<li>On the Preview tab, the pooled data is displayed.</li>
+<li>Click <strong>Done</strong>. The dictionary is saved.</li>
 </ol>
 <h4 id="preview">Preview<a class="headerlink" href="#preview" title="Permanent link">¶</a></h4>
 <p>Displays processed data to users, initially showing five records with an option to load more. Users can configure an “open” option that appears when hovering over any record. Clicking it will open a record in a new tab. </p>
@@ -3975,7 +3970,7 @@ You can navigate through records using the "Prev field" and "Next field" options
 <li>To configure the URL, click  <strong>+ Create URL</strong>.</li>
 <li>The Open URL pop-up is displayed.  </li>
 <li>
-<p>Enter the Static URL. For example, <a href="https://team.atlassian.net/browse/">https://team.atlassian.net/browse/</a>.</p>
+<p>Enter the Static URL. For example, <code>https://team.atlassian.net/browse/</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can create a Dynamic URL using the response objects.</p>
@@ -4380,81 +4375,49 @@ HubSpot integrations.</p>
 
 
 
-    
   
-  
-  
-    <style>
-      .feedback-container {
-        text-align: center;
-      }
-      [kore-feedback-link] {
-        display: block;
-        padding: 5px 5px 5px 5px;
-        border: 1px solid #eee;
-        width: 168px;
-        margin: auto;
-      }
-      [kore-feedback-link]:hover {
-        background-color: #e9f0fe;
-      }
-      .md-feedback__inner{
-        height: 25px;
-      }
-    </style>
-    <div class="feedback-container">
-      <form class="md-feedback" name="feedback" hidden>
-        <fieldset>
-          <legend class="md-feedback__title">
-            Was this page helpful?
-          </legend>
-          <div class="md-feedback__inner">
-            <div class="md-feedback__list">
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"></path></svg>
-                </button>
               
-                <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"></path></svg>
-                </button>
+                
               
+              Thanks for your feedback!
             </div>
-            <!-- <div class="md-feedback__note">
+          
+            <div data-md-value="0" hidden>
               
-                <div data-md-value="1" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!
-                </div>
               
-                <div data-md-value="0" hidden>
-                  
-                  
-                    
-                  
-                  
-                  
-                    
-                    
-                  
-                  Thanks for your feedback!            
-                </div>
+                
               
-            </div> -->
-          </div>
-        </fieldset>
-      </form>
-      <a kore-feedback-link="true" href="#" target="_blank" rel="noopener">Send Feedback</a>
-    </div>
-  
+              Thanks for your feedback!            
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 
