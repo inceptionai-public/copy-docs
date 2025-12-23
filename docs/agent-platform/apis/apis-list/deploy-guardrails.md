@@ -2,7 +2,7 @@
 
 # Deploy Guardrails API
 
-This API deploys predefined **guardrails** to enhance security, compliance, and content moderation in AI interactions. These guardrails act as filters or constraints to ensure safe and appropriate AI responses.
+This API deploys predefined guardrails to enhance security, compliance, and content moderation in AI interactions. These guardrails act as filters or constraints to ensure safe and appropriate AI responses.
 
 Users can deploy a specific guardrail from a predefined set of options, including:
 
@@ -66,7 +66,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -190,4 +190,3 @@ curl --location 'https://{host}/api/public/guardrails/deploy' \
    </td>
   </tr>
 </table>
-

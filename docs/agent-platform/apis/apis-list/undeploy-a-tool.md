@@ -2,9 +2,9 @@
 
 # Undeploy a Tool API
 
-This API undeploys a tool that is deployed in an environment. 
+This API undeploys a tool that's deployed in an environment. 
 
-The API response includes the **tool ID** and the **tool undeployment status**. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the tool undeployment status.
+The API response includes the tool ID, dock status ID and the tool undeployment status. After receiving the response, use the <code>dockStatusId</code> to call the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} and verify the status of the task.
 
 
 <table>
@@ -54,7 +54,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
+   <td>The environment URL.
    </td>
    <td>String
    </td>

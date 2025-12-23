@@ -2,7 +2,7 @@
 
 # Get Dock Status API
 
-This API allows users to track the status of ongoing or completed jobs related to tools or models. After triggering operations like **import**, **export**, **deploy**, or **undeploy**, it provides real-time updates on progress, success, or failure, enabling efficient monitoring of execution.
+This API allows users to track the status of ongoing or completed jobs related to tools or models. After triggering operations like **import**, **export**, **deploy**, or **undeploy**, this api is used to get real-time updates on progress, success, or failure, enabling efficient monitoring of execution.
 
 
 <table>
@@ -52,7 +52,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -62,7 +62,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
   <tr>
    <td><strong>dockStatusId</strong>
    </td>
-   <td>The dock status ID that is received in the response.
+   <td>The dock status ID that's received in the response.
    </td>
    <td>String
    </td>
@@ -158,4 +158,3 @@ No parameters are passed.
    </td>
   </tr>
 </table>
-

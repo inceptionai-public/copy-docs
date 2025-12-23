@@ -1,6 +1,6 @@
 # Evaluate Guardrails for Efficiency
 
-After adding and configuring the necessary scanners, you can verify that they adhere to the specified standards. Test the effectiveness of an individual scanner or a group of scanners and then tweak the scanner's settings if required.
+After enabling and configuring the necessary scanners, you can verify that they adhere to the specified standards. Test the effectiveness of an individual scanner or a group of scanners and then tweak the scanner's settings if required.
 
 Steps to test the Guardrails or Scanners:
 
@@ -26,4 +26,3 @@ Steps to test the Guardrails or Scanners:
         * For the **Relevance Scanner**, if the similarity between the prompt and generated answer is below the user-defined threshold, the Risk Score is 1; otherwise, it's 0.
 
 4. Based on the results, you can adjust the Scanner's settings and test them again if required.
-

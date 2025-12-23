@@ -7,14 +7,7 @@ The Agent Protocol API enables programmatic interaction with your agents, allowi
 
 ### Base URL
 
-All requests are made to the following base URL. 
-
-```
-https://<agent-platform-env>.<domain>.com/api/v2/
-```
-
-
-Replace `<agent-platform-env>` with your specific environment name and `<domain>` with your domain name.
+All requests are made to the base URL `https://<host>.com/api/v2/`.
 
 
 ### Authentication
@@ -27,7 +20,7 @@ x-api-key: YOUR_API_KEY
 ```
 
 
-Note: API keys are **app-specific**. They are not shared across accounts or workspaces. Ensure that you use the API key associated with the correct app when making requests. 
+Note: API keys are **app-specific**. They're not shared across accounts or workspaces. Ensure that you use the API key associated with the correct app when making requests. 
 
 ## Key Concepts and Terminologies
 
@@ -82,7 +75,7 @@ Session resolution follows a **priority-based approach** to determine how a sess
    <td>Attempts to find an existing session with the given sessionReference.
 <ul>
 
-<li>If a session with the given sessionReference exists, it is retrieved.</li>
+<li>If a session with the given sessionReference exists, it's retrieved.</li>
 
 <li>If no session is found, a new session is created using the sessionReference.</li>
 
@@ -173,6 +166,8 @@ Sample Response
 * Authorization is only required once per user (across sessions) or until the token expires.
 * If one or more authorizations are pending, all of them must be completed before continuing. If the required authorization is not completed, the associated tools will return an error upon invocation.
 
-## See Also
+<hr/>
+
+ **Related resource** 
 
 * [List of available APIs](../../apis/list-of-apis.md).

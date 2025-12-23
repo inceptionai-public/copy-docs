@@ -4,7 +4,7 @@ The S3 Storage Integration functionality broadens (In)Agent Platform's capabilit
 
 **To integrate with your S3 account, follow these steps**:
 
-1. Click the **Settings** icon on the top navigation bar of the application. The **Integrations** page is displayed.
+1. Click the **Settings** icon on the top navigation bar. The **Integrations** page is displayed.
 
     <img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;">
 
@@ -36,7 +36,7 @@ You can test your connection after you provide the details to verify the accurac
 
 1. If the connection is successful, you can click **Confirm** and complete the connection process.
 2. If the connection fails, you can verify the details entered or cancel the set-up process.
-3. From the connections table, you can test the connection by clicking the **Play** button.
+3. From the connections table, you can test the connection by clicking the **▶** icon.
 
     !!! note
 

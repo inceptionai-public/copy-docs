@@ -2,7 +2,7 @@
 
 # File Upload API
 
-The API uploads a file to the local server for seamless usage in multimodal nodes and across the (In)Agent Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.
+The API uploads a file to the server for seamless usage in multi modal nodes and across the Platform. The API returns a unique <code><em>file URL</em></code> and <code><em>file ID</em></code> for further action on the file.
 
 The following file extensions are currently supported:
 
@@ -75,7 +75,7 @@ This method directly calls the endpoint and returns the <code>fileId</code> and 
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>.
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -221,7 +221,7 @@ This API starts the upload process, returning a <code>session ID</code>. The fil
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -396,7 +396,7 @@ The API uploads the file in multiple chunks. The <code>session ID</code> from th
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai</code>
+   <td>The environment URL.
    </td>
    <td>String
    </td>
@@ -612,4 +612,3 @@ No parameters are passed.
    </td>
   </tr>
 </table>
-

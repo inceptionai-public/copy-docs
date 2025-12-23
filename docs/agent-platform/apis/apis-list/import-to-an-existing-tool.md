@@ -53,7 +53,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md/#h
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code></td>
+   <td>The environment URL.
    <td>String
    </td>
    <td>Required
@@ -206,4 +206,3 @@ curl --location 'https://{host}/api/public/tools/a-fbxxxxxf4-20x5-58xb-8b94-00xx
    </td>
   </tr>
 </table>
-
