@@ -112,7 +112,7 @@ The Exit Scenario Key-Value fields help identify when to end the interaction wit
 * **Agent Node**: This feature lets you build an AI Agent using LLMs, Tool calling, and generative AI. It supports entity collection, context handling, multilingual conversations, and external integrations—enabling dynamic, human-like interactions for employees and customers.
 * **Prompt Node**: Leverage this node to unlock the power of Generative AI with your prompts, enabling you to build creative and custom use cases.
 * **Repeat Responses**: Use LLM to reiterate the last app responses when the Repeat App Response event is triggered.
-* **Rephrase Dialog Responses**: Enhance end-user experience with empathetic and contextual app responses.
+* **Rephrase Responses**: Enhance end-user experience with empathetic and contextual app responses.
 * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
 * **Zero-shot ML Model**: Uses the Open AI LLM model for intent identification during run time based on semantic similarity.
 * **Few-shot ML Model**: Uses the Platform hosted embeddings for intent identification during run time based on semantic similarity.
@@ -130,12 +130,20 @@ Learn more about [Automation AI - GenAI Features](genai-features-automationai.md
 ## Search AI - GenAI Features
 
 * **Answer Generation**: This feature helps generate an answer to the user question based on the data ingested into the Search AI application.
+
+* **Enrich Chunks with LLM**: This feature helps leverage the capabilities of an external LLM to refine, update, or enrich the chunks extracted from the ingested content. 
+
 - **Metadata Extractor Agent**: This feature is used to extracts relevant sources and fields from a query, map them to structured data, and apply filters or boosts for accurate retrieval. This is particularly useful for data from third party applications.  
 - **Query Rephrase for Advanced Search API**: This feature is used to add contextual information to the user queries and enhance them for relevance. 
+
 - **Query Transformation**: This feature is used to identify key terms within a query, removing noise and prioritizing relevant documents.
-- **Result Type Classification**: This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query.
+
 * **Rephrase User Query**: Improve intent detection and entity extraction by enriching the user query with relevant details from the ongoing conversation context.
+
+- **Result Type Classification**: This feature is used in Agentic RAG to determine whether the user seeks a specific answer or a list of search results in response to the query.
+
 * **Transform Documents with LLM**: Use LLM to transform documents ingested into Search AI.
+
 * **Vector Generation - Image**: Generate visual embeddings for ingested image content and user queries, enabling the system to retrieve relevant images and provide accurate responses to end-user queries.
 
 * **Vector Generation - Text**: Generate embeddings for the ingested textual content and user queries, enabling the system to retrieve relevant information and provide accurate responses.
@@ -163,7 +171,6 @@ Learn more about [Agent AI - GenAI Features](genai-features-agentai.md).
 * **Agent Response Rephrasing**: Generate agent best responses based on the conversation history and current message to support agent coaching.
 * **Conversation Summary**: Create conversation summaries during chat transfers or create closing notes of conversations between users and agents.
 * **Disposition Prediction for Agent Wrap-Up**: Auto-suggest disposition codes based on conversation context and disposition metadata.
-* **Post conversation Sentiment analysis**: Post conversation sentiment and emotion detection.
 * **Sentiment Analysis**: Identify customer sentiment across agent conversations through Quality AI using LLMs.
 
 
@@ -172,6 +179,7 @@ Learn more about [Contact Center AI - GenAI Features](genai-features-contactcent
 ## Quality AI - GenAI Features
 
 * **Advanced Topic Discovery based on Custom Taxonomy and Resolution Detection**: Extract topics and intents from agent conversations detect resolution of agent conversations to discover levers based on customer sentiment, Handle Time and Resolution and quickly surface trends and anomalies based on these outcomes.
+
 - **Agent Empathy Identification**: Identify Agent empathy instances where customers have expressed negative sentiment through Quality AI using LLMs.
 - **By Hold Adherence**: This feature detects when an agent places a user on hold and resumes the conversation.
 - **By Transfer Adherence**: This feature identifies whether the agent informs the customer about the transfer.

@@ -26,11 +26,12 @@ There are two pre-configured groups available:
 To create a new agent group, follow these steps:
 
 1. On the Agent Groups page, select `Add Group`.  
-<img src="../images/add-group-button.png" alt="Add Group Button" title="Add Group Button" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/add-agent-group.png" alt="Add Group" title="Add Group" style="border: 1px solid gray; zoom:80%;">
 
 2. In the New Group window, provide the input for the following fields:
     * `Group Name` - Enter the agent group name.
     * `Description` - Enter a brief description.
+    * `Agent Status` - (Optional) Select statuses for the Agent Group. Agents in the group see the selected statuses along with the system-defined ones. The system shows only system statuses for the group when no agent statuses are selected.
 
 ### Add Agents to a Group
 
@@ -122,6 +123,7 @@ To create a new agent status, follow these steps:
     1. `Status Name`-Enter the status name.
     2. `Status Type`-Select the status type: `Away` or `Busy`.
     3. `Description`-Type in a brief description of the status.
+    4. `Assign to Agent Groups`-Select the agent groups to assign the statuses. The system makes the status available to all agents in the selected groups. It's mandatory to add an agent group while creating a custom agent status.
 3. Select `Add & Exit` to create the status and exit the window or select `Add & Stay` to create the status and continue to a new one.  
 4. The status created successfully success message appears on-screen and the new status adds to the Agent Status list.  
 
@@ -246,9 +248,9 @@ Conversation statuses apply under specific conditions for certain channels. The 
 | `Snooze`                                   | If agent marked the customer on Snooze                                            | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
 |                                              |                                                                                   |                        | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
 | `On Agent Interruption`                    | If the agent disconnects                                             | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
-| `On Customer Interruption after Agent Transfer` | If customer gets disconnected, conversations will wait with agent     | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
+| `On Customer Interruption after Agent Transfer` | If customer gets disconnected, conversations wait with agent     | Live Chat              | To Agent     | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name.           |
 |                                              |                                                                                   |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
-| `On Customer Interruption in Queue`        | If the customer gets disconnected, conversations will wait in the queue |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
+| `On Customer Interruption in Queue`        | If the customer gets disconnected, conversations wait in the queue |                        | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name            |
 | `Idle Reminder For Customer`               | If the customer’s response time is greater than the set percentile of total idle customer conversations | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 | `Idle`                                     | If the customer hasn't responded for the set amount of time                      | Live Chat, Messaging.  | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
 | `Auto Expire`                              | If the customer’s response time is greater than the set amount of time            | Live Chat              | To User      | Agent Full Name, Agent First Name, Agent Last Name, Agent Nick Name, Elapsed Time, Expired Time. |
@@ -257,13 +259,13 @@ Conversation statuses apply under specific conditions for certain channels. The 
 
 ### Conversation Statuses by Channel (Email)
 
-| **Status**                       | **Applicability**                                                                                                                   | **Channel** | **Message** | **Variables**                                                              |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
+| **Status**                       | **Applicability**                     | **Channel** | **Message** | **Variables**                                                              |
+|----------------------------------|---------------------------------------|-------------|-------------|----------------------------------------------------------------------------|
 | `On Connect (Default Message(s))`                        | When the agent connects                                                   | Email       | To User    | Time Left to Inactivity, <br>Time Left to Expiry.|
 | `On Connect (Queue  & Skill Specific Messages)`<br>(Acknowledgement Mail Mode)                          | When the Queue, Skill, or both match the configured combination<br>(Controlled through a toggle: “Send OnConnect Message Only for First Agent.” When enabled, the system sends the OnConnect message only once as an acknowledgment email. Subsequent agent assignments in the same email thread don't trigger OnConnect messages.)                                                    | Email       | To User    | Time Left to Inactivity, <br>Agent First Name, <br>Agent Last Name, <br>Agent Nick Name, <br>Queue Name, <br> Skill Name. |
 | `Overdue`                          | If the agent hasn't responded for the set amount of time (in hours and minutes).                                                    | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| `Due Reminder for Agent Inactivity`| If the agent’s response time is under the set amount of time (in hours).                                                            | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time is moved back to Queue, once it turns overdue if the agent hasn't responded for the set amount of time (in hours and minutes). | Email       | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
-| `Agent Offline`                    | If an agent gets disconnected unexpectedly, conversations will wait in queue for a set amount of time (in hours and minutes).       | Email       | To Agent    |                                                                            |
+| `Due Reminder for Agent Inactivity`| If the agent’s response time is under the set amount of time (in hours).                                     | Email | To Agent    | Elapsed Time, Expired Time, Time Left to Inactivity, Time it takes to move back to Queue, once it turns overdue if the agent hasn't responded for the set amount of time (in hours and minutes).|Email|To Agent| Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry.|
+| `Agent Offline`                    | If an agent gets disconnected, conversations wait in queue for a set amount of time (in hours and minutes).       | Email       | To Agent    |                                                                            |
 | `Customer Idle`                    | If the customer hasn't responded for the set amount of time (in hours and minutes) since the last agent response.                  | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 | `Due Reminder for Auto Expiry`     | If the customer’s response time is under the set amount of time (in hours) before Auto Expiry.                                      | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
 | `Auto Expire`                      | When the conversation turns idle if the customer doesn't respond for the set amount of time (in hours and minutes) the interaction expires. | Email       | To User     | Elapsed Time, Expired Time, Time Left to Inactivity, Time Left to Expiry. |
@@ -275,21 +277,20 @@ Conversation statuses apply under specific conditions for certain channels. The 
 For each status, you can configure the following:
 
 1. The response time after which the status triggers: Set this either as a percentage value of a total or as minutes and seconds.
-    1. The statuses for which you can set a percentage value are: `Due Reminder For Agent`, and `Idle Reminder For Customer`.
-    2. The statuses that don't require percentile or response time configuration are: `On Connect`, `On Interruption`, and `On Close`.  
-        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">   
-    The following applies to emails:
-    3. The statuses for which you can set a response time (in hours) are `Due Reminder for Agent Inactivity`, and `Due Reminder for Auto Expiry`.
-    4. The status for which there is no response time is `On Close`.
-    5. The statuses for which you can set a response time (in hours and minutes) are `Overdue`, `Agent Inactivity`, `Agent Offline`, `Customer Idle`, and `Auto Expire`.
+
+    * The statuses for which you can set a percentage value are: `Due Reminder For Agent`, and `Idle Reminder For Customer`.  
+    * The statuses that don't require percentile or response time configuration are: `On Connect`, `On Interruption`, and `On Close`.   
+        <img src="../images/response-status.png" alt="Status Configuration" title="Status Configuration" style="border: 1px solid gray; zoom:80%;">     
+        The following applies to emails:  
+    * The statuses for which you can set a response time (in hours) are `Due Reminder for Agent Inactivity`, and `Due Reminder for Auto Expiry`.  
+    * The status for which there is no response time is `On Close`.  
+    * The statuses for which you can set a response time (in hours and minutes) are `Overdue`, `Agent Inactivity`, `Agent Offline`, `Customer Idle`, and `Auto Expire`.
 
     !!! note
 
         The configurable limit for Overdue, Agent Inactivity, and Auto Expire for the Email channel is 30 days.
 
-2. The messaging goes out to either the user or the agent. Edit Status
-Messages by selecting the Edit icon under the Message column.  
-    <img src="../images/status-edit.png" alt="Status Edit" title="Status Edit" style="border: 1px solid gray; zoom:80%;">
+2. The messaging goes out to either the user or the agent. Edit status messages by selecting the Edit icon under the Message column.  
 
     1. Each status lets you edit the message text, add variables and select the language.  
         <img src="../images/onconnect-other-channels.png" alt="Status Message Dialog Box" title="Status Message Dialog Box" style="border: 1px solid gray; zoom:80%;">
@@ -313,7 +314,7 @@ By default, the Allow Agent to Pause or Resume feature is disabled. However, adm
 By default, the Allow Assistant to Pause/Resume feature isn't available. However, admins can enable it for AI Agents (automation) handling voice interactions, allowing them to pause the recording when collecting Personally Identifiable Information (PII).  
 <img src="../images/allow-virtual-assistants-to-pause-resume.png" alt="Allow Assistant Dialogs to Pause/Resume Call Recording" title="Allow Assistant Dialogs to Pause/Resume Call Recording" style="border: 1px solid gray; zoom:80%;">
 
-Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/contact-center/interactions.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
+Recorded calls are available to supervisors on the Dashboard’s [Interactions](../../../analytics/overview/conversations.md#call-recording){:target="_blank"} tab. The system doesn't record interactions in the Interactions tab during the period when recording stops or pauses.
 
 The system logs the changes to the Call Recording Control settings on the [Admin Console](../../../administration/adminconsole.md#accessing-the-admin-console) > Analytics > [Audit Report page](../../../administration/analytics.md#audit-report-details).
 
@@ -321,7 +322,7 @@ The system logs the changes to the Call Recording Control settings on the [Admin
 
 ### Transfer to External Contacts
 
-If enabled, this option lets agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. Please see [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
+If enabled, this option lets agents to transfer ongoing customer calls to the external contacts list, via the Agent Console. See [Agent Console > Transfer Interactions](../../../console/interacting-with-customers.md#transfer-interactions){:target="_blank"} to learn more.  
 <img src="../images/transfer-to-external-contacts.png" alt="Enable Transfer to External Contacts" title="Enable Transfer to External Contacts" style="border: 1px solid gray; zoom:80%;">
 
 ### Enforce Skill Match for Transfers
@@ -425,5 +426,5 @@ This setting lets admins to configure a maximum total digital conversation limit
 
     You can set the total conversation limit for a user only from the User section. This setting is not available in the user profile under the Monitor tab.  
 
-When the Total digital conversation limit is reached,  an agent will move to System Busy status. This setting is disabled by default.  
+When the Total digital conversation limit is reached,  an agent moves to System Busy status. This setting is disabled by default.  
 <img src="../images/total-digital-conversations-enable.png" alt="Enable Total Digital Conversations Limit" title="Enable Total Digital Conversations Limit" style="border: 1px solid gray; zoom:80%;">

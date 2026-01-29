@@ -2,6 +2,32 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Voice Gateway** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">ASR and TTS</font>
+
+**TTS Streaming at Start Flow Level**
+
+TTS Streaming can be configured at the start flow level to reduce voice response latency. The platform maintains a persistent streaming connection throughout the call and adapts playback based on the model's response streaming behavior. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#tts-streaming)
+
+**Continuous Gather at Start Flow Level**
+
+Provided a Continuous Gather option at the start flow when TTS streaming is enabled. Caller input is captured continuously to reduce latency and support agentic voice interactions, without altering default behavior unless configured. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md#continuous-gather)
+
+**Model Selection for ASR and TTS Providers**
+
+The platform now allows model selection for ASR and TTS providers directly from the app-level and Start Flow-level UIs. The selected model is consistently applied across design-time and runtime voice scenarios, including interactions, transcriptions, and monitoring, without requiring call-control parameters. [Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#voice-preferences)
+
+**TTS Providers: Required Language Support**
+
+The platform ensures that all natively supported TTS providers offer support for required languages wherever the vendor supports them. This applies to AWS Amazon Polly, Google, Microsoft Azure, ElevenLabs, OpenAI TTS, Deepgram, and similar integrations. The required languages include English, Japanese, Spanish, German, Arabic, French, Hindi, and Filipino.
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
@@ -19,7 +45,7 @@ A new utility function, voiceUtils.transfer enables seamless call transfers betw
 
 **Support DTMF Input for Caller After External Call Transfer**
 
-The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI agent, preserving the intended automated experience.
+The platform now lets callers to provide DTMF input when an agent transfers a call to an external IVR or automated dialog system. This ensures that callers can continue interacting with the destination IVR or AI Agent, preserving the intended automated experience.
 
 <font size="4">Inbound and Outbound Calls</font>
 
@@ -63,13 +89,13 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 **Voice Call Recording - Failure Scenario Handling**
 
-When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+When fetching a voice call recording, the system displays context-specific messages. If the initial fetch or subsequent retries fail, users are prompted to retry, with unlimited attempts allowed, and a 15-minute wait message for repeated failures. If the 24-hour job fails, a final message advises contacting the administrator, with no action button displayed. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 <font size="4">Text-to-Speech (TTS)</font>
 
 **Agent Platform – Text Streaming Support for Deepgram and ElevenLabs TTS**
 
-Agent Platform now supports end-to-end streaming via the Voice Gateway for Deepgram and ElevenLabs TTS engines, delivering real-time AI agent voice responses. A new ‘TTS Streaming’ flag in the Automation Node controls this feature. When enabled, it automatically disables the Real-time Voice Interactions flag to prevent conflicts. Streaming provides low-latency audio playback, gracefully falls back to standard TTS if interrupted, maintains full backward compatibility with existing configurations, and captures streaming latency metrics for monitoring performance. [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#full-autonomy)
+Agent Platform now supports end-to-end streaming via the Voice Gateway for Deepgram and ElevenLabs TTS engines, delivering real-time AI Agent voice responses. A new ‘TTS Streaming’ flag in the Automation Node controls this feature. When enabled, it automatically disables the Real-time Voice Interactions flag to prevent conflicts. Streaming provides low-latency audio playback, gracefully falls back to standard TTS if interrupted, maintains full backward compatibility with existing configurations, and captures streaming latency metrics for monitoring performance. [Learn more :octicons-arrow-right-24:](../../flows/node-types/automation.md#full-autonomy)
 
 <font size="4">Configuration</font>
 
@@ -136,7 +162,7 @@ The voicemail feature in `voiceutils.voicemail` now supports call control parame
 
 **Voice Call Recordings Retention Configuration for On-Prem Customers**
 
-On-prem customers can now configure a retention period for voice call recordings to meet compliance and storage needs. Recordings are permanently deleted after expiration, with email notifications sent 7 days before and upon deletion. Deleted recordings display the message: “Recording not available. It may have been deleted as per your data retention policy.” Customers who do not opt in remain unaffected. All configuration and deletion actions are logged in the admin console for audit purposes. [Learn more :octicons-arrow-right-24:](../../analytics/contact-center/interactions.md#call-recording)
+On-prem customers can now configure a retention period for voice call recordings to meet compliance and storage needs. Recordings are permanently deleted after expiration, with email notifications sent 7 days before and upon deletion. Deleted recordings display the message: “Recording not available. It may have been deleted as per your data retention policy.” Customers who do not opt in remain unaffected. All configuration and deletion actions are logged in the admin console for audit purposes. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#call-recording)
 
 <font size="4">API</font>
 
@@ -260,7 +286,7 @@ The updated SIP Trunk Configuration for Agent AI now provides easier integration
 
 * **SIPREC (SIP Recording)**: Agent AI acts as a SIPREC server, receiving duplicated audio streams directly from the contact center platform or Session Border Controller (SBC).  
 * **WebSockets Audio Streaming**: For cloud-native platforms (for example, Genesys AudioHook), Agent AI uses secure WebSocket connections to subscribe to real-time audio feeds from the contact center's cloud environment. 
-[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md/#sip-trunk-setup)
+[Learn more :octicons-arrow-right-24:](../../channels/voice-gateway/configure-voice-gateway.md#sip-trunk-setup)
 
 **Enable Call Recordings via SIPREC for Third-Party Agent Desktops**
 

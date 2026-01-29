@@ -20,8 +20,7 @@ Steps to buy a new phone number:
     2. Select either the **Local** or **Toll-Free Number** option.
     3. Select the **State**.
     4. Enter the **Area Code**.
-    5. After configuring the fields, Contact Center AI displays the monthly fee and the operational charge per minute.  
-        <img src="../images/get-new-phone-number-details.png" alt="Get New Phone Number Details" title="Get New Phone Number Details" style="border: 1px solid gray; zoom:70%;">
+    5. After configuring the fields, Contact Center AI displays the monthly fee and the operational charge per minute. 
 
 2. Configure an available number with the following steps:
 
@@ -41,24 +40,19 @@ Steps to buy a new phone number:
 
 Steps to attach a flow to the phone number:
 
-1. Select **+ Attach Flow**. Hovering over the pie icon displays **No Flow Attached**.  
-    <img src="../images/attach-a-flow.png" alt="Attach Flow" title="Attach Flow" style="border: 1px solid gray; zoom:80%;">
+1. Select **+ Attach Flow**. Hovering over the pie icon displays **No Flow Attached**.
 
-2. Select a **Start Flow** you want to add to this number and select **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).  
-    <img src="../images/add-start-flow.png" alt="Add Start Flow" title="Add Start Flow" style="border: 1px solid gray; zoom:80%;">
+2. Select a **Start Flow** you want to add to this number and select **Done**. You can add a start flow by clicking **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 
-3. The attached flow appears. Hovering over the pie icon displays **Configured**.  
-    <img src="../images/flow-is-attached.png" alt="Voice Flow Configured" title="Voice Flow Configured" style="border: 1px solid gray; zoom:80%;">
+3. The attached flow appears. Hovering over the pie icon displays **Configured**.
 
 ### Edit a Phone Number
 
 Steps to edit a previously added phone number:
 
-1. Select **︙** and then select **Update**.  
-    <img src="../images/update-phone-number.png" alt="Update Phone Number" title="Update Phone Number" style="border: 1px solid gray; zoom:80%;">
+1. Select **︙** and then select **Update**.
 
-2. On the **Forward to Phone Number** page, select **Change**.  
-    <img src="../images/change-button.png" alt="Change Button" title="Change Button" style="border: 1px solid gray; zoom:70%;">
+2. On the **Forward to Phone Number** page, select **Change**.
 
 3. Make the necessary edits, and select **Done**. A success confirmation message appears.
 
@@ -68,13 +62,11 @@ Deleting a phone number means stopping all services associated with it. If you r
 
 Steps to delete an existing phone number:
 
-1. Select the **︙**, and select **Delete**.  
-    <img src="../images/delete-phone-number.png" alt="Delete Phone Number" title="Delete Phone Number" style="border: 1px solid gray; zoom:80%;">
+1. Select the **︙**, and select **Delete**.
 
 2. Select **Delete** to confirm your choice.  
 
-3. Alternatively, select **Update**, go to the **Forward to Phone Number** window, and select **Remove**. A success confirmation message appears.  
-    <img src="../images/remove-phone-number.png" alt="Remove Phone Number" title="Remove Phone Number" style="border: 1px solid gray; zoom:80%;">
+3. Alternatively, select **Update**, go to the **Forward to Phone Number** window, and select **Remove**. A success confirmation message appears.
 
     !!! Note
 
@@ -94,8 +86,7 @@ Agent AI supports real-time audio streaming through two primary methods:
 
 ### Steps to configure SIP Trunk
 
-1. Select **Configure SIP Trunk**.  
-    <img src="../images/configure-sip-trunk.png" alt="Configure SIP Trunk" title="Configure SIP Trunk" style="border: 1px solid gray; zoom:80%;"> 
+1. Select **Configure SIP Trunk**. 
 
 2. On the **Configure SIP Trunk** page, configure the following:  
     1. **Product Selection**: Select the product for SIP Trunk configuration. You can select from the following options:
@@ -111,18 +102,19 @@ Agent AI supports real-time audio streaming through two primary methods:
 
             * Under **Domain Name**, provide the following:
                 * **Fully Qualified Domain Name (FQDN)**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
-                * **DNS (Domain Name System) Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
+                * **DNS (Domain Name System) Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname associates with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.  
                 <img src="../images/dns-resolve-method.png" alt="DNS Resolve Method" title="DNS Resolve Method" style="border: 1px solid gray; zoom:80%;">
 
             * Under **MS Teams**, provide a **Fully Qualified Domain Name** (the domain name that specifies all domain levels, including the top-level domain and the root zone).  
             <img src="../images/ms-teams.png" alt="MS Teams" title="MS Teams" style="border: 1px solid gray; zoom:80%;">  
 
-        * (Optional) By default, the **E.164 Syntax** is selected. Selecting this option prepends a + before the DID number.  
-        <img src="../images/e-164.png" alt="E-164 Syntax" title="E-164-Syntax" style="border: 1px solid gray; zoom:80%;">  
+        * (Optional) By default, the system selects **E.164 Syntax**. Selecting this option prepends a + before the DID number.  
 
-        * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) that route calls to your existing telephone lines. You can configure SIP trunks by entering DID numbers using wildcard patterns (for example, `123*`) to automatically handle multiple similar DIDs without listing each one individually. If two wildcard patterns are configured for different experience flows within an application, and a caller dials a number that matches both patterns, the system triggers the experience flow associated with the pattern that matches the most digits.  
-        Example:  
-        If the DID numbers `7896*` and `789654*` are mapped to Experience Flow 1 and Experience Flow 2, and a caller dials `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
+        * Under **Direct Inward Dialing (DID) number**, you can enable virtual phone numbers (SIP trunk numbers) that route calls to your existing telephone lines. You can configure SIP trunks by entering DID numbers using wildcard patterns (for example, `123*`) to automatically handle multiple similar DIDs without listing each one individually. On configuring two wildcard patterns for different experience flows within an application, and a caller dials a number that matches both patterns, the system triggers the experience flow associated with the pattern that matches the most digits.  
+        
+            Example:
+
+            Map the DID numbers `7896*` and `789654*` to Experience Flow 1 and Experience Flow 2, and dial `78965478`, the system triggers Experience Flow 2, as `789654*` matches more digits than `7896*`.
         * **DTMF (Dual-Tone Multi-Frequency) Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
         * Select an option from the list for **SIP Transport Type**. This field sets a protocol to route SIP traffic to servers and other endpoints. The available options are *TCP*, *UDF*, and *TLS*.
         * (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
@@ -132,10 +124,9 @@ Agent AI supports real-time audio streaming through two primary methods:
 
             Configure the termination URL on your SIP trunk to enable outbound calls.
 
-        * **Option Ping**: If selected, the system checks whether the IP addresses are accessible. This option is selected by default.  
-        <img src="../images/option-ping.png" alt="Option Ping" title="Option Ping" style="border: 1px solid gray; zoom:80%;">  
+        * **Option Ping**: When selected, the system verifies access to the IP addresses. The system selects this option by default.   
 
-        * Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
+        * Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The system lists the parameters as key-value pairs:
             * X-AgentName: {{agentName}}
             * X-AgentPhoneNumber: {{agentPhoneNumber}}
             * X-AgentEmailID: {{agentEmailId}}
@@ -155,22 +146,22 @@ Agent AI supports real-time audio streaming through two primary methods:
         **Select the SIP Trunk connection method**: Select the method based on your third-party vendor’s requirements (<a href="#siprec">SIPREC</a> or <a href="#websocket">WebSocket</a>). 
 
         * <span id="siprec">If you select **SIPREC**</span>:
-            * **SIP URI**: This is a pre-configured field. A copy button allows you to copy the SIP URIs.
+            * **SIP URI**: This is a pre-configured field. A copy option lets you to copy the SIP URIs.
             * **Network**: To configure the Network, you can select one of the following:
                 * Under **List of IP Address**, type the values for **Incoming IP Address** in the textbox.
                 * Under **Domain Name**, provide the following:
-                    * **Fully Qualified Domain Name**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
-                    * **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname is associated with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
-            * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when an RTP stream is received at our SBC level.
-            * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API.
-            * (Optional) By default, the **E.164 Syntax** is selected. Selecting this option prepends a + before the DID number.
+                    * **Fully Qualified Domain Name (FQDN)**: The domain name specifies all domain levels, including the top-level domain and the root zone. [Learn more](./../../channels/voice-gateway/deployment-and-operations.md#ips-ports-and-protocols).
+                    * **DNS Resolve Method** (Optional): Select an option from the list to translate IP addresses to domain names for resolution when the hostname associates with multiple IP addresses. You can choose a-record, srv, naptr, or ms-lync.
+            * **Agent AI Initiated transcription**: Enable or disable auto transcription. When disabled, transcription starts automatically when the SBC receives an RTP stream.
+            * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. Access these recorded calls using a [public API](../../apis/contact-center/api-list.md#call-recording-apis).
+            * (Optional) By default, the system selects **E.164 Syntax**. Selecting this option prepends a + before the DID number.
             * **Siprec Identifier**: Enter Siprec identifier values.
             * **DTMF Type**: (Optional) Select the DTMF type. RC2833 is the default selection.
             * Select an option from the list for **SIP Transport Type**. This field sets a protocol to route SIP traffic to servers and other endpoints. The available options are *TCP*, *UDF*, and *TLS*.
             * (Optional) Set the **SIP Credentials** (username and password) to access your SIP trunk setup account.
             * Under **SIP Termination URI**, enter the **IP Address**/**Domain Name**.
             * **Call control parameters**: Define the parameters to control the call behavior. Select **Add Parameter**, enter the **Parameter Name** and **Value**, and select **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
-            * Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The parameters are listed as key-value pairs:
+            * Enter the **SIP Headers**. You can include all available agent data in the SIP headers, enabling customers to use only the parameters relevant to their needs. The system lists the parameters as key-value pairs:
                 * X-AgentName: {{agentName}}
                 * X-AgentPhoneNumber: {{agentPhoneNumber}}
                 * X-AgentEmailID: {{agentEmailId}}
@@ -185,34 +176,28 @@ Agent AI supports real-time audio streaming through two primary methods:
         * <span id="websocket">If you select **WebSocket**:</span>
 
             * **Connection URL (Generate URL)**: Copy the auto generated URL and paste it into your third-party desktop configuration settings.  
-            * **Agent AI Initiated transcription**: Turn on or turn off auto transcription. When turned off, transcription starts automatically when an RTP (Real-time Transport Protocol) stream is received at our SBC level. 
-            * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. These recorded calls can be accessed through a public API. 
+            * **Agent AI Initiated transcription**: Turn on or turn off auto transcription. When turned off, transcription starts automatically when the SBC receives an RTP (Real-time Transport Protocol) stream. 
+            * **Record the calls**: Enable or disable call recordings for third-party Agent Desktop integrations. Access these recorded calls can using a [public API](../../apis/contact-center/api-list.md#call-recording-apis). 
             * **Call control parameters**: Define the parameters to control the call behavior. Select **Add Parameter**, enter the **Parameter Name** and **Value**, and select **Save**. [Learn more](./../../channels/voice-gateway/speech-customization.md#introduction-to-call-control-parameters).
 
-3. Select **Next**.  
-    <img src="../images/did-number.png" alt="DID Number" title="DID Number" style="border: 1px solid gray; zoom:70%;">
+3. Select **Next**.
 
 4. On the **Forward to Phone Number** window, reserve the phone numbers for **Inbound Calls**, **Outbound Calls**, or both by selecting the appropriate options. 
 5. Select **Save**.  
-    <img src="../images/reserve-number.png" alt="Reserve Number" title="Reserve Number" style="border: 1px solid gray; zoom:70%;">  
 
     Wait for up to 10 minutes after saving for the IPs to be whitelisted.  
-    <img src="../images/ip-whitelist-message.png" alt="IP Whitelist Note" title="IP Whitelist Note" style="border: 1px solid gray; zoom:80%;">
 
-6. The selected information appears on the SIP Numbers tab.  
-<img src="../images/sip-trunk-added.png" alt="SIP Numbers Added" title="SIP Numbers Added" style="border: 1px solid gray; zoom:80%;">
+6. The selected information appears on the SIP Numbers tab.
 
 ### Attach a Flow
 
 Steps to attach a flow to the SIP Number:
 
 1. Select **+ Attach Flow**. Hovering over the link icon displays **No Flow Attached**.  
-    <img src="../images/attach-sip-flow.png" alt="Attach FLows SIP" title="Attach Flows SIP" style="border: 1px solid gray; zoom:80%;">
 
 2. Select a **Start Flow** to add to individual numbers and select **Done**. You can add a start flow by selecting **+ New Start Flow**. [Learn more](../../flows/create-flows.md#create-a-start-flow).
 
 3. The attached flows appear. A pie icon appears under the attached flows. Hovering over the pie icon displays **Configured**.  
-    <img src="../images/sip-flow-attached.png" alt="FLows Attached SIP" title="Flows Attached SIP" style="border: 1px solid gray; zoom:80%;">
 
 !!! Note
 
@@ -223,15 +208,10 @@ Steps to attach a flow to the SIP Number:
 Steps to edit a previously added SIP number:
 
 1. Select **︙** and then select **Update**.  
-    <img src="../images/update-sip-number.png" alt="Update Button SIP Number" title="Update Button SIP Number" style="border: 1px solid gray; zoom:80%;">
 
 2. Make the necessary changes on the Transfer from IVR page, and select **Next**.  
-    <img src="../images/edit-sip-transfer.png" alt="Edit SIP Number" title="Edit Button SIP Number" style="border: 1px solid gray; zoom:70%;">
 
-3. Make the necessary changes on the Forward to Phone Number page, and select **Save**.  
-    <img src="../images/edit-forward-to-phone-number-page.png" alt="Edit Forward to Phone Number" title="Edit Forward to Phone Number" style="border: 1px solid gray; zoom:70%;">
-
-4. A success confirmation message appears.
+3. Make the necessary changes on the Forward to Phone Number page, and select **Save**. A success confirmation message appears.
 
 ### Delete a SIP Number
 
@@ -240,108 +220,100 @@ Deleting a SIP number means stopping all services associated with it.
 Steps to delete a SIP number:
 
 1. Select **︙** and then select **Delete**.  
-    <img src="../images/delete-sip-number.png" alt="Delete Button SIP" title="Delete Button SIP" style="border: 1px solid gray; zoom:80%;">
 
 2. On the pop-up, select **Delete** to confirm your choice.  
-    <img src="../images/delete-confirmation-sip.png" alt="Delete SIP Number" title="Delete SIP Number" style="border: 1px solid gray; zoom:80%;">  
-    
-    The sip number is deleted.
 
 ### Best Practices
 
 #### Voice Calls - Failures and Fallback Handling
 
-**Overview**
-
 This document outlines the comprehensive failure handling and fallback mechanisms available for voice calls in the platform. The system provides three distinct layers of failure handling to ensure robust call management and graceful degradation in the event of issues.
 
 The failure handling mechanisms are designed to address different types of failures at various stages of the call lifecycle, from initial call establishment to ongoing conversation management and error recovery.
 
-**Failure Handling Mechanisms**
+Failure Handling Mechanisms
 
-**1. App-Level Settings - Answer Call on Bot Response**
+1. App-Level Settings - Answer Call on Bot Response
 
-**Purpose**
+Purpose
 
 The "Answer Call on Bot Response" functionality controls the timing of call answering behavior. When enabled, the system delays answering the call until the first AI Agent response is prepared and ready for delivery.
 
-**Configuration**
+Configuration
 
-**Location**: App-level settings
+Location: App-level settings
 
-AI for Service > App Settings > Advanced Settings > System Settings  
-<img src="../images/delayed-first-response.png" alt="System Settings" title="System Settings" style="border: 1px solid gray; zoom:70%;">
+AI for Service > App Settings > Advanced Settings > System Settings.  
 
 * **Default Value**: `false` (disabled)
 
-**Behavior**:  
+Behavior:  
 
-* **Enabled (<code>true</code>)**: Call is answered only when the first AI Agent response is ready.  
-* **Disabled (<code>false</code>)**: Call is answered immediately, with AI Agent response preparation occurring after call establishment.
+* **Enabled (`true`)**: Call is answered only when the first AI Agent response is ready.  
+* **Disabled (`false`)**: Call is answered immediately, with AI Agent response preparation occurring after call establishment.
 
-**Use Cases**
+Use Cases
 
 * **SIP-Specific Error Handling**: Ideal for systems requiring SIP response codes for failure detection.  
 * **Source System Integration**: Enables upstream systems to handle AI Agent unresponsiveness through standard SIP signaling.  
 * **Quality Assurance**: Ensures users only hear prepared, ready responses.
 
-**Technical Benefits**
+Technical Benefits
 
 * Prevents dead air or silence during AI Agent response preparation.  
 * Provides clear SIP signaling for upstream system integration.  
 * Enables proactive failure detection before call establishment.
 
-**Cons**
+Cons
 
-Configuring this setting results in frequent call drops if we've many script/service nodes, which delays the initial AI Agent response and prevent the call from being answered.
+Configuring this setting results in frequent call drops if we've many script/service nodes, which delays the initial AI Agent response and prevents answering the call.
 
-**2. Experience Flow Settings - Bot No Input Section**
+2. Experience Flow Settings - Bot No Input Section
 
-**Purpose**
+Purpose
 
 The Bot No Input section provides configuration options for handling scenarios where the AI Agent becomes unresponsive after a successful initial response.
 
-**Location**: Experience Flow → Bot No Input Section → BotNoInputGiveUp
+Location: Experience Flow → Bot No Input Section → BotNoInputGiveUp
 
 AI for Service > Contact Center AI > Start Flows > Create a ‘New Start Flow’ or update an existing ‘Start Flow’  
 <img src="../images/bot-no-input.png" alt="Bot no Input" title="Bot no Input" style="border: 1px solid gray; zoom:70%;">
 
-**Available Options**
+Available Options
 
-1. **End Call**: Automatically terminates the call when the AI Agent's unresponsiveness is detected.  
-2. **SIP URI Target Transfer**: Transfers the call to a specified SIP URI target.
+* **End Call**: Automatically terminates the call when the system detects the AI Agent's unresponsiveness.  
+* **SIP URI Target Transfer**: Transfers the call to a specified SIP URI target.
 
-**Operational Behavior**
+Operational Behavior
 
 * **Trigger Condition**: The AI Agent fails to respond within the configured timeout interval.  
 * **Prerequisite**: First AI Agent response must have been successfully delivered.  
 * **Detection Method**: Timeout-based monitoring of AI Agent responsiveness.
 
-**Configuration Parameters**
+Configuration Parameters
 
 * **Timeout Interval**: Configurable duration for AI Agent response detection.  
 * **Action Type**: End call or transfer to target.  
-* **SIP URI Target**: Destination for call transfer (when transfer option is selected).
+* **SIP URI Target**: Destination for call transfer (On selecting the transfer option).
 
-**3. Automation Node Error Handling - OnError Path**
+3. Automation Node Error Handling - OnError Path
 
-**Purpose**
+Purpose
 
 Provides explicit error handling for various types of system failures that can occur during call processing, including dialog flow errors, ASR (Automatic Speech Recognition) failures, and TTS (Text-to-Speech) errors.
 
-**Supported Error Types**
+Supported Error Types
 
 * **Dialog Flow Errors**: Task failure events and flow execution errors.  
 * **ASR Errors**: Speech recognition failures and timeout issues.  
 * **TTS Errors**: Text-to-speech synthesis failures.  
 * **Bot Failures**: Explicit AI Agent processing errors.
 
-**Configuration**
+Configuration
 
-**Location**: Experience Flow → Automation Node → OnError Path
+Location: Experience Flow → Automation Node → OnError Path
 
-AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Error Handling  
-<img src="../images/error-handling.png" alt="Error Handling" title="Error Handling" style="border: 1px solid gray; zoom:70%;">
+AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Error Handling.  
 
 * **Trigger Events**: System-detected errors and exceptions.  
 * **Response Actions**: Configurable error handling workflows.
@@ -352,83 +324,83 @@ AI for Service > Contact Center AI > Start Flows > Add an Automation Node > Erro
 * **Graceful Degradation**: Maintain call continuity during error conditions.  
 * **User Communication**: Provide appropriate feedback to callers during error scenarios.
 
-**Implementation Guidelines**
+Implementation Guidelines
 
-**When to Use Each Mechanism**
+When to Use Each Mechanism?
 
-**Use App-Level Settings When**:
+Use App-Level Settings When:
 
-* Integration with SIP-aware source systems is required.  
+* Requires integration with SIP-aware source systems.  
 * Upstream failure detection and handling capabilities exist.  
 * Call quality requirements mandate prepared responses only.  
-* SIP response codes are needed for system integration.
+* Needs SIP response codes for system integration.
 
-**Use Experience Flow Settings When**:
+Use Experience Flow Settings When:
 
 * First AI Agent response delivery is successful.  
-* Ongoing AI Agent responsiveness monitoring is required.  
-* Fallback targets or graceful call termination are needed.  
-* User experience continuity is prioritized.
+* Requires ongoing AI Agent responsiveness monitoring.  
+* Needs fallback targets or graceful call termination.  
+* Prioritizes user experience continuity.
 
-**Use OnError Path When**:
+Use OnError Path When:
 
-* Comprehensive error handling is required.  
+* Requires comprehensive error handling.  
 * Multiple error types need specific handling.  
 * Custom error workflows are necessary.  
 * System resilience is a priority.
 
-**Configuration Priority**
+Configuration Priority
 
-1. **Always Configure**: OnError path handling (universal applicability).  
-2. **Conditionally Configure**: App-level settings (based on SIP integration needs).  
-3. **Scenario-Specific**: Experience flow settings (based on user experience requirements).
+* **Always Configure**: OnError path handling (universal applicability).  
+* **Conditionally Configure**: App-level settings (based on SIP integration needs).  
+* **Scenario-Specific**: Experience flow settings (based on user experience requirements).
 
-**Configuration Recommendations**
+Configuration Recommendations
 
-1. **Always implement OnError path handling** for comprehensive error coverage.  
-2. **Evaluate SIP integration requirements** before enabling AI Agent-level settings.  
-3. **Define clear timeout values** for AI Agent responsiveness detection.
+* **Always implement OnError path handling** for comprehensive error coverage.  
+* **Evaluate SIP integration requirements** before enabling AI Agent-level settings.  
+* **Define clear timeout values** for AI Agent responsiveness detection.
 
-**Use Case Scenarios**
+Use Case Scenarios
 
-**Scenario 1: SIP-Integrated Environment**
+Scenario 1: SIP-Integrated Environment
 
-**Configuration**:
+Configuration:
 
 * App-Level: Answer Call on Bot Response = true  
 * Experience Flow: BotNoInputGiveUp = Transfer to SIP URI  
 * OnError Path: Custom error handling workflow
 
-**Behavior**:
+Behavior:
 
 * Call answered only when the bot response is ready.  
 * SIP codes are available for the upstream system handling.  
 * Unresponsive bot triggers transfer to fallback target.  
 * Explicit errors are handled through a custom workflow.
 
-**Scenario 2: Direct Call Environment**
+Scenario 2: Direct Call Environment
 
-**Configuration**:
+Configuration:
 
 * App-Level: Answer Call on Bot Response = false  
 * Experience Flow: BotNoInputGiveUp = End call  
 * OnError Path: Standard error messaging
 
-**Behavior**:
+Behavior:
 
 * Immediate call answering for a better user experience.  
 * AI Agent unresponsiveness results in call termination.  
 * Errors handled with standard user messaging.
 
-**Scenario 3: High-Availability Environment**
+Scenario 3: High-Availability Environment
 
-**Configuration:**
+Configuration:
 
 * App-Level: Answer Call on Bot Response = true  
 * Experience Flow: BotNoInputGiveUp = Transfer to backup system  
 * OnError Path: Comprehensive error recovery workflows
 
-**Behavior**:
+Behavior:
 
 * Quality-assured response delivery.  
 * Multiple fallback layers for different failure types.  
@@ -452,8 +424,9 @@ Steps to configure Voice Preferences:
             * Google Cloud Speech-to-Text,
             * Amazon Transcribe.
         2. Dialect
-        3. Primary ASR Configuration (Advanced Setting)
-        4. Fallback ASR Configuration (Advanced Setting)
+        3. ASR Model [BETA] (Advanced Setting)
+        4. Primary ASR Configuration (Advanced Setting)
+        5. Fallback ASR Configuration (Advanced Setting)
     3. Text to Speech Engine (TTS)
         1. TTS
             You can choose between
@@ -467,11 +440,12 @@ Steps to configure Voice Preferences:
         2. Voice
     4. Voice Preview
         1. Sample Text: Enter Sample Text to preview your voice selection. You can play, navigate through the audio (Back/Forward), and adjust the preview volume. Selecting the More Options (**⋮**) reveals options to adjust Playback Speed. Select Play next to any available voice to preview it. Voices are available for all TTS engines, but each engine has its voice options. Select a different Voice Language if required.
-        2. Primary TTS Configuration (Advanced Setting)
-        3. Fallback TTS Configuration (Advanced Setting)
+        2. TTS Model [BETA] (Advanced Setting)
+        3. Primary TTS Configuration (Advanced Setting)
+        4. Fallback TTS Configuration (Advanced Setting)
 2. Select **Done** once you have completed configuring your voice preferences. The set voice, language, and dialect apply to automated customer responses that use text-to-speech.  
 
-    <img src="../images/voice-preferences-configuration.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/config-voice-preferences.png" alt="Voice Preferences Configuration" title="Voice Preferences Configuration" style="border: 1px solid gray; zoom:70%;">
 
 !!! Note
 
@@ -485,26 +459,19 @@ ASR/TTS Fallback functionality can be implemented at various levels within the s
 
 * For optimal performance, it’s advised to configure the fallback with the same vendor in a different region/label.
 
-**Location 1 - Global Setting**
+Location 1 - Global Setting
 
-In SmartAssist: **Configurations** > **System Setup** > **Language & Speech** > **Voice Preferences** > **Show Advanced Settings**.  
-<img src="../images/show-advanced-settings.png" alt="Show Advanced Settings" title="Show Advanced Settings" style="border: 1px solid gray; zoom:80%;">
+In SmartAssist: Configurations > System Setup > Language & Speech > Voice Preferences > Show Advanced Settings. 
 
-**Location 2 - Call Control Parameters**
+Location 2 - Call Control Parameters
 
-In SmartAssist: **Automation** > **Select app** > **Conversational Skills** > **Dialog Tasks** > **Select Dialog Task** > **Select the Node you want to configure** > **IVR Properties** > **Advance Controls** > **Call Control Parameters**.  
-<img src="../images/call-control-parameters.png" alt="Call Control Parameters" title="Call Control Parameters" style="border: 1px solid gray; zoom:80%;">
+In SmartAssist: Automation > Select app > Conversational Skills > Dialog Tasks > Select Dialog Task > Select the Node you want to configure > IVR Properties > Advance Controls > Call Control Parameters.  
 
-**Location 3 - Experience Flows**
+Location 3 - Experience Flows
 
-In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experience Flow** > **Speech Recognition Engine (ASR/TTS)** > **Show Advanced Settings**.  
-<img src="../images/experience-flows-advanced-settings.png" alt="Experience Flows" title="Experience flows" style="border: 1px solid gray; zoom:80%;">  
+In SmartAssist: Configurations > Experience Flows > Update/New Experience Flow > Speech Recognition Engine (ASR/TTS) > Show Advanced Settings.  
 
-<img src="../images/edit-experience-flows.png" alt="Edit Experience Flows" title="Edit Experience Flows" style="border: 1px solid gray; zoom:80%;">
-
-**Location 4 - Start Node in Experience Flow**  
-<img src="../images/start-node.png" alt="Start Node" title="Start Node" style="border: 1px solid gray; zoom:80%;">  
-<img src="../images/start-node-experience-flow.png" alt="Start Node - Experience Flow" title="Start Node - Experience Flow" style="border: 1px solid gray; zoom:80%;">
+Location 4 - Start Node in Experience Flow  
 
 !!! Note
       
@@ -514,7 +481,7 @@ In SmartAssist: **Configurations** > **Experience Flows** > **Update/New Experie
          * You can configure the label name in Primary ASR/TTS configuration and Fallback ASR/TTS configuration under Show Advanced Settings.
          * The fallback ASR/TTS configuration should not be the same as the Primary ASR/TTS configuration.
          * Both Primary and Fallback ASR/TTS configurations should be available in VG Speech Services otherwise you will not be able to configure in SmartAssist.
-         * The Credential Status of the Speech services configured in VG should be verified. If credential status is failed then ASR/TTS conversations will fail.
+         * The Credential Status of the Speech services configured in VG should be verified. If credential status is failed then ASR/TTS conversations fail.
       * In Call control parameters, 
          * You can configure the fallback for different vendors. But for optimal performance, it’s advised to configure the fallback with the same vendor in a different region.
          * In-call control parameters don’t have any validation of duplicate values for Primary and Fallback configurations, so you have to pay closer attention to spelling mistakes.
@@ -527,21 +494,21 @@ Voice Gateway supports integration with third party ASR, TTS, and Voice Biometri
 
 The following languages and dialects are supported:
 
-| English (Australia)   | English (Nigeria)        |
-|-----------------------|--------------------------|
-| English (Canada)      | English (Pakistan)       |
-| English (Ghana)       | English (Philippines)    |
-| English (Hong Kong)   | English (Singapore)      |
-| English (India)       | English (South Africa)   |
-| English (Ireland)     | English (Tanzania)       |
-| English (Kenya)       | English (United Kingdom) |
-| English (New Zealand) | English (United States)  |
+| English (Australia)    | English (Nigeria)         |
+|:-----------------------|:--------------------------|
+| English (Canada)       | English (Pakistan)        |
+| English (Ghana)        | English (Philippines)     |
+| English (Hong Kong)    | English (Singapore)       |
+| English (India)        | English (South Africa)    |
+| English (Ireland)      | English (Tanzania)        |
+| English (Kenya)        | English (United Kingdom)  |
+| English (New Zealand)  | English (United States)   |
 
 ### Best Practices
 
 #### Multi-Language App Setup
 
-This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call is routed) and the **Dialog Flow** (how the AI Agent responds).
+This guide details the process for setting up a multilingual App that can switch languages based on the caller's selection. We'll cover the steps for both the **Experience Flow** (how the call routes) and the **Dialog Flow** (how the AI Agent responds).
 
 **Understanding the Use Case**
 
@@ -551,12 +518,11 @@ Steps to configure a Multilingual App:
 
 **Step 1: Add Languages to Your Platform**
 
-Before you can use a language in an APP, you need to enable it on the platform.
+Before you can use a language in an App, you need to enable it on the platform.
 
 1. Log to AI for Service and select the **Product Switcher**.
 2. Go to **Settings** > **Language Management**.
 3. Select **+ Add Language** and select the languages your AI Agent supports, such as English, Hindi, and Telugu.  
-    <img src="../images/language-management.png" alt="Language Management" title="Language Management" style="border: 1px solid gray; zoom:70%;">
 
 **Step 2: Configure the Flow**
 
@@ -626,11 +592,11 @@ For more precise control, you can customize the Automatic Speech Recognition (AS
 1. In a specific Dialog Flow node (for example, a Message or Entity node), select the IVR Properties tab.
 2. You can set specific call control parameters that override the default settings. This is useful for:  
 
-* Using a different TTS provider or voice in a particular language.  
-    <img src="../images/tts-provider.png" alt="TTS Provider" title="TTS Provider" style="border: 1px solid gray; zoom:70%;">  
+    * Using a different TTS provider or voice in a particular language.  
+        <img src="../images/tts-provider.png" alt="TTS Provider" title="TTS Provider" style="border: 1px solid gray; zoom:70%;">  
 
-* Choosing a different ASR provider that's better at understanding a particular accent or language.  
-    <img src="../images/asr-provider.png" alt="ASR Provider" title="ASR Provider" style="border: 1px solid gray; zoom:70%;">  
+    * Choosing a different ASR provider that's better at understanding a particular accent or language.  
+        <img src="../images/asr-provider.png" alt="ASR Provider" title="ASR Provider" style="border: 1px solid gray; zoom:70%;">  
 
 For more details on these advanced settings, refer to the [Call Control Parameters](../voice-gateway/speech-customization.md#supported-call-control-parameters).
 
@@ -642,7 +608,7 @@ After configuring the Flow and Dialogs, publish the flows and perform thorough t
 
     Double-check that the language codes are in lowercase in the script node and that you've configured both the IVR and the Run Automation nodes correctly.
 
-The multi-lingual behavior can also be achieved with **Automatic Language Detection** based on the caller's speech.
+The multi-lingual behavior is also achieved with **Automatic Language Detection** based on the caller's speech.
 
 ## Voice Call Properties (Account Level)
 
@@ -651,8 +617,7 @@ This section describes global voice call properties that apply to your entire Vo
 You can configure the voice call properties by going to the Voice Preferences tab and selecting **Configure** on the **Voice Call Properties** section.  
     <img src="../images/voice-call-properties.png" alt="Configure Voice Call Properties" title="Configure Voice Call Properties" style="border: 1px solid gray; zoom:80%;">
 
-The Voice Call Properties window is displayed.  
-    <img src="../images/voice-call-properties-window.png" alt="Voice Call Properties Window" title="Voice Call Properties Window" style="border: 1px solid gray; zoom:70%;">
+The Voice Call Properties window displays.
 
 ### End of Task Behavior
 
@@ -664,15 +629,15 @@ Define the app's behavior when reaching the end of a task. You can choose the fo
 
 ### Event Configuration
 
-Define how to proceed when this event is detected. You can choose the following actions:
+Define how to proceed on detecting this event. You can choose the following actions:
 
-* **Initiate Task**: Select a task from the dropdown menu to be initiated when the event is detected.  
+* **Initiate Task**: Select a task from the dropdown menu that initiates on detecting the event.  
     <img src="../images/initiate-task.png" alt="Initiate Task" title="Initiate Task" style="border: 1px solid gray; zoom:80%;">
 
-* **Run Script**: Enter the script to be run when the event is detected.  
+* **Run Script**: Enter the script that runs on detecting the event.  
     <img src="../images/run-script.png" alt="Run Script" title="Run Script" style="border: 1px solid gray; zoom:80%;">
 
-* **Show Message**: Select **+ Add Response**, enter the message to be displayed when the event is detected, and select **Done**.  
+* **Show Message**: Select **+ Add Response**, enter the message that displays on detecting the event, and select **Done**.  
     <img src="../images/add-response.png" alt="Add Response" title="Add Response" style="border: 1px solid gray; zoom:80%;">
 
 ### Call Termination Handler

@@ -1,12 +1,10 @@
 # Secure Account Access Using Authorization Profiles
 
-The Agent Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring **Authorization (Auth) Profiles**, users can enforce access control policies while ensuring data privacy and regulatory compliance.
+The Platform offers a secure and streamlined way to manage authorization when integrating with external web services. By configuring **Authorization (Auth) Profiles**, users can enforce access control policies while ensuring data privacy and regulatory compliance.
 
 Whether connecting to external or commercial models via custom APIs or integrating tools through the AI or API node, the platform provides a structured framework to handle user authorization. This simplifies security configurations, strengthens access control, and enables smooth identity verification across various services.
 
-Key capabilities of managing Auth Profiles on the Agent Platform include:
-
-
+Key capabilities of managing Auth Profiles on the Platform include:
 
 * **Defining Authorization Rules**
 Specify auth methods and requirements, such as passwords, token fields, and custom authorization parameters.
@@ -21,11 +19,9 @@ Verify that identity and authorization tokens are correctly passed to external s
 
 To access the feature, follow the steps below:
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
-3. Click **Security & Control** > **Authorization profile** on the left navigation menu.
-<img src="../images/auth-profile-access.png" alt="auth profile access" title="auth profile access" style="border: 1px solid gray; zoom:75%;">
-
+3. Click **Security & Control** -> **Authorization profile** on the left navigation menu.
 
 ## Supported Auth Models
 
@@ -72,7 +68,7 @@ The Client Credentials flow is one of the OAuth 2.0 authorization grant types. I
 
 To add a new Auth profile, you must first set up the required auth fields with the steps below: 
 
-1. [Navigate](../security-and-control/authorization-profile.md/#access-authorization-profile){:target="_blank"} to the **Authorization Profile** feature.
+1. [Navigate](../security-and-control/authorization-profile.md#access-authorization-profile){:target="_blank"} to the **Authorization Profile** feature.
 2. Click **Create Authorization Profile** if this is your first auth profile.
 <img src="../images/click-create-auth-profile.png" alt="create auth profile" title="create auth profile" style="border: 1px solid gray; zoom:75%;">  
 
@@ -100,8 +96,6 @@ If the mandatory fields are left blank, validation error messages appear, as sho
 <img src="../images/save-new-auth.png" alt="save new auth" title="save new auth" style="border: 1px solid gray; zoom:75%;"></ol>
 
 A success message is displayed, and the new auth profile is added to the **Authorization Profile** page.
-
-<img src="../images/profile-created-message.png" alt="success message" title="success message" style="border: 1px solid gray; zoom:75%;">
 
 ## Define Authorization Fields
 
@@ -190,7 +184,7 @@ To configure the OAuth2 profile, define the fields described in the table below:
    <td><strong>Authorization URL</strong>
    </td>
    <td>
-    The endpoint where users are redirected to authenticate and grant permissions to an application before it can access protected resources on their behalf. Example: <code>https://auth.networks.com/oauth/authorize</code>
+    The endpoint where users are redirected to authenticate and grant permissions to an application before it can access protected resources on their behalf. Example: <code>https://auth.example.com/oauth/authorize</code>
    </td>
    <td>Required
    </td>
@@ -256,7 +250,7 @@ Example: <code>read_profile</code>.
    <td><strong>Refresh token URL</strong>
    </td>
    <td>
-    The endpoint where a client application sends a request to obtain a new <strong>access token</strong> using a <strong>refresh token</strong> (whenever the access token expires). Example: <code>https://auth.networks.com/oauth/access</code>
+    The endpoint where a client application sends a request to obtain a new <strong>access token</strong> using a <strong>refresh token</strong> (whenever the access token expires). Example: <code>https://auth.example.com/oauth/access</code>
 
 <p><strong>Note</strong>: When the <strong>Refresh Token URL</strong> or refresh token expires, the following happens:
 <ul>
@@ -328,15 +322,13 @@ To add additional fields, follow the steps below:
   </tr>
 </table>
 
-<ol start="3"><li>Click <b>Done</b>.</li>
-    <img src="../images/add-additional-field-form.png" alt="add additional field form" title="add additional field form" style="border: 1px solid gray; zoom:75%;"></ol>
+<ol start="3"><li>Click <b>Done</b>.</li></ol>
 
-The new field is added to the additional fields list. You can edit or delete this custom field.
-<img src="../images/new-additional-field.png" alt="new additional field" title="new additional field" style="border: 1px solid gray; zoom:75%;">
+The new custom field is added to the Additional Fields list, where you can edit or delete it.
 
 ## Add Authorization Field
 
-Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in the Agent Platform.
+Authorization fields are data fields used in API requests to verify the identity of a user, system, or application and determine their permissions to access resources. These fields ensure authorization and access control in APIs, particularly for token-based authorization in the Platform.
 
 
 To add auth fields, follow the steps below:
@@ -359,7 +351,7 @@ To add auth fields, follow the steps below:
   <tr>
    <td>Field Type
    </td>
-   <td>Defines how authorization data is sent and verified in an API request within the Agent Platform for token-based authorization. The supported types include:
+   <td>Defines how authorization data is sent and verified in an API request within the Platform for token-based authorization. The supported types include:
 <ul>
 
 <li><strong>Header</strong>: Used to send authorization credentials, such as API tokens.</li>
@@ -416,7 +408,7 @@ Each authorization you add to your account is displayed in the **Authorization P
 
 The **Test** button is enabled when you provide all the fields in the **New authorization mechanism** window. To validate the connection using the configured mechanism, click **Test**.
 
-A new window appears where the Agent Platform tries to establish a connection with the external service through the configured auth profile.
+A new window appears where the Platform tries to establish a connection with the external service through the configured auth profile.
 
 A successful connection is shown below:
 
@@ -436,14 +428,13 @@ You can either edit the configured values of an auth profile or delete it from t
 
 3. Modify the required fields in the **Update authorization mechanism** window.
 4. Click **Update new auth**.
-<img src="../images/update-new-auth.png" alt="update new auth" title="update new auth" style="border: 1px solid gray; zoom:75%;">  
+
+   A success message appears when the auth profile information is updated.
 
 <div class="admonition note">
 <p class="admonition-title">Important</p>
 <p>The <b>Authorization Type</b> and <b>Name</b> fields cannot be edited, but all other parameters can be modified.</p>
 </div>
-
-A success message appears when the auth profile information is updated.
 
 ### Delete
 
@@ -452,11 +443,9 @@ To delete an Auth profile, follow the steps below:
 1. Click the **Ellipses** icon and select **Delete**.
 <img src="../images/delete-auth-profile.png" alt="delete auth profile" title="delete auth profile" style="border: 1px solid gray; zoom:75%;">  
 
-2. Click **Delete** in the following window.
+2. Click **Delete** in the confirmation window.
 
-    <img src="../images/confirm-deletion.png" alt="confirm delete auth profile" title="confirm delete auth profile" style="border: 1px solid gray; zoom:75%;">  
-
-A success message is displayed, and the profile is removed from the **Authorization profile** page.
+   A success message is displayed, and the profile is removed from the **Authorization profile** page.
 
 <div class="admonition warning">
 <p class="admonition-title">Caution</p>

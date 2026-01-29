@@ -15,8 +15,8 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 ## Key Features
 
-* **Column Filters** enable you to view specific records by setting a column value or combining multiple filters using AND/OR operators. [Learn more](./model-traces.md/#filter-model-traces-by-columns){:target="_blank"}.
-* **Time-based filters** provide a comprehensive view of the selected model's performance across runs for a specific past date or date range. [Learn more](./model-traces.md/#time-based-filters){:target="_blank"}.
+* **Column Filters** enable you to view specific records by setting a column value or combining multiple filters using AND/OR operators. [Learn more](./model-traces.md#filter-model-traces-by-columns){:target="_blank"}.
+* **Time-based filters** provide a comprehensive view of the selected model's performance across runs for a specific past date or date range. [Learn more](./model-traces.md#time-based-filters){:target="_blank"}.
 * **Search** lets you look up a specific run(s) of a model using the *Request ID* and other *String* type column values.
 * Hovering over specific metrics displays a tooltip that provides additional information about the metric's purpose and significance.
 * When selecting a date range filter, you can obtain **hourly performance analysis** for a model on a specific day or review **daily performance trends**.
@@ -26,16 +26,16 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 <img src="../images/success-failed-requests.png" alt="success and failed requests" title="success and failed requests" style="border: 1px solid gray; zoom:75%;">
 
 * Export the model traces dataset for your model into a CSV file for further analysis, editing, and debugging.
-* The **Metrics Summary** showcases the key performance metrics of the selected model across all executed runs. [Learn more](./model-traces.md/#performance-metrics-summary){:target="_blank"}.
+* The **Metrics Summary** showcases the key performance metrics of the selected model across all executed runs. [Learn more](./model-traces.md#performance-metrics-summary){:target="_blank"}.
 * The **table view** summarizes key metadata for successful and failed runs of the selected model, offering quick insights and the ability to monitor run-specific response times, analyze input and output, view failed runs in detail, and verify whether credit consumption aligns with usage. 
 * Click the **Sort** filter in the **Executed on** column to view the data in ascending or descending order by execution date.
 <img src="../images/model-traces-sort.png" alt="model traces sort" title="model traces sort" style="border: 1px solid gray; zoom:75%;">
 
-* Click on each model traces record in the table to view the input, output, and key metadata. [Learn more](./model-traces.md/#traces-input-output-and-metadata){:target="_blank"}.
+* Click on each model traces record in the table to view the input, output, and key metadata. [Learn more](./model-traces.md#traces-input-output-and-metadata){:target="_blank"}.
 
 ## Best Practices
 
-* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on Agent Platform to optimize usage.
+* Track the **Total Requests** versus **Hosting Credits** for fine-tuned and open-source models created, deployed, and monitored on the Platform to optimize usage.
 * Analyze successful versus failed runs to compare model performance over time and identify failure patterns using failure rates for all model types.
 * Identify model runs with low or high response times using P90 and P99 thresholds and isolate under-performing runs for further investigation.
 * Apply time-based and record filters for focused and accurate analysis.
@@ -47,7 +47,7 @@ Monitoring open-source, fine-tuned, commercial, or custom API models offers the 
 
 To access the **Model Traces**, follow the steps below:
 
-1. [Navigate](../../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Model Traces**.
 3. If this is your first time accessing the feature, select the desired model from the dropdown menu shown below.
 <img src="../images/get-started-model-traces.png" alt="get started with model traces" title="get started with model traces" style="border: 1px solid gray; zoom:75%;">
@@ -70,8 +70,8 @@ The key features for customizing the model traces data include:
     * For commercial models, you can select the default connection linked to the model.
        <img src="../images/traces-external.png" alt="external filter" title="external filter" style="border: 1px solid gray; zoom:75%;">  
 
-* **Time Selection Filter**: Required to analyze model traces data for a specific time-frame in the past. [Learn more](./model-traces.md/#time-based-filters){:target="_blank"}.
-* **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis. [Learn more](./model-traces.md/#filter-model-traces-by-columns){:target="_blank"}.
+* **Time Selection Filter**: Required to analyze model traces data for a specific time-frame in the past. [Learn more](./model-traces.md#time-based-filters){:target="_blank"}.
+* **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis. [Learn more](./model-traces.md#filter-model-traces-by-columns){:target="_blank"}.
 * **Visibility Filter**: Add or remove columns from the UI to display only relevant data. To set the filter, click the **Eye** icon, enable the field to view its data, and disable it otherwise.
 <img src="../images/visibility-filter.png" alt="visibility filters" title="visibility filters" style="border: 1px solid gray; zoom:75%;">
 
@@ -104,16 +104,16 @@ Below is a sample of the export schema file. The file name is automatically save
 * **Search**: You can locate specific model traces records on the UI by entering the run's *Request* *ID* in the **Search** textbox. The system returns matching results, as shown below.
 <img src="../images/search-record-model-traces.png" alt="search model traces record" title="search model traces record" style="border: 1px solid gray; zoom:75%;">
 
-* **Model Performance Metrics Summary**: Summarizes key metrics to help quickly analyze the model’s performance. [Learn more](./model-traces.md/#performance-metrics-summary){:target="_blank"}.
+* **Model Performance Metrics Summary**: Summarizes key metrics to help quickly analyze the model’s performance. [Learn more](./model-traces.md#performance-metrics-summary){:target="_blank"}.
 * **Model Traces**: The table displays all runs executed by the model since its configuration, sorted by execution date from the latest to the oldest records. It includes data from the initial execution onward—whether deployed (for open-source and fine-tuned models) or integrated (for external models). The table includes the following metrics:
-    * **Status**: An icon indicating the success or failure of the run is displayed. See point 7 [here](./model-traces.md/#key-features){:target="_blank"}.
+    * **Status**: An icon indicating the success or failure of the run is displayed. See point 7 [here](./model-traces.md#key-features){:target="_blank"}.
     * **Request ID**: The unique identifier used for the run record. 
     * **Response Time**: The time taken by the model to respond to a request.
     * **Deployment Version**: The model version deployed in your account. 
     * **Source Type**: The source type that initiated the request. 
     * **Source**: The source name from where the request was initiated.
 
-Please refer to the table [here](./model-traces.md/#steps-to-add-a-custom-filter){:target="_blank"} for more information on the above metrics.
+Please refer to the table [here](./model-traces.md#steps-to-add-a-custom-filter){:target="_blank"} for more information on the above metrics.
 
 * **Executed on**: The run execution timestamp, with records displayed from latest to oldest by date.
 * **Input**: Displays the input text provided for the run execution.
@@ -135,7 +135,7 @@ The UI summarizes key metrics for the selected period, offering actionable insig
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Hosting Credits apply only to Agent Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
+<p>Hosting Credits apply only to the Platform’s open-source and fine-tuned models and are not displayed for external models.</p></div>
 
 <img src="../images/hosting-credits.png" alt="hosting credits" title="hosting credits" style="border: 1px solid gray; zoom:75%;">
 
@@ -164,7 +164,7 @@ Time selection is available for the past and current period, including the ones 
 
 ### Steps to Set Time Range for Model Traces
 
-1. [Navigate](../analytics/model-traces.md/#access-model-traces){:target="_blank"} to the **Model Traces** feature.
+1. [Navigate](../analytics/model-traces.md#access-model-traces){:target="_blank"} to the **Model Traces** feature.
 2. Click the time selection button (displays **Last 30 Days**).
 <img src="../images/time-selection-button.png" alt="time selection button" title="time selection button" style="border: 1px solid gray; zoom:75%;">
 
@@ -174,22 +174,9 @@ Time selection is available for the past and current period, including the ones 
 
 The relevant model traces' data is displayed for the selected period.
 
-### Key Considerations and Tips
-
-The date range is automatically selected on the calendar widget once you select the period and displayed at the bottom of the widget.
-<img src="../images/date-range-display.png" alt="date range display" title="date range display" style="border: 1px solid gray; zoom:75%;">
-
-You can select a specific month or year from the relevant dropdown list and switch to different months by clicking the **forward/backward** arrows.
-<img src="../images/calendar-widget.png" alt="calendar widget" title="calendar widget" style="border: 1px solid gray; zoom:75%;">
-
-To set a specific past date as the start date, click on the desired date in the widget.
-
-By default, the current day will be set as the end date. This feature allows you to easily customize the period you want to monitor and analyze model traces.
-<img src="../images/default-calendar-selection.png" alt="default selection" title="default selection" style="border: 1px solid gray; zoom:75%;">
-
 ## Filter Model Traces by Columns
 
-You can narrow down the information displayed for model traces by applying **custom column filters**. This functionality is similar to **Filter** in the Audit Logs feature. [Learn more](../audit-logs.md/#filter-audit-logs){:target="_blank"}.
+You can narrow down the information displayed for model traces by applying **custom column filters**. This functionality is similar to **Filter** in the Audit Logs feature. [Learn more](../audit-logs.md#filter-audit-logs){:target="_blank"}.
 
 These filters allow you to select specific column values, compare the chosen or entered values, and apply logical operators across columns for multi-level filtering, providing targeted, custom data on the UI.
 
@@ -197,7 +184,7 @@ Filter customization streamlines tracking and debugging of model runs at a detai
 
 ### Steps to Add a Custom Filter
 
-1. [Navigate](./model-traces.md/#access-model-traces){:target="_blank"} to the **Model Traces** feature.
+1. [Navigate](./model-traces.md#access-model-traces){:target="_blank"} to the **Model Traces** feature.
 2. Click the **Filter** icon.
 3. Click **+ Add Filter**.
 <img src="../images/click-add-filter.png" alt="add filter" title="add filter" style="border: 1px solid gray; zoom:75%;">
@@ -325,11 +312,11 @@ The table below summarizes the available columns along with their supported oper
    <td rowspan="3" >
 <ul>
 
-<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="../../../../ai-agents/tools/overview" target="_blank">Learn more</a>.</li>
+<li><strong>Tool</strong>: The request was sent to the model from a tool. <a href="../../../../ai-agents/tools/overview/" target="_blank">Learn more</a>.</li>
 
-<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio" target="_blank">Learn more</a>.</li>
+<li><strong>Prompts</strong>: The request was sent to the model from a Prompt experiment. <a href="../../../../prompts/using-prompt-studio/" target="_blank">Learn more</a>.</li>
 
-<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="../../../../models/open-source-models/generate-an-api-key-open-source" target="_blank">Learn more</a>.</li>
+<li><strong>API Key</strong>: The request was sent to the (open-source) model using an API key. <a href="../../../../models/open-source-models/generate-an-api-key-open-source/" target="_blank">Learn more</a>.</li>
 </ul>
    </td>
   </tr>
@@ -375,11 +362,11 @@ To clear the filter settings, click **Clear All**.
 
 ### Add Multiple Filters
 
-Adding multiple filter levels enhances model trace visibility on the UI. You can combine column, operator, and value filters using the AND or OR operators for targeted data, allowing you to focus on the model trace entries most relevant to your needs. [Learn more](../audit-logs.md/#add-multiple-filters){:target="_blank"}.
+Adding multiple filter levels enhances model trace visibility on the UI. You can combine column, operator, and value filters using the AND/OR operators for targeted data, allowing you to focus on the model trace entries most relevant to your needs. [Learn more](../audit-logs.md#add-multiple-filters){:target="_blank"}.
 
 **Important**
 
-* AND and OR operators cannot be combined in multiple filtering steps to set filter criteria, ensuring consistent operator usage for each filtering step.
+* AND/OR operators cannot be combined in multiple filtering steps to set filter criteria, ensuring consistent operator usage for each filtering step.
 * Using the AND operator ensures that all specified conditions must be met for an entry to be included in the results.
 * On the other hand, using the OR operator broadens the criteria, allowing entries that meet any of the specified conditions to be included. These operators provide flexibility in tailoring your model traces data.
 * Click the **Delete** icon to delete a filter criteria step.
@@ -387,12 +374,12 @@ Adding multiple filter levels enhances model trace visibility on the UI. You can
 
 #### Steps to Add Multiple Filters
 
-1. Follow **Steps 1 to 3** mentioned [here](./model-traces.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+1. Follow **Steps 1 to 3** mentioned [here](./model-traces.md#steps-to-add-a-custom-filter){:target="_blank"}.
 2. Select the **AND/OR** operator tab in the **Filter by** window.
 
     <img src="../images/select-operator-filter.png" alt="select operator" title="select operator" style="border: 1px solid gray; zoom:75%;">
 
-3. Follow **Steps 4 to 5** mentioned [here](./model-traces.md/#steps-to-add-a-custom-filter){:target="_blank"}.
+3. Follow **Steps 4 to 5** mentioned [here](./model-traces.md#steps-to-add-a-custom-filter){:target="_blank"}.
 
 The matched model traces entries are displayed in the UI.
 
@@ -453,10 +440,11 @@ In addition to the above metadata (excluding *Deployment name* and *Deployment v
 
 **Model Traces** empowers users to identify time-based trends, troubleshoot issues, and make informed decisions by offering detailed and targeted insights into run-based metrics. This capability ensures that organizations uphold high efficiency, reliability, and compliance standards in their model deployments.
 
-## Related Information
+<hr/> 
 
-* [Settings Console](../../../administration/overview.md){:target="_blank"}- Learn more about other Agent Platform admin features.
-* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Get actionable insights into model-specific metrics and optimize performance.
-* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
-* [Billing](../../billing/billing-and-usage.md){:target="_blank"}- Manage resource consumption for tools, set limits, and track usage trends.
+**Related Resources**
 
+* [Settings Console](../../../administration/overview.md){:target="_blank"} - Learn more about other Platform admin features.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"} - Get actionable insights into model-specific metrics and optimize performance.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"} - Track activities and events in your account.
+* [Billing](../../billing/billing-and-usage.md){:target="_blank"} - Manage resource consumption for tools, set limits, and track usage trends.

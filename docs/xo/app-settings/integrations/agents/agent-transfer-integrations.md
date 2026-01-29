@@ -12,7 +12,7 @@ Agent Transfer node now allows you to define the IVR properties required to hand
 
 ## Configure Agent Transfer in Voice Gateway
 
-The **Agent Transfer** feature in Voice Gateway enables seamless transfer of live calls from an AI agent or IVR to a human agent. Supervisors can transfer calls to internal agents within their contact center or to external agents outside your organization’s network. Use this feature when a customer’s query requires human assistance or escalation.
+The **Agent Transfer** feature in Voice Gateway enables seamless transfer of live calls from an AI Agent or IVR to a human agent. Supervisors can transfer calls to internal agents within their contact center or to external agents outside your organization’s network. Use this feature when a customer’s query requires human assistance or escalation.
 
 **Overview**
 
@@ -195,3 +195,7 @@ The AI Agent supports sharing the following file formats.
 To enable attachment sharing for Tokyo, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent.md#enable-attachment-sharing-with-live-agents).
 
 To enable attachment sharing for Utah and Vancouver, see [Enable Attachment Sharing with Live Agent](../agents/servicenow/configuring-the-servicenow-agent-utah-and-vancouver.md#enable-attachment-sharing-with-live-agents).
+
+## Read Receipts
+
+The Platform now supports WhatsApp Cloud API read receipts, allowing end users to see message status indicators (delivered and read) across both bot and agent conversations. This feature is automatically available for all existing and new WhatsApp Cloud API integrations.

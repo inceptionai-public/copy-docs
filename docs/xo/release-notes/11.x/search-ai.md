@@ -1,9 +1,37 @@
 # Search AI Release Notes
 
 This document provides information on the feature updates and enhancements introduced in **Search AI** of AI for Service (XO) v11.x releases.
+
+## v11.21.0 January 17, 2026
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Export and Import Search AI Apps via Public APIs</font>
+
+Search AI now supports app configuration export and import via public APIs, enabling easy migration and backup. Users can initiate an app-export job and track its progress using the job-status API, which returns the download URL for the exported JSON file upon completion. For imports, users can upload a config file and then programmatically trigger an app-import request. This capability allows admins to efficiently replicate configurations across apps. Supported configurations include chunk processing stages, advanced configurations, business rules, search results config, answer generation settings, and answer retrieval configuration.
+
+[Learn more :octicons-arrow-right-24:](./../../apis/searchai/api-list.md)
+
+<font size="4">Github Connector Enhancements: Support for Multiple Auth Profiles</font>
+
+Search AI now supports ingesting and indexing content from multiple GitHub organizations using the same GitHub connector with multiple profiles. 
+
+Key Features
+
+* Add multiple GitHub authentication profiles, each representing a different organization.
+* Filters and Manage Content configurations are maintained separately for each organization.
+* Permissions, Content Types, and Sync Schedules are shared across all GitHub authentication profiles.
+
+[Learn more :octicons-arrow-right-24:](../../searchai/content-sources/connectors/github-onprem.md)
+
+<hr>
+
 ## v11.20.0 December 07, 2025
 
 <u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
 
 <font size="4">Access Control Enhancements</font>
 
@@ -242,7 +270,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 
 <font size="4">Multi-Vector Search</font> 
 
-Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weightage based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
+Search AI introduces **Multi-Vector Search** that allows users to associate multiple vectors with a single chunk of data. This advanced technique significantly improves retrieval accuracy by capturing different essential fields of a chunk. Each vector can be assigned a weight based on the relative importance of the fields used in that vector generation, enabling the system to prioritize specific fields during search and retrieval. This leads to more relevant and accurate results.
 
 For example, consider a document utilizing a dual-vector approach for information retrieval. One vector, generated from the document's content and title, captures detailed context. The other vector, derived from questions related to the content, anticipates user inquiries. By appropriately weighting these vectors, retrieval efficiency is significantly enhanced. This is because the vectors encompass various content aspects, such as title, content, and derived questions, resulting in improved alignment with diverse user queries.
 

@@ -10,7 +10,8 @@ Navigate to the Agentic app’s Configuration and enable Realtime Voice. This fe
 
 Click the settings icon to customize the configuration of the AI model. 
 
-* Voice AI Model: This model is responsible for interpreting user queries and generating spoken responses. Currently, Agent Platform supports only OpenAI models. Refer to[ this to learn more about adding an external model to Agent Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
+* Voice AI Model: This model is responsible for interpreting user queries and generating spoken responses. See [how to add an external model to the Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
+* The Platform supports various models. See [how to add an external model to the Platform](../../models/external-models/add-an-external-model-using-easy-integration.md).
 * Temperature: This config controls the randomness and creativity of the responses. The value for this field can range from 0 to 1.2
     * Lower values (for example, 0.2–0.6) produce more focused, deterministic answers.
     * Higher values (for example, 1–1.2) make responses more creative and varied.

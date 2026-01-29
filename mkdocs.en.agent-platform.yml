@@ -48,6 +48,13 @@ plugins:
   - redirects:
       redirect_maps:
         'getting-started/ip-addresses.md': 'getting-started/outbound-ip-address.md'
+        'ai-agents/tools/tool-flows/tool-calling.md': 'ai-agents/tools/tool-calling.md' 
+        'prompts/about-prompt-studio.md': 'prompts/overview.md'
+        'ai-agents/agentic-apps/app-settings.md': 'ai-agents/agentic-apps/settings/app-configurations.md'
+        'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
+        'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
+        'settings/workspaces/workspace-mgmt.md': 'settings/workspaces/workspace-management.md'
+        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'                
 extra:
   version:
     provider: mike
@@ -133,6 +140,7 @@ nav:
     - AI Agents: ai-agents/overview.md
     - Dialog Agents: dialog-agents/overview.md
     - Orchestration:
+      - Single Agent: ai-agents/single-agent.md
       - Supervisor: ai-agents/supervisor.md
       - Adaptive Network: ai-agents/adaptive-network.md
       - DialogGPT: dialog-agents/dialoggpt.md
@@ -147,40 +155,41 @@ nav:
         - App Profile: ai-agents/agentic-apps/app-profile.md
         - App Orchestrator: ai-agents/agentic-apps/orchestrator.md
     - Knowledge:
-      - About Search AI: ai-agents/knowledge/overview.md
+      - Search AI Overview: ai-agents/knowledge/overview.md
       - About Knowledge Tools: ai-agents/knowledge/about-knowledge.md
       - Manage Knowledge Tools: ai-agents/knowledge/manage-knowledge-tools.md
     - Tools: 
       - About Tools: ai-agents/tools/overview.md
+      - Tool Calling Overview: ai-agents/tools/tool-calling.md
       - Workflow Tools: 
         - About Workflow Tools: ai-agents/tools/workflow-tools.md
         - Create a Workflow Tool: ai-agents/tools/create-a-new-tool.md
         - Tool Templates: ai-agents/tools/tool-templates.md
         - Import a Tool: ai-agents/tools/import-a-tool.md
         - Tool Flows:
-          - About Flows: ai-agents/tools/tool-flows/flows-overview.md
-          - About Tool Calling: ai-agents/tools/tool-flows/tool-calling.md
+          - About Flows: ai-agents/tools/tool-flows/flows-overview.md          
           - Manage Flows: 
             - Manage Nodes in Flows: ai-agents/tools/tool-flows/manage-flow-nodes.md
             - Manage Input and Output: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output.md
             - Run the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow.md
             - Create a Version of the Flow: ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow.md
-          - Types of Nodes: 
-            - AI Node: 
-              - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
-              - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
-              - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
-              - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
-              - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
-            - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
-            - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
-            - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
-            - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
-            - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md 
-            - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
-            - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
-            - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md 
-          - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md    
+          - Tool Flow Change Log: ai-agents/tools/tool-flows/tool-canvas-change-log.md
+        - Nodes: 
+          - Nodes Overview: ai-agents/tools/tool-flows/types-of-nodes/nodes-overview.md
+          - AI Node: 
+            - About AI Nodes: ai-agents/tools/tool-flows/types-of-nodes/ai-node.md
+            - Text to Text Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node.md
+            - Text to Image Node: ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node.md
+            - Audio to Text Node: ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node.md
+            - Image to Text Node: ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node.md
+          - Integration Node: ai-agents/tools/tool-flows/types-of-nodes/integration-node.md
+          - API Node: ai-agents/tools/tool-flows/types-of-nodes/api-node.md
+          - Function Node: ai-agents/tools/tool-flows/types-of-nodes/function-node.md
+          - Condition Node: ai-agents/tools/tool-flows/types-of-nodes/condition-node.md
+          - DocSearch Node: ai-agents/tools/tool-flows/types-of-nodes/docsearch-node.md 
+          - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
+          - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
+          - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md              
         - Sharing & Permissions: 
           - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
         - Tool Endpoint: 
@@ -198,20 +207,22 @@ nav:
           - Export a Tool: ai-agents/tools/export-a-tool.md
           - Import Tool as a Version: ai-agents/tools/import-a-tool-as-a-version.md
       - Code Tools: 
-        - About Code Tools: ai-agents/tools/code-tools.md
+        - Code Tools Overview: ai-agents/tools/code-tools.md
         - Create a Code Tool: ai-agents/tools/create-a-code-tool.md
       - MCP Tools: 
-        - About MCP Tools: ai-agents/tools/mcp-tools.md
+        - MCP Tools Overview: ai-agents/tools/mcp-tools.md
         - Configure MCP server: ai-agents/tools/configure-mcp-server.md    
-      - Context Object: ai-agents/context-object.md
+      - Context Management: ai-agents/context-object.md
     - App Settings:
         - System Events: ai-agents/agentic-apps/settings/events.md
         - App Configurations: ai-agents/agentic-apps/settings/app-configurations.md
-        - Guardrails: ai-agents/agentic-apps/settings/guardrails.md
+        - PII & Guardrails: ai-agents/agentic-apps/settings/guardrails.md
         - Sharing & Permissions: ai-agents/agentic-apps/settings/sharing-permissions.md
         - Variables: ai-agents/agentic-apps/settings/variables.md
         - Content: ai-agents/agentic-apps/settings/content.md
+        - App Component Limits: ai-agents/agentic-apps/settings/app-component-limits.md
     - App Simulation:
+      - App Diagnostics: ai-agents/agentic-apps/diagnostics-for-agent-platform.md
       - App Simulation and Testing: ai-agents/agentic-apps/app-testing.md
     - App Analytics:
       - Usage Dashboard: ai-agents/agentic-apps/analytics-dashboard.md    
@@ -235,14 +246,14 @@ nav:
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
-      - About Models: models/overview.md 
+      - Models Overview: models/overview.md 
       - Model Factory: 
         - Fine-Tuned Models:
           - Managing Fine-Tuned Models: models/fine-tune-models/managing-fine-tuned-models.md 
           - Create a Model: models/fine-tune-models/create-a-fine-tuned-model.md
           - Deploy a Model: models/fine-tune-models/deploy-a-fine-tuned-model.md
           - Model Settings:
-            - Overview: models/fine-tune-models/model-settings-overview.md
+            - Model Settings Overview: models/fine-tune-models/model-settings-overview.md
             - Model Endpoint: models/fine-tune-models/view-the-generated-api-endpoint.md
             - API Keys: models/fine-tune-models/generate-an-api-key.md
             - Configurations: models/fine-tune-models/configure-your-fine-tuned-model.md
@@ -265,15 +276,15 @@ nav:
           - Add a Model using API Integration: models/external-models/add-an-external-model-using-api-integration.md
       - Supported Models: models/supported-models.md        
     - Prompts:
-      - About Prompt Studio: prompts/overview.md
+      - Prompt Studio Overview: prompts/overview.md
       - Accessing Prompt Studio: prompts/accessing-prompt-studio.md
       - Using Prompt Studio: prompts/using-prompt-studio.md
       - Advanced Features: prompts/advanced-features.md
       - More Options on Prompt Studio: prompts/options-prompt-canvas.md
     - Evaluation:
-      - About Evaluation Studio: evaluation/overview.md
+      - Evaluation Studio Overview: evaluation/overview.md
       - Model Evaluation: 
-        - About Model Evaluation: evaluation/model-evaluation/overview.md
+        - Model Evaluation Overview: evaluation/model-evaluation/overview.md
         - Create Projects: evaluation/model-evaluation/create-project.md
         - Create Evaluations: evaluation/model-evaluation/create-evaluation.md
         - Import Datasets: evaluation/model-evaluation/import-dataset.md
@@ -281,7 +292,7 @@ nav:
         - Run Evaluations: evaluation/model-evaluation/run-evaluation.md
         - View Results: evaluation/model-evaluation/view-evaluation-insight.md
       - Agentic Evaluation:
-        - About Agentic Evaluation: evaluation/agentic-evaluation/overview.md
+        - Agentic Evaluation Overview: evaluation/agentic-evaluation/overview.md
         - Create Projects: evaluation/agentic-evaluation/create-project.md
         - Create Simulations: evaluation/agentic-evaluation/create-simulation.md
         - Create Evaluations: evaluation/agentic-evaluation/create-evaluation.md
@@ -291,27 +302,27 @@ nav:
         - View Results: evaluation/agentic-evaluation/view-evaluation-result.md
         - Analyze Evaluations: evaluation/agentic-evaluation/analyze-evaluation.md
     - AI Safety & Governance: 
-      - About Guardrails: guardrails/overview.md
+      - Guardrails Overview: guardrails/overview.md
       - Enable a Scanner: guardrails/enable-a-scanner.md
       - Test Guardrail: guardrails/test-guardrail.md
   - Administration: 
-    - About Settings: administration/overview.md
-    - About Workspaces: settings/workspaces/workspace-mgmt.md
+    - Settings Overview: administration/overview.md
+    - Workspaces Overview: settings/workspaces/workspace-management.md
     - User Management:
-      - Overview: settings/user-management/overview.md
-      - User Management: settings/user-management/users.md
+      - User Management Overview: settings/user-management/overview.md
+      - Manage Account Users: settings/user-management/users.md
       - Invite a User: settings/user-management/invite-a-user.md
       - Add Users from Active Directory: settings/user-management/settings/active-directory.md
       - Role Management: settings/user-management/role-management.md
     - Integrations:
-      - About Integrations: settings/integrations/about-integrations.md
+      - Integrations Overview: settings/integrations/about-integrations.md
       - Enable Hugging Face: settings/integrations/enable-hugging-face.md
       - Integrate with S3 Bucket: settings/integrations/integrate-with-s3-bucket.md
       - Integrate with Weights & Biases: settings/integrations/integrate-with-wandb.md
     - Manage Custom Scripts:
       - Deploy and Manage Scripts: settings/manage-custom-scripts/custom-scripts.md 
     - Monitoring: 
-      - About Monitoring: settings/monitoring/overview.md
+      - Analyze Account-level Performance: settings/monitoring/overview.md
       - Audit Logs: settings/monitoring/audit-logs.md
       - Analytics:
         - Tools Analytics Dashboard: settings/monitoring/analytics/tools-analytics-dashboard.md      
@@ -321,21 +332,21 @@ nav:
     - Security & Control:
       - Single Sign On: settings/security-and-control/single-sign-on.md
       - Authorization Profile: settings/security-and-control/authorization-profile.md
-      - Key Management: settings/security-and-control/encryption-key-mgmt.md
+      - Key Management: settings/security-and-control/encryption-key-management.md
       - API Scopes: settings/security-and-control/api-scopes.md
     - Billing:
       - Billing and Usage: settings/billing/billing-and-usage.md
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
       - Manage Data: settings/data/manage-datasets.md
-  - API:
+  - APIs:
       - About Agentic App APIs: apis/agentic-apps/overview.md
   - APIs:
       - About Agentic App APIs: apis/agentic-apps/overview.md
       - About Tools APIs: apis/overview.md
       - APIs List: apis/list-of-apis.md
   - SDK:
-      - About Agent Platform SDK: sdk/index.md
+      - Agent Platform SDK Overview: sdk/index.md
       - Installation: sdk/getting-started/installation.md
       - Quick Start: sdk/getting-started/quickstart.md
       - Core Concepts: sdk/getting-started/concepts.md

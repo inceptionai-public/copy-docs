@@ -89,6 +89,7 @@ hi {{context.userInfo.firstName}} {{context.userInfo.lastName}}, your balance on
     <img src="../images/csv.png" alt="CSV Fields" title="CSV Fields" style="border: 1px solid gray; zoom:80%;">  
 
 #### Time Zone
+
 * The **Timezone** field of the CSV is validated against the Calling Hours Timezone.
 * The time zone mentioned for a contact in the CSV gets preference over Calling Hours.
 * When setting up the time zones for an Outbound campaign's contact list or specifying contactable timings, use the format mentioned in the Tz database. [Tz Identifiers](./tz-identifiers.md).
@@ -164,7 +165,7 @@ Steps to retrieve the label names of all available fields in a contact record:
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
 2. Enter the following function in the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md).
 `{{JSON.stringify(context.session.UserSession.campaignUserInfo)}}`
-    1. You can get the labels from the [Transcripts](../../../analytics/contact-center/interactions.md#insights-to-logs) tab of the Interactions Dashboard.
+    1. You can get the labels from the [Transcripts](../../../analytics/overview/conversations.md#insights-to-logs) tab of the Interactions Dashboard.
     2. You can also use the same function in the [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md) to access the data.  
         <img src="../images/message-node.png" alt="Message Node" title="Message Node" style="border: 1px solid gray; zoom:80%;">
 
@@ -183,12 +184,15 @@ You can use the extracted labels to access specific contact list fields within y
 
 1. Go to an [Experience Flow](../../../flows/introduction-to-flows.md) or [Dialog Task](../../../automation/use-cases/dialogs/dialog-tasks-overview.md).
 2. In the [Message Node](../../../automation/use-cases/dialogs/node-types/working-with-the-message-nodes.md) or [Script Node](../../../automation/use-cases/dialogs/node-types/working-with-the-script-node.md), add the following JavaScript function to retrieve campaign user details:
+
 ```
 const campaignUserInfo = context.session.UserSession.campaignUserInfo;
 ```
+
 // Accessing all fields, including mapped and unmapped ones
 
 3. After retrieving the user information, implement custom logic as needed. In this example, the script extracts the user’s phone number and stores it in the context for use in future flows.
+
 ```
 const number = campaignUserInfo.phoneNumber;
 ```

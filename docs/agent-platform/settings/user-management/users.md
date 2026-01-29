@@ -12,7 +12,7 @@ The **Users** feature simplifies account administration through centralized tool
 * **Status Tracking**: Monitor user statuses (active, inactive, locked) from a centralized dashboard.
 * **Account Unlocking**: Quickly unlock user accounts that have been locked due to failed login attempts.
 * **User Search**: Easily find specific users using the search functionality.
-* **User Deletion**: Remove individual or multiple users from your Agent Platform account as needed.
+* **User Deletion**: Remove individual or multiple users from your Platform account as needed.
 
 **Best Practices**
 
@@ -25,7 +25,7 @@ The **Users** feature simplifies account administration through centralized tool
 
 The dashboard displays user counts by status:
 
-* **Active**: Users with active accounts who can interact with other Agent Platform users.
+* **Active**: Users with active accounts who can interact with other Platform users.
 * **Inactive**: Users invited by the admin but who have yet to join or accept the invitation.
 * **Locked**: Users who have exceeded 5 failed login attempts and their accounts have been locked.
 
@@ -51,7 +51,7 @@ The import feature allows administrators to add multiple users at once using .tx
 **Key Considerations**
 
 * Valid file types are _.txt_ or _.csv_. No other file types are allowed.
-* The file must contain the required user information, such as name, email ID, and status, to create a user profile in your Agent Platform account.
+* The file must contain the required user information, such as name, email ID, and status, to create a user profile in your Platform account.
 * Each row should contain information for ONE user.
 * You can use accepted delimiters like Comma (","), Pipe ("|"), Semi-Colon (";"), and Tab in the file.
 * The first row in the file should be the field name used to identify the user data.
@@ -59,13 +59,13 @@ The import feature allows administrators to add multiple users at once using .tx
 * The **User Status** indicates the user’s status after import, and the corresponding actions are taken for *New*, *Update*, and *Delete* statuses.
 * Entries with invalid email formats, missing domain name, or wrong email IDs are ignored during import.
 * Once an entry in the file is validated, an email request is sent out to the user to activate their account.
-* If a user is already active (joined admin’s account), the email invitation is not sent.
+* If a user is already active (joined admin’s account), the email invitation isn't sent.
 
 #### Import User Data File
 
-The steps mentioned below, allow you to import users' data from a designated file into Agent Platform.
+The steps mentioned below, allow you to import users' data from a designated file into the Platform.
 
-1. Log in to your account and click **Autonomous Agents** under **Agent Platform Modules**.
+1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the navigation bar.
 3. Navigate to **Users Management** > **Users** on the left menu.
 4. Click **Add New User**, and select **Import**.
@@ -81,14 +81,19 @@ The steps mentioned below, allow you to import users' data from a designated fil
 **Key Suggestions**
 
 * Click and download the sample ._csv_ file for reference.
+* The fields are pre-defined in the sample file, as shown below.
 
-    <img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;">
+   <img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
 
-* The fields are pre-defined in the sample file, and the data requirements are shown below:
-<img src="../images/pre-defined-fields.png" alt="pre-defined fields" title="pre-defined fields" style="border: 1px solid gray; zoom:75%;">
+  <div class="admonition note">
+  <p class="admonition-title">Important</p>
+  <p><ul><li>Mandatory fields are marked with an asterisk (*).</li>
+  <li>The column header names and order must match the fields in the uploaded file.</li>
+  <li>Only <i>New</i>, <i>Update</i>, and <i>Delete</i> user statuses are accepted.</li>
+  <li>Invalid email IDs are not accepted.</li></ul></p> 
+</div>
 
-* Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
-<img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;">
+* Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error.
 
 4. A preview window displays the file’s data with a file uploaded success message. Click **Continue** to import the file.
 <img src="../images/success-import.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;">
@@ -101,9 +106,7 @@ The steps mentioned below, allow you to import users' data from a designated fil
 
 Correct the highlighted values based on the reason, and upload the file again. Then, follow **Steps 4 and 5** above.
 
-The file takes a few minutes to import. You can see the progress in the dialog window. When completed, the following message is displayed.
-
-<img src="../images/file-imported-successfully.png" alt="file imported successfully" title="file imported successfully" style="border: 1px solid gray; zoom:75%;">
+The file may take a few minutes to import. You can track the progress in the dialog window. Once complete, a success message is displayed.
 
 Click **OK** to see the imported users on the dashboard. 
 
@@ -143,12 +146,12 @@ The following window is displayed with the import date and time, the importing u
 
 ## Delete a User/Bulk Delete
 
-The **Delete** feature removes a user you’re managing from your Agent Platform account.
+The **Delete** feature removes a user you’re managing from your Platform account.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>Only users included as Admin in the system with the required permissions can access the <b>Settings</b> Console.</p>
-<p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on Agent Platform. To rejoin your account, you must invite them again via email.</li>
+<p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on the Platform. To rejoin your account, you must invite them again via email.</li>
 <li>You cannot delete users if they have created and manage tools in your account. The user must first remove all active tools before they can be deleted.</li></ul></p></div>
 
 **Steps to delete a user**
@@ -218,7 +221,7 @@ On the **Users** dashboard, you can change the account-level role for one or mor
 
 Changing the user role automatically assigns the designated permissions and access levels defined in the system.
 
-To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
+To change a user’s role, follow the steps mentioned [here](../user-management/role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
 ### Bulk Role Change
 
@@ -233,12 +236,10 @@ To perform bulk role change, follow the steps below:
 The role is updated for the selected users.
 <img src="../images/bulk-role-changed.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;">
 
-## Related Information
+<hr/> 
 
-* **Settings Console** - [Learn more](../../administration/overview.md){:target="_blank"} about other Agent Platform admin features.
-* **Role Management** - [Learn more](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
-* **Monitoring: Audit Logs** - [Learn more](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.
+**Related Resources**
 
-
-
-
+* [Settings Console](../../administration/overview.md){:target="_blank"} about other Platform admin features.
+* [Role Management](../user-management/role-management.md){:target="_blank"} about managing default and custom roles in your account.
+* [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} about tracking events and user activity in your account.

@@ -16,8 +16,6 @@ The **Task Execution Logs** feature helps you gain in-depth insights into the ta
 
 The **Task Execution Logs** page shows information specific to task execution in the following sections:
 
-
-
 * **Failed Task**: Indicates the number of unsuccessful tasks.
 * **API Calls**: Displays all the Service node and Webhook node executions-related data, and the number of failed services during AI Agents interactions.
 * **Script Execution**: Displays analytics data for all the script node executions and the number of failed scripts during AI Agents interactions.
@@ -267,12 +265,9 @@ This can be sorted from <strong>High to Low</strong> or<strong> Low to High</str
 
 ### Debug Log
 
-Any custom debug statements that you entered in the Script node using the script `koreDebugger.log("&lt;debug statement>")`are displayed on this tab. Debug statements should be in a string format. See the following table to know more:
-
-The logs include the user conversation from across all channels. You can use them for AI Agents analysis, especially in case of failures during user interaction.
+Any custom debug statements that you entered in the Script node using the script `koreDebugger.log("debug statement>")`are displayed on this tab. Debug statements should be in a string format. The logs include the user conversation from across all channels. You can use them for AI Agents analysis, especially in case of failures during user interaction.
 
 The details include the following:
-
 
 
 * The actual statement that you have defined at the time of AI Agents definition.
@@ -282,9 +277,7 @@ The details include the following:
 * Language of interaction
 * Task name, if available
 
-You can also view the details of the chat history associated with the session. 
-
-**To view more details, follow the steps**:
+You can also view the details of the chat history associated with the session. To view more details, follow the steps:
 
 
 

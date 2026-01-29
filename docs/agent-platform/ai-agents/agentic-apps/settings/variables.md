@@ -10,7 +10,6 @@ Key Benefits
 
 *Currently, environment variables are accessible only in the code tools.*
 
-
 ## View Environment Variables
 
 Environment variables are accessible and scoped to an app. Go to the Variables page under Settings to view the available variables for an app. 
@@ -127,4 +126,4 @@ Environment variables are defined at the app level and can take different values
 
 ## API Support for Updating Values of the Variables
 
-The Agent Platform provides APIs to update environment variable values dynamically at runtime. Contact Support Team to get access to the API.
+The Platform provides APIs to update environment variable values dynamically at runtime. Contact Support Team to get access to the API.

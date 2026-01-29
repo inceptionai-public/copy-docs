@@ -1,10 +1,8 @@
 # View API Endpoint & Deployment History
 
-
-
-
 ## API Endpoint
-After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in Agent Platform. 
+
+After the open-source model is deployed, the API endpoint is generated which implies that your model is ready for inferencing externally and across the other sections in the Platform. 
 
 The API endpoint is available in 3 formats.
 
@@ -69,10 +67,3 @@ The most recent deployment is marked with a green ticket next to the model name.
 **Deployment details**: This section includes who deployed the model, the start and end timestamps of deployment, the deployment duration, and its status (Success, Failed, or Deploying). In case of a failed deployment, hover over “Status” to view the reason for the failure.
 
 **Un-deployment details**: This section appears only if the model is undeployed either automatically by the system or manually. In the case of manual un-deployment, the person who initiated the un-deployment, along with the start and end timestamps of the process, is displayed.
-
-
-
-
-
-
-

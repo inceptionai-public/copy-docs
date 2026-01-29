@@ -34,8 +34,8 @@ Steps to add and configure the node:
 
 ### Step 1: Open Flow Builder
 
-* Log in → In **Agent Platform Modules** → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log into the Agent Platform and select **Tools** under modules.
+* Select your tool and select **Go to Flow**.
 
 ### Step 2: Add the API Node
 
@@ -158,5 +158,3 @@ Finally, test the flow and fix any issues found. Click the **Run Flow** button a
     ~~~
     {{context.steps.Start.APINodeName}}
     ~~~
-
-
