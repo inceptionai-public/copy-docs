@@ -1,6 +1,6 @@
 # About Inception AI technical documentation
 
-Inception AI offers a single AI ecosystem for all your enterprise use cases. This repo contains the source files of the technical documentation for the following products:
+[Inception AI](https://inceptionai.ai/) offers a single AI ecosystem for all your enterprise use cases. This repo contains the source files of the technical documentation for the following products:
 
 * **(In)Agent Platform**: Create valuable AI agents and agentic workflows with confidence and ongoing control.
 * **(In)Business Productivity**: Connect to your business systems, understand your data and workflows, and activate agentic RAG search, to automate and orchestrate AI agents with precision.
