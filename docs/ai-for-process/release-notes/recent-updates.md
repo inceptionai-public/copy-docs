@@ -2,6 +2,46 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent AI for Process releases.
 
+## v1.0.7 January 24, 2026
+
+<u> Minor Release </u>
+
+This release includes a new AI-powered browser automation feature and general improvements across the platform. The new feature is summarized below.
+
+**New AI-Powered Browser Automation**
+
+AI for Process now supports human-like interactions with websites, converting plain-language goals into automated tasks such as clicks, typing, navigation, and validations. The platform securely handles authentication, dynamic content, and errors, enabling end-to-end process automation across web-only and legacy systems.
+
+Key Capabilities:
+
+* Instruction Generation & Simulation: Turn plain-language goals into step-by-step browser actions.
+* Reusable Automation Nodes: Secure, reusable workflow steps with retries, timeouts, and visual validation.
+* Automation Deployment: Safely promote workflows with versioning, approvals, validation checks, and rollback.
+* Secure & Auditable: Detailed logs, replay visibility, and credential management ensure reliability and compliance.
+
+
+<hr>
+
+## v1.0.6 December 12, 2025
+
+<u> Minor Release </u>
+
+This release includes new features, enhancements, and general improvements across the platform. The key updates are listed below.
+
+**Doc Intelligence Node Enhancements**
+
+The enhanced Doc Intelligence node makes document processing more transparent, reliable, and easier to manage at scale.
+
+* Processing progress visibility: Users can now view real-time document processing progress in both the node output and Workflow Monitor.
+* Audit log support: Doc Intelligence–related events are now captured in Audit Logs, making it easier to review activity and improve traceability across workflows.
+* Workflow portability: Doc Intelligence configurations are fully preserved during workflow import and export, including node settings, engine configuration, file URLs, and context variables, with automatic connection mapping.
+* Simplified language configuration: English is selected by default during deployment, with support for selecting one additional language to reduce configuration complexity.
+* Deployment history for OCR models: A new Deployment History tab provides visibility into past and current deployments, including version details, status, configuration, and lifecycle information.
+
+<hr>
+
+
+
 ## v1.0.5 December 2, 2025
 
 <u> Minor Release </u>

@@ -2,6 +2,65 @@
 
 This document provides information on the feature updates and enhancements introduced in **Automation AI** of AI for Service (XO) v11.x releases.
 
+## v11.21.0 January 17, 2026
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">DialogGPT</font> 
+
+**Multiple Intent Descriptions** 
+
+DialogGPT now allows users to add multiple descriptions for each intent, giving the flexibility to define various phrasings, perspectives, and explanations. This enhancement helps users achieve broader semantic coverage and significantly improves the accuracy of intent shortlisting and detection—especially valuable when working with broad, overlapping, or domain-specific intents. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#create-a-dialog-task) 
+
+
+<font size="4">Agent Node </font>
+
+**Ability to Render Rich UI Components from LLM Responses**
+
+The Agent Node can now pass structured JSON responses from the LLM to client channels for rich UI presentation. When users enable the "Parse Rich Templates" option in custom prompt settings (available for V1 and V2 prompts), the node passes the JSON payloads as structured responses to the platform, which then sends them as templates to client channels. This can be achieved by either prompting the model to generate responses in structured JSON format or by generating the templates in the prompt post-processor. The Node passes these JSON payloads as structured responses to the platform, which then sends them as templates to client channels. The client channels render these templates as supported UI components such as cards, lists, tables, and suggestion chips, enabling visually engaging information display beyond plain text. [Learn more :octicons-arrow-right-24:](../../automation/agent-node/prompt-setup.md#parse-rich-templates) 
+
+
+<font size="4">Security (API Scopes) </font>
+
+**End-to-End Request and Response Payload Encryption for APIs**
+
+Payload encryption support has been extended to request payloads for selected APIs, in addition to the existing response payload encryption. The "Enforce Request and Response Payload Encryption" option (renamed from "Enforce Response Payload Encryption") now encrypts both request and response payloads. When enabled, the system generates a key to encrypt payloads in both directions, ensuring full end-to-end data protection for APIs within the JWT application's assigned scope. [Learn more :octicons-arrow-right-24:](../../apis/automation/get_linked_apps.md) 
+
+
+<font size="4">Flows & Channels</font>
+
+**Enhanced Response Structure for the Get Linked Apps API**
+
+
+The Get Linked Apps API has been enhanced with a revised response structure to retrieve all linked applications associated with a universal or parent app. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#creating-and-managing-jwt-apps-in-the-platform)
+
+
+
+
+<font size="4">Agent Transfer</font>
+
+**Read Receipts for WhatsApp Cloud API Integration**
+
+The Platform now supports WhatsApp Cloud API read receipts, allowing end users to see message status indicators (delivered and read) across both bot and agent conversations. This feature is automatically available for all existing and new WhatsApp Cloud API integrations. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/agent-transfer-integrations.md#read-receipts) 
+
+**Availability of Salesforce MIAW Conversation ID**
+
+The Platform now exposes the Salesforce MIAW Conversation ID in the bot user context during agent transfer. This enables Message, Script, and Call Flow nodes, as well as external integrations, to access the active MIAW conversation identifier at runtime for tracking, correlation, and conditional logic. [Learn more :octicons-arrow-right-24:](../../app-settings/integrations/agents/configuring-the-salesforce-agent.md#salesforce-miaw-conversation-id) 
+
+
+
+<font size="4">NLU Config</font>
+
+**BGE M3 Embeddings Support**
+
+The Platform now supports BGE M3 Embeddings as an additional option for Knowledge Graph, Machine Learning, and Few-Shot NLP use cases across all languages.
+
+Users can select BGE M3 alongside existing options (MPNet and LaBSE) to enhance multilingual performance and improve retrieval accuracy. [Learn more :octicons-arrow-right-24:](../../automation/knowledge-ai/knowledge-graph-overview.md#enable-the-few-shot-knowledge-graph)
+
+<hr>
+
 
 ## v11.20.0 December 07, 2025
 
@@ -54,7 +113,7 @@ Backward Compatibility
 
 All existing V1 and V2 prompts remain unchanged; streaming is disabled by default, preserving existing configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md#tool-definition) 
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/tools.md) 
 
 
 
@@ -90,7 +149,7 @@ The Agent node's Intent Detection now defaults to "Prefer user input as intent a
 
 **Multi-language Support**
 
-DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines to translate the user input and AI agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
+DialogGPT has expanded its intent identification and orchestration capabilities to include non-English languages, allowing users to fully leverage its power in multilingual applications. The process for adding new languages is streamlined, allowing users to easily configure LLM-based or traditional translation engines to translate the user input and AI Agent responses. [Learn more :octicons-arrow-right-24:](../../app-settings/language-management/managing-languages-for-multilingual-vas.md#adding-a-language-to-a-dialog-gpt-enabled-ai-agent)
 
 **Pre-intent Input Guardrails Support**
 
@@ -190,7 +249,7 @@ This update includes enhancements and bug fixes. The key enhancements included i
 **Enhanced DialogGPT Batch Testing Framework** 
 
 
-The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI agent performance across various conversation types [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
+The DialogGPT batch testing framework now supports the validation of specific Conversational Intent Types (e.g., Hold, Restart, Refuse, End, Agent Transfer, Repeat) within test cases, enabling direct testing of how AI Agents handle key conversational events. This enhancement enhances the test coverage, accuracy, and reliability of AI Agent performance across various conversation types. [Learn more :octicons-arrow-right-24:](../../automation/testing/batch-testing-dialoggpt.md#validate-specific-conversational-intent-types)
 
  
 <font size="4">Agent Transfer</font>
@@ -607,7 +666,7 @@ Key Updates:
 * Supports transitions to both orphan nodes and sub-dialogs.
 * Ensures full backward compatibility with existing tool configurations.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md){:target="_blank"}
 
 <font size="4">Agent Transfer</font>
 
@@ -669,7 +728,7 @@ Key changes
 * Scripts execution order in a defined flow: Node Pre-processor → Prompt Pre-processor → Prompt Execution → Prompt Post-processor → Node Post-processor.
 * Support for app functions in addition to content, context, and environment variables in the node level pre and post-processor scripts.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/node-types/agent-node-configuration.md)
+[Learn more :octicons-arrow-right-24:](../../automation/agent-node/working-with-agent-node.md)
 
 
 <hr>
@@ -739,7 +798,7 @@ Key updates
 * Customizable background colors.
 * Default yellow styling with instant edit mode.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#bookmarks-and-notes)
 
 
 **Upgraded Bookmarks for Better Visual Organization**
@@ -750,7 +809,7 @@ Key updates
 * Customizable background colors.
 * Improved loading experience with visual feedback.
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#bookmarks-and-notes)
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#bookmarks-and-notes)
 
 
 <hr>
@@ -797,7 +856,7 @@ The implementation of DialogGPT is planned in three phases:
 * Phase 2 (future release): Introduces advanced features such as Multi-App Routing support, granular intent identification, custom entity extraction, and new XO GPT models.
 * Phase 3 (future release): Includes extended capabilities like multilingual support and implementation of guardrails.  
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dialog-gpt-based-orchestration.md)
 
 <font size="4">Dialog Builder</font>  
 
@@ -1008,7 +1067,7 @@ Key updates:
 
 * Collaborative viewing: The first user to open the app is automatically granted editing rights, while subsequent users join as viewers. This ensures clear control over who can make changes, reducing the potential for conflicts or errors.  
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#collaboration-tool){:target="_blank"}
 
 **Redesigned Property Panel for Dialog Builder Nodes**
 
@@ -1122,7 +1181,7 @@ Key benefits:
 
 <img src="../images/collaboration-tool.png" alt="collaboration-tool" title="collaboration-tool" style="border: 1px solid gray; zoom:100%;">
 
-[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#collaboration-tool){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md#collaboration-tool){:target="_blank"}
 
 
 **Redesigned Property Panel for Dialog Builder Nodes**
@@ -1357,7 +1416,7 @@ Key features and enhancements included in this release are summarized below.
 
 **Enhancement to the Comments Functionality**
 
-The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/using-the-dialog-builder-tool.md#notes-comments-and-bookmarks){:target="_blank"}
+The Comments feature now includes comment and thread actions, user mentions and notifications, timestamps, and filtering options. These enhancements make Comments a powerful tool for collaboration. [Learn more :octicons-arrow-right-24:](../../automation/use-cases/dialogs/navigating-dialog-tasks.md){:target="_blank"}
 
 <font size="4">Digital Forms</font>
 
@@ -1407,7 +1466,7 @@ Key Benefits
 * Lower Costs: It removes the need to manually train the agent with diverse utterances,  reducing the overall effort in building and maintaining virtual agents; it automatically resolves more requests, minimizing transfers to human representatives and lowering operational expenses.
 * Improved Customer Experience: assistants provide more natural conversations by understanding context and handling multiple requests simultaneously.
 
-[Learn more :octicons-arrow-right-24:](../../generative-ai-tools/dialog-gpt.md)
+[Learn more :octicons-arrow-right-24:](../../automation/dialog-gpt-based-orchestration.md)
 
 
 **Enhanced Agent Node with V2 Prompt and Tool Calling**

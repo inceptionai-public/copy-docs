@@ -1,4 +1,4 @@
-# Batch Testing
+# Batch Testing - NLP
 
 Once you have built and trained your app, the most important question that arises is how good is your app’s learning model? So, evaluating your app’s performance is important to delineate how good your app understands the user utterances.
 
@@ -22,6 +22,7 @@ To conduct a batch test, you can use predefined test suites available in the bui
 * When naming the intent, ensure that the name is relatively short (3-5 words) and does not have special characters or words from the Stop Word list. Try to ensure the intent name is close to what the users request in their utterance.
 * Batch Test executions do not consider the context of the user. Hence you might see some False Negatives in the test results which in fact are True Positives in the actual app when the context is taken into consideration.
 * The **count** in Batch Test results refers to the **unique assertion** statements and not necessarily the number of the rows in the CSV file. Batch tests use a rule to validate the unique assertions based on the **utterance** in consecutive rows. If two consecutive rows have same utterances and different entity values, the Platform considers it as one assertion statement which accepts both the entity values.
+* Batch testing uses the original user input for intent scoring instead of the spell-corrected input.
 
 
 

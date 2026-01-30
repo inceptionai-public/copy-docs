@@ -12,7 +12,7 @@ You can fine-tune a Inception-hosted model or import one from Hugging Face. The 
 
 Steps to fine-tune a model:
 
-1. Log in to your account and click **Model Hub** under (In)Agent Platform Modules.
+1. Log in to your Platform account and click **Model Hub** under Modules.
 
 2. On the **Fine-tuned models** tab, click **Start fine-tuning**.<img src="../images/start-fine-tuning.png" alt="Start Fine-Tune Model" title="Start Fine-Tune Model" style="border: 1px solid gray; zoom:80%;">
 
@@ -92,4 +92,4 @@ The model **Overview** page displays real-time progress. You can also view the m
 
 Once testing is completed, you can download the training file, test results, and test data for your reference.
 
-After fine-tuning, deploy the model in (In)Agent Platform or externally via the generated API endpoint. You can also create another fine-tuned model on top of this one.
+After fine-tuning, deploy the model in the Platform or externally via the generated API endpoint. You can also create another fine-tuned model on top of this one.

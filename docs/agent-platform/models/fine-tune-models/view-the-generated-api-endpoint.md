@@ -2,7 +2,7 @@
 
 ## API Endpoint
 
-After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in (In)Agent Platform.
+After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in the Platform.
 
 !!! note
 
@@ -19,11 +19,7 @@ The API endpoint is available in 3 formats. You can copy and use the same as req
 
 ### API Endpoint
 
-You can use the deployed fine-tuned model in (In)Agent Platform for the following use cases:
-
-* In the Prompt Playground to compare prompts against commercial, open-source, or any other fine-tune model.
-
-* In a tool in the tool flow builder via the AI Node.
+You can use the deployed fine-tuned model in the Platform for the following use cases:
 
 ## Deployment History
 

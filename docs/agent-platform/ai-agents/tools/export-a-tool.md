@@ -2,7 +2,7 @@
 
 (In)Agent Platform offers the ability to export specific tool versions from your account as self-contained packages for data preservation and sharing. This feature also allows users to transfer tool configurations without compromising the integrity and security of the tool setup.
 
-When you export a tool, (In)Agent Platform automatically creates a *.zip* file named after the tool. For example, if the tool is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
+When you export a tool, Platform automatically creates a *.zip* file named after the tool. For example, if the tool is named "*Banking Assistant*," the exported file will be "*Banking Assistant.zip*". You can save this folder in the desired location on your local machine. 
 
 The exported package can be reimported to create a new tool or add it as a version to an existing one, ensuring seamless restoration.
 
@@ -55,8 +55,8 @@ The exported package includes the following JSON files encapsulating the tool’
 You can view the file name in the archive.
 
 <hr/> 
- 
- **Related resources** 
+
+**Related Resources**
 
 * [Import a tool](./import-a-tool.md){:target="_blank"} - Create a tool by importing configurations or add it as a version to an existing tool.
 * [Deploy a tool](./deploy-a-tool.md){:target="_blank"} - Explore synchronous and asynchronous deployment methods for tool integration.

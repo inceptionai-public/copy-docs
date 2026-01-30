@@ -14,7 +14,7 @@ Contextual metadata is transferred from the (In)Agent Platform to (In)Business C
 3. Configure metadata to be passed to (In)Business Customer Experience during the handoff. The event supports two types of parameters:
     * **LLM Collected parameters**: These parameters are automatically gathered by the LLM based on the description of the parameter. For example, if you wish to pass a summary of the conversation or user sentiment.
     * **System-defined parameters**: These parameters are explicitly defined. These parameters can have static values or dynamic values from the context or memory. Some examples are listed below. 
-        * Passing Static value : Add a parameter that indicates the source of information as ‘Agent Platform’.
+        * Passing Static value : Add a parameter that indicates the source of information as `Agent Platform`.
 
         ```
         "source": "(In)Agent Platform"
@@ -32,15 +32,13 @@ Contextual metadata is transferred from the (In)Agent Platform to (In)Business C
 
 ### Step 2: Handle the metadata in (In)Business Customer Experience
 
-The parameters passed from (In)Agent Platform become available in the (In)Business Customer Experience platform's flow under the Automation node context.
+The parameters passed from the Platform become available in (In)Business Customer Experience platform's Experience Flow under the Automation node context.
 
-Use the following format to access the metadata passed from the (In)Agent Platform. 
-
+Use the following format to access the metadata passed from the the Platform. 
 
 ```json
 {{context.steps.<<nodename>>.<<keyname>>}}
 ```
-
 
 **Examples**: Given the name of the automation node is queryResolver.
 

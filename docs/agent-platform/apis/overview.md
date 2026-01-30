@@ -1,6 +1,6 @@
 # Tools APIs
 
-(In)Agent Platform provides secured APIs to manage files, tools, models, and guardrails. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs .
+The Platform provides secured APIs to manage files, tools, models, and guardrails. Developers can perform key activities like deployment, import/export, monitoring, analytics, billing, and reporting using these APIs .
 
 ## API Key Authentication
 
@@ -21,7 +21,7 @@ API keys are typically included in request headers or parameters to validate acc
 
 ## How to Create the API Key?
 
-1. Log in to (In)Agent Platform and [access](../administration/overview.md/#access-settings-console){:target="_blank"} the Settings Console.
+1. Log in to the Platform and [access](../administration/overview.md/#access-settings-console){:target="_blank"} the Settings Console.
 
 2. On the left menu, click Security & Control -> API Scopes.
 
@@ -33,6 +33,6 @@ API keys are typically included in request headers or parameters to validate acc
    
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [List of available APIs](list-of-apis.md).

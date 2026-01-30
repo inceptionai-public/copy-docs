@@ -11,8 +11,8 @@ Moreover, the automatic synchronization (auto sync) feature ensures that Setting
 
 **Key Steps for Configuring Active Directory Import**
 
-1. [Set up the Connection](./active-directory.md/#step-1-set-up-the-connection){:target="_blank"}: Connect the **Settings** Console to your organization's AD to enable data import.
-2. [Select and Import the Organizational Units (OUs)](./active-directory.md/#step-2-import-organization-units){:target="_blank"}: Choose specific OUs or all OUs from which to import key user information.
+1. [Set up the Connection](./active-directory.md#step-1-set-up-the-connection){:target="_blank"}: Connect the **Settings** Console to your organization's AD to enable data import.
+2. [Select and Import the Organizational Units (OUs)](./active-directory.md#step-2-import-organization-units){:target="_blank"}: Choose specific OUs or all OUs from which to import key user information.
 3. [Specify User Attributes and Configure Rules for Selective Import from Active Directory](#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-active-directory){:target="_blank"}: Define desired user attributes (profile fields) that need to be imported from your active directory. Configure the inclusion and exclusion rules to control the information you need.
 4. [Schedule Automatic Active Directory Sync](#step-4-schedule-automatic-active-directory-sync){:target="_blank"}: Set up automatic or periodic sync schedules to keep user data current and reflect any changes or deletions from Active Directory.
 
@@ -118,9 +118,9 @@ To delete a rule, hover over the entry, click the **Delete** icon, and confirm.
 
 ### Step 4: Schedule Automatic Active Directory Sync
 
-To finish configuring your directory, schedule auto sync for your Active Directory. Enabling auto sync is **_optional_** but highly recommended to keep your Active Directory data on (In)Agent Platform up-to-date. 
+To finish configuring your directory, schedule auto sync for your Active Directory. Enabling auto sync is **_optional_** but highly recommended to keep your Active Directory data on the Platform up-to-date. 
 
-Auto sync will ensure that any changes in Active Directory, such as user additions or deletions, are automatically reflected on (In)Agent Platform.
+Auto sync will ensure that any changes in Active Directory, such as user additions or deletions, are automatically reflected on the Platform.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -164,7 +164,7 @@ When you set up Active Directory sync for the first time, the following options 
   <img src="../images/sync-history.png" alt="sync history" title="sync history" style="border: 1px solid gray; zoom:75%;">
 
 * **Manage directory sync**: Displays the **Configure Directory** window where you can edit the existing configurations.
-* **Reset**: Resets the Active Directory sync configurations but retains the last sync data on (In)Agent Platform.
+* **Reset**: Resets the Active Directory sync configurations but retains the last sync data on the Platform.
 * **Sync Status**: This information summary displays the date of last sync, the total number of users and organization units synchronized, and any errors/issues encountered during the process. 
 
 <div class="admonition note">
@@ -174,10 +174,21 @@ When you set up Active Directory sync for the first time, the following options 
 
 <img src="../images/configure-sync-with-directory.png" alt="configure sync with directory" title="configure sync with directory" style="border: 1px solid gray; zoom:75%;">
 
+### User Settings
+
+In this module, you can choose which profile fields (data fields) are visible to all users by default in your domain. You can also specify whether users are allowed to edit these default fields. You can manage mandatory fields here. For example: *First Name* in the HRIS.
+
+Additionally, you can manage which non-default fields (controlled fields) end users can view and edit. You can manage optional fields here. For example: *District* for address.
+
 ### Sync Status Email Notifications
 
-For a successful or failed sync, a notification is sent to the registered email.  
+For a successful or failed sync, a notification is sent to the registered email.
 
-An alternative way to add users to your account (without using Active Directory sync) is to invite them via email. 
+In the **Email Notifications** section you can choose whether the users should receive email notifications in the following scenarios:
+
+* Only when invited by the administrator.
+* Only when added or sychronized using AD server
+
+An alternative way to add users to your account (without using Active Directory sync) is to [invite them via email](../invite-a-user.md){:target="_blank"}. 
 
 To learn more about other administrator features on the **Settings** Console, click [here](../../../administration/overview.md){:target="_blank"}.

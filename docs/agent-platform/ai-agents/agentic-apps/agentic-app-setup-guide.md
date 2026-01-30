@@ -1,6 +1,6 @@
 # Agentic App Setup Guide
 
-This guide walks you through setting up your first Agentic App on the (In)Agent Platform. By following these steps, you'll learn how to create an account, configure your app, thoroughly test it, and deploy it to production.
+This guide walks you through setting up your first Agentic App on the Platform. By following these steps, you'll learn how to create an account, configure your app, test the app, and deploy it to a production environment.
 
 ## Setup Process
 
@@ -13,10 +13,10 @@ The Agentic App setup process consists of the following phases:
 
 ### 1. Foundation Phase
 
-1. **Sign Up for the (In)Agent Platform**: The (In)Agent Platform onboarding journey starts with creating an account. Upon successful signup, the platform will automatically provision a dedicated workspace for your projects.</br>
-  If you've already set up (In)Business Customer Experience, both your existing workspaces and shared workspaces will be visible, but you'll need separate access permission from workspace owners to use shared workspaces in the (In)Agent Platform.
-1. **Configuring Large Language Models (LLMs)**: The (In)Agent Platform leverages the power of LLMs to enable the intelligence of your agents. The platform supports integration with various LLM providers, including OpenAI, Azure OpenAI, Anthropic, and Gemini. Select the preferred model based on your specific use case and configure it. [Learn more](../../models/overview.md){:target="_blank"}.
-2. **Create an Agentic App**: An Agentic App is the core application you will build on the (In)Agent Platform. You can create an Agentic App from scratch on the platform, import a pre-built app, or install an existing one from the marketplace. [Learn more](create-app.md){:target="_blank"}.
+1. **Sign Up for the Platform**: The Platform onboarding journey starts with creating an account. Upon successful sign up, the Platform automatically provisions a dedicated workspace for your projects.
+If you've set up (In)Business Customer Experience, both your existing workspaces and shared workspaces are visible, but you need separate access permission from workspace owners to use shared workspaces in the Platform.
+1. **Configuring Large Language Models (LLMs)**: The Platform leverages the power of LLMs to enable the intelligence of your agents. The platform supports integration with various LLM providers, including OpenAI, Azure OpenAI, Anthropic, and Gemini. Select the preferred model based on your specific use case and configure it. [Learn more](../../models/overview.md){:target="_blank"}.
+1. **Create an Agentic App**: An Agentic App is the core application you will build on the Platform. You can create an Agentic App from scratch on the platform, import a pre-built app, or install an existing one from the marketplace. [Learn more](create-app.md){:target="_blank"}.
 
 ### 2. Configuration Phase
 

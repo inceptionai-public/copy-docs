@@ -101,7 +101,11 @@ To configure the Component Properties tab, please follow the steps below:
         For more information, see [Redacting Personally Identifiable Information ](../../../../app-settings/advanced-settings/pii-data-masking.md){:target="_blank"}.  
        <img src="../images/service-node-img11-pii-redaction.png" alt="Service node - PII Redaction" title="Service node - PII Redaction" style="border:1px solid gray;zoom:70%;"> 
 
-12. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
+12. Enable **Payload Encryption** to send PII values in the encrypted format.  
+<img src="../images/payload-encryption.png" alt="Payload Encryption" title="Payload Encryption" style="border:1px solid gray;zoom:70%;">
+
+
+13. In the **Variable Namespaces** section, associate the variable namespaces to execute this node and its transitions. This option is visible only when the Variable Namespace is enabled for the AI Agent. You can go with the task level settings or customize it for this node. For more information, refer to [Managing Namespace](../../../../app-settings/managing-namespace.md){:target="_blank"}.
 
 !!! Note
 
@@ -430,7 +434,7 @@ You can define the Service Type as:
     4. **DELETE**: Deletes the content of an existing target resource.
     5. **GET**: Returns the content of an existing target resource
 
-5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, https://koremessenger.com/postURL. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+5. In the second field of the **Request URL**, specify the URL for the dialog task response to process at Kore.ai. For example, `https://koremessenger.com/postURL`. Add query or path parameters as part of the URL, if required. To use entity node values as parameters, use the following syntax for accessing the `Context` object: `https://myDomain.com/{{context.entities.topic}}` for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     1. Optionally, click **Show Advanced**, and select  
 
         1. **Yes** in the **Access Using A Connector** field if access for Kore.ai assistants is using the Kore.ai connector agent. 
@@ -441,7 +445,7 @@ You can define the Service Type as:
     4. In the **Body** tab, select the body content type. You can select:
         * **application/x-www-form-urlencoded**: Also known as Multipart/Form-data, which is an encoding type that allows files to be sent through an HTTP POST request method if you want to allow a user to upload a file from a form. You can add key/value pairs that are encoded by the XO Platform.
         * **application/json**: Use JSON to transmit data between the Kore.ai servers and your AI Agent’s web application. Any JSON is sent with the request without any processing.
-        * **application/xml**: For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: https://myDomain.com/{{context.entities.topic}} for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
+        * **application/xml**: For SOAP services, pass XML payload using POST methods. You can pass entity node values as part of the XML, using the following syntax for accessing the `Context` object: `https://myDomain.com/{{context.entities.topic}}` for the `context.entities.topic`. You must use the double brackets `{{ context.object }}`. For more information, refer to [Context Object](../../../intelligence/context-object.md){:target="_blank"}.
     
     5. In the **Test Request** tab, click **Test** to optionally send your API request URL using the specified Auth type, HTTP headers, and body parameters, if defined. The response is displayed in the text area. Click **Save as Sample Response** to save the test response as the sample response for this node.
     6. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.
@@ -466,7 +470,7 @@ You can define the Service Type as:
 
 1. When you select **URL to Image** in the **Service Type**, the **Type** setting is read-only.
 2. In the **Request Definition** section, click **Define Request** to specify the settings when the **URL to Image** is selected for **Service Type**. The **Define Request for &lt; _Service Node Name_ >** dialog is displayed as shown in the following illustration.
-3. In the **URL to Convert** field, enter the URL for the image. The syntax when using a `Context` object key in a URL is to enclose the object name in double brackets, for example, https://myURLimage.com/{{context.entities.imageName}}.
+3. In the **URL to Convert** field, enter the URL for the image. The syntax when using a `Context` object key in a URL is to enclose the object name in double brackets, for example, `https://myURLimage.com/{{context.entities.imageName}}`.
 4. In the **Render Sizes** section, specify a name for the image size. For example, for an iPhone or tablet, enter the **Width** and **Height** in pixels; then click **+Add** to add additional sizes, or click **Add** to save and close the dialog.
 5. Click **Save** to save the request for the service node and close the **Define Request for &lt; _Service Node Name_ >** dialog.
 

@@ -1,14 +1,14 @@
 # Account Limits and Notifications
 
-When users create an account with (In)Agent Platform, they receive free credits - 75 model credits and 10,000 tool runs by default. The model credits are used for model inference and setting guardrails, while tool runs are consumed when inferring tools. Once the free credits are fully exhausted, users will no longer be able to perform these actions. To continue using (In)Agent Platform’s services after the free credits are exhausted, users must add credits to their account by contacting (In)Agent Platform support.
+When users create an account with (In)Agent Platform, they receive free credits - 75 model credits and 10,000 tool runs by default. The model credits are used for model inference and setting guardrails, while tool runs are consumed when inferring tools. Once the free credits are fully exhausted, users will no longer be able to perform these actions. To continue using the Platform’s services after the free credits are exhausted, users must add credits to their account by contacting Support.
 
 ## Exhaustion alerts for Model Credits and Tool Runs
 
-(In)Agent Platform provides multiple alerts and warning notifications to inform users when their credits are running low or have expired. These notifications are crucial for:
+The Platform provides multiple alerts and warning notifications to inform users when their credits are running low or have expired. These notifications are crucial for:
 
 * Helping users monitor their credit usage.
 * Allowing proactive management to prevent service disruptions.
-* Reminding users to add credits in advance to ensure uninterrupted access to (In)Agent Platform's features.
+* Reminding users to add credits in advance to ensure uninterrupted access to the Platform's features.
 
 ### Notification Methods
 
