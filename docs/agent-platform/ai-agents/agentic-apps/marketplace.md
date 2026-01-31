@@ -41,7 +41,7 @@ The Marketplace is ideal for professionals seeking rapid prototyping, scalable d
 ### Enhance an Existing App
 
 1. Access the Marketplace
-    * Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"} and select your existing app.
+    * Go to Agentic Apps and select your existing app.
     * Choose **Explore Marketplace**.
       <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 

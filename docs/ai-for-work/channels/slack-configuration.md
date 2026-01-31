@@ -1,6 +1,6 @@
 # Slack Integration - Configuration
 
-This document provides detailed step-by-step instructions to integrate AI for Work platform with Slack. Follow these steps sequentially to ensure proper deployment and functionality.
+This document provides detailed step-by-step instructions to integrate (In)Business Productivity platform with Slack. Follow these steps sequentially to ensure proper deployment and functionality.
 
 
 ## Step 1: Configure App Display Settings
@@ -77,7 +77,7 @@ Copy the app credentials from Slack Developer Portal and provide them to the pla
     
     <img src="../images/slack-6.png" alt="teams_1" title="teams_1" style="border: 1px solid gray; zoom:70%;">
 
-**Configure Credentials in AI for Work**
+**Configure Credentials in (In)Business Productivity**
 
 1. Return to the Admin Console.
 2. In the **App Credentials** page, paste the copied values:

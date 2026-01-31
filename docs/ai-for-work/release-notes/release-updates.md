@@ -12,13 +12,13 @@ This update includes new features and feature enhancements summarized below.
 
 **Slack Integration**
 
-AI for Work now supports native Slack integration, allowing you to bring AI capabilities directly into your team's communication workflows. Configure agents to respond in Slack channels, provide intelligent assistance, and streamline collaboration without leaving your Slack workspace.
+(In)Business Productivity now supports native Slack integration, allowing you to bring AI capabilities directly into your team's communication workflows. Configure agents to respond in Slack channels, provide intelligent assistance, and streamline collaboration without leaving your Slack workspace.
 
 [Learn more :octicons-arrow-right-24:](../channels/slack-overview.md)
 
 **MCP Server Integration**
 
-AI for Work now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the Agent platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
+(In)Business Productivity now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the Agent platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
 
 MCP Server integration provides enhanced connectivity and extensibility, enabling advanced AI orchestration and interoperability with external systems.
 
@@ -28,7 +28,7 @@ MCP Server integration provides enhanced connectivity and extensibility, enablin
 
 Introducing Work, an intelligent search capability that leverages AI agents to deliver more contextual and actionable search results. This feature enhances the Work Orchestrator experience by enabling agents to understand search intent, reason through complex queries, and provide comprehensive answers with proper source attribution.
 
-To enable Work - Agentic Search, create an agentic app from the base template and link it with AI for Work. This configuration unlocks powerful AI-driven search capabilities across your organization.
+To enable Work - Agentic Search, create an agentic app from the base template and link it with (In)Business Productivity. This configuration unlocks powerful AI-driven search capabilities across your organization.
 
 [Learn more :octicons-arrow-right-24:](../custom-agents/work-agent.md)
 

@@ -139,7 +139,7 @@ Create the API credentials that the Platform uses to communicate with your deplo
 Keep this updated cURL command ready for the next step.
 
 
-## Register with AI for Work
+## Register with (In)Business Productivity
 
 The final configuration step connects your deployed Agentic Search instance to the Platform, making it available to users through the search interface.
 
@@ -167,7 +167,7 @@ With everything configured and deployed, validate that Agentic Search functions 
 In platform, navigate to the Work tab's search interface. Submit a test query that should trigger your configured agents and tools. The system should process your query and return relevant results.
 
 
-1. Open **AI for Work** → **Search Bar (Work tab)**.
+1. Open **(In)Business Productivity** → **Search Bar (Work tab)**.
 2. Submit a test query.
 3. Verify the results appear correctly.
 4. Check **Agent Platform** → **Traces** to review the execution flow.

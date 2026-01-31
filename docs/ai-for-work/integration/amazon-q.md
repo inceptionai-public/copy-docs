@@ -194,13 +194,13 @@ This final step completes the integration by configuring Inception as a data acc
     * **Use an existing TTI** that you configured.
     * **Create a new TTI** specifically for this accessor.
 5. **Set Data Source Access permissions**:
-    * **All data sources**: Grant Kore.ai access to all current and future data sources.
-    * **Specific data sources**: Select only the data sources that Kore.ai should access.
+    * **All data sources**: Grant access to all current and future data sources.
+    * **Specific data sources**: Select only the data sources that the Platform should access.
     <img src="../images/AmazonQ_13.png" alt="Platform Architecture" title="Platform Architecture" style="border: 1px solid gray; zoom:100%;">
 
 6. **Configure User Access**:
     * **All Users**: Grant access to all users (ensure that you add the users to the application).
-    * **Specific Users**: Select individual users who should have access through Kore.ai.
+    * **Specific Users**: Select individual users who should have access.
 7. **Complete the integration**:
     * Copy the **Data Accessor Details** from the AWS console.
     * Return to your Platform configuration screen. Paste the Data Accessor Details to complete the linkage.
@@ -214,7 +214,7 @@ The architecture comprises several interconnected components that facilitate sec
 
 At the infrastructure level, the solution leverages AWS Identity and Access Management (IAM) for authentication and authorization, with AWS Security Token Service (STS) serving as the credential broker. The core components include Amazon Q Index (which stores vector embeddings and metadata), Application code (which handles API routing and token exchange), and the Platform application layer (which manages user interactions and business logic). These components communicate via HTTPS using RESTful APIs with AWS Signature Version 4 (SigV4) for request signing.
 
-When processing queries, the data flow begins with user input at the Platform application layer, which routes to either Kore's native retrievers or Amazon Q Index based on predefined routing rules. For Amazon Q Index requests, the architecture implements cross-account API calls using OAuth 2.0 tokens that undergo transformation into temporary AWS credentials.
+When processing queries, the data flow begins with user input at the Platform application layer, which routes to either the native retrievers of the Platform or Amazon Q Index based on predefined routing rules. For Amazon Q Index requests, the architecture implements cross-account API calls using OAuth 2.0 tokens that undergo transformation into temporary AWS credentials.
 
 Query responses from Amazon Q Index contain relevant document snippets with source references rather than complete documents, maintaining both security and performance optimization.
 

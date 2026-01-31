@@ -1,6 +1,6 @@
 # (In)Business Productivity Setup Guide
 
-This setup guide helps administrators quickly configure the AI for Work Platform for their users. Learn how to sign up, set up, configure, and invite users to the Platform.
+This setup guide helps administrators quickly configure the (In)Business Productivity Platform for their users. Learn how to sign up, set up, configure, and invite users to the Platform.
 
 The Platform setup consists of the following steps:
 
@@ -50,4 +50,4 @@ Agents and applications can be quickly set up to integrate with your workflows a
 
 ### Step 8: Invite your Users to the Platform
 
-Now that you've set up the Platform, [invite or let your team know about it](../user-management/user-enrollments.md). The AI for Work Assistant provides employees with a single access point to knowledge across systems and can automate routine tasks using published AI agents. [Learn how to use the Assistant](../getting-started/how-to-use.md).
+Now that you've set up the Platform, [invite or let your team know about it](../user-management/user-enrollments.md). The (In)Business Productivity Assistant provides employees with a single access point to knowledge across systems and can automate routine tasks using published AI agents. [Learn how to use the Assistant](../getting-started/how-to-use.md).

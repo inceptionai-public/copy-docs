@@ -1,6 +1,6 @@
 # Slack Channel - Overview
 
-AI for Work integrates seamlessly with Slack, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by enabling users to perform work-related tasks, query enterprise knowledge sources, and interact with AI agents all within Slack. 
+(In)Business Productivity integrates seamlessly with Slack, enabling employees to access AI-powered assistance directly within their collaboration environment. This integration streamlines productivity by enabling users to perform work-related tasks, query enterprise knowledge sources, and interact with AI agents all within Slack. 
 
 The following guide provides step-by-step instructions to deploy the Platform as a custom Slack application, covering app manifest generation, credential configuration, and organizational rollout.
 
@@ -18,14 +18,14 @@ Before you begin the deployment process, ensure you have:
 
 * **Slack Workspace**: Active workspace with administrative privileges.
 * **Slack Developer Portal Access**: Permission to create and manage apps in your workspace.
-* **AI for Work Account**: Active subscription with access to the Admin Console.
+* **(In)Business Productivity Account**: Active subscription with access to the Admin Console.
   
 
 ## Architecture Overview
 
 The integration between the Platform and Slack follows an app-based architecture using Slack's Developer Portal and OAuth authentication.
 
-**[AI for Work Platform]** ↔ **[Slack App Configuration]** ↔ **[Slack Workspace]**
+**[(In)Business Productivity Platform]** ↔ **[Slack App Configuration]** ↔ **[Slack Workspace]**
 
 ### Integration Lifecycle
 

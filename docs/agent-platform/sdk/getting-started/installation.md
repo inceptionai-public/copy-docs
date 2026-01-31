@@ -4,7 +4,7 @@ Get started with the AgenticAI Workspace and set up your development environment
 
 !!!note 
 
-    The SDK repository is private and is shared on request. [Contact Support for access to the repo.](https://support.kore.ai)
+    The SDK repository is private and is shared on request. Contact Support for access to the repo.
 
 ## Requirements
 
@@ -80,7 +80,7 @@ Before building applications, configure access to the AgenticAI platform.
 
 ### 1. Access the Platform
 
-Visit [AgenticAI Platform](https://agent-platform.kore.ai/) to:
+Visit the Platform to:
 
 1. **Configure LLM Models** - Set up your preferred models (GPT-4, Claude, etc.)
 2. **Create Application** - Create a new app on the platform
@@ -92,7 +92,7 @@ Create environment configuration files in `.env/` directory:
 
 ```bash
 # .env/dev
-KORE_HOST=https://agent-platform.kore.ai
+KORE_HOST=platform_url
 APP_API_KEY=your_generated_api_key_here
 
 # Optional: Enable distributed tracing

@@ -5,7 +5,7 @@ This document explains how to share contextual variables such as channel informa
 
 ## How It Works
 
-Agent Platform supports **metadata injection** via a structured memory model. Developers can define variables and expose them as metadata in the Automation Node in (In)Business Customer Experience, which is then made available in the agent’s memory during runtime. This allows seamless context sharing across the platforms.
+(In)Agent Platform supports **metadata injection** via a structured memory model. Developers can define variables and expose them as metadata in the Automation Node in (In)Business Customer Experience, which is then made available in the agent’s memory during runtime. This allows seamless context sharing across the platforms.
 
 
 ## Step 1: Pass variables from the (In)Business Customer Experience app

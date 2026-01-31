@@ -33,7 +33,7 @@ You can now configure tools to include their outputs as artifacts in the final r
 
 **PII Handling for Workflow Tools**
 
-The Agent Platform extends existing PII handling to Workflow Tools, ensuring sensitive data is securely processed while preventing exposure in logs, traces, or model outputs. Before a Workflow Tool starts execution, input fields are automatically scanned for declared PII patterns. Inputs identified as PII are masked as configured and passed to the tool in redacted form. If the Workflow tools are granted access to the original value in the PII configuration:
+The (In)Agent Platform extends existing PII handling to Workflow Tools, ensuring sensitive data is securely processed while preventing exposure in logs, traces, or model outputs. Before a Workflow Tool starts execution, input fields are automatically scanned for declared PII patterns. Inputs identified as PII are masked as configured and passed to the tool in redacted form. If the Workflow tools are granted access to the original value in the PII configuration:
 
 * The tool can securely unredact and use the PII internally for execution.
 * All monitoring, debugging logs, and execution traces continue to display only masked values.
@@ -51,7 +51,7 @@ Selecting context variables is now faster and more intuitive. When users type `{
 
 **Expanded Model Support**
 
-The Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
+The (In)Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
 
 New models include:
 
@@ -135,19 +135,19 @@ Environment Variables with namespace support enable secure, reusable, and enviro
 
 **Pre-Processor for Agent Execution**
 
-Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
+(In)Agent Platform introduces a new Pre-Processor capability that allows developers to transform and validate agent context before each execution. This enhancement enables custom logic to run before each agent invocation, allowing it to process incoming data, enrich context, and adjust agent inputs as required. The Pre-Processor supports user-defined scripts in JavaScript and Python.
 
 **Note**: This feature is currently in preview and can be enabled upon request.
 
 **API Key Permissions and Access Control**
 
-Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
+(In)Agent Platform now supports granular permission controls for API keys, allowing precise definition of each key's capabilities. Users can create app-level keys scoped to specific permissions to create, manage, or delete sessions, upload or delete files, and execute agent runs. Existing API keys maintain full backward compatibility.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/api-keys.md)
 
 **Agent Invocation Error Handling**
 
-Agent Platform introduces a new error-handling framework that provides configurable timeouts, retry logic, fallback models, and recovery actions for model invocation failures. These enhancements ensure a predictable handling of failures, and improved user experience during model outages.
+(In)Agent Platform introduces a new error-handling framework that provides configurable timeouts, retry logic, fallback models, and recovery actions for model invocation failures. These enhancements ensure a predictable handling of failures, and improved user experience during model outages.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/app-configurations.md#error-handling)
 
@@ -177,7 +177,7 @@ Custom external model integrations now support the Gemini request–response for
 
 **New PII Protection Framework**
 
-Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data. Developers can selectively unmask and use original values in tools when needed.
+(In)Agent Platform introduces a comprehensive PII Protection Framework designed to safeguard sensitive information across the platform. The framework uses regex-based detection to identify sensitive data and automatically applies configured actions - redaction, masking, or replacement. Sensitive content is protected across users, agents, tools, and system logs, as configured, ensuring it's never exposed in traces or debug logs and providing end-to-end protection of sensitive data. Developers can selectively unmask and use original values in tools when needed.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/guardrails.md)
 

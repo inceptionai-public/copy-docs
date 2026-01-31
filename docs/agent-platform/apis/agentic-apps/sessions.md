@@ -95,20 +95,7 @@ Refer to <a href="../overview/">this</a> for a detailed description.
   </tr>
   <tr>
   <td>source(optional)</td>
-  <td><p>Identifies the system from which the API request is initiated. This field enables better analytics, monitoring, and observability by indicating what triggered the agentic app execution. This field is available as a filter in the session logs.</p>If not provided, the platform automatically assigns the default value.</p>
-    <p>Recommended Values:</p>
-    <ul>
-    <li>AP: This is the default value. Used when the sourcefield isn't explicitly passed.</li>
-    <li>AIS-AA: AI for Service - Agent Assist</li>
-    <li>AIS-QM: AI for Service - Quality Module</li>
-    <li>AIS-CC: AI for Service - Contact Center</li>
-    <li>AP-PG: Agent Platform - Playground</li>
-    <li>AP-ES: Agent Platform - Evaluation Studio</li>
-    <li>AIW: AI for Work</li>
-    <li>AIP: AI for Process</li>
-    <li>MP: Agent Platform - Marketplace</li>
-
-    </ul>
+  <td><p>Identifies the system from which the API request is initiated. This field enables better analytics, monitoring, and observability by indicating what triggered the agentic app execution. This field is available as a filter in the session logs. If not provided, the platform automatically assigns the default value.</p>
 </td>
   </tr>
 </table>
