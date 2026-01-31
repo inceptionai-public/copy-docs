@@ -39,7 +39,7 @@ In this document, you will learn how to add and configure DocSearch Nodes with S
 Configuring the DocSearch Node consists of the following steps:
 
 1. [Set up a Search AI application and the information source for Platform integration](../types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in the Platform](../types-of-nodes/docsearch-node.md/#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"}.
+2. [Link the Search AI application in the Platform](#step-2-link-the-search-ai-app-in-inagent-platform).
 3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 4. [Test the Flow](../types-of-nodes/docsearch-node.md/#step-4-test-the-flow) you have built.
 
@@ -107,14 +107,14 @@ After fetching the Search AI application credentials, configuring the source, an
   You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."
    <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;">
    
- * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-agent-platform" target="_blank">Step 2</a> on the Platform integration page.
+ * Select the <b>Search AI connection</b> you set up in Step 2 on the Platform integration page.
    <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;">
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
    <p>Use search to look up and select the required connection.</p></div>
 
-  To set up a new connection, click **+ New Connection**. It redirects you to the Platform Integrations page. Follow the steps mentioned [here](./docsearch-node.md#step-2-link-the-search-ai-app-in-agent-platform){:target="_blank"} to complete the integration.
+  To set up a new connection, click **+ New Connection**. It redirects you to the Platform Integrations page. Follow the steps mentioned in Step 2 to complete the integration.
 
  * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code.
   <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">

@@ -293,9 +293,6 @@ Debug output includes:
 ### Viewing Traces
 
 Access your application traces through the Platform analytics dashboard. For detailed information on viewing and analyzing traces, sessions, and generations, see the [Application Analytics documentation](../../../ai-agents/agentic-apps/app-analytics.md).
-../../../ai-agents/
-
-/agent-platform/ai-agents/agentic-apps/app-analytics
 
 The platform provides:
 
