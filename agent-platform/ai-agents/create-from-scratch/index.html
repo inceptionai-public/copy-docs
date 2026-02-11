@@ -7,28 +7,28 @@
         <meta name="author" content="Inceptionai Content Experience Team">
       
       
-        <link rel="canonical" href="https://inceptionai.ai/sdk/api/designtime/memory_store/">
+        <link rel="canonical" href="https://inceptionai.ai/ai-agents/create-from-scratch/">
       
       
-        <link rel="prev" href="../prompt/">
+        <link rel="prev" href="../create-agent/">
       
       
-        <link rel="next" href="../app_configuration/">
+        <link rel="next" href="../external-agents/">
       
       
-      <link rel="icon" href="../../../../images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>Memory Store - Inceptionai Docs</title>
+        <title>Create Agent From Scratch - Inceptionai Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -47,9 +47,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra_kore.css">
+      <link rel="stylesheet" href="../../stylesheets/extra_kore.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -66,7 +66,7 @@
     
     
     
-  <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#memory-store" class="md-skip">
+        <a href="#create-a-new-agent-from-scratch" class="md-skip">
           Skip to content
         </a>
       
@@ -204,7 +204,7 @@
 
     <!-- Link to home -->
     <!-- <a
-      href="../../../.."
+      href="../.."
       title="Inceptionai Docs"
       class="md-header__button md-logo"
       aria-label="Inceptionai Docs"
@@ -232,7 +232,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Memory Store
+              Create Agent From Scratch
             
           </span>
         </div>
@@ -345,7 +345,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../home/" class="md-tabs__link">
+      <a href="../../home/" class="md-tabs__link">
         
   
     
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../getting-started/introduction/" class="md-tabs__link">
+        <a href="../../getting-started/introduction/" class="md-tabs__link">
           
   
   Getting Started
@@ -378,11 +378,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../ai-agents/multi-agent-system/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../multi-agent-system/" class="md-tabs__link">
           
   
   AI Agents
@@ -400,7 +402,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../core-ai/overview/" class="md-tabs__link">
+        <a href="../../core-ai/overview/" class="md-tabs__link">
           
   
   Core AI Capabilities
@@ -418,7 +420,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../administration/overview/" class="md-tabs__link">
+        <a href="../../administration/overview/" class="md-tabs__link">
           
   
   Administration
@@ -436,7 +438,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../apis/agentic-apps/overview/" class="md-tabs__link">
+        <a href="../../apis/agentic-apps/overview/" class="md-tabs__link">
           
   
   APIs
@@ -450,29 +452,9 @@
         
   
   
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
-          
-  
-  SDK
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
   
     <li class="md-tabs__item">
-      <a href="../../../../ai-agents/agentic-apps/marketplace/" class="md-tabs__link">
+      <a href="../agentic-apps/marketplace/" class="md-tabs__link">
         
   
     
@@ -506,7 +488,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Inceptionai Docs" class="md-nav__button md-logo" aria-label="Inceptionai Docs" data-md-component="logo">
+    <a href="../.." title="Inceptionai Docs" class="md-nav__button md-logo" aria-label="Inceptionai Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
@@ -536,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../home/" class="md-nav__link">
+      <a href="../../home/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -596,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started/introduction/" class="md-nav__link">
+      <a href="../../getting-started/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -617,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../getting-started/outbound-ip-address/" class="md-nav__link">
+      <a href="../../getting-started/outbound-ip-address/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -638,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/agentic-app-setup-guide/" class="md-nav__link">
+      <a href="../agentic-apps/agentic-app-setup-guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../release-notes/recent-updates/" class="md-nav__link">
+      <a href="../../release-notes/recent-updates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,25 +714,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -761,7 +748,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             AI Agents
@@ -775,7 +762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/multi-agent-system/" class="md-nav__link">
+      <a href="../multi-agent-system/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/overview/" class="md-nav__link">
+      <a href="../agentic-apps/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../dialog-agents/overview/" class="md-nav__link">
+      <a href="../../dialog-agents/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -864,17 +851,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5">
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -899,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/single-agent/" class="md-nav__link">
+      <a href="../single-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/supervisor/" class="md-nav__link">
+      <a href="../supervisor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/adaptive-network/" class="md-nav__link">
+      <a href="../adaptive-network/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -962,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../dialog-agents/dialoggpt/" class="md-nav__link">
+      <a href="../../dialog-agents/dialoggpt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/realtime-multimodal/" class="md-nav__link">
+      <a href="../realtime-multimodal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1009,25 +999,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6">
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1038,7 +1033,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             Build AI Agents
@@ -1052,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/create-app/" class="md-nav__link">
+      <a href="../agentic-apps/create-app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,14 +1065,56 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../ai-agents/create-agent/" class="md-nav__link">
+  
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Set up AI Agents
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Set up AI Agents
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
   </span>
   
 
@@ -1091,10 +1128,157 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create Agent From Scratch
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Create Agent From Scratch
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#agent-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent Profile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agent-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent Definition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agent Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agent-definition-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agent Definition Editor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-tool-to-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Tool to Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-a-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import a Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-a-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing a Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/external-agents/" class="md-nav__link">
+      <a href="../external-agents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1115,7 +1299,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/memory-stores/" class="md-nav__link">
+      <a href="../create-from-marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import from Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic-apps/memory-stores/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1136,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agent-management/" class="md-nav__link">
+      <a href="../agent-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1169,10 +1382,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_6">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_5">
         
           
-          <label class="md-nav__link" for="__nav_3_6_6" id="__nav_3_6_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6_5" id="__nav_3_6_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1183,8 +1396,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_5">
             <span class="md-nav__icon md-icon"></span>
             Manage Agentic App
           </label>
@@ -1197,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/app-profile/" class="md-nav__link">
+      <a href="../agentic-apps/app-profile/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1218,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/orchestrator/" class="md-nav__link">
+      <a href="../agentic-apps/orchestrator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1260,17 +1473,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7">
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1295,7 +1511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/knowledge/overview/" class="md-nav__link">
+      <a href="../knowledge/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1316,7 +1532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/knowledge/about-knowledge/" class="md-nav__link">
+      <a href="../knowledge/about-knowledge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1337,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/knowledge/manage-knowledge-tools/" class="md-nav__link">
+      <a href="../knowledge/manage-knowledge-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1371,17 +1587,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8">
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1406,7 +1625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/overview/" class="md-nav__link">
+      <a href="../tools/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1427,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-calling/" class="md-nav__link">
+      <a href="../tools/tool-calling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1488,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/workflow-tools/" class="md-nav__link">
+      <a href="../tools/workflow-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1509,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/create-a-new-tool/" class="md-nav__link">
+      <a href="../tools/create-a-new-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1530,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-templates/" class="md-nav__link">
+      <a href="../tools/tool-templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1551,7 +1770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/import-a-tool/" class="md-nav__link">
+      <a href="../tools/import-a-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1612,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/flows-overview/" class="md-nav__link">
+      <a href="../tools/tool-flows/flows-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1673,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/manage-flow-nodes/" class="md-nav__link">
+      <a href="../tools/tool-flows/manage-flow-nodes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1694,7 +1913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/" class="md-nav__link">
+      <a href="../tools/tool-flows/perform-other-actions-on-the-flow-builder/manage-input-and-output/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1715,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/" class="md-nav__link">
+      <a href="../tools/tool-flows/perform-other-actions-on-the-flow-builder/run-the-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1736,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow/" class="md-nav__link">
+      <a href="../tools/tool-flows/perform-other-actions-on-the-flow-builder/create-a-new-version-of-the-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1765,7 +1984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/tool-canvas-change-log/" class="md-nav__link">
+      <a href="../tools/tool-flows/tool-canvas-change-log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1834,7 +2053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/nodes-overview/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/nodes-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1895,7 +2114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/ai-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/ai-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1916,7 +2135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/text-to-text-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/text-to-text-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1937,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/text-to-image-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/text-to-image-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1958,7 +2177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/audio-to-text-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/audio-to-text-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1979,7 +2198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/image-to-text-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/image-to-text-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2008,7 +2227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/integration-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/integration-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2029,7 +2248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/api-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/api-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2050,7 +2269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/function-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/function-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2071,7 +2290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/condition-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/condition-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2092,7 +2311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/docsearch-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/docsearch-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2113,7 +2332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/loop-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/loop-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2134,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/human-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/human-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2155,7 +2374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-flows/types-of-nodes/end-node/" class="md-nav__link">
+      <a href="../tools/tool-flows/types-of-nodes/end-node/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2224,7 +2443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/manage-user-roles-and-permissions/" class="md-nav__link">
+      <a href="../tools/manage-user-roles-and-permissions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2293,7 +2512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/deploy-a-tool/" class="md-nav__link">
+      <a href="../tools/deploy-a-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2362,7 +2581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-monitor/about-tool-monitor/" class="md-nav__link">
+      <a href="../tools/tool-monitor/about-tool-monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2383,7 +2602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-monitor/accessing-tool-monitor/" class="md-nav__link">
+      <a href="../tools/tool-monitor/accessing-tool-monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2404,7 +2623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface/" class="md-nav__link">
+      <a href="../tools/tool-monitor/understanding-the-tool-monitor-interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2473,7 +2692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/create-a-new-api-key/" class="md-nav__link">
+      <a href="../tools/create-a-new-api-key/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2542,7 +2761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/tool-audit-log/" class="md-nav__link">
+      <a href="../tools/tool-audit-log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2611,7 +2830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/configure-a-tool/" class="md-nav__link">
+      <a href="../tools/configure-a-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2632,7 +2851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/export-a-tool/" class="md-nav__link">
+      <a href="../tools/export-a-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2653,7 +2872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/import-a-tool-as-a-version/" class="md-nav__link">
+      <a href="../tools/import-a-tool-as-a-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2730,7 +2949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/code-tools/" class="md-nav__link">
+      <a href="../tools/code-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2751,7 +2970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/create-a-code-tool/" class="md-nav__link">
+      <a href="../tools/create-a-code-tool/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2820,7 +3039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/mcp-tools/" class="md-nav__link">
+      <a href="../tools/mcp-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2841,7 +3060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/tools/configure-mcp-server/" class="md-nav__link">
+      <a href="../tools/configure-mcp-server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2870,7 +3089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/context-object/" class="md-nav__link">
+      <a href="../context-object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2904,17 +3123,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9">
         
           
-          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -2939,7 +3161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/events/" class="md-nav__link">
+      <a href="../agentic-apps/settings/events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2960,7 +3182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/app-configurations/" class="md-nav__link">
+      <a href="../agentic-apps/settings/app-configurations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2981,7 +3203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/guardrails/" class="md-nav__link">
+      <a href="../agentic-apps/settings/guardrails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3002,7 +3224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/sharing-permissions/" class="md-nav__link">
+      <a href="../agentic-apps/settings/sharing-permissions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3023,7 +3245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/variables/" class="md-nav__link">
+      <a href="../agentic-apps/settings/variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3044,7 +3266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/content/" class="md-nav__link">
+      <a href="../agentic-apps/settings/content/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3065,7 +3287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/settings/app-component-limits/" class="md-nav__link">
+      <a href="../agentic-apps/settings/app-component-limits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3099,17 +3321,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10">
         
           
-          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3134,7 +3359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/diagnostics-for-agent-platform/" class="md-nav__link">
+      <a href="../agentic-apps/diagnostics-for-agent-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3155,7 +3380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/app-testing/" class="md-nav__link">
+      <a href="../agentic-apps/app-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3189,17 +3414,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11">
         
           
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3224,7 +3452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/analytics-dashboard/" class="md-nav__link">
+      <a href="../agentic-apps/analytics-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3245,7 +3473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/app-analytics/" class="md-nav__link">
+      <a href="../agentic-apps/app-analytics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3279,17 +3507,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12">
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3314,7 +3545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/deployment/app-deployment/" class="md-nav__link">
+      <a href="../agentic-apps/deployment/app-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3335,7 +3566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/deployment/access-deployed-version/" class="md-nav__link">
+      <a href="../agentic-apps/deployment/access-deployed-version/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3356,7 +3587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/api-keys/" class="md-nav__link">
+      <a href="../agentic-apps/api-keys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3417,7 +3648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/import/" class="md-nav__link">
+      <a href="../agentic-apps/import/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3438,7 +3669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/export/" class="md-nav__link">
+      <a href="../agentic-apps/export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3467,7 +3698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/audit-logs/" class="md-nav__link">
+      <a href="../agentic-apps/audit-logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3501,17 +3732,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13">
         
           
-          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -3536,7 +3770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/howto/share-context/" class="md-nav__link">
+      <a href="../agentic-apps/howto/share-context/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3557,7 +3791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/howto/pass-data/" class="md-nav__link">
+      <a href="../agentic-apps/howto/pass-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3578,7 +3812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/howto/pass-uploaded-documents-to-external-systems/" class="md-nav__link">
+      <a href="../agentic-apps/howto/pass-uploaded-documents-to-external-systems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3599,7 +3833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/howto/initiate-live-agent-handoff/" class="md-nav__link">
+      <a href="../agentic-apps/howto/initiate-live-agent-handoff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3620,7 +3854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/howto/use-metadata/" class="md-nav__link">
+      <a href="../agentic-apps/howto/use-metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3641,7 +3875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/howto/voice-interactions/" class="md-nav__link">
+      <a href="../agentic-apps/howto/voice-interactions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3717,7 +3951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../core-ai/overview/" class="md-nav__link">
+      <a href="../../core-ai/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3778,7 +4012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/overview/" class="md-nav__link">
+      <a href="../../models/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3879,7 +4113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/managing-fine-tuned-models/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/managing-fine-tuned-models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3900,7 +4134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/create-a-fine-tuned-model/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/create-a-fine-tuned-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3921,7 +4155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/deploy-a-fine-tuned-model/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/deploy-a-fine-tuned-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3982,7 +4216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/model-settings-overview/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/model-settings-overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4003,7 +4237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/view-the-generated-api-endpoint/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/view-the-generated-api-endpoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4024,7 +4258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/generate-an-api-key/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/generate-an-api-key/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4045,7 +4279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/configure-your-fine-tuned-model/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/configure-your-fine-tuned-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4074,7 +4308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/fine-tune-models/export-your-fine-tuned-model/" class="md-nav__link">
+      <a href="../../models/fine-tune-models/export-your-fine-tuned-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4191,7 +4425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/open-source-summary/" class="md-nav__link">
+      <a href="../../models/open-source-models/open-source-summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4212,7 +4446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/importing-models/" class="md-nav__link">
+      <a href="../../models/open-source-models/importing-models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4273,7 +4507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/select-and-deploy-an-open-source-model/" class="md-nav__link">
+      <a href="../../models/open-source-models/select-and-deploy-an-open-source-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4294,7 +4528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/deploy-an-imported-model-from-hugging-face/" class="md-nav__link">
+      <a href="../../models/open-source-models/deploy-an-imported-model-from-hugging-face/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4323,7 +4557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/model-optimization/" class="md-nav__link">
+      <a href="../../models/open-source-models/model-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4384,7 +4618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/view-the-generated-api-endpoint/" class="md-nav__link">
+      <a href="../../models/open-source-models/view-the-generated-api-endpoint/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4405,7 +4639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/generate-an-api-key-open-source/" class="md-nav__link">
+      <a href="../../models/open-source-models/generate-an-api-key-open-source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4426,7 +4660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/open-source-models/configure-your-open-source-model/" class="md-nav__link">
+      <a href="../../models/open-source-models/configure-your-open-source-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4503,7 +4737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/external-models/managing-external-models/" class="md-nav__link">
+      <a href="../../models/external-models/managing-external-models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4524,7 +4758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/external-models/add-an-external-model-using-easy-integration/" class="md-nav__link">
+      <a href="../../models/external-models/add-an-external-model-using-easy-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4545,7 +4779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/external-models/add-an-external-model-using-api-integration/" class="md-nav__link">
+      <a href="../../models/external-models/add-an-external-model-using-api-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4582,7 +4816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../models/supported-models/" class="md-nav__link">
+      <a href="../../models/supported-models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4651,7 +4885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../prompts/overview/" class="md-nav__link">
+      <a href="../../prompts/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4672,7 +4906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../prompts/accessing-prompt-studio/" class="md-nav__link">
+      <a href="../../prompts/accessing-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4693,7 +4927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../prompts/using-prompt-studio/" class="md-nav__link">
+      <a href="../../prompts/using-prompt-studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4714,7 +4948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../prompts/advanced-features/" class="md-nav__link">
+      <a href="../../prompts/advanced-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4735,7 +4969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../prompts/options-prompt-canvas/" class="md-nav__link">
+      <a href="../../prompts/options-prompt-canvas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4804,7 +5038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/overview/" class="md-nav__link">
+      <a href="../../evaluation/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4865,7 +5099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/overview/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4886,7 +5120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/create-project/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/create-project/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4907,7 +5141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/create-evaluation/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/create-evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4928,7 +5162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/import-dataset/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/import-dataset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4949,7 +5183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/configure-evaluator/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/configure-evaluator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4970,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/run-evaluation/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/run-evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4991,7 +5225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/model-evaluation/view-evaluation-insight/" class="md-nav__link">
+      <a href="../../evaluation/model-evaluation/view-evaluation-insight/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5060,7 +5294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/overview/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5081,7 +5315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/create-project/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/create-project/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5102,7 +5336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/create-simulation/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/create-simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5123,7 +5357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/create-evaluation/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/create-evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5144,7 +5378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/import-data/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/import-data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5165,7 +5399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/configure-evaluators/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/configure-evaluators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5186,7 +5420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/run-evaluation/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/run-evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5207,7 +5441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/view-evaluation-result/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/view-evaluation-result/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5228,7 +5462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../evaluation/agentic-evaluation/analyze-evaluation/" class="md-nav__link">
+      <a href="../../evaluation/agentic-evaluation/analyze-evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5305,7 +5539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guardrails/overview/" class="md-nav__link">
+      <a href="../../guardrails/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5326,7 +5560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guardrails/enable-a-scanner/" class="md-nav__link">
+      <a href="../../guardrails/enable-a-scanner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5347,7 +5581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../guardrails/test-guardrail/" class="md-nav__link">
+      <a href="../../guardrails/test-guardrail/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5423,7 +5657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../administration/overview/" class="md-nav__link">
+      <a href="../../administration/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5444,7 +5678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/workspaces/workspace-management/" class="md-nav__link">
+      <a href="../../settings/workspaces/workspace-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5505,7 +5739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/user-management/overview/" class="md-nav__link">
+      <a href="../../settings/user-management/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5526,7 +5760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/user-management/users/" class="md-nav__link">
+      <a href="../../settings/user-management/users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5547,7 +5781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/user-management/invite-a-user/" class="md-nav__link">
+      <a href="../../settings/user-management/invite-a-user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5568,7 +5802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/user-management/settings/active-directory/" class="md-nav__link">
+      <a href="../../settings/user-management/settings/active-directory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5589,7 +5823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/user-management/role-management/" class="md-nav__link">
+      <a href="../../settings/user-management/role-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5658,7 +5892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/integrations/about-integrations/" class="md-nav__link">
+      <a href="../../settings/integrations/about-integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5679,7 +5913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/integrations/enable-hugging-face/" class="md-nav__link">
+      <a href="../../settings/integrations/enable-hugging-face/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5700,7 +5934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/integrations/integrate-with-s3-bucket/" class="md-nav__link">
+      <a href="../../settings/integrations/integrate-with-s3-bucket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5721,7 +5955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/integrations/integrate-with-wandb/" class="md-nav__link">
+      <a href="../../settings/integrations/integrate-with-wandb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5790,7 +6024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/manage-custom-scripts/custom-scripts/" class="md-nav__link">
+      <a href="../../settings/manage-custom-scripts/custom-scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5859,7 +6093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/monitoring/overview/" class="md-nav__link">
+      <a href="../../settings/monitoring/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5880,7 +6114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/monitoring/audit-logs/" class="md-nav__link">
+      <a href="../../settings/monitoring/audit-logs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5941,7 +6175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/monitoring/analytics/tools-analytics-dashboard/" class="md-nav__link">
+      <a href="../../settings/monitoring/analytics/tools-analytics-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5962,7 +6196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/monitoring/analytics/model-analytics-dashboard/" class="md-nav__link">
+      <a href="../../settings/monitoring/analytics/model-analytics-dashboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5983,7 +6217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/monitoring/analytics/model-traces/" class="md-nav__link">
+      <a href="../../settings/monitoring/analytics/model-traces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6012,7 +6246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/monitoring/monitoring-custom-scripts/" class="md-nav__link">
+      <a href="../../settings/monitoring/monitoring-custom-scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6081,7 +6315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/security-and-control/single-sign-on/" class="md-nav__link">
+      <a href="../../settings/security-and-control/single-sign-on/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6102,7 +6336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/security-and-control/authorization-profile/" class="md-nav__link">
+      <a href="../../settings/security-and-control/authorization-profile/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6123,7 +6357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/security-and-control/encryption-key-management/" class="md-nav__link">
+      <a href="../../settings/security-and-control/encryption-key-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6144,7 +6378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/security-and-control/api-scopes/" class="md-nav__link">
+      <a href="../../settings/security-and-control/api-scopes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6213,7 +6447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/billing/billing-and-usage/" class="md-nav__link">
+      <a href="../../settings/billing/billing-and-usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6234,7 +6468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/billing/managing-usage-limits/" class="md-nav__link">
+      <a href="../../settings/billing/managing-usage-limits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6303,7 +6537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../settings/data/manage-datasets/" class="md-nav__link">
+      <a href="../../settings/data/manage-datasets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6379,7 +6613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../apis/agentic-apps/overview/" class="md-nav__link">
+      <a href="../../apis/agentic-apps/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6400,7 +6634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../apis/overview/" class="md-nav__link">
+      <a href="../../apis/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6421,7 +6655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../apis/list-of-apis/" class="md-nav__link">
+      <a href="../../apis/list-of-apis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6446,1305 +6680,10 @@
       
   
   
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    SDK
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            SDK
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Agent Platform SDK Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../getting-started/installation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Installation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../getting-started/quickstart/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Quick Start
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../getting-started/concepts/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Core Concepts
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5">
-        
-          
-          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    User Guide
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_5">
-            <span class="md-nav__icon md-icon"></span>
-            User Guide
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../guide/building-apps/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Building Applications
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../guide/creating-agents/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Creating Agents
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../guide/working-with-tools/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Working with Tools
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../guide/memory-stores/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Memory Stores
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../guide/prompts-llm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prompts and LLM Config
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../guide/orchestration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Custom Orchestration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    API Reference
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7_6">
-            <span class="md-nav__icon md-icon"></span>
-            API Reference
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_7_6_2" id="__nav_7_6_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Design-Time Models
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_6_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Design-Time Models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../app/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    App
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../agent/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Agent
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tool/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Tool
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm_model/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    LLM Model
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../prompt/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prompt
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Memory Store
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Memory Store
-  </span>
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this Page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this Page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supporting-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supporting Classes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Supporting Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#namespace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Namespace
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retentionpolicy" class="md-nav__link">
-    <span class="md-ellipsis">
-      RetentionPolicy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enumerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enumerations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Enumerations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scope
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retentionperiod" class="md-nav__link">
-    <span class="md-ellipsis">
-      RetentionPeriod
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#namespacetype" class="md-nav__link">
-    <span class="md-ellipsis">
-      NamespaceType
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#memoryregistry" class="md-nav__link">
-    <span class="md-ellipsis">
-      MemoryRegistry
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-session-scoped-memory-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating a Session-Scoped Memory Store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-specific-memory-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      User-Specific Memory Store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#application-wide-memory-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application-Wide Memory Store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-namespaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multiple Namespaces
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#registering-memory-stores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Registering Memory Stores
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schema-definition" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Definition
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retention-policies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retention Policies
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Retention Policies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#session-based" class="md-nav__link">
-    <span class="md-ellipsis">
-      Session-Based
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#time-based" class="md-nav__link">
-    <span class="md-ellipsis">
-      Time-Based
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Models
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../app_configuration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    App Configuration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../app_namespace/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    App Namespace
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../app_variable/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    App Variable
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../icon/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Icon
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6_3">
-        
-          
-          <label class="md-nav__link" for="__nav_7_6_3" id="__nav_7_6_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Runtime
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_6_3">
-            <span class="md-nav__icon md-icon"></span>
-            Runtime
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../runtime/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../runtime/request_context/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    RequestContext
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../runtime/environment_variables/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    EnvironmentVariables
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../runtime/memory/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Memory
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../runtime/logger/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Logger
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../runtime/tracer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Tracer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7">
-        
-          
-          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    CLI Reference
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_7">
-            <span class="md-nav__icon md-icon"></span>
-            CLI Reference
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cli/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CLI Commands
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8">
-        
-          
-          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Examples
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_8">
-            <span class="md-nav__icon md-icon"></span>
-            Examples
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/banking-assistant/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Banking Assistant
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/multi-agent/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Multi-Agent Workflow
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../contributing/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Contributing
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../changelog/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Changelog
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../ai-agents/agentic-apps/marketplace/" class="md-nav__link">
+      <a href="../agentic-apps/marketplace/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7786,139 +6725,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#supporting-classes" class="md-nav__link">
+  <a href="#agent-profile" class="md-nav__link">
     <span class="md-ellipsis">
-      Supporting Classes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Supporting Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#namespace" class="md-nav__link">
-    <span class="md-ellipsis">
-      Namespace
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retentionpolicy" class="md-nav__link">
-    <span class="md-ellipsis">
-      RetentionPolicy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#enumerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Enumerations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Enumerations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scope
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retentionperiod" class="md-nav__link">
-    <span class="md-ellipsis">
-      RetentionPeriod
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#namespacetype" class="md-nav__link">
-    <span class="md-ellipsis">
-      NamespaceType
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#memoryregistry" class="md-nav__link">
-    <span class="md-ellipsis">
-      MemoryRegistry
+      Agent Profile
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage-examples" class="md-nav__link">
+  <a href="#agent-definition" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage Examples
+      Agent Definition
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Usage Examples">
+    <nav class="md-nav" aria-label="Agent Definition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-a-session-scoped-memory-store" class="md-nav__link">
+  <a href="#agent-definition-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating a Session-Scoped Memory Store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#user-specific-memory-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      User-Specific Memory Store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#application-wide-memory-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      Application-Wide Memory Store
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-namespaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multiple Namespaces
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#registering-memory-stores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Registering Memory Stores
+      Agent Definition Editor
     </span>
   </a>
   
@@ -7930,37 +6758,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#schema-definition" class="md-nav__link">
+  <a href="#knowledge" class="md-nav__link">
     <span class="md-ellipsis">
-      Schema Definition
+      Knowledge
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#retention-policies" class="md-nav__link">
+  <a href="#tools" class="md-nav__link">
     <span class="md-ellipsis">
-      Retention Policies
+      Tools
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Retention Policies">
+    <nav class="md-nav" aria-label="Tools">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#session-based" class="md-nav__link">
+  <a href="#adding-a-tool-to-agent" class="md-nav__link">
     <span class="md-ellipsis">
-      Session-Based
+      Adding a Tool to Agent
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#time-based" class="md-nav__link">
+  <a href="#import-a-tool" class="md-nav__link">
     <span class="md-ellipsis">
-      Time-Based
+      Import a Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-a-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing a Tool
     </span>
   </a>
   
@@ -7968,24 +6805,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best Practices
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Models
-    </span>
-  </a>
   
 </li>
       
@@ -8007,239 +6826,193 @@
   
 
 
-<h1 id="memory-store">Memory Store<a class="headerlink" href="#memory-store" title="Permanent link">¶</a></h1>
-<p>::: agenticai_core.designtime.models.memory_store.MemoryStore
-    options:
-      show_root_heading: true
-      show_source: false
-      members_order: source</p>
-<h2 id="supporting-classes">Supporting Classes<a class="headerlink" href="#supporting-classes" title="Permanent link">¶</a></h2>
-<h3 id="namespace">Namespace<a class="headerlink" href="#namespace" title="Permanent link">¶</a></h3>
-<p>::: agenticai_core.designtime.models.memory_store.Namespace
-    options:
-      show_root_heading: true
-      show_source: false</p>
-<h3 id="retentionpolicy">RetentionPolicy<a class="headerlink" href="#retentionpolicy" title="Permanent link">¶</a></h3>
-<p>::: agenticai_core.designtime.models.memory_store.RetentionPolicy
-    options:
-      show_root_heading: true
-      show_source: false</p>
-<h3 id="enumerations">Enumerations<a class="headerlink" href="#enumerations" title="Permanent link">¶</a></h3>
-<h4 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">¶</a></h4>
-<p>::: agenticai_core.designtime.models.memory_store.Scope
-    options:
-      show_root_heading: true</p>
-<h4 id="retentionperiod">RetentionPeriod<a class="headerlink" href="#retentionperiod" title="Permanent link">¶</a></h4>
-<p>::: agenticai_core.designtime.models.memory_store.RetentionPeriod
-    options:
-      show_root_heading: true</p>
-<h4 id="namespacetype">NamespaceType<a class="headerlink" href="#namespacetype" title="Permanent link">¶</a></h4>
-<p>::: agenticai_core.designtime.models.memory_store.NamespaceType
-    options:
-      show_root_heading: true</p>
-<h2 id="memoryregistry">MemoryRegistry<a class="headerlink" href="#memoryregistry" title="Permanent link">¶</a></h2>
-<p>::: agenticai_core.designtime.models.memory_store.MemoryRegistry
-    options:
-      show_root_heading: false</p>
-<p>Global registry for memory stores defined in the application.</p>
-<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">¶</a></h2>
-<h3 id="creating-a-session-scoped-memory-store">Creating a Session-Scoped Memory Store<a class="headerlink" href="#creating-a-session-scoped-memory-store" title="Permanent link">¶</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">agenticai_core.designtime.models.memory_store</span> <span class="kn">import</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">MemoryStore</span><span class="p">,</span> <span class="n">Namespace</span><span class="p">,</span> <span class="n">NamespaceType</span><span class="p">,</span> 
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">RetentionPolicy</span><span class="p">,</span> <span class="n">RetentionPeriod</span><span class="p">,</span> <span class="n">Scope</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">memory_store</span> <span class="o">=</span> <span class="n">MemoryStore</span><span class="p">(</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">"Account Information"</span><span class="p">,</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">technical_name</span><span class="o">=</span><span class="s2">"accountInfo"</span><span class="p">,</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="nb">type</span><span class="o">=</span><span class="s2">"hotpath"</span><span class="p">,</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">"Stores user account balances and details"</span><span class="p">,</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">schema_definition</span><span class="o">=</span><span class="p">{</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            <span class="s2">"accounts"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>                <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>                    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>                    <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>                        <span class="s2">"account_id"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">},</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>                        <span class="s2">"balance"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"number"</span><span class="p">},</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>                        <span class="s2">"currency"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">}</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>                    <span class="p">}</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                <span class="p">}</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>            <span class="p">},</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>            <span class="s2">"last_updated"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">}</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        <span class="p">}</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="p">},</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="n">strict_schema</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>    <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        <span class="n">Namespace</span><span class="p">(</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"session_id"</span><span class="p">,</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">NamespaceType</span><span class="o">.</span><span class="n">DYNAMIC</span><span class="p">,</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>            <span class="n">value</span><span class="o">=</span><span class="s2">"</span><span class="si">{session_id}</span><span class="s2">"</span><span class="p">,</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>            <span class="n">description</span><span class="o">=</span><span class="s2">"Session identifier"</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>        <span class="p">)</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="p">],</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">SESSION_LEVEL</span><span class="p">,</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    <span class="n">retention_policy</span><span class="o">=</span><span class="n">RetentionPolicy</span><span class="p">(</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>        <span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">SESSION</span><span class="p">,</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>        <span class="n">value</span><span class="o">=</span><span class="mi">1</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>    <span class="p">)</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="user-specific-memory-store">User-Specific Memory Store<a class="headerlink" href="#user-specific-memory-store" title="Permanent link">¶</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">user_preferences</span> <span class="o">=</span> <span class="n">MemoryStore</span><span class="p">(</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">"User Preferences"</span><span class="p">,</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">technical_name</span><span class="o">=</span><span class="s2">"userPrefs"</span><span class="p">,</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">type</span><span class="o">=</span><span class="s2">"persistent"</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">"User preference and settings"</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">schema_definition</span><span class="o">=</span><span class="p">{</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>            <span class="s2">"theme"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">},</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>            <span class="s2">"language"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">},</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>            <span class="s2">"notifications"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"boolean"</span><span class="p">}</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="p">}</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">},</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">strict_schema</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>        <span class="n">Namespace</span><span class="p">(</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"user_id"</span><span class="p">,</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">NamespaceType</span><span class="o">.</span><span class="n">DYNAMIC</span><span class="p">,</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>            <span class="n">value</span><span class="o">=</span><span class="s2">"</span><span class="si">{user_id}</span><span class="s2">"</span><span class="p">,</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>            <span class="n">description</span><span class="o">=</span><span class="s2">"User identifier"</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        <span class="p">)</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="p">],</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">USER_SPECIFIC</span><span class="p">,</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="n">retention_policy</span><span class="o">=</span><span class="n">RetentionPolicy</span><span class="p">(</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>        <span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">MONTH</span><span class="p">,</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>        <span class="n">value</span><span class="o">=</span><span class="mi">6</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="p">)</span>
-</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="application-wide-memory-store">Application-Wide Memory Store<a class="headerlink" href="#application-wide-memory-store" title="Permanent link">¶</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">app_config</span> <span class="o">=</span> <span class="n">MemoryStore</span><span class="p">(</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">"Application Configuration"</span><span class="p">,</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">technical_name</span><span class="o">=</span><span class="s2">"appConfig"</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="nb">type</span><span class="o">=</span><span class="s2">"global"</span><span class="p">,</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">"Shared configuration across all users"</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">schema_definition</span><span class="o">=</span><span class="p">{</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>            <span class="s2">"feature_flags"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">},</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>            <span class="s2">"api_endpoints"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">}</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="p">}</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">},</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">strict_schema</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>        <span class="n">Namespace</span><span class="p">(</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"app_version"</span><span class="p">,</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">NamespaceType</span><span class="o">.</span><span class="n">STATIC</span><span class="p">,</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>            <span class="n">value</span><span class="o">=</span><span class="s2">"v1.0"</span><span class="p">,</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>            <span class="n">description</span><span class="o">=</span><span class="s2">"Application version"</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="p">)</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    <span class="p">],</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">APPLICATION_WIDE</span><span class="p">,</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="n">retention_policy</span><span class="o">=</span><span class="n">RetentionPolicy</span><span class="p">(</span>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">DAY</span><span class="p">,</span>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>        <span class="n">value</span><span class="o">=</span><span class="mi">30</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    <span class="p">)</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="multiple-namespaces">Multiple Namespaces<a class="headerlink" href="#multiple-namespaces" title="Permanent link">¶</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">memory_store</span> <span class="o">=</span> <span class="n">MemoryStore</span><span class="p">(</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">"Conversation History"</span><span class="p">,</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">technical_name</span><span class="o">=</span><span class="s2">"conversationHistory"</span><span class="p">,</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">type</span><span class="o">=</span><span class="s2">"hotpath"</span><span class="p">,</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">"Stores conversation messages"</span><span class="p">,</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">schema_definition</span><span class="o">=</span><span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">},</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">strict_schema</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="n">Namespace</span><span class="p">(</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"user_id"</span><span class="p">,</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">NamespaceType</span><span class="o">.</span><span class="n">DYNAMIC</span><span class="p">,</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>            <span class="n">value</span><span class="o">=</span><span class="s2">"</span><span class="si">{user_id}</span><span class="s2">"</span><span class="p">,</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>            <span class="n">description</span><span class="o">=</span><span class="s2">"User identifier"</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="p">),</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="n">Namespace</span><span class="p">(</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"session_id"</span><span class="p">,</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">NamespaceType</span><span class="o">.</span><span class="n">DYNAMIC</span><span class="p">,</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>            <span class="n">value</span><span class="o">=</span><span class="s2">"</span><span class="si">{session_id}</span><span class="s2">"</span><span class="p">,</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>            <span class="n">description</span><span class="o">=</span><span class="s2">"Session identifier"</span>
-</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>        <span class="p">),</span>
-</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>        <span class="n">Namespace</span><span class="p">(</span>
-</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>            <span class="n">name</span><span class="o">=</span><span class="s2">"environment"</span><span class="p">,</span>
-</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">NamespaceType</span><span class="o">.</span><span class="n">STATIC</span><span class="p">,</span>
-</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>            <span class="n">value</span><span class="o">=</span><span class="s2">"production"</span><span class="p">,</span>
-</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>            <span class="n">description</span><span class="o">=</span><span class="s2">"Deployment environment"</span>
-</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>        <span class="p">)</span>
-</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    <span class="p">],</span>
-</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>    <span class="n">scope</span><span class="o">=</span><span class="n">Scope</span><span class="o">.</span><span class="n">SESSION_LEVEL</span><span class="p">,</span>
-</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    <span class="n">retention_policy</span><span class="o">=</span><span class="n">RetentionPolicy</span><span class="p">(</span>
-</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>        <span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">DAY</span><span class="p">,</span>
-</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>        <span class="n">value</span><span class="o">=</span><span class="mi">7</span>
-</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>    <span class="p">)</span>
-</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="registering-memory-stores">Registering Memory Stores<a class="headerlink" href="#registering-memory-stores" title="Permanent link">¶</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">agenticai_core.designtime.models.memory_store</span> <span class="kn">import</span> <span class="n">MemoryRegistry</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Register memory store</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">MemoryRegistry</span><span class="p">[</span><span class="s1">'accountInfo'</span><span class="p">]</span> <span class="o">=</span> <span class="n">memory_store</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Access in runtime</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">memory_store</span> <span class="o">=</span> <span class="n">MemoryRegistry</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'accountInfo'</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="schema-definition">Schema Definition<a class="headerlink" href="#schema-definition" title="Permanent link">¶</a></h2>
-<p>Memory stores use JSON Schema for data validation:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">schema</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        <span class="s2">"user_data"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"object"</span><span class="p">,</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>                <span class="s2">"name"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">},</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>                <span class="s2">"email"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">,</span> <span class="s2">"format"</span><span class="p">:</span> <span class="s2">"email"</span><span class="p">},</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>                <span class="s2">"age"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"integer"</span><span class="p">,</span> <span class="s2">"minimum"</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>            <span class="p">},</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>            <span class="s2">"required"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"email"</span><span class="p">]</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        <span class="p">},</span>
-</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>        <span class="s2">"preferences"</span><span class="p">:</span> <span class="p">{</span>
-</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"array"</span><span class="p">,</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>            <span class="s2">"items"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"type"</span><span class="p">:</span> <span class="s2">"string"</span><span class="p">}</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>        <span class="p">}</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    <span class="p">}</span>
-</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="retention-policies">Retention Policies<a class="headerlink" href="#retention-policies" title="Permanent link">¶</a></h2>
-<h3 id="session-based">Session-Based<a class="headerlink" href="#session-based" title="Permanent link">¶</a></h3>
-<p>Data is deleted when the session ends:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">RetentionPolicy</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">SESSION</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="time-based">Time-Based<a class="headerlink" href="#time-based" title="Permanent link">¶</a></h3>
-<p>Data is deleted after a specified time:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 7 days</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">RetentionPolicy</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">DAY</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># 2 weeks</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">RetentionPolicy</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">WEEK</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># 6 months</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">RetentionPolicy</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">RetentionPeriod</span><span class="o">.</span><span class="n">MONTH</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
-</span></code></pre></div>
-<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">¶</a></h2>
-<ol>
-<li><strong>Schema Design</strong>: Define clear schemas for strict type safety</li>
-<li><strong>Namespace Strategy</strong>: Use appropriate namespaces for data isolation</li>
-<li><strong>Retention Policy</strong>: Choose retention based on data sensitivity</li>
-<li><strong>Scope Selection</strong>: Match scope to data access patterns</li>
-<li><strong>Technical Names</strong>: Use consistent, descriptive technical names</li>
-</ol>
-<h2 id="related-models">Related Models<a class="headerlink" href="#related-models" title="Permanent link">¶</a></h2>
+<h1 id="create-a-new-agent-from-scratch">Create a New Agent from Scratch<a class="headerlink" href="#create-a-new-agent-from-scratch" title="Permanent link">¶</a></h1>
+<p>To add a new agent to an app, go to the Agents page or the Overview page of the app and click +New Agent or +Create Agent.  Select Create from Scratch.</p>
+<p>Provide appropriate details for each field as described below.</p>
+<h2 id="agent-profile">Agent Profile<a class="headerlink" href="#agent-profile" title="Permanent link">¶</a></h2>
+<p>Agent profile consists of the following fields:</p>
+<p><strong>Name</strong>: Choose a unique name that reflects your agent's core function and persona. It's good to have a name that's intuitive and indicative of its role. </p>
+<div class="admonition abstract">
+<p class="admonition-title">Examples</p>
 <ul>
-<li><a href="../app/">App</a> - Applications define memory stores</li>
-<li><a href="../agent/">Agent</a> - Agents access memory stores via prompts</li>
+<li>Credit Card Assistant for an agent that handles all queries related to credit cards.</li>
+<li>Leave Manager for an agent that manages all requests related to employee leaves in an organization.</li>
+<li>Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. </li>
 </ul>
+</div>
+<hr>
+<p><strong>Description</strong>: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to select the most suitable agent for a specific task.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Examples</p>
+<ul>
+<li>Credit Card Assistant: An agent that handles all queries related to credit cards.</li>
+<li>Leave Manager: An agent that manages all requests related to employee leaves in an organization.</li>
+<li>Order Manager: Manages all the user requests related to order status, returns, and refunds. </li>
+</ul>
+</div>
+<hr>
+<p><strong>Avatar</strong>: Select an avatar for the agent. This is primarily for visual appeal. </p>
+<hr>
+<p><strong>AI Model</strong>: Select the AI model and connection that the agent will use to perform its tasks. The model helps an Agent in the following:</p>
+<ul>
+<li>Understanding and Processing User Input into structured data</li>
+<li>Selecting the most appropriate action for the task</li>
+<li>Tool calling </li>
+<li>Transforming results from agents into natural and contextual responses for the users.</li>
+</ul>
+<p>For more information, see <a href="../../models/external-models/managing-external-models/" target="_blank">Managing External Models</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When choosing a model for your agent, consider its specific use case. For example, if the agent is designed for code generation, opt for a model that specializes in coding skills.</p>
+</div>
+<p>Click the <em>settings</em> icon to change the Model Generation Parameters.</p>
+<hr>
+<p><strong>Context Window Limit</strong>: Specifies the maximum number of messages the agent retains in its conversation context. When the limit is reached, older messages are automatically removed to maintain an optimal context size. The default value of this field is 50. It can a maximum value of 200 and a minimum of 25.</p>
+<hr>
+<h2 id="agent-definition">Agent Definition<a class="headerlink" href="#agent-definition" title="Permanent link">¶</a></h2>
+<p>The agent definition describes the role of the agent and the tasks it can perform. It serves as a guideline for setting objectives and defining functionalities. Clearly establishing what the agent can do and how it should operate ensures that its goals are effectively aligned. 
+An agent operates based on a set of directives or rules that dictate how it should behave, respond to inputs, and complete tasks effectively, all in line with the application's overall goals. These instructions also help define the agent's boundaries and provide specifications for how it should interact with users. They serve as a guide to ensure the agent operates within its scope, delivering accurate and consistent results.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Examples</p>
+<ul>
+<li>Leave Manager: You are an AI-powered Leave Management Assistant designed to streamline the leave application process and provide employees with up-to-date leave balances. <ul>
+<li>Your key responsibilities include:<ul>
+<li>Facilitating Leave Applications: Guide employees through the process of applying for leave, ensuring the correct leave type and duration are selected.</li>
+<li>Providing Leave Balances: Offer accurate and real-time updates on remaining leave entitlements.</li>
+<li>Cancelling Leave requests: Help users cancel their leave requests.</li>
+</ul>
+</li>
+<li>Behavioral Guidelines: Understanding user inputs<ul>
+<li>When a user asks for their leave balance, respond with the available balance without requiring the leave type unless necessary.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Credit Card Assistant: You are an AI-powered Credit card assistant that assists users with credit card-related inquiries and transactions efficiently and accurately. <ul>
+<li>Your responsibilities include:<ul>
+<li>Credit Card Approval Status: Provide updates on the status of credit card applications.</li>
+<li>Outstanding Balance Inquiry: Provide details on the outstanding bills and information on recent transactions.</li>
+<li>Bill Payments: Facilitate secure payment of outstanding credit card bills.</li>
+</ul>
+</li>
+<li>Behavioral Guidelines: Setting the tone of the conversation.<ul>
+<li>Respond in a professional and empathetic tone when handling refund-related queries. \</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Order Manager: You are an AI agent responsible for enabling users to access real-time order updates and manage their orders independently. <ul>
+<li>Key responsibilities are:<ul>
+<li>Order Status Inquiry: Provide updates on the order status.</li>
+<li>Return Management: Verify the eligibility of return, guide users on the return process, initiate returns, and provide information on return policies.</li>
+<li>Refund Enquiry: Provide the status of the refund and address refund-related queries.</li>
+</ul>
+</li>
+<li>Output Guidelines: <ul>
+<li>Always get a confirmation from the user before performing any transactions. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="agent-definition-editor">Agent Definition Editor<a class="headerlink" href="#agent-definition-editor" title="Permanent link">¶</a></h3>
+<p>The Agent Definition editor provides a structured workspace to define an agent’s role, responsibilities, and response guidelines. In addition to rich text formatting, the editor supports dynamic insertion of variables, tools, memory, and other agents, enabling precise control over agent behavior. </p>
+<p>For example, you can reference a memory field such as <code>{{memory.sessionMeta.metadata.FLAG}}</code> to conditionally guide execution based on runtime context.</p>
+<p>The editor also offers AI-assisted authoring to help generate, refine, and organize agent definitions. Using AI guidance, you can quickly create clear, well-structured instructions, improve consistency, and ensure agent behavior remains aligned with application objectives. This helps reduce manual efforts and setup time.</p>
+<h2 id="knowledge">Knowledge<a class="headerlink" href="#knowledge" title="Permanent link">¶</a></h2>
+<p>The platform provides powerful search functionality across diverse content sources using the <em>Search AI</em> application, which supports Retrieval-Augmented Generation (RAG)-based search across enterprise knowledge bases, document repositories, FAQs, and external systems. This advanced RAG-driven integration empowers autonomous agents to deliver accurate, context-aware, and timely responses by leveraging relevant information from connected knowledge sources.</p>
+<p>You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries. Each Search AI app can be integrated with multiple content sources. </p>
+<p><a href="../knowledge/overview/" target="_blank">Learn more</a> about Knowledge integration with agents. </p>
+<hr>
+<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">¶</a></h2>
+<p><em>Tools</em> are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments.</p>
+<p>In an Agentic architecture, <em>Actions</em> represent the discrete tasks an agent can execute. These actions are made possible by <em>Tools</em>, which encapsulate the domain-specific logic and capabilities needed to accomplish specific objectives. Tools serve as the operational foundation of actions, providing the necessary interfaces and execution that translate an agent’s intent into meaningful outcomes.</p>
+<p>Powered by the tool invocation capabilities of large language models (LLMs), agents can dynamically identify and invoke the most relevant tools at runtime, ensuring flexibility, scalability, and precision in task execution.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Examples</p>
+<ul>
+<li>Tools for a Leave Managing Agent might include:   <ul>
+<li>Get leave balance tool that invokes an external API to get leave details.</li>
+<li>Leave application tool that gathers necessary information and applies leaves in the backend system.  </li>
+</ul>
+</li>
+<li>Tools for a Credit Card Assistant might include:<ul>
+<li>Retrieve outstanding amount - Fetches the due amount </li>
+<li>Fetch credit limit - Fetches the maximum credit limit for the user </li>
+<li>Initiate bill payment - Initiates bill payment process</li>
+<li>Find recent transactions - Present last <em>n</em> transactions that might include retrieving data from a database. </li>
+</ul>
+</li>
+</ul>
+</div>
+<p>There are <em>three types of tools</em> that agents can use.</p>
+<ol>
+<li>
+<p><strong>Workflow Tools</strong>: Workflow Tools provide a visual, no-code interface for designing and orchestrating agent actions with ease. Built for clarity and control, these tools allow users to define multi-step workflows using an intuitive graphical builder, making them ideal for standardized, repeatable processes. Supporting both synchronous and asynchronous execution modes, Workflow Tools enable rapid development and reliable execution of tasks without writing code. They're best suited for scenarios where business logic is consistent, well-defined, and benefits from visual traceability.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Examples</p>
+</div>
+<ul>
+<li>Weather API: Retrieves live weather updates.</li>
+<li>Stock Market Tool: Fetches real-time stock prices.</li>
+<li>Database Query Tool: Accesses structured data from a company’s database.</li>
+</ul>
+<p>For more information, see <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/workflow-tools/">Workflow Tools</a>.</p>
+</li>
+<li>
+<p><strong>Code Tools</strong>: Code Tools are designed for flexibility and depth, enabling agents to execute custom code for highly tailored operations. These tools are ideal for handling complex or dynamic logic that can't be captured through pre-defined workflows. Supporting synchronous execution, Code Tools empower developers to implement advanced algorithms, perform conditional processing, and integrate with intricate systems. They're the preferred choice when precision engineering and extensibility are required to meet unique business needs. With <strong>code tools</strong>, you can write and execute business logic using <em>JavaScript or Python</em> code, allowing seamless integration and automation of complex workflows. \</p>
+<p>For more information, see <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/code-tools/">Code Tools</a>.</p>
+</li>
+<li>
+<p><strong>MCP Tools</strong>: MCP Tools connect agents to remote functions hosted on Model Context Protocol (MCP) servers. These tools serve as reusable logic or integration blocks, such as scripts, webhooks, or service connections, which are created and maintained outside the platform. Following a client-server discovery model, agents can dynamically invoke third-party or proprietary services in real time without embedding logic directly into workflows or code. Once connected, MCP Tools can be selected, configured, versioned, and managed independently, allowing modular and scalable integration across environments. Because they're centrally managed, these tools support versioning, cross-feature reuse, and simplified development—ideal for scaling integrations across multiple agents. They're best suited for seamless integration with external APIs, proprietary platforms, or shared tool sets across teams or organizations.</p>
+<p>For more information, see <a href="https://docs.kore.ai/agent-platform/ai-agents/tools/mcp-tools/">MCP Tools</a>.</p>
+</li>
+</ol>
+<h3 id="adding-a-tool-to-agent">Adding a Tool to Agent<a class="headerlink" href="#adding-a-tool-to-agent" title="Permanent link">¶</a></h3>
+<p>You can enhance an agent's capabilities by creating a new tool or importing an existing one from the tool library.</p>
+<ul>
+<li><strong>New tools</strong> are custom-built within the context of a specific app and aren't shared across other apps.</li>
+<li><strong>Imported tools</strong> act as templates from the library. Once imported, they can be customized within the app to suit specific requirements without affecting the original version in the library.</li>
+</ul>
+<p>To add a new tool, click <em>New Tool</em> and choose the desired tool type - <em>Workflow Tool</em>, <em>Code Tool</em> or <em>MCP Tool</em>.</p>
+<p>For a <strong>Workflow Tool</strong>, enter the tool's <em>name</em> and <em>description</em>, then click <em>Create</em>. The tool will be added to your app. Next, go to the <em>Agent's Tools</em> page, select the newly created tool, and open it to define its workflow. You can now design the logic and flow for this tool. <a href="../tools/configure-a-tool/">Learn More.</a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/addtool1.png" data-desc-position="bottom"><img alt="Create App" src="../images/addtool1.png" title="Agentic App Creation"></a></p>
+<p>To create a <strong>Code tool</strong>, click on Code Tool and configure the details of the tool. Refer <a href="../tools/create-a-code-tool/" target="_blank">to this page</a> for details on creating a new code tool, along with an example. </p>
+<p>Similarly, to add a new MCP server and use MCP Tool, click on MCP Server and provide the configuration details. <a href="../tools/configure-mcp-server/" target="_blank">Learn More about MCP Server Configuration</a>.</p>
+<p>The Tools Assignment page provides a structured view of the available tools, showing their types, statuses, and the total number of tools in the app.</p>
+<p><strong>Key highlights</strong></p>
+<ul>
+<li>Displays total count categorized under Workflow, Code, and MCP.</li>
+<li>Displays the Workflow tool status as Draft or Deployed.</li>
+<li>Provide empty-state CTAs: Import and New Tool for Workflow tools, New Tool for Code tools, New Tool and Connect to MCP Server for MCP tools.</li>
+<li>MCP tools are grouped by their parent MCP server. Each server provides a search bar to help you find tools within it.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mcptool.png" data-desc-position="bottom"><img alt="Tool Assignment page" src="../images/mcptool.png" title="MCP tool"></a></p>
+<h3 id="import-a-tool">Import a Tool<a class="headerlink" href="#import-a-tool" title="Permanent link">¶</a></h3>
+<p>You can easily <strong>import an existing workflow tool</strong> into your Agentic app to accelerate development and reuse existing tools. When a tool is imported:</p>
+<ul>
+<li>A <strong>new instance</strong> of the tool is created, specifically scoped to the app.</li>
+<li>This instance of the tool is independent of the original, and can be customized without affecting the source tool or its use in other apps.</li>
+<li>You can use it as it's if it already meets your needs, or modify it to align with your app’s specific use cases.</li>
+</ul>
+<p>Tools can be imported via:</p>
+<ul>
+<li><strong>File</strong>: Import tools that have been exported previously or shared in file formats(JSON format).</li>
+<li><strong>Library</strong>: Use existing tools from the shared repository of reusable tools existing in the platform.</li>
+<li><strong>Marketplace</strong>: Access a tool from a catalog of publicly shared tools.</li>
+</ul>
+<p>To make changes, simply select the tool and open it to <strong>modify the flow</strong> as needed.</p>
+<p>Use <a href="../agent-creation-example/" target="_blank">this example as a reference or starting point</a> when building your own agent.</p>
+<h3 id="testing-a-tool">Testing a Tool<a class="headerlink" href="#testing-a-tool" title="Permanent link">¶</a></h3>
+<p>Testing allows you to verify the behavior and output of a tool before using it in production workflows.</p>
+<p>To test a tool:</p>
+<ul>
+<li>Navigate to the Tools page of the application.</li>
+<li>Select the tool you want to test to open its details view.</li>
+<li>Use the Test interface on the tool details page to run the tool and review its behavior and responses.</li>
+</ul>
+<p>For step-by-step instructions and example, refer to <a href="../test-a-workflow-tool/" target="_blank">this</a>.</p>
 
 
 
@@ -8319,7 +7092,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../prompt/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prompt">
+          <a href="../create-agent/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -8329,20 +7102,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Prompt
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../app_configuration/" class="md-footer__link md-footer__link--next" aria-label="Next: App Configuration">
+          <a href="../external-agents/" class="md-footer__link md-footer__link--next" aria-label="Next: Connect External Agents">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                App Configuration
+                Connect External Agents
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -8376,14 +7149,14 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "tags": {"workflow_tool": "workflow_tool"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.path", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "tags": {"workflow_tool": "workflow_tool"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../../../extra_js/feedback.js"></script>
+        <script src="../../extra_js/feedback.js"></script>
       
     
   
