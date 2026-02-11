@@ -51,7 +51,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Conversation Test Suite Execution Status](./get-test-suite-execution-status.md) | To get the execution status and summary of a Conversation Test Suite. | Conversation Tests Execution | Conversation Tests Execution |
 | [Delete Conversation Test Suite](./delete-test-suite.md) | To delete a Conversation Test Suite. | Conversation Tests Management | Conversation Tests Management |
 | [Manage SDK Push Notifications](./manage-sdk-push-notifications.md) | To subscribe and unsubscribe a user’s device(s) to SDK push notifications, and list all the subscribed devices. | SDK Push Notifications | NA |
-
+| [Get Linked Apps](./get_linked_apps.md) | To retrieve all apps linked to a universal or parent app. | Get linked App details | Getlinkedbotdetails |
 
 ## NLP Training APIs
 
@@ -82,7 +82,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | --- | --- | --- | --- |
 |     |     | **XO PLATFORM** | **ADMIN CONSOLE** |
 | [Find Intent](./find-intent.md) | To obtain the intent recognition result and the scoring from NLP and ML engines. | Intent and Entity Detection | Intent Identification > Intent and Entity Detection |
-| [Conversation History](./conversation-history.md) | To fetch the conversational messages between the AI agent and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
+| [Conversation History](./conversation-history.md) | To fetch the conversational messages between the AI Agent and user in reverse chronological order. | Chat History | Bot Analytics > Chat History |
 | [Conversation History-Lightweight](./conversation-history-lightweight.md) | To fetch high-volume conversation summarization without additional metadata or payload overhead. | Chat History | Bot Analytics > Chat History |
 | [Conversation Summary](./conversation-summary.md) | To summarizes the conversation between a user and an agent. | Conversation Summary | NA  |
 | [Feedback Analytics](./fetch-feedback-survey-scores.md) | To fetch the Feedback Survey Response Data and push it to the Feedback Analytics Dashboard. | Feedback Survey | Bot Analytics > Feedback Analytics |
@@ -95,7 +95,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Get Analytics](./get-analytics.md) | To extract the metrics data related to the intent detection and task performance using API | Metrics | NA  |
 | [Task Execution-based Containment Report](./task-execution-based-containment-report.md) | To extract task execution details (including success and failure status) across all the conversation sessions of the AI Agent in the selected timeframe for Drop-off, Self-service, and Agent Hand-off containment types using API. | Metrics | NA  |
 | [User Engagement Trend](./user-engagement-trend.md) | To provide the number of users who have interacted with the AI Agent in a given period across different time intervals. | User Engagement Trend | NA  |
-| [Conversation Details and Summary](./conversation-details-and-summary.md) | To fetch the conversational details and summary between the bot and the user.. | Conversation History | NA  |
+| [Conversation Details and Summary](./conversation-details-and-summary.md) | To fetch the conversational details and summary between the bot and the user. | Conversation History | NA  |
 | [LLM and Generative AI Usage Logs API](./llm-usage-logs-api.md) | To fetch the LLM & Generative AI usage logs. | Gen AI and LLM Usage Logs | API Scopes > Gen AI and LLM Usage Logs |
 
 ## Admin APIs
@@ -110,7 +110,7 @@ The following tables list the APIs available for Automation AI, grouped by the f
 | [Export Roles](./export-roles.md) | To export bot or admin roles from an account | Profile Management > Role Management |
 | [Assign BT Roles](./assign-bt-roles.md) | To assign a bot role to a set of users in a specific agent | Profile Management > Role Management |
 | [Assign Admin Roles](./assign-admin-roles.md) | To add or remove users or groups from admin roles | Profile Management > Role Management |
-| [Update User Access](./update-user-access.md) | To add or remove the ability to access AI for Service Platform, create new AI agents | Profile Management > Role Management |
+| [Update User Access](./update-user-access.md) | To add or remove the ability to access AI for Service Platform, create new AI Agents | Profile Management > Role Management |
 | [Create Users](./create-users.md) | To add users to an account | User Management |
 | [Get Users Information](./get-user-information.md) | To retrieve the user details | User Management |
 | [Update User](./update-user.md) | To update user details | User Management |

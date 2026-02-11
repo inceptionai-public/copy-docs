@@ -1,6 +1,6 @@
 # Guardrails Overview
 
-Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) remain appropriate and aligned with organizational or regulatory standards. The (In)Agent Platform includes pre-deployed guardrails that scan both user inputs and model outputs to help maintain safe, responsible, and compliant AI interactions.
+Guardrails are safety measures that ensure AI-generated responses from large language models (LLMs) remain appropriate and aligned with organizational or regulatory standards. The Platform includes pre-deployed guardrails that scan both user inputs and model outputs to help maintain safe, responsible, and compliant AI interactions.
 
 !!! note
 
@@ -34,6 +34,6 @@ To view the list of guardrails:
 
 <hr/> 
 
- **Related resource**
+**Related resource**
 
 * [Enable Scanners](./enable-a-scanner.md) - Enable guardrails in your Agentic app or Tool.

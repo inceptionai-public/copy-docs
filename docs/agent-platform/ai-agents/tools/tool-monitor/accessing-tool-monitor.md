@@ -2,12 +2,11 @@
 
 Steps to access the tool monitor page:
 
-1. Log in to your (In)Agent Platform account and click **Tools** from the list of modules.
- 
+1. Log into the Platform and select **Tools** under modules. 
 2. On the top navigation bar, click **Tools**.
 3. On the **All tools** page, click the desired tool.  
 
-    Ensure that the status of the selected tool is ‘Deployed’. Tool monitoring is only available for tool deployed in production. Tools that are in debugging or design phases are not tracked here. 
+    Ensure that the status of the selected tool is ‘Deployed’. Tool monitoring is only available for tool deployed in production. Tools that are in debugging or design phases aren't tracked here. 
 
     <img src="../images/agent_monitor_new.png" alt="All agents" title="All agents" style="border: 1px solid gray; zoom:80%;">
 

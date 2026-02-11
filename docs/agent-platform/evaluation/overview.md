@@ -31,9 +31,9 @@ Agentic Evaluation enables multi-level evaluation across sessions and traces, of
 
 ## Accessing Evaluation Studio
 
-1. Log in to your (In)Agent Platform account.
+1. Log in to the Platform account.
 
-2. Go to the **Agent Platform Modules** menu and select **Evaluation Studio**.
+2. From the modules menu, select **Evaluation Studio**.
  
 3. On the Evaluation page, select **Model evaluation** or **Agentic evaluation** to begin.
 

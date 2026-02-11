@@ -1,10 +1,10 @@
 # Manage Roles, Permissions and Access Levels
 
-(In)Agent Platform’s **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the platform. 
+Platform's **Role Management** feature in the **Settings** console helps implement Role-based Access Control (RBAC) for account, tool, and agentic app features on the Platform. 
 
-User roles can be classified based on the role types. [Learn more](./role-management.md/#role-types){:target="_blank"}.
+User roles can be classified based on the role types. [Learn more](./role-management.md#role-types){:target="_blank"}.
 
-When you invite/add a user to your account, you must assign a default role to them to define their module-wise permissions and access levels. You can later reassign a different role to the user, including a default/system-defined or custom role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
+When you invite add a user to your account, you must assign a [default role](./role-management.md/#system-defined-roles){:target="_blank"} to them to define their [module-wise permissions and access levels](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. You can later [reassign a different role](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"} to the user, including a [default/system-defined](./role-management.md/#system-defined-roles){:target="_blank"} or [custom](./role-management.md/#custom-roles){:target="_blank"} role. [Learn more](../user-management/overview.md){:target="_blank"} about **Users Management**.
 
 Here are some key points to consider:
 
@@ -18,17 +18,17 @@ Here are some key points to consider:
 
 3. **Assigning Roles**
 
-    * Once a user joins your account, assign them a role based on their responsibilities and job functions. By default, the **Viewer** role is assigned to new users joining your account, providing the minimum level of account access required. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}. This role can be changed later in the **Settings** console. [Learn more](./role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
+    * Once a user joins your account, assign them a role based on their responsibilities and job functions. By default, the **Member** role is assigned to new users joining your account, providing the minimum level of account access required. [Learn more](./role-management.md#system-defined-roles){:target="_blank"}. This role can be later changed by the admin in the **Settings** console. [Learn more](./role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
 4. **Default and Custom Roles**
 
-    * Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. [Learn more](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}. 
+    * Each role comes with specific permissions and access levels to determine what features the user can access, modify, or manage. [Learn more](./role-management.md#module-wise-permissions-and-access-levels){:target="_blank"}. 
 
-    (In)Agent Platform supports the following roles in the **Settings** console:
+    The Platform supports the following roles in the **Settings** console:
 
-    * **Default Role**: A system-generated role with internally defined set of permissions and access levels. [Learn more](./role-management.md/#system-defined-roles){:target="_blank"}.
+    * **Default Role**: A system-generated role with internally defined set of permissions and access levels. [Learn more](./role-management.md#system-defined-roles){:target="_blank"}.
 
-    * **Custom Role**: Allows you to customize permissions and access levels for your users. [Learn more](./role-management.md/#custom-roles){:target="_blank"}.
+    * **Custom Role**: Allows you to customize permissions and access levels for your users. [Learn more](./role-management.md#custom-roles){:target="_blank"}.
 
 5. **Role Management Benefits**
 
@@ -50,9 +50,9 @@ The modules for which permissions and access levels can be defined for a role in
 
 **Tool Level**
 
-To learn more about permissions and access levels around features, click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}.
+To learn more about permissions and access levels around features, click [here](./role-management.md#module-wise-permissions-and-access-levels){:target="_blank"}.
 
-Access to module-level permissions can either be disabled (no access) or enabled with **Full**, **Custom**, or **View** privileges. [Learn more](./role-management.md/#access-levels){:target="_blank"}.
+Access to module-level permissions can either be disabled (no access) or enabled with **Full**, **Custom**, or **View** privileges. [Learn more](./role-management.md#access-levels){:target="_blank"}.
 
 ### Roles
 
@@ -66,13 +66,13 @@ A **Tool Admin** has complete control over the core functionalities of tools, su
 
 An **App Admin** has full access to almost all the core Platform features relating to Agentic Apps.
 
-(In)Agent Platform supports the following roles:
+The Platform supports the following roles:
 
 #### System-defined Roles
 
 Also called **Default** roles, these are inbuilt in the system at the agentic app, account and tool levels defined in the system. The scopes, permissions, and access levels for these roles are preset based on what users commonly require and **cannot be modified** in the application. Also, system roles cannot be deleted.
 
-To modify a user's scope and permissions, you must add a [custom](./role-management.md/#custom-roles){:target="_blank"} agentic app/account/tool-type role. [Learn more](./role-management.md/#add-a-role){:target="_blank"}.
+To modify a user's scope and permissions, you must add a [custom](./role-management.md#custom-roles){:target="_blank"} agentic app/account/tool-type role. [Learn more](./role-management.md#add-a-role){:target="_blank"}.
 
 System-defined, system-generated, or default roles provide baseline control over the core features and functionalities and streamline the user management process for administrators. 
 
@@ -105,7 +105,7 @@ The following table summarizes the scope for different system roles supported fo
   <tr>
    <td><strong>Member</strong>
    </td>
-   <td>Users can create tools, add external models, and modify only specific integrations.</td>
+   <td>Users can create tools, add external models, and modify only specific integrations. This is the default role assigned to new users.</td>
   </tr>
   <tr>
    <td><strong>Viewer</strong>
@@ -222,32 +222,32 @@ The **Settings** console supports two types of access: “_Yes_” indicates the
 * **Full**: The user can view, add, edit, and delete the module data. 
 * **No Access**: The user cannot access the module's features.
 
-[Learn more](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about Module-wise permissions and access levels.
+[Learn more](./role-management.md#module-wise-permissions-and-access-levels){:target="_blank"} about Module-wise permissions and access levels.
 
 ### Role Types 
 
 A **Role Type** defines the module-wise scope and access level for the defined permissions and associated actions.
 
-Roles are auto-assigned by the system based on the following Role Types. Please refer to [this](./role-management.md/#system-defined-roles){:target="_blank"} table for more information on the roles.
+Roles are auto-assigned by the system based on the following Role Types. See [this](./role-management.md#system-defined-roles){:target="_blank"} table for more information on the roles.
 
 * **Account**:  Users invited to the account must be assigned an Account role (default or custom). The role type manages access to users, integrations, and security permissions.
 * **Tool**:  When a user is invited to a tool, they receive a Tool role. The role type manages access to tool configurations and deployments.
-* **App**: When a user is invited to the (In)Agent Platform at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
+* **App**: When a user is invited to the Platform at the agentic app level, they are assigned this role. This role type manages access to the core features,  configurations, and deployments of autonomous AI applications (agentic apps) that handle specialized business tasks and processes. The admin must assign this role type to any user with whom they intend to share an agentic app.
 
 **Account Role**
 
-* The user who creates an (In)Agent Platform account is assigned the *Master Admin* role by default.
-* The *Master Admin* can assign other account roles to users added to their account.
+* The user who creates a Platform account is assigned the `Master Admin` role by default.
+* A `Master Admin` can assign other account roles to the users.
 
 **Tool Role**
 
-* The user who creates a tool is assigned the *Tool Admin* role by default.
-* The *Tool Admin* can assign other tool roles to users they invite to their tool.
+* The user who creates a tool is assigned the `Tool Admin` role by default.
+* The `Tool Admin` can assign other tool roles to users they invite to their tool.
 
 **App Role**
 
-* The user who creates an agentic app is assigned the *App Owner* role by default.
-* The *App Owner* can assign other Agentic App roles to users who have access to their agentic apps.
+* The user who creates an agentic app is assigned the `App Owner` role by default.
+* The `App Owner` can assign other Agentic App roles to users who have access to their agentic apps.
 
 ### Module-wise Permissions and Access Levels
 
@@ -1800,7 +1800,7 @@ The following table summarizes the module-wise permissions and access levels for
 
 ### Role Management Dashboard
 
-The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the (In)Agent Platform.
+The **Role Management** Dashboard displays key information related to system and custom roles and their permissions available on the Platform.
 
 To access the dashboard, follow the steps below:
 
@@ -1826,13 +1826,13 @@ The **Role Management** dashboard displays the following:
     * **Created by**: For system-generated roles, _System_ is displayed. For custom roles, the name of the user who created the role is displayed, as shown in the image below. This user can be the account owner or another user in the admin’s account.
     <img src="../images/custom-and-system-roles.png" alt="custom and system roles" title="custom and system roles" style="border: 1px solid gray; zoom:80%;">
 
-    * **Last Updated On**: The local time and date when the custom role was last updated are displayed. This information does not appear for system roles, as they cannot be modified.
+    * **Last Updated On**: The local time and date when the custom role was last updated are displayed. This information doesn't appear for system roles, as they can't be modified.
 
 ### Search a Role
 
 To look up a system or custom role, follow the steps below:
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard.
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard.
 2. Click the **Search** text field.
 3. Enter the role you want to search for. All the matching results are displayed.
 <img src="../images/search-role.png" alt="search role" title="search role" style="border: 1px solid gray; zoom:80%;">
@@ -1842,7 +1842,7 @@ To look up a system or custom role, follow the steps below:
 
 ### Manage System Roles
 
-You can perform the following actions on the [system-generated roles](./role-management.md/#system-defined-roles){:target="_blank"}.
+You can perform the following actions on the [system-generated roles](./role-management.md#system-defined-roles){:target="_blank"}.
 
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -1851,9 +1851,9 @@ You can perform the following actions on the [system-generated roles](./role-man
 
 #### View Role Information
 
-To view the details of a [system-defined role](./role-management.md/#system-defined-roles){:target="_blank"}, follow the steps below.
+To view the details of a [system-defined role](./role-management.md#system-defined-roles){:target="_blank"}, follow the steps below.
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard,
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard,
 2. Click the **Ellipses** icon for a system role.
 3. Select **View**.
 <img src="../images/click-view.png" alt="select view" title="select view" style="border: 1px solid gray; zoom:80%;">
@@ -1863,7 +1863,7 @@ The following information is displayed:
 * Role Title along with Role Type.
 * Role Name
 * Role Description
-* Configuration panel to enable/disable access and set access levels for the listed permissions at the account/tool level. Click [here](./role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
+* Configuration panel to enable/disable access and set access levels for the listed permissions at the account/tool level. Click [here](./role-management.md#module-wise-permissions-and-access-levels){:target="_blank"} to see the module-wise permissions and access levels for different roles.
 <img src="../images/module-wise-permissions-new.png" alt="module-wise permissions" title="module-wise permissions" style="border: 1px solid gray; zoom:80%;">
 
 #### Duplicate System Role
@@ -1880,7 +1880,7 @@ If you want to add a custom role by copying the scope and permissions of a syste
 
 To duplicate a system role, follow the steps below:
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard.
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard.
 2. Click the **Ellipses** icon for a system role.
 3. Select **Duplicate**.
 <img src="../images/select-duplicate.png" alt="select duplicate" title="select duplicate" style="border: 1px solid gray; zoom:80%;">
@@ -1890,14 +1890,14 @@ The duplicate custom role displays the system role name followed by a suffix “
 
 ### Manage Custom Roles
 
-[Custom roles](../user-management/role-management.md/#custom-roles){:target="_blank"} can be edited, deleted, or duplicated on the Settings console. They help customize a set of [permissions](../user-management/role-management.md/#permissions){:target="_blank"} and set [access levels](../user-management/role-management.md/#access-levels){:target="_blank"} according to enterprise's requirements.
+[Custom roles](../user-management/role-management.md#custom-roles){:target="_blank"} can be edited, deleted, or duplicated on the Settings console. They help customize a set of [permissions](../user-management/role-management.md#permissions){:target="_blank"} and set [access levels](../user-management/role-management.md#access-levels){:target="_blank"} according to enterprise's requirements.
 
 #### Add a Role
 
 To add a custom role, follow the steps below:
 
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to **Role Management** on the **Settings** console.
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to **Role Management** on the **Settings** console.
 2. Click **Add New Role**.
 <img src="../images/add-new-role.png" alt="add new role" title="add new role" style="border: 1px solid gray; zoom:80%;">
 
@@ -1908,7 +1908,7 @@ To add a custom role, follow the steps below:
     * Select the **Role Type** from the dropdown.
     <img src="../images/select-role-type.png" alt="select role type" title="select role type" style="border: 1px solid gray; zoom:80%;">
     * Follow the steps below if you select **Role Type** as **_Account_**.
-        * Enable/select the access level for module-wise permissions in the **Enable/Disable tool access** section. [Learn more](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
+        * Enable/select the access level for module-wise permissions in the **Enable/Disable tool access** section. [Learn more](../user-management/role-management.md#module-wise-permissions-and-access-levels){:target="_blank"} about module-wise permissions and access levels you can configure for a custom role.
         * If you select *Custom*, Select the checkbox to enable the permissions (set to _Yes_) or unselect to disable (set to _No_) for the following:
 
             * Create and Import Tool
@@ -2004,7 +2004,7 @@ You can change **_Custom_** to **_Full_** or **_View_** for **Integrations** and
 
 If you select **Role Type** as **_Tool_**, follow the steps below:
 
-* Select **_Custom_**, **_View_**, or **_Full_** for **Access**. [Learn more](../user-management/role-management.md/#access-levels){:target="_blank"}. 
+* Select **_Custom_**, **_View_**, or **_Full_** for **Access**. [Learn more](../user-management/role-management.md#access-levels){:target="_blank"}. 
 
 **_Custom_** is the default selection.
 <img src="../images/access-options.png" alt="access options" title="access options" style="border: 1px solid gray; zoom:80%;">
@@ -2032,7 +2032,7 @@ You can modify the role name, description, and access levels for account type or
 
 To update a role, follow the steps below:
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard on the **Settings** console.
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard on the **Settings** console.
 2. Click the **Ellipses** icon for the custom role you want to modify.
 3. Select **Edit**.
 <img src="../images/edit-role.png" alt="edit role" title="edit role" style="border: 1px solid gray; zoom:80%;">
@@ -2068,13 +2068,13 @@ You can delete a custom role if you want to permanently remove it from the syste
 
 Before you delete a role, ensure that the custom role is not assigned to any active users. If the role is assigned, do one of the following:
 
-* Reassign an alternative role to the active users. [Learn more](../user-management/role-management.md/#reassign-an-alternative-role-to-active-users){:target="_blank"}.
+* Reassign an alternative role to the active users. [Learn more](../user-management/role-management.md#reassign-an-alternative-role-to-active-users){:target="_blank"}.
 
 * Remove Inactive users to whom this role is assigned.
 
 To delete a role, follow the steps below:
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard on the **Settings** console.
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to the **Role Management** dashboard on the **Settings** console.
 2. Click the **Ellipses** icon for the custom role you want to delete.
 3. Select **Delete**.
 <img src="../images/select-delete-role.png" alt="select delete role" title="select delete role" style="border: 1px solid gray; zoom:80%;">
@@ -2093,31 +2093,31 @@ You must perform one of the following workarounds.
 
 ##### Reassign an Alternative Role to Active Users
 
-1. [Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to **Users Management** > **Users** on the **Settings** Console.
+1. [Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to **Users Management** > **Users** on the **Settings** Console.
 2. Click the **Account Role** entry for the user.
 3. Select the role you want to reassign.
 <img src="../images/select-role-to-reassign.png" alt="reassign role" title="reassign role" style="border: 1px solid gray; zoom:80%;">
 
-Once you reassign the role for the user, go to the **Role Management** dashboard and delete the role using the steps mentioned [here](../user-management/role-management.md/#delete-a-custom-role){:target="_blank"}.
+Once you reassign the role for the user, go to the **Role Management** dashboard and delete the role using the steps mentioned [here](../user-management/role-management.md#delete-a-custom-role){:target="_blank"}.
 
 The role is deleted successfully from the **Role Management** dashboard and the count for custom roles is updated (decreased).
 <img src="../images/custom-role-deleted.png" alt="custom role deleted" title="custom role deleted" style="border: 1px solid gray; zoom:80%;">
 
 ##### Delete Assigned Users
 
-[Navigate](../user-management/role-management.md/#role-management-dashboard){:target="_blank"} to the **Users Management** dashboard and follow the steps mentioned in the **Delete Users** section to delete all the assigned users individually or in bulk. Once the user is deleted, go to the **Role Management** dashboard and [delete](../user-management/role-management.md/#delete-a-custom-role){:target="_blank"} the required custom role.
+[Navigate](../user-management/role-management.md#role-management-dashboard){:target="_blank"} to the **Users Management** dashboard and follow the steps mentioned in the **Delete Users** section to delete all the assigned users individually or in bulk. Once the user is deleted, go to the **Role Management** dashboard and [delete](../user-management/role-management.md#delete-a-custom-role){:target="_blank"} the required custom role.
 
 Deleting the assigned users removes their association with the role you want to delete.
 
 #### Duplicate a Custom Role
 
-Like a system role, you can duplicate a custom role, which copies the name, role type, and configurations for permissions and access. Follow the steps mentioned [here](../user-management/role-management.md/#duplicate-system-role){:target="_blank"} to complete the process for a custom role.
+Like a system role, you can duplicate a custom role, which copies the name, role type, and configurations for permissions and access. Follow the steps mentioned [here](../user-management/role-management.md#duplicate-system-role){:target="_blank"} to complete the process for a custom role.
 <img src="../images/duplicate-custom-role.png" alt="duplicate custom role" title="duplicate custom role" style="border: 1px solid gray; zoom:80%;">
 
 <hr/> 
 
- **Related Resources**
+**Related Resources**
 
-* [Settings Console](../../administration/overview.md){:target="_blank"} - about other Agent Platform admin features.
+* [Settings Console](../../administration/overview.md){:target="_blank"} - about other Platform admin features.
 * [Users Management](../user-management/users.md){:target="_blank"} - about managing users in your account.
 * [Monitoring: Audit Logs](../monitoring/audit-logs.md){:target="_blank"} - about tracking events and user activity in your account.

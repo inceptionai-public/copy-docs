@@ -1,6 +1,6 @@
 # Monitoring Custom Script Runs and Logs
 
-**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the (In)Agent Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
+**Monitoring Custom Scripts** provides comprehensive visibility into custom script performance on the Platform. It tracks executions across API nodes, Function nodes, and API calls for the selected period, enabling users to view run-level data, analyze logs, and monitor key metrics. Advanced filtering and search capabilities support precise analysis, effective troubleshooting, and proactive issue resolution.
 
 **Key Benefits**
 
@@ -15,8 +15,8 @@
 
 **Search and Filter Capabilities**
 
-* **Column Filters**: View specific records by setting column values or combining filters with logical operators. [Learn more](../monitoring/monitoring-custom-scripts.md/#columns-filtering){:target="_blank"}.
-* **Time-based filters** Analyze script performance for specific dates or date ranges. [Learn more](../monitoring/monitoring-custom-scripts.md/#time-based-filtering){:target="_blank"}.
+* **Column Filters**: View specific records by setting column values or combining filters with logical operators. [Learn more](../monitoring/monitoring-custom-scripts.md#columns-filtering){:target="_blank"}.
+* **Time-based filters** Analyze script performance for specific dates or date ranges. [Learn more](../monitoring/monitoring-custom-scripts.md#time-based-filtering){:target="_blank"}.
 * **Search Functionality** Look up script runs using Run ID and other searchable column fields.
 
 **UI Features**
@@ -41,14 +41,14 @@
 * **Navigation**: Use arrow buttons or keyboard shortcuts (<code>K</code> for previous, <code>J</code> for next) to navigate records.
     <img src="../images/keyboard-shortcuts.png" alt="keyboard shortcuts" title="keyboard shortcuts" style="border: 1px solid gray; zoom:75%;">
 
-* Click on each script run record to see the record-level view of the log based on the **Run ID**. [Learn more](../monitoring/monitoring-custom-scripts.md/#record-view){:target="_blank"}.
+* Click on each script run record to see the record-level view of the log based on the **Run ID**. [Learn more](../monitoring/monitoring-custom-scripts.md#record-view){:target="_blank"}.
 * Click the **Logs** tab to view metrics and summary information on each run-based log recorded for the script.
 * Log visibility depends on how the script is configured by the developer:
     * Failure runs **can generate logs if logging is implemented correctly**. 
 
     * For **in-progress** runs, logs using **default logging** appear only after the run completes. 
 
-    * With the **custom <code>xxxxlogger</code> library**, logs populate in real-time, with support for structured log levels (e.g., info, debug, error), making it ideal for live monitoring and debugging.
+    * With the **custom <code>korelogger</code> library**, logs populate in real-time, with support for structured log levels (e.g., info, debug, error), making it ideal for live monitoring and debugging.
 
 * Export runs and logs as a dataset in .csv format, based on the applied filters and selected date range for further analysis, editing, and debugging.
 
@@ -61,14 +61,14 @@
 * Analyze the input and output for each script run (identified by **Run ID**) using Log data like *Log ID*, *Log level*, *Log message*, and *Timestamp*.
 * **Total Runs**, **Response Time** (P90 and P99), and **Failure Rate** for all script executions help uncover performance insights, diagnose errors, and optimize script usage.
 * Use the input and output code editors available in the record view to analyze and troubleshoot the script run logs.
-* Perform script tracing using the record view for a specific run. [Learn more](../monitoring/monitoring-custom-scripts.md/#record-view){:target="_blank"}.
+* Perform script tracing using the record view for a specific run. [Learn more](../monitoring/monitoring-custom-scripts.md#record-view){:target="_blank"}.
 
 
 ## Access Monitoring Custom Scripts
 
 To access the feature, follow the steps below:
 
-1. [Navigate](../../administration/overview.md/#access-settings-console){:target="_blank"} to the **Settings** Console.
+1. [Navigate](../../administration/overview.md#access-settings-console){:target="_blank"} to the **Settings** Console.
 2. On the left menu, select **Monitoring** > **Custom scripts**.
    <img src="../images/access-custom-script-monitoring.png" alt="custom scripts monitoring" title="custom scripts monitoring" style="border: 1px solid gray; zoom:75%;">
 
@@ -105,8 +105,8 @@ This feature provides a centralized view of actionable insights into run-level a
 The key features for customizing the data in the page include:
 
 * **Script Name Filter**: Use this to select and view data for a specific script you want to monitor. You can also choose another deployed and executed script from the list to view its metrics and logs.
-* **Time Selection Filter**: Required to analyze script runs data for a specific period in the past or current day. [Learn more](../monitoring/monitoring-custom-scripts.md/#time-based-filtering){:target="_blank"}.
-* **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis of runs and logs. [Learn more](../monitoring/monitoring-custom-scripts.md/#columns-filtering){:target="_blank"}.
+* **Time Selection Filter**: Required to analyze script runs data for a specific period in the past or current day. [Learn more](../monitoring/monitoring-custom-scripts.md#time-based-filtering){:target="_blank"}.
+* **Filter By Option**: An optional multi-field, multi-level filter for targeted analysis of runs and logs. [Learn more](../monitoring/monitoring-custom-scripts.md#columns-filtering){:target="_blank"}.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -253,11 +253,11 @@ Use the time selection dropdown (displayed as "Custom") at the top-right of the 
 <p class="admonition-title">Note</p>
 <p>Data is displayed only if the selected script’s runs were executed during the selected period.</p></div>
 
-[Learn more](../monitoring/audit-logs.md/#time-based-audit-logs){:target="_blank"} about the calendar widget.
+[Learn more](../monitoring/audit-logs.md#time-based-audit-logs){:target="_blank"} about the calendar widget.
 
 ## Columns Filtering
 
-You can narrow down the information displayed for custom script runs and logs by applying **custom column filters**. This functionality is similar to the **Filter** in the Audit Logs feature. [Learn more](../monitoring/audit-logs.md/#filter-audit-logs){:target="_blank"}. 
+You can narrow down the information displayed for custom script runs and logs by applying **custom column filters**. This functionality is similar to the **Filter** in the Audit Logs feature. [Learn more](../monitoring/audit-logs.md#filter-audit-logs){:target="_blank"}. 
 
 Additionally, the filter for custom scripts includes the **contains** operator, which matches results that include a specific keyword or value you enter. For example, the following image depicts checking if the **Log message** contains the string “*Adding*.”  
  
@@ -292,7 +292,7 @@ The UI displays all the relevant run and log records that align with the applied
 
 ### Multiple Filters
 
-Users can combine filters using AND/OR operators for multi-level filtering. Note that AND and OR operators cannot be mixed in the same filter set. [Learn more](../monitoring/audit-logs.md/#add-multiple-filters){:target="_blank"} about using multiple filters.
+Users can combine filters using AND/OR operators for multi-level filtering. Note that AND/OR operators cannot be mixed in the same filter set. [Learn more](../monitoring/audit-logs.md#add-multiple-filters){:target="_blank"} about using multiple filters.
 
 ## Record View
 
@@ -317,7 +317,7 @@ The record view offers log-specific insights at the script run level after each 
 2. The record view page is displayed with the following information: 
 
     * Run ID
-    * Log-specific information, including the *Log ID*, *Log level*, *Log message*, and *timestamp*. [Learn more](../monitoring/monitoring-custom-scripts.md/#log-level-metadata){:target="_blank"}.
+    * Log-specific information, including the *Log ID*, *Log level*, *Log message*, and *timestamp*. [Learn more](../monitoring/monitoring-custom-scripts.md#log-level-metadata){:target="_blank"}.
     * JSON editors that display the script’s input and the function’s output, respectively. 
     * Navigation buttons.
 
@@ -325,13 +325,13 @@ The record view offers log-specific insights at the script run level after each 
 
 ## Enhanced Logging for gVisor Monitoring
 
-The (In)Agent Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*xxxxlogger*).
+The Platform offers two convenient logging options to help you effectively capture and monitor logs for your custom scripts: using default logging functions or a custom logging library (*korelogger*).
 
 **Key Considerations**
 
 * When using **default logging** (e.g., `print()` in Python or `console.log()` in JavaScript), logs appear in the **Logs** section only after the script execution completes (success or failure).
-* **Custom logging** with the `xxxxlogger` library enables real-time log streaming where logs are populated in the table as they're generated.
-* We recommend using `xxxxlogger` for its log-level control and immediate log visibility, which significantly improves monitoring and debugging efficiency.
+* **Custom logging** with the `korelogger` library enables real-time log streaming where logs are populated in the table as they're generated.
+* We recommend using `korelogger` for its log-level control and immediate log visibility, which significantly improves monitoring and debugging efficiency.
 
 
 ### Option 1: Standard Logging (Simple Setup)
@@ -362,9 +362,9 @@ Checking print function...
 Print function is working!
 ```
 
-### Option 2: Advanced Logging with xxxxlogger (Recommended for Monitoring)
+### Option 2: Advanced Logging with korelogger (Recommended for Monitoring)
 
-The `xxxxlogger` library is provided to users to enable detailed trace capture, supporting enhanced script monitoring and observability.
+The `korelogger` library is provided to users to enable detailed trace capture, supporting enhanced script monitoring and observability.
 
 Additionally, the same logs are also captured in stdout in the following format: 
 
@@ -376,27 +376,27 @@ Additionally, the same logs are also captured in stdout in the following format:
 <p class="admonition-title">Note</p>
 <p>The above log format can be modified as required.</p></div>
 
-A sample script and its output, which uses the `xxxxlogger` library in Python, are given below:
+A sample script and its output, which uses the `korelogger` library in Python, are given below:
 
 **Script**
 
 ```
-import xxxxlogger
+import korelogger
 def call_openai_chat(prompt):
-    xxxxlogger.debug("Debug log using xxxxlogger")
-    xxxxlogger.info("Info log using xxxxlogger")
-    xxxxlogger.warning("Warning log using xxxxlogger")
-    xxxxlogger.error("Error log using xxxxlogger")
+    korelogger.debug("Debug log using korelogger")
+    korelogger.info("Info log using korelogger")
+    korelogger.warning("Warning log using korelogger")
+    korelogger.error("Error log using korelogger")
     return
 ```
 
 **Output captured in** `stdout`
 
 ```
-DEBUG :: Debug log using xxxxlogger
-INFO :: Info log using xxxxlogger
-WARNING :: Warning log using xxxxlogger
-ERROR :: Error log using xxxxlogger
+DEBUG :: Debug log using korelogger
+INFO :: Info log using korelogger
+WARNING :: Warning log using korelogger
+ERROR :: Error log using korelogger
 ```
 
 **Log traces are pushed in the following format:**
@@ -422,10 +422,10 @@ ERROR :: Error log using xxxxlogger
         "deployment_id": "deploy_67890",
         "source": "api_call",
         "source_type": "test",
-        "log.message": "Using xxxxlogger to log",
+        "log.message": "Using korelogger to log",
         "log.level": "INFO",
         "log.trace_id": "00-abcdef12345xxxxxxxxxxxxxxxxxxxx0-12345xxxxxxxxxxf-01",
-        "log.meta.msg": "Using xxxxlogger to log",
+        "log.meta.msg": "Using korelogger to log",
         "log.meta.pid": "41",
         "log.meta.logid": "4XXXXXX5-5XX0-4XX6-bXX8-4XXXXXXXXXX6"
     },

@@ -22,11 +22,9 @@ The **DocSearch Node** is a Retrieval-Augmented Generation (RAG)-powered compone
 * **Knowledge Base Search**: Search internal wikis, technical docs, or training material with support for dynamic inputs and filters.
 * **User Query Handling**: Accept real-time input queries from other nodes to personalize search results in the workflow context.
 
-
 ## Example Use Case
 
 A retail bank uses the **DocSearch Node** to automate responses to frequently asked questions about loans, accounts, and card services. When a user asks, “*What documents are required to apply for a home loan based on my income?*”, the node dynamically passes the query to a connected Search AI App, which searches, indexes, and fetches relevant information chunks from internal resources such as loan policy documents, eligibility criteria, and process guidelines. It then returns a precise, context-aware response, reducing call center load and improving self-service efficiency.
-
 
 ## How It Works
 
@@ -40,14 +38,14 @@ In this document, you will learn how to add and configure DocSearch Nodes with S
 
 Configuring the DocSearch Node consists of the following steps:
 
-1. [Set up a Search AI application and the information source for (In)Agent Platform integration](../types-of-nodes/docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
-2. [Link the Search AI application in (In)Agent Platform](#step-2-link-the-search-ai-app-in-inagent-platform){:target="_blank"}.
+1. [Set up a Search AI application and the information source for Platform integration](../types-of-nodes/docsearch-node.md#step-1-set-up-search-ai-app){:target="_blank"}.
+2. [Link the Search AI application in the Platform](#step-2-link-the-search-ai-app-in-inagent-platform).
 3. [Add and configure the DocSearch node](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"}.
 4. [Test the Flow](../types-of-nodes/docsearch-node.md/#step-4-test-the-flow) you have built.
 
 ## Step 1: Set up Search AI App
 
-The integration of Search AI with (In)Agent Platform involves setting up a Search AI application, configuring it for integration, and modifying (In)Agent Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
+The integration of Search AI with the Platform involves setting up a Search AI application, configuring it for integration, and modifying the Platform to interact with Search AI in response to specific conditions or events. Search AI provides REST APIs that enable seamless interaction with any application.
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -56,9 +54,9 @@ The integration of Search AI with (In)Agent Platform involves setting up a Searc
 
 ## Step 2: Link the Search AI App in (In)Agent Platform
 
-After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in (In)Agent Platform. 
+After fetching the Search AI application credentials, configuring the source, and enabling the channel communication via API, you must link the app in the Platform. 
 
-**Steps to integrate Search AI in (In)Agent Platform**
+**Steps to integrate Search AI in the Platform**
 
 1. Log in to your account and click **Autonomous Agents** from the list of modules.
 2. Click **Settings** on the top navigation bar.
@@ -67,7 +65,7 @@ After fetching the Search AI application credentials, configuring the source, an
   <img src="./../images/link-an-app.png" alt="link an app" title="link an app" style="border: 1px solid gray; zoom:75%;">
 
 5. In the **Search AI** window, provide the required information that you copied from the Search AI app in 
-[Step 1](./docsearch-node.md/#step-1-set-up-search-ai-app){:target="_blank"}.
+[Step 1](./docsearch-node.md#step-1-set-up-search-ai-app){:target="_blank"}.
 6. Click **Test** to test the connection.
 * If the connection is successful, click **Confirm**.
   <img src="./../images/searchai-connection-form.png" alt="searchai connection form" title="searchai connection form" style="border: 1px solid gray; zoom:75%;">
@@ -87,8 +85,8 @@ After fetching the Search AI application credentials, configuring the source, an
 
 ### Step 3(A): Open Flow Builder
 
-* Log in → In (In)Agent Platform Modules → Click **Tools**.
-* Select your tool → Click **Go to Flow**.
+* Log into the Platform and select **Tools** under modules.
+* Select your tool and select **Go to Flow**.
 
 ### Step 3(B): Add the Node
 
@@ -109,14 +107,14 @@ After fetching the Search AI application credentials, configuring the source, an
   You can also add plain text for hard-coded inputs like "<i>What does the McKinsey report forecast for Q3 in 2025 based on historic data taken in the past 3 years</i>."
    <img src="./../images/context-input.png" alt="query field" title="query field" style="border: 1px solid gray; zoom:75%;">
    
- * Select the <b>Search AI connection</b> you set up in <a href="#step-2-link-the-search-ai-app-in-inagent-platform" target="_blank">Step 2</a> on the (In)Agent Platform integration page.
+ * Select the <b>Search AI connection</b> you set up in Step 2 on the Platform integration page.
    <img src="./../images/searchai-connection.png" alt="search ai connection" title="search ai connection" style="border: 1px solid gray; zoom:75%;">
 
    <div class="admonition note">
    <p class="admonition-title">Note</p>
    <p>Use search to look up and select the required connection.</p></div>
 
-  To set up a new connection, click **+ New Connection**. This will redirect you to the (In)Agent Platform Integrations page. Follow the steps mentioned [here](#step-2-link-the-search-ai-app-in-inagent-platform){:target="_blank"} to complete the integration.
+  To set up a new connection, click **+ New Connection**. It redirects you to the Platform Integrations page. Follow the steps mentioned in Step 2 to complete the integration.
 
  * (Optional) Set <b>Meta filters</b> (click the expansion arrow to access the editor) to define rules that will narrow down the search results. For example, if the sources have multiple files, you can define the specific file names to look up in the meta filters code.
   <img src="./../images/set-meta-filters.png" alt="set meta filters" title="set meta filters" style="border: 1px solid gray; zoom:75%;">
@@ -139,7 +137,7 @@ To run and test the flow, follow the steps below:
 * Click the **Run Flow** button at the top-right corner of the flow builder.
   <img src="../images/docsearch-run-flow.png" alt="click run button" title="click run button" style="border: 1px solid gray; zoom:75%;">
 
-* (Optional) Add the value for **Input Variable** if you have configured it to test the flow in **Step 5** of [this](../types-of-nodes/docsearch-node.md/#step-3-add-and-configure-a-docsearch-node){:target="_blank"} section. Otherwise, go directly to the next step.
+* (Optional) Add the value for **Input Variable** if you have configured it to test the flow in **Step 5** of [this](../types-of-nodes/docsearch-node.md#step-3-add-and-configure-a-docsearch-node){:target="_blank"} section. Otherwise, go directly to the next step.
 
 * Click <b>Generate Output</b>.
 
@@ -160,7 +158,7 @@ Use that key in your tool flow. You may also need to extract multiple chunks fro
 
 <hr/> 
 
- **Related resources**
+**Related Resources**
 
 * [Manage Nodes in Tool Flow](./../manage-flow-nodes.md){:target="_blank"} - Add and manage nodes on the canvas.
 * [Run Tool Flow](./../perform-other-actions-on-the-flow-builder/run-the-flow.md){:target="_blank"} - Run and test an tool flow in real time.

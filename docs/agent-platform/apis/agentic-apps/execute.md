@@ -228,6 +228,13 @@ Example: To directly invoke the leaveBalanceById tool in a specific agent, set t
 
 <hr/>
 
+**source**- Optional
+
+Identifies the system from which the API request is initiated. This field enables better analytics, monitoring, and observability by indicating what triggered the agentic app execution. This field is available as a filter in the session logs.
+
+If not provided, the Platform automatically assigns the default value.
+
+<hr/>
 
 #### Sample Request
 
@@ -298,6 +305,13 @@ Returns the agent's response to the query along with the session details.
 - content: agent's response
    </td>
   </tr>
+  <tr>
+  <td>Artifacts</td>
+  <td>Array of responses from the tools in the order of execution. For example, if tool 1 was executed followed by tool 2, artifacts[0] will contain the response from tool 1 and artifacts[1] will contain the response from tool 2. 
+  <p>
+  Note that the response from a tool is updated in this array only if the ‘Include tool response in artifacts’ flag is enabled in the corresponding tool. Learn More.
+  </td> 
+</tr>
   <tr>
    <td>sessionInfo
    </td>

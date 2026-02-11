@@ -1,26 +1,22 @@
 # Real-time Voice Interaction between (In)Business Customer Experience and (In)Agent Platform
 
-When integrating a voice channel with the (In)Agent Platform through the Automation Node in (In)Business Customer Experience, two modes of voice interaction are available:
+When integrating a voice channel with the Platform through the Automation Node in (In)Business Customer Experience, two modes of voice interaction are available:
 
 * Real-Time Voice
-* ASR/TTS 
+* ASR/TTS
 
-Both modes determine how user audio is processed, how agent responses are generated, and how they're presented to the user in the form of audio or speech.
-
+These modes determine how user audio is processed, how agent responses are generated, and how they're presented to the user in the form of audio or speech.
 
 ## Real-Time Voice Interactions
 
 Real-Time Voice enables natural, conversational interaction using multi-modal language models that support real-time voice input and output.
 
-
 ### How It Works
 
-
-* When Real-Time Voice is enabled in (In)Business Customer Experience, it must also be enabled in the (In)Agent Platform for the selected Agentic App. 
-* The (In)Agent Platform will use the configured real-time voice model to process user audio and generate audio responses.
-* If Real-Time Voice isn't enabled on the (In)Agent Platform side, the system can't process audio requests correctly and will return errors.
-* When Real-Time Voice is disabled in the Automation Node on the (In)Business Customer Experience side, ASR/TTS will be used by default for audio responses. 
-
+* When Real-Time Voice is enabled in (In)Business Customer Experience, it must also be enabled in the Platform for the selected Agentic App. 
+* The Platform uses the configured real-time voice model to process user audio and generate audio responses.
+* If Real-Time Voice isn't enabled on the Platform side, the system can't process audio requests correctly and will return errors.
+* When Real-Time Voice is disabled in the Automation Node on the (In)Business Customer Experience side, ASR/TTS will be used by default for audio responses.
 
 ## TTS Streaming
 
@@ -30,7 +26,7 @@ TTS Streaming provides a hybrid approach in which the agent’s text output is s
 ### How It Works
 
 * If real-time voice is disabled, the system defaults to ASR-TTS, that converts text to speech. 
-* (In)Agent Platform uses the text based LLM model to generate the answer and sends it back to the (In)Business Customer Experience Platform, which uses ASR/TTS to convert it to audio and present it to user. 
+* The Platform uses the text based LLM model to generate the answer and sends it back to the (In)Business Customer Experience Platform, which uses ASR/TTS to convert it to audio and present it to user. 
 * If TTS streaming is disabled, the system delivers the audio response to the user only after the complete output is generated.
 * When TTS Streaming is turned on, the text output is streamed back to (In)Business Customer Experience as soon as it's generated. This reduces the latency involved in answering user queries. 
 * (In)Business Customer Experience converts streamed text to speech in real time using TTS engines (Deepgram, ElevenLabs).
@@ -40,12 +36,9 @@ TTS Streaming provides a hybrid approach in which the agent’s text output is s
 
 The Platform allows admins to configure the wait-time experience to provide a better experience for users when processing responses is delayed. Note that it's not applicable to real time voice. Learn More.  
 
-
-
-* The wait-time experience configured in (In)Agent Platform is triggered.
-* After the threshold is reached, the (In)Agent Platform sends a filler or system-generated message, as configured.
+* The wait-time experience configured in the Platform is triggered.
+* After the threshold is reached, the Platform sends a filler or system-generated message, as configured.
 * The message is presented to the user via TTS as it's received by (In)Business Customer Experience. (if streaming is enabled).
-
 
 ## Configurations
 
@@ -54,10 +47,10 @@ The Platform allows admins to configure the wait-time experience to provide a be
 1. Enable Real Time Voice in the (In)Business Customer Experience Automation node. ![Enable Real Time Voice](images/voice/real-time-voice.png "Enable Real time voice")
 2. Ensure real-time voice is enabled in the Agentic App, and that an AI model supporting real-time voice is configured for it. ![Enable Real Time Voice](images/voice/enable-voice-ap.png "Enable Real Time Voice")
 
-Note: [Wait Time Experience](../settings/app-configurations.md#waiting-experience) in (In)Agent Platform isn't available for real-time voice interactions. 
+Note: [Wait Time Experience](../settings/app-configurations.md#waiting-experience) in the Platform isn't available for real-time voice interactions. 
 
 **For TTS:**
 
 1. Disable real-time voice in (In)Business Customer Experience. 
 2. Additionally, for streaming the response, enable the TTS Streaming option. ![alt_text](images/voice/tts-streaming.png "image_tooltip")
-3. No special configuration is required on the (In)Agent Platform side.
+3. No special configuration is required on the Platform side.

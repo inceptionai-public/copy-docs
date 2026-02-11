@@ -1,6 +1,6 @@
 # Manage Scopes and Keys for API Apps
 
-(In)Agent Platform introduces **API scopes** in the **Settings** console, moving from unrestricted management API keys to more secure, scoped API key-based application management.
+The Platform introduces **API scopes** in the **Settings** console, moving from unrestricted management API keys to more secure, scoped API key-based application management.
 
 Users can select specific scopes for managing tools, models, and guardrails. This allows for the creation of internal applications with restricted access to only the necessary API endpoints. By limiting API access, this feature reduces security risks, allowing administrators to generate multiple API keys and ensure secure, controlled access for authorized personnel.
 
@@ -15,7 +15,7 @@ Users can select specific scopes for managing tools, models, and guardrails. Thi
 
 Users can rename an app, modify its selected scopes, or delete the app as needed. Once the admin defines or updates the API scopes, the changes are applied platform-wide, ensuring consistent and controlled access to the APIs wherever they are used. 
 
-For more information on roles and permissions for API-scoped apps, please refer [here](../user-management/role-management.md/#module-wise-permissions-and-access-levels){:target="_blank"}.
+For more information on roles and permissions for API-scoped apps, please refer [here](../user-management/role-management.md#module-wise-permissions-and-access-levels){:target="_blank"}.
 
 
 ## Use Case: Scoped API Access for Banking Departments
@@ -43,73 +43,73 @@ The following API scopes are available for this feature.
   <tr>
    <td>Deploy Tool
    </td>
-   <td>Deploy a specific tool into an environment. It allows the user to control the deployment process either synchronously or asynchronously. <a href="../../../apis/apis-list/deploy-a-tool" target="_blank">Learn more</a>.
+   <td>Deploy a specific tool into an environment. It allows the user to control the deployment process either synchronously or asynchronously. <a href="../../../apis/apis-list/deploy-a-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Undeploy Tool
    </td>
-   <td>Undeploy a tool that is deployed in an environment. <a href="../../../apis/apis-list/undeploy-a-tool" target="_blank">Learn more</a>.
+   <td>Undeploy a tool that is deployed in an environment. <a href="../../../apis/apis-list/undeploy-a-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Deploy Model
    </td>
-   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state. <a href="../../../apis/apis-list/deploy-a-model" target="_blank">Learn more</a>.
+   <td>Deploy an open-source or fine-tuned model in the <strong><em>Ready to Deploy</em></strong> state. <a href="../../../apis/apis-list/deploy-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Undeploy Model
    </td>
-   <td>Undeploy a model from the environment. <a href="../../../apis/apis-list/undeploy-a-model" target="_blank">Learn more</a>.
+   <td>Undeploy a model from the environment. <a href="../../../apis/apis-list/undeploy-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Import Model
    </td>
-   <td> Import a model in chunks into the (In)Agent Platform environment. <a href="../../../apis/apis-list/import-a-model" target="_blank">Learn more</a>.
+   <td> Import a model in chunks into the Platform environment. <a href="../../../apis/apis-list/import-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Import Tool
    </td>
-   <td>Import a new tool into the system. <a href="../../../apis/apis-list/import-a-new-tool" target="_blank">Learn more</a>.
+   <td>Import a new tool into the system. <a href="../../../apis/apis-list/import-a-new-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Export Model
    </td>
-   <td>Export a trained AI model from the system. <a href="../../../apis/apis-list/export-a-model" target="_blank">Learn more</a>.
+   <td>Export a trained AI model from the system. <a href="../../../apis/apis-list/export-a-model/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Export Tool
    </td>
-   <td>Export a tool's configuration and associated data.<a href="../../../apis/apis-list/export-a-tool" target="_blank">Learn more</a>.
+   <td>Export a tool's configuration and associated data.<a href="../../../apis/apis-list/export-a-tool/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Deploy Guardrails
    </td>
-   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="../../../apis/apis-list/deploy-guardrails" target="_blank">Learn more</a>.
+   <td>Deploy pre-defined <strong>guardrails</strong> to enhance security, compliance, and content moderation in AI interactions. <a href="../../../apis/apis-list/deploy-guardrails/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Undeploy Guardrails
    </td>
-   <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="../../../apis/apis-list/undeploy-guardrails" target="_blank" target="_blank"> Learn more</a>.
+   <td>Remove the previously deployed guardrails that regulate AI interactions.<a href="../../../apis/apis-list/undeploy-guardrails/" target="_blank" target="_blank"> Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>View Connections
    </td>
-   <td>Required for viewing connection details. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
+   <td>Required for viewing connection details. <a href="../../../apis/apis-list/connections-api/" target="_blank">Learn more</a>.
    </td>
   </tr>
   <tr>
    <td>Manage Connections
    </td>
-   <td>Required for creating and updating connections. <a href="../../../apis/apis-list/connections-api" target="_blank">Learn more</a>.
+   <td>Required for creating and updating connections. <a href="../../../apis/apis-list/connections-api/" target="_blank">Learn more</a>.
    </td>
   </tr>
 </table>
@@ -126,15 +126,15 @@ To access this feature, follow the steps below:
 
 The key steps to implement API scoping include:
 
-1. [Create an API app and assign scopes](../security-and-control/api-scopes.md/#create-an-api-application){:target="_blank"}: API-scoped apps have limited and specific permissions tied only to the API endpoints they need. Creating an API-scoped app enables you to restrict permissions, enhance security, better control and monitor access, and tailor the app specifically to meet the integration’s needs.
-2. [Create one or more API Keys to access the app](../security-and-control/api-scopes.md/#create-an-api-key){:target="_blank"}: API keys for scoped apps provide secure, manageable, and auditable access control tailored to the app’s needs, making access and usage safer and easier to track.
+1. [Create an API app and assign scopes](../security-and-control/api-scopes.md#create-an-api-application){:target="_blank"}: API-scoped apps have limited and specific permissions tied only to the API endpoints they need. Creating an API-scoped app enables you to restrict permissions, enhance security, better control and monitor access, and tailor the app specifically to meet the integration’s needs.
+2. [Create one or more API Keys to access the app](../security-and-control/api-scopes.md#create-an-api-key){:target="_blank"}: API keys for scoped apps provide secure, manageable, and auditable access control tailored to the app’s needs, making access and usage safer and easier to track.
 
 
 ### Create an API Application
 
 To create an app, follow the steps below:
 
-1. [Access](../security-and-control/api-scopes.md/#access-api-scopes){:target="_blank"} **API Scopes**.
+1. [Access](../security-and-control/api-scopes.md#access-api-scopes){:target="_blank"} **API Scopes**.
 2. Click **Create an API App** or **Create an App**.
 3. Click **Untitled app** and provide the app name.
     <img src="../images/provide-app-name.png" alt="provide app name" title="provide app name" style="border: 1px solid gray; zoom:75%;">
@@ -142,7 +142,7 @@ To create an app, follow the steps below:
 4. Select the required scopes from the list.
 5. Click **Next**. 
 
-    A success message is displayed when the app is created. Follow the steps in the [next section](../security-and-control/api-scopes.md/#create-an-api-key){:target="_blank"} to complete the process.
+    A success message is displayed when the app is created. Follow the steps in the [next section](../security-and-control/api-scopes.md#create-an-api-key){:target="_blank"} to complete the process.
 
 ### Create an API Key
 
