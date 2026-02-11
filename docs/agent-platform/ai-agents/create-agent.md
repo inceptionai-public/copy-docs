@@ -1,8 +1,8 @@
 # Set up an AI Agent
 
-Setting up an agent involves defining its intended purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the boundaries of the agent to govern its actions within specified boundaries.
+An AI Agent is a configurable, goal-driven component that can understand user input, reason using context, and take actions by invoking tools or delegating tasks. Setting up an agent involves defining its intended purpose, configuring its core functions, and ensuring it has the necessary tools and resources to perform its tasks. It also includes defining the agent's boundaries to govern its actions within those boundaries.
 
-
+**Components of an Agent**
 <img src="../images/agent-anatomy.png" alt="Anatomy of an Agent" title="Anatomy of an Agent" style="border: 1px solid gray; zoom:65%;">
 
 <!-- ## Agents Page
@@ -19,63 +19,95 @@ Key highlights
 <img src="../images/agents-listing-page.png" alt="Agent Listing Page" title="Agent Listing Page" style="zoom:70%; border: 1px solid gray;">
 -->
 
-## Create an Agent
+## Agent Setup Overview
 
-To add a new agent to an app, go to the Agents Apps page, choose the App, and then click **+New Agent**. You can also set up the agent during the app creation process. 
+### Choosing How to Create an Agent
 
-![Add Agent](images/new-agent-pw.png "Add Agent")
+The first step in setting up an agent is deciding how it will be created. Depending on your use case, you may:
 
-Enter or select the appropriate details for each field as described below. 
+* Use a prebuilt agent from the Marketplace.
+* Connect an external agent that's hosted elsewhere.
+* Build an agent from scratch with full control over its configuration.
 
-## Agent Profile
+<table>
+  <tr>
+   <td>
+Option
+   </td>
+   <td>When to use
+   </td>
+   <td>What you configure
+   </td>
+  </tr>
+   <tr>
+   <td><a href="../create-from-scratch/">From Scratch</a>
+   </td>
+   <td>You want full control
+   </td>
+   <td>Configure everything for the agent - Profile, instructions, tools, and knowledge. 
+   </td>
+  </tr>
+  <tr>
+   <td><a href="../external-agents/">Connect External Agent</a>
+   </td>
+   <td>You already have an agent hosted elsewhere
+   </td>
+   <td>Connection details
+   </td>
+  </tr>
+  <tr>
+   <td><a href="../create-from-marketplace/">From Marketplace</a>
+   </td>
+   <td>You want to use a  preconfigured, ready-to-use agent
+   </td>
+   <td>Requires minimal edits
+   </td>
+  </tr>
+  
+ 
+</table>
 
-Agent profile consists of the following fields:
 
-**Name**: Choose a unique name that reflects your agent's core function and persona. It's good to have a name that's intuitive and indicative of its role. 
-
-!!!abstract "Examples"
-
-    * Credit Card Assistant for an agent that handles all queries related to credit cards.
-    * Leave Manager for an agent that manages all requests related to employee leaves in an organization.
-    * Order Manager for an agent that manages all the user requests related to order status, returns, and refunds. 
-
----
-
-**Description**: Specify your AI agent's primary objectives and key responsibilities. The description should clearly define the agent's role in the application and differentiate it from other agents. The application orchestrator uses this description to select the most suitable agent for a specific task.
-
-!!!abstract "Examples"
-
-    * Credit Card Assistant: An agent that handles all queries related to credit cards.
-    * Leave Manager: An agent that manages all requests related to employee leaves in an organization.
-    * Order Manager: Manages all the user requests related to order status, returns, and refunds. 
-
----
-
-**Avatar**: Select an avatar for the agent. This is primarily for visual appeal. 
-
----
-
-**AI Model**: Select the AI model and connection that the agent will use to perform its tasks. The model helps an Agent in the following:
-
-* Understanding and Processing User Input into structured data
-* Selecting the most appropriate action for the task
-* Tool calling 
-* Transforming results from agents into natural and contextual responses for the users.
-
-For more information, see [Managing External Models](../models/external-models/managing-external-models.md){:target="_blank"}.
-
-!!!tip
-    When choosing a model for your agent, consider its specific use case. For example, if the agent is designed for code generation, opt for a model that specializes in coding skills.
-
-Click the settings icon to change the Model Generation Parameters.
-
----
-
-Context Window Limit: Specifies the maximum number of messages the agent retains in its conversation context. When the limit is reached, older messages are automatically removed to maintain an optimal context size. The default value of this field is 50. It can a maximum value of 200 and a minimum of 25.
+This selection determines the setup flow and the configurations available during agent creation. For step-by-step instructions, refer to the corresponding guides for each option.
 
 ---
 
-## Agent Definition
+## Defining the Agent Profile 
+
+The agent profile establishes the agent’s identity and purpose. It specifies the AI agent's primary objectives and key responsibilities. The profile helps the system (or orchestrator) understand what the agent is designed to do and helps identify the most suitable agent for a task.
+
+---
+
+## Configuring Agent Definition
+
+This defines how the agent should behave. It outlines the agent's role and the tasks it can perform to support decision-making. It defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. It establishes what the agent can do and how it should operate, ensuring that the goals are effectively aligned.
+Well-structured instructions ensure the agent responds consistently and follows expected workflows.
+
+---
+
+## Adding Knowledge
+
+The platform provides powerful search functionality across diverse content sources using the Search AI application, which supports Retrieval-Augmented Generation (RAG)-based search across enterprise knowledge bases, document repositories, FAQs, and external systems. You can link to one or more Search AI applications in the same workspace and account and access them as Knowledge Tools for the agent to answer user queries.
+
+---
+
+## Adding Tools 
+
+Tools are foundational components that empower agents to perform purposeful actions. They serve as the functional extensions of an agent’s intelligence, enabling it to interact with third-party applications, retrieve information, perform logic-based operations, and trigger workflows across complex environments. For example, tools can be used for:
+
+* Fetching data from external systems
+* Creating or updating records
+* Triggering workflows or APIs
+
+Each tool expands the agent’s capabilities and allows it to interact with other applications or services. Agent Platform offers three types of tools:
+
+* Workflow Tools
+* Code Tools
+* MCP Tools
+
+---
+
+## Adding Delegation Logic
 
 **Scope**: This section outlines the agent's role and the tasks it can perform. The scope defines the agent's capabilities, serving as a guideline for setting its objectives and outlining its functionalities. Clearly establishing what the agent can do and how it should operate ensures that the goals are effectively aligned.  
 
@@ -224,3 +256,5 @@ To test a tool:
 * Use the Test interface on the tool details page to run the tool and review its behavior and responses.
 
 For step-by-step instructions and example, refer to [this](test-a-workflow-tool.md){:target="_blank"}.
+
+If the agentic app follows the Adaptive Network pattern for orchestration, additionally provide the delegation rules that define how the agent delegates the query to another agent in the app. Clear delegation logic ensures predictable and reliable agent behavior.
