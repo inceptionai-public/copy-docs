@@ -42,7 +42,7 @@ SSO allows users to access their Platform accounts using credentials managed by 
 |---------------------|----------------------------------------|
 | [SAML 2.0](#saml-20)           | Okta, OneLogin, Other Provider          |
 | [WS-Federation](#ws-federation)      | Windows Azure, Other Provider           |
-| [OpenID Connect ](#other-configuration-1)    | Google                                  |
+| [OpenID Connect](#openid-connect-configuration)    | Google                                  |
 
 ### How SSO Works
 
