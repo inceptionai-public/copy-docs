@@ -68,6 +68,9 @@ plugins:
         'agentai/integration/AgentAI-webSDK/sdk-Playbooks.md': 'agentai/integration/websdk/sdk-Playbooks.md'
         'agentai/integration/AgentAI-webSDK/sentiment-charts.md': 'agentai/integration/websdk/sentiment-charts.md'
         'agentai/integration/AgentAI-webSDK/other-events.md': 'agentai/integration/websdk/other-events.md'
+        'apis/agent-ai/hooks-api-for-internal-transfers.md': 'apis/agent-ai/webhook-api-for-conversation-events.md'
+        'apis/agent-ai/conversation-summary-trigger-api.md': 'apis/agent-ai/webhook-api-for-conversation-events.md'
+        'apis/agent-ai/end-of-conversation-api.md': 'apis/agent-ai/webhook-api-for-conversation-events.md' 
         'contactcenter/integrations/multibot-integration-with-genesys/multibot-agentai-integration-with-genesys.md': 'agentai/integration/genesys/agent-ai-integration-with-genesys-cloud-cx.md'
         'quality-ai/analyze/Supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
         'quality-ai/analyze/supervisor-view-with-agent-specific-dashboard.md': 'quality-ai/analyze/supervisor-view-agent-specific-dashboard.md'
@@ -94,6 +97,14 @@ plugins:
         'analytics/contact-center/interactions.md': 'analytics/overview/conversations.md'
         'contactcenter/configurations/settings/queue-level-outbound-numbers-emails.md': 'contactcenter/configurations/settings/queue-level-settings.md'
         'quality-ai/analyze/conversation-intelligence.md': 'quality-ai/analyze/performance-insights.md'
+        'channels/add-skype-channel.md': 'channels/adding-channels-to-your-bot.md'
+        'channels/add-skype-business-channel.md': 'channels/adding-channels-to-your-bot.md'
+        'administration/user-management/managing-your-groups-new-admin-console.md.md': 'administration/user-management/managing-your-groups-new-admin-console.md'
+        'administration/user-management/managing-your-users-new-admin-console.md.md': 'administration/user-management/managing-your-users-new-admin-console.md'
+        'administration/security-and-control/using-single-sign-on-new-admin-console.md.md': 'administration/security-and-control/using-single-sign-on-new-admin-console.md'
+        'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md.md': 'administration/user-management/synchronizing-users-from-active-directory-new-admin-console.md'
+        'searchai/auto-migration.md': 'getting-started/searchassist-to-searchai-migration.md'
+
 
 extra:  
   version:
@@ -438,8 +449,10 @@ nav:
         - Testing and Debugging Answers: searchai/testing-and-debugging-answers.md
     - Dev Tools:
         - Advanced Configuration: searchai/advanced-configurations/advanced-configurations.md
+        - Email Notifications: searchai/email-notifications.md
         - Toolkit: searchai/toolkit.md
     - FAQs:
+        - Document-Level Processing: searchai/document-level-processing.md
         - Application Training: searchai/application-training.md
         - Multilingual Support: searchai/language-support.md
         - User Feedback Handling: searchai/feedback.md
@@ -560,7 +573,8 @@ nav:
             - By Dialog Task: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-dialog-task.md
             - By Playbook Adherence: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-playbook-adherence.md
             - By Hold: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-hold.md 
-            - By Transfer: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md             
+            - By Transfer: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-transfer.md
+            - By Manual: quality-ai/configure/evaluation-criteria/metrics-measurement-types/by-manual-evaluation.md             
       - Agent Scorecards: quality-ai/configure/agent-scorecards.md
       - Taxonomy Builder: 
           - Overview: quality-ai/configure/taxonomy-builder/overview.md
@@ -776,13 +790,15 @@ nav:
         - SDK Introduction: sdk/bot-sdk-introduction.md
         - Web SDK:
           - How the Web SDK Works: sdk/how-web-sdk-works.md
+          - SDK Accessibility: sdk/web-sdk-accessibility.md
           - SDK Security: sdk/sdk-security.md
           - SDK Registration: sdk/app-registration.md
-          - SDK Configurations: sdk/sdk-configuration.md
+          - SDK Tutorial: sdk/tutorials/web-sdk.md
           - Web Socket Connect and RTM: sdk/web-socket-connect-and-rtm.md         
         - BotKit SDK:
           - BotKit SDK Deployment Guide: sdk/botkit-sdk-deployment-guide.md
           - Installing the BotKit SDK: sdk/installing-the-botkit-sdk.md
+          - Botkit SDK Configurations: sdk/sdk-configuration.md
           - Using the BotKit SDK: sdk/using-the-botkit-sdk.md
           - SDK Events: sdk/sdk-events.md
           - SDK Functions: sdk/sdk-functions.md

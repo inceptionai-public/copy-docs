@@ -2,6 +2,168 @@
 
 This document provides information on the feature updates and enhancements introduced in the **Platform Services** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">LLM & Generative AI</font>
+
+**Google Gemini Integration**
+
+AI for Service now supports Google Gemini as an out-of-the-box (OOB) integration, allowing platform users to access Google Gemini models directly within the Platform across all GenAI features. Users must create and manage their own prompts for their use cases.
+
+* Simple Integration Setup: Configure the integration using an API key.
+* Supported models: Gemini 3.1 Pro Preview, Gemini 3 Flash Preview, Gemini 2.5 Pro, Gemini 2.5 Flash, and Gemini 2.5 Flash-Lite. 
+
+ [Learn more :octicons-arrow-right-24:](../../generative-ai-tools/configure-llm-integration.md#google-gemini-integration) 
+
+
+<font size="4">Channels</font>
+
+**Session Isolation by Inbound Number for WhatsApp Infobip Channel**
+
+The channel-based session is a new setting in WhatsApp channel configurations that prevents unintended session merging when users interact with multiple inbound numbers in the same app. It uniquely identifies sessions based on inbound numbers, considering each number as an independent channel associated with a specific flow. When you enable it for an existing app, it may disrupt ongoing sessions if the inbound numbers are linked to experience flow. [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md/#adding-the-whatsapp-channel-using-infobip-application)
+
+**Support for Multiple WhatsApp Infobip Accounts**
+
+The Platform now supports configuring up to 10 Infobip accounts for the WhatsApp infobip channel, enabling organizations with multiple business units to manage their WhatsApp operations independently. You can map each account to one or more inbound numbers, which are treated as distinct channels at runtime to ensure accurate session handling, flow execution, and response routing. [Learn more :octicons-arrow-right-24:](../../channels/add-whatsapp-business-channel.md/#adding-the-whatsapp-channel-using-infobip-application)
+
+<font size="4">App Language</font>
+
+**Spanish Language Support**
+
+Support for Spanish (Beta) as a new App language is now available via profile menu > app language. [Learn more :octicons-arrow-right-24:](../../getting-started/navigating-the-platform.md#the-top-menu)
+
+
+
+
+<hr>
+
+
+## v11.22.1 March 14, 2026
+
+<u> Patch Release </u>
+
+This update includes an enhancement and bug fixes. The key enhancement included in this release is summarized below.
+
+
+<font size="4">Security & Control</font>
+
+
+**SSO Enhancements: Onboarding and Login Controls**
+
+
+AI for Service supports both Identity Provider (IdP)-Initiated and Service Provider (SP)-Initiated SSO. In the IdP-initiated flow, authentication begins at the IdP, which sends a SAML response to the platform for validation. In the SP-initiated flow, authentication begins at the platform, which redirects the user for authentication before creating a session.
+
+This enhancement adds the following capabilities:
+
+
+* Restrict Auto-Onboarding: By default, new users are automatically onboarded during IdP-initiated login. When this toggle is enabled, automatic onboarding is disabled, keeping user provisioning fully controlled by your external system.
+* Skip 2FA During First-Time Login: Administrators can now skip OTP-based authentication for first-time logins, providing flexibility to align the login experience with your organization's security policies especially where authentication is already enforced at the IdP level.
+
+[Learn more :octicons-arrow-right-24:](../../administration/security-and-control/using-single-sign-on.md)
+
+
+<font size="4">Channels</font>
+
+
+**Email Channel Enhancements**
+
+
+
+**DKIM Configuration**
+
+DomainKeys Identified Mail (DKIM) is now available as a standalone module, allowing users to verify a domain independently before setting up an email channel and reuse it across multiple channels — eliminating repeated verification.
+
+
+* Advanced Email Channels: DKIM verification is mandatory for the channel setup. The platform checks for a verified DKIM record and requires completed verification before proceeding.
+
+* Microsoft Exchange: DKIM signing is optional and off by default. Without it, the platform sends emails through the Microsoft Graph API using Microsoft's native delivery. To enable DKIM signing, you must verify a DKIM record before completing the channel setup.
+
+
+**Manual Email Configuration for Microsoft Exchange**
+
+Exchange channels now support manually adding email IDs, in addition to configuring them through a Microsoft 365 Group. Manually added email IDs default to Outbound usage, allowing agents to use them for outbound conversations. 
+
+**User Identity Source**
+
+The platform now supports using the Reply-To address for user and session identification, rather than the From address. This is useful when an intermediary email aggregator is in use, where multiple conversations share the same From address but have distinct Reply-To values. This option is off by default.
+
+**Improved HTML Email Processing**
+
+The Email channel now efficiently handles large HTML emails. Raw text is extracted for processing while the full HTML structure — including lists, hyperlinks, and text alignment — is preserved for accurate display in Agent Desktop.
+
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
+
+<font size="4">Analytics</font>
+
+**Task Execution Logs Enhancement**
+
+Task Execution Logs now capture execution details for Agent, Prompt, and SearchAI nodes, including LLM calls and any associated pre- or post-processor scripts. These details appear in the API Calls and Script Execution sections, making it easier to analyze execution flow and debug AI agent behavior.
+
+[Learn more :octicons-arrow-right-24:](../../analytics/automation/task-execution-logs.md)
+
+<font size="4">App Settings</font>
+
+**Channel-Level Control for Session Closure Messages**
+
+Specific channels can now be excluded from receiving session closure messages via the Additional Settings option in the Session Closure Behavior section. When the Send a Message toggle is enabled, users can select which channels should not receive these messages. Email is excluded by default for new apps to avoid unnecessary inbox notifications. For newly added channels, session closure messages remain enabled by default. 
+
+[Learn more :octicons-arrow-right-24:](../../app-settings/advanced-settings/bot-sessions.md/#manage-sessions)
+
+
+<hr>
+
+
+## v11.22.0 February 28, 2026
+
+<u>Minor Release</u>  
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+
+<font size="4">LLM & Generative AI</font>
+
+**Change Log Enhancement**
+
+Change Logs will track the entire prompt lifecycle, including creation, updates, and deletions, providing a clear, auditable history of all prompt changes. 
+
+<font size="4">API</font>
+
+**Enhanced User Engagement Trend API (v2)**
+
+The User Engagement Trend API now delivers all user engagement metrics through a single endpoint. This includes counts for unique, new, and returning users, along with daily or hourly averages for each category. [Learn more :octicons-arrow-right-24:](../../apis/automation/user-engagement-trend-v2.md)
+
+
+<font size="4">App Settings</font>
+
+
+**Auto-Token Regeneration for OAuth2 Password Grant Type**
+
+The Platform now automatically regenerates Auth and Refresh tokens for the OAuth 2.0 Password Grant Type using stored credentials, ensuring uninterrupted service when tokens expire. [Learn more :octicons-arrow-right-24:](../../app-settings/dev-tools/bot-authorization/setting-up-authorization-using-oauth-v2-password-grant.md#selecting-authorization-mode)
+
+
+**End-to-End Payload Encryption Extended to Additional APIs**
+
+Payload encryption is now supported for the LLM and Generative AI Usage Logs API and the Conversation Details and Summary API. When the ‘Enforce Request and Response Payload Encryption’ setting is enabled in the JWT application, and the relevant scopes — Gen AI and LLM Usage Logs and Chat History — are selected, request and response payloads are automatically encrypted and decrypted using the symmetric key associated with those scopes. [Learn more :octicons-arrow-right-24:](../../apis/automation/api-introduction.md#how-request-and-response-payload-encryption-works)
+
+
+<font size="4">Channels</font>
+
+**Typing Indicator Support for MS Teams**
+
+The platform now shows typing indicators in MS Teams, providing users with real-time visual feedback as an AI or human agent composes a response. This keeps users informed during the interaction and makes conversations feel more natural. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#typing-indicator)
+
+**Proactive Welcome Message for MS Teams Validation**
+
+The MS Teams Channel Adapter now automatically sends a welcome message when the app is installed in the personal scope. This ensures compliance with  Microsoft Teams Marketplace validation and certification requirements. As a result, the app distribution process is smoother. [Learn more :octicons-arrow-right-24:](../../channels/add-microsoft-teams-channel.md#proactive-welcome-message-for-ms-teams-validation)
+
+
+
+<hr>
+
 ## v11.21.1 January 31, 2026
 
 <u> Patch Release </u>
@@ -44,7 +206,7 @@ The Prompts Library will display "In Use" and "Not in Use" statuses for custom p
 
 **Email Thread Continuity When Adding Recipients**
 
-The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+The email channel now supports adding To, CC, and BCC recipients mid-conversation without breaking the email thread. When users or agents add recipients, the platform maintains the existing thread and preserves conversation context, allowing all participants to join and respond seamlessly. [Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
 **Email Channel Session Configuration and Analytics Updates**
 
@@ -106,7 +268,7 @@ The Email Channel now supports more accurate session handling through two new ap
 
 * Thread-Based Sessions: Creates a new session based on the email thread's Reference ID. Replies within the same thread continue the session, while new threads start new sessions. Available only when Channel-Based Sessions are enabled.
 
-[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md#session-creation-settings)
+[Learn more :octicons-arrow-right-24:](../../channels/add-email-channel.md)
 
 
 <font size="4">App Settings</font>
@@ -304,8 +466,7 @@ Key benefits
 
 **Retirement of Skype**
 
-Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform.  
-[Learn more :octicons-arrow-right-24:](../../channels/add-skype-channel.md)
+Microsoft has officially retired the Skype channel. In alignment with this deprecation, the following changes are being implemented across the platform. 
 
 <font size="4">Rebranding</font>
 

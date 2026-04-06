@@ -2,7 +2,7 @@
 
 The Platform offers flexible orchestration and runtime support for a wide range of AI Models across leading providers. Whether you're building real-time assistants, multi-agent systems, or background workflows, you can choose from Platform-hosted, open-source, externally integrated, or third-party models to meet your needs. Some advanced capabilities—like real-time voice interaction—are available only with specific models.
 
-## Supported AI Models for Agents and Supervisors
+## Supported AI Models for Agentic Apps and Agents
 
 ### External Models
 
@@ -20,25 +20,23 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>OpenAI</td>
    <td>
   <ul>
+    <li>gpt-5.3-chat-latest</li>
     <li>gpt-5.2-2025-12-11</li>
     <li>gpt-5.2</li>
     <li>gpt-5.2-chat-latest</li>
     <li>gpt-5.1-2025-11-13</li>
     <li>gpt-5.1</li>
     <li>gpt-5.1-chat-latest</li>
-    <li>gpt-realtime-mini-2025-10-06</li>
     <li>gpt-audio-mini-2025-10-06</li>
     <li>gpt-5-2025-08-07</li>
     <li>gpt-5-mini-2025-08-07</li>
     <li>gpt-5-nano-2025-08-07</li>
     <li>gpt-audio-2025-08-28</li>
-    <li>gpt-realtime-2025-08-28</li>
     <li>gpt-5</li>
     <li>gpt-5-mini</li>
     <li>gpt-5-nano</li>
     <li>gpt-5-chat-latest</li>
     <li>gpt-4o-audio-preview-2025-06-03</li>
-    <li>gpt-4o-realtime-preview-2025-06-03</li>
     <li>gpt-4.5-preview-2025-02-27</li>
     <li>o3-2025-04-16</li>
     <li>o4-mini-2025-04-16</li>
@@ -47,7 +45,6 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4.1-nano-2025-04-14</li>
     <li>gpt-4o-search-preview-2025-03-11</li>
     <li>o3-mini-2025-01-31</li>
-    <li>gpt-4o-realtime-preview-2024-12-17</li>
     <li>gpt-4o-mini-audio-preview-2024-12-17</li>
     <li>gpt-4o-audio-preview-2024-12-17</li>
     <li>o1-2024-12-17</li>
@@ -63,8 +60,6 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4o</li>
     <li>gpt-4o-mini</li>
     <li>gpt-4</li>
-    <li>gpt-4o-realtime-preview</li>
-    <li>gpt-4o-mini-realtime-preview</li>
     <li>gpt-4o-search-preview</li>
     <li>gpt-4.1</li>
     <li>gpt-4.1-mini</li>
@@ -76,13 +71,11 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>gpt-4o-mini-transcribe</li>
     <li>gpt-4o-mini-audio-preview</li>
     <li>gpt-4o-audio-preview</li>
-    <li>gpt-4o-realtime-preview</li>
     <li>gpt-audio-mini</li>
     <li>gpt-audio</li>
     <li>gpt-image-1-mini</li>
     <li>gpt-image-1</li>
-    <li>gpt-realtime-mini</li>
-    <li>gpt-realtime</li>
+    <li>gpt-image-1.5</li>
     <li>o4-mini</li>
     <li>o3</li>
     <li>o1</li>
@@ -108,6 +101,10 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>GPT-5-Mini</li>
     <li>GPT-5-Nano</li>
     <li>GPT-5-Chat</li>
+    <li>GPT-5.1</li>
+    <li>GPT-5.1-Chat</li>
+    <li>GPT-5.2</li>
+    <li>GPT-5.2-Chat</li>
   </ul>
    </td>
   </tr>
@@ -115,6 +112,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
    <td>Anthropic</td>
    <td>
     <ul>
+    <li>claude-sonnet-4-6</li>
     <li>claude-3-5-sonnet</li>
     <li>claude-3-haiku</li>
     <li>claude-3-sonnet</li>
@@ -128,6 +126,7 @@ Agentic Apps supports Agent and Supervisor orchestration with the most widely us
     <li>claude-opus-4-20250514</li>
     <li>claude-opus-4-1-20250805</li>
     <li>claude-opus-4-5-20251101</li>
+    <li>claude-opus-4-6</li>
   </ul>
    </td>
   </tr>
@@ -226,8 +225,14 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
    </td>
    <td >
     <ul>
-    <li>open ai-gpt-4o-realtime-preview</li>
-    <li>open ai-gpt-4o-mini-realtime-preview</li>
+    <li>gpt-4o-realtime-preview</li>
+    <li>gpt-4o-mini-realtime-preview</li>
+    <li>gpt-realtime-mini-2025-10-06</li>
+    <li>gpt-realtime-2025-08-28</li>
+    <li>gpt-4o-realtime-preview-2025-06-03</li>
+    <li>gpt-4o-realtime-preview-2024-12-17</li>
+    <li>gpt-realtime-mini</li>
+    <li>gpt-realtime</li>
     </ul>
    </td>
   </tr>
@@ -241,17 +246,37 @@ While Agent and Supervisor Orchestration is supported for most commonly used LLM
     </ul>
    </td>
   </tr>
+    <tr>
+   <td >Azure OpenAI
+   </td>
+   <td >
+    <ul>
+    <li>GPT-Realtime</li>
+    <li>GPT-Realtime-Mini</li>
+    </ul>
+   </td>
+  </tr>
 </table>
 
 ### Custom Model Support in Agentic Apps
 
-Agentic Apps also support integrating with custom third party models via API Integration. 
+Agentic Apps support integration with custom third-party models through API integration.
 
-To use a custom model in Agentic Apps
+To use a custom model in Agentic Apps, the following requirements must be met:
 
-* **Tool Calling Support**: The model must inherently support Tool Calling functionality. For models that support Tool Calling, the feature must be explicitly enabled during model configuration. ![Enable Tool Calling](images/custom-model/enable-tool.png "Enable Tool Calling")
+* Tool Calling Support
+* Compatible API Structure
+
+#### Tool Calling Support(Mandatory)
+
+The model must inherently support Tool Calling functionality. Models that do not support Tool Calling cannot be used in Agentic Apps. 
+
+If the model supports Tool Calling, ensure that the feature is explicitly enabled during model configuration. ![Enable Tool Calling](images/custom-model/enable-tool.png "Enable Tool Calling")
 [Learn how to enable model features](external-models/add-an-external-model-using-api-integration.md#option-b-existing-model-provider-structures).  
-* **Compatible API Structure**: The request and response structure must follow the API reference of either Anthropic (Messages) or OpenAI (Chat Completions). ![Structures](images/custom-model/format.png "Request/Response Structures")
+
+#### Compatible API Structure
+
+The request and response structure must follow the API reference of Anthropic (Messages), OpenAI (Chat Completions), or Google (Gemini).
 
 
 For detailed steps, see [Add an External Model Using API Integration](external-models/add-an-external-model-using-api-integration.md).
@@ -627,6 +652,8 @@ Here is the list of all the external models supported in the Platform:
    <td>
 <ul>
 
+<li>claude-sonnet-4-6</li>
+
 <li>claude-3-5-sonnet-20240620</li>
 
 <li>claude-3-haiku-20240307</li>
@@ -657,6 +684,8 @@ Here is the list of all the external models supported in the Platform:
 
 <li>claude-sonnet-4-5-20250929</li>
 
+<li>claude-opus-4-6</li>
+
 <li>Claude Sonnet Vision (Available only for the Image-to-text node, No Prompt Studio support.)</li>
 </ul>
    </td>
@@ -683,6 +712,10 @@ Here is the list of all the external models supported in the Platform:
 <li>GPT-5-Mini</li>
 <li>GPT-5-Nano</li>
 <li>GPT-5-Chat</li>
+<li>GPT-5.1</li>
+<li>GPT-5.1-Chat</li>
+<li>GPT-5.2</li>
+<li>GPT-5.2-Chat</li>
 </ul>
    </td>
   </tr>
@@ -733,6 +766,7 @@ Here is the list of all the external models supported in the Platform:
    <td>
 <ul>
 
+<li>gpt-5.3-chat-latest</li>
 <li>gpt-5.2-2025-12-11</li>
 <li>gpt-5.2</li>
 <li>gpt-5.2-chat-latest</li>
@@ -789,11 +823,11 @@ Here is the list of all the external models supported in the Platform:
 <li>gpt-4o-mini-transcribe</li>
 <li>gpt-4o-mini-audio-preview</li>
 <li>gpt-4o-audio-preview</li>
-<li>gpt-4o-realtime-preview</li>
 <li>gpt-audio-mini</li>
 <li>gpt-audio</li>
 <li>gpt-image-1-mini</li>
 <li>gpt-image-1</li>
+<li>gpt-image-1.5</li>
 <li>gpt-realtime-mini</li>
 <li>gpt-realtime</li>
 <li>o4-mini</li>

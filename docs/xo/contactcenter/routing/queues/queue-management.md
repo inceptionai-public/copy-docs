@@ -100,7 +100,16 @@ This section is available in `Simple` and `Advanced Routing` modes and enables y
 
         If the customer ends the chat before the completion of a transfer, then the transfer is dropped, and the interaction isn't assigned to any queue or agent. This feature only applies to chat conversations and is available if you are using WebSDK v1.0.
 
-5. **Maximum Wait Time**: Specify the maximum time a conversation waits in the queue before the default `No available agent` flow handles it.
+5. **Maximum Wait Time**: Configure how long a conversation can wait in the queue before fallback handling is triggered.
+
+    * **Before Agent Transfer**: Specifies the maximum wait time for conversations when they first enter the queue.
+    * **After Agent Transfer**: Specifies the maximum wait time for conversations that re-enter the queue after an agent transfer. The system resets the wait timer at the point of transfer.  
+    <img src="../images/max-wait-time.png" alt="Maximum Wait Time" title="Maximum Wait Time" style="border: 1px solid gray; zoom:70%;">
+
+If you don't configure the After Agent Transfer value, the system uses the Before Agent Transfer value by default. When the configured wait time is exceeded, the system triggers the applicable fallback flow (for example, No Agent Available or OOBH).
+
+The supported range is 1 minute to 43,200 minutes (30 days).
+
 6. **After Call Work (ACW)** You can enable or disable ACW.
 
     **ACW Enabled**
@@ -154,7 +163,7 @@ In the **Preferred** tab, you can assign preferred agents to the queue.
 
     When you are ready to save the Queue, select **Create**. The new Queue is then listed among your available queues.
 
-#### Additional Configuration
+#### Optional Configuration
 
 Select this tab to configure:
 
@@ -172,7 +181,80 @@ Steps to configure outbound email IDs:
 1. Enter the email IDs or choose from the list.  
 2. Select **Apply** to save the email IDs.
 
+Override Out of Business Hours Flow
+
+1. Turn on the Enable Override Out of Business Hours Flow toggle.
+2. Select a Queue from the Route to Queue dropdown.
+
+Acknowledgement Message for Email Channel
+
+The system sends an acknowledgment when a customer message arrives, and the configured interval has elapsed since the last acknowledgment.
+
+1. Turn on the Enable Acknowledgement Message for Email Channel toggle.
+2. Create the message using the Rich Text Editor or HTML View.
+3. Select the Acknowledgment Email Frequency and enter the frequency (15 minutes to 72 hours).
+
+Select Create.
+
 Administrators can turn on the Queue-level Outbound Numbers or Emails feature from [System Settings](../../configurations/settings/queue-level-settings.md) to restrict agents to only see the outbound phone numbers or email addresses assigned to their respective queue.
+
+## Route to Queue Override for Out-of-Hours
+
+Turn on the **Route to Queue** toggle to transfer conversations to a specified target queue when a queue enters out-of-hours. The system routes the conversation directly to the selected queue. The target queue selection is mandatory. The transfer behaves as a standard queue transfer and preserves routing logic, metrics, and history.
+
+To prevent queue bouncing across time zones, the system maintains an Out-of-Hours Count at the conversation level. The system increments the count each time it performs an out-of-hours transfer.
+
+Administrators configure a Max Out-of-Hours Transfer Limit (default: 10) at the environment level. If the count exceeds this limit, the system closes the conversation gracefully.
+
+## Queues Array in InQueuesFlow
+
+The system displays a QueuesArray variable in the InQueuesFlow context. This array lists the queues that a conversation passes through during transfers.
+
+The array maintains the chronological order of queue traversal. Each time a conversation transfers to a new queue, the system appends the destination queue to the array. The last element in the array represents the current (target) queue.
+
+Flow logic can use this array to identify the current queue and apply routing logic such as dynamic skill overrides.
+
+Example
+
+If a conversation moves across the following queues:
+
+`QueuesArray = [Q1, Q2, Q3]`
+
+Q2 represents the previous queue.
+
+Q3 represents the current queue.
+
+Flow logic can use the last element (Q3) to determine the target queue and override skills based on queue-to-skill mapping.
+
+Sample Output:
+
+```
+object {6}
+  from: INBOUND
+  conversationId: c-51ee512-e871-4745-9cbb-77c4e8cbxxxx
+  flowType: INQUEUE
+  routingType: AGENT_QUEUE_TRANSFERRED
+  routingSettings {6}
+  conversation {7}
+    conversationId: c-51ee512-e871-4745-9cbb-77c4e8cbxxxx
+    queues [2]
+      0 {2}
+        id: qu-e30b539-dd3c-4e10-90a9-354a3e72xxxx
+        name: Default Queue
+      1 {2}
+        id: qu-61d03c5-4906-478e-89c5-6dee0719xxxx
+        name: queue 1
+    skills [1]
+      0 {2}
+    participants [1]
+      0 {3}
+        aId: a-75b2b7b-674c-49d2-ad7a-8bce77c5xxxx
+        name: agent settings1
+        status: INACTIVE
+  hopId: 68a32c7fbb7f85a0367axxxx
+  source: rtm
+  subType: livechat
+```
 
 ## Edit a Queue
 

@@ -1,68 +1,49 @@
-# Conversation Mining
+# Conversation Mining - Interactions
 
-The Conversation Mining feature lets you focus on interactions of interest or those with the greatest potential for improvement, removing guesswork from manual evaluations and allowing you to concentrate on the most critical interactions.
+The Interactions feature enables supervisors to review and filter scored interactions within their assigned queues. It provides insights into conversation quality, agent performance, and customer experience at both the conversation and agent levels. 
 
-## Access Conversation Mining
+Using Conversation Mining filters, supervisors can refine interaction results by selecting evaluation metrics, qualification outcomes, and duration status. This helps identify interactions that require coaching or improvement while also isolating contacts excluded from evaluation due to duration thresholds.
 
-Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining**.  
 
-<img src="../conversation-mining/images/conversation-mining-default-page.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
-
-The **Conversation Mining** includes the following sections:
-
-* **Interactions**: Enables you to view the scored interactions and applied filters for targeted reviews. [Learn more](./conversation-mining-interactions.md){:target=”_blank”}.
-
-* **Audit Allocations**: Lets you create and assign allocations for auditors to perform manual quality scoring. [Learn more](../analyze/conversation-mining-audit-allocations.md){:target=”_blank”}.
-
-## Conversation Mining - Interactions
-
-This feature enables supervisors to review and filter scored interactions within their assigned queues, making it easier to identify conversations that need coaching or attention. It delivers clear insights into conversation quality, agent performance, and customer experience at the conversation level and agent level.
+## Key Capabilities
 
 By using these new capabilities, supervisors can:  
 
-* **Queue Interaction Review**: Access scored interactions within their assigned queues to identify conversations that need coaching or attention.
+* **Review and Filter Interactions**: Access scored interactions within their assigned queues to identify conversations that need coaching or attention.
 
-* **Gain Clear Quality Insights**: Understand conversation quality, agent performance, and customer experience at a glance.
+* **Monitor Conversation Quality**: Understand conversation quality, agent performance, and customer experience at a glance.
 
-* **Analyze Conversations with Insights**: Leverage integrated Taxonomy-based Topic Discovery, Topic-Level Sentiment, and Resolution insights to perform better analysis across Conversation Mining, the AI-Audit Screen, and Agent Dashboards.
+* **Gain Deeper Insights**: Leverage integrated Taxonomy-based Topic Discovery, Topic-Level Sentiment, and Resolution insights to perform better analysis across Conversation Mining, the AI-Audit Screen, and Agent Dashboards.
 
-* **Identify Key Conversation Insights**: Use taxonomy-based topics, topic-level sentiment, and resolution status across filters, columns, audits, and dashboards to identify unresolved or high-impact conversations and interpret sentiment with intuitive, color-coded indicators.
+* **Identify Key Conversation Insights**: Use taxonomy-based topics, topic-level sentiment, and resolution indicators across filters, columns, audits, and dashboards to identify high-impact or unresolved conversations.
 
-* **Filter by Experience Insights**: Apply new filters for configured intents (topics) across L1, L2, and L3 levels, generated intents, and overall resolution (resolved/unresolved).
+* **Filter by Experience Insights**: Apply new filters for configured intents (topics) across L1, L2, and L3 levels, generated intents, and overall resolution (resolved/unresolved)Apply filters for configured intents (L1, L2, L3), generated intents, resolution status, and duration status (Evaluated, Below Threshold, Duration Unavailable).
 
-* **Audit with Precision**: Customize the view with metadata and column controls, including the new configured intent column (showing topics with sentiment color-coding) and the overall resolution column.
+* **Audit with Precision**:  Customize views using metadata and column controls, including indicators for intent, sentiment, resolution, and duration status.
 
-* **Refine Searches Efficiently**: Use keyword-based filtering, including speaker-specific filters, include/exclude terms, and options to hide resolved or irrelevant cases.
+* **Refine Searches Efficiently**: Use keyword-based filtering, including speaker-specific filters, include/exclude terms, and options to hide resolved or irrelevant interactions.
 
 * **Leverage Timeline Navigation**: Use a timeline-based search and jump-to-match display for fast, focused review.
-Save Custom Views: Store preferred filter sets and column configurations for targeted, repeatable audits.
 
-### Access Interactions
+* **Save Custom Views**: Store preferred filter sets and column configurations for targeted, repeatable audits.
 
-Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.  
-<img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Interactions" title="Interactions" style="border: 1px solid gray; zoom:80%;">
+## Access Interactions
 
-!!! Note
+Navigate to **Quality AI** > **ANALYZE** > **Conversation Mining** > **Interactions**.     
 
-    * Interactions may take a few seconds to appear after a call ends. 
+<img src="../conversation-mining/images/conversation-mining-interaction-default.png" alt="Default Page" title="Default Page" style="border: 1px solid gray; zoom:80%;">
 
-    * If any section of the Agent Interactions dashboard elements shows **NA** status, the data for that section is not available on the Audit Allocations page.
+### Interactions Dashboard Elements
 
-### Interactions Dashboard Columns
+This dashboard elements enable supervisors to review and filter scored interactions within their assigned queues, making it easier to identify conversations that need coaching or attention. It delivers clear insights into conversation quality, agent performance, and customer experience at the conversation and agent level.
 
-The **Interactions** dashboard includes the following items:
+The **Interactions** dashboard includes the following elements:
 
 * **Agents**: Shows the agent's name who last engaged in and ended the interaction.
 
 * **Processing Status**: Displays a green icon when all processes succeed and a red icon when any process fails.
 
-    * **Pass**: Shows a green icon when all processes succeed and the system captures metric adherence.
-
-    * **Failed**: Shows a red icon when any process fails and the system doesn't capture metric adherence.  
-<img src="../conversation-mining/images/processing-status.png" alt="Processing Status" title="Processing Status" style="border: 1px solid gray; zoom:80%;">
-
 * **Actions**: Lets you assign the interaction to a bookmark for future reference.    
-<img src="../conversation-mining/images/actions-tags.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">
 
     !!! Note
 
@@ -70,15 +51,19 @@ The **Interactions** dashboard includes the following items:
 
 * **Queues**: Shows the queue where the system terminated during the interaction.
 
-    !!!Note
+    !!! Note
 
         The evaluation form used to score the interaction corresponds to the queue where the system terminated the interaction. 
 
-* **Kore Evaluation Score**: Shows the Auto QA score based on the agent-completed evaluation form. Hover over the warning icon to view the agent’s API processing status (Pass, Failed, or Disabled). Select a conversation to open the Conversation Mining page, which includes Audit, Conversation Details, and Logs.
+* **Kore Evaluation Score**: Shows the AutoQA score based on the assigned form. Hover to view status (Pass, Failed, Minimum Duration Threshold, or Manual Evaluation Metrics Excluded). 
+
+    * **Manual Evaluation Interactions**: The system excludes AutoQA scoring for interactions with manual evaluation metrics (Manual Evaluation Metrics Excluded) but enables you to access in Conversation Mining.
+
+    * **Below Threshold or Duration Unavailable**: The system doesn't evaluate interactions flagged as Below Threshold or Duration Unavailable. These interactions remain visible in Conversation Mining for review, but don't generate scores. Select a conversation to open the Conversation Mining view with Audit, Conversation Details, and Logs. 
 
 * **Sentiment Score**: Displays the system-generated sentiment score for the interaction based on the customer's words.
 
-* **Supervisor Auditor Score**: Shows the supervisor-audited score when a supervisor has manually evaluated the interaction.
+* **Supervisor Auditor Score**: Displays the supervisor-assigned score for audited or manually evaluated interactions and highlights manual evaluation metrics with a distinct, consistent visual indicator across the platform.
 
 * **Start Time**: Displays conversation's start time in a specified format in the Interaction listing page (for example, 24 May 2024, 1:17:10 PM).
 
@@ -91,10 +76,10 @@ The **Interactions** dashboard includes the following items:
     * **Violation**: Speech-based violations that occurred.
 
     * **Omission**: Metrics not met, including playbook steps, dialog tasks, and by-question metrics. Select an interaction to open the conversation history and view Moment metrics in the AI-Assisted Manual Audit page. [Learn more](../ai-assisted-manual-audit.md){:target=”_blank”}.  
-    <img src="../conversation-mining/images/moments.png" alt="Moments" title="Moments" style="border: 1px solid gray; zoom:80%;">    
 
 * **Sentiment Trend**: Shows the distribution of positive, negative, and neutral tones; tracks sentiment changes throughout the call; highlights the resolution tone; and summarizes overall sentiment.
-Emotions: Shows customer emotional states or tracked emotions during a conversation.
+
+* **Emotions**: Shows customer emotional states or tracked emotions during a conversation.
 
 * **Conversation ID**: Displays the user-defined identifier for custom tracking.
 
@@ -126,16 +111,11 @@ Provides the option to select the date range for the conversation interactions. 
 
 ## Filters
 
-This helps you to pinpoint high-value interactions, streamline audits, and narrow results to conversations that need attention. You can add filters from the Filters dropdown and refine results using multiple category panels.
+This helps you to pinpoint high-value interactions, streamline audits, and narrow results to conversations that need attention. You can add filters from the Filters list and refine results using multiple category panels.
 
 ## Add New Filter
 
 The new filter interaction enables you to focus on areas of interest or those with high potential for improvement, where you can save them for audit assignments. It helps you filter out options and identify which interactions went wrong.
-
-Steps to Add New Filter:
-
-1. Select the **Filters** dropdown to add a new filter.   
-<img src="../conversation-mining/images/Filters.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;">  
 
 Steps to Add New Filter:
 
@@ -147,17 +127,22 @@ Steps to Add New Filter:
 
 ## Filter Categories
 
-This Filter categories panel lets you refine and analyze interaction data based on various parameters configured, such as efficiency, experience, behavior, and keywords.
+This Filter categories panel lets you refine and analyze interaction data using configured parameters.
 
 ### Filter by Efficiency
 
-This provides an operational view of areas of interest where there is greater potential for improvement. 
+This shows metrics related to interaction handling and process adherence.
 
 To filter by Efficiency,
 
 1. Select **Channels** (Chat or Voice) to limit interactions to a specific communication mode.
 
 1. Select **Audit Status** to view Audited, Assigned, or Not Assigned conversations.
+
+1. Select one or more **Allocation Name** (applications) to filter interactions associated with specific allocation batches. You can search and select multiple values.
+
+1. Select the **Duration Status** filter options that let you control which contacts (interactions) appear based on their evaluation eligibility, such as All (default), Evaluated Only, Below Threshold, or Duration Unavailable.
+
 
 1. Enter the **Conversation ID** to filter by a specific interaction.
 
@@ -167,14 +152,10 @@ To filter by Efficiency,
 
 1. From **Agent Groups**, select the group linked to the chosen queue. You can filter only groups associated with the selected queues.
 
-1. From **Agents**, select the agent assigned to the chosen queue. The list shows only agents who have interactions in that queue.
+1. From **Agents**, select the agent assigned to the chosen queue. The system filters agents based on interactions within that queue.
 
-1. Enable the required filter options: 
-
-    * Filter by handling time
-    * Filter by deviation from AHT
-    * Deviation (%)
-    * Number of Transfers
+1. Enable the required filter options.
+   
 
 ### Filter by Experience
 
@@ -197,13 +178,17 @@ This shows the distribution of interactions across the score range in which the 
 
 Select the configured topics or intents for each conversation across all levels (L1, L2, and L3) from the search bar. Child lists update automatically based on the parent level selection.
 
+!!! Note
+
+    Select levels in order: L1 first, then L2, and finally L3. You must select at least one level to apply the filter. All topic levels update dynamically based on your selections.
+
 #### Generated Intents
 
 Select the configured intents for each conversation, or choose AI-suggested options based on your input.
 
 #### Overall Resolution
 
-Filter conversations by Resolved or Unresolved (both selected by default). The system marks a conversation Resolved when it determines all applicable L3 intents, and Unresolved when it can't define at least one intent.
+Filter conversations by **Resolved** or **Unresolved** (both selected by default). The system marks a conversation resolved when it determines all applicable L3 intents, and unresolved when it can't define at least one intent.
 
 #### Churn Monitor
 
@@ -229,11 +214,21 @@ This category analyzes interaction dynamics and conduct between agents and custo
 
 #### Metric Name
 
-This filter enables supervisors to view interactions by specific evaluation metrics. Use radio buttons to filter by Pass or Failed and select a metric from the drop-down list to refine results.  
+Select a metric from the dropdown list to filter interactions evaluated for that specific metric. You can select only one metric at a time. After selection, the metric appears as a tag in the input field. Metrics configured for manual evaluation display a distinct visual indicator to help supervisors identify them for audit allocation.
 
 #### Metric Qualification
 
-The selected evaluation metric appears as a tag under the input field, and you can clear it by selecting **X**. When you open the page from the Adherence Heatmap, the system automatically applies the filters. If you select queues, the list shows only metrics from the forms in those queues. The filter retrieves interactions where the metric applies, allowing you to view failed or adhered interactions using the radio buttons.
+The selected evaluation metric appears as a tag under the input field, and you can clear it by selecting **X**. When you open the page from the Adherence Heatmap, the system automatically applies the filters. If you select queues, the list shows only metrics from the forms in those queues. The filter retrieves interactions where the metric applies, allowing you to view failed or adhered interactions using the radio options.
+
+* **Pass**: Conversations where the trigger was present, and the answer matched the expected utterance (Adhered outcome).
+
+* **Fail**: Conversations where the trigger was present, but the answer didn't match (Not Adhered outcome).
+
+* **N/A**: Conversations where the trigger wasn't detected, making answer evaluation not applicable. Available only for the Dynamic By Question metric type.
+
+    !!! Note
+
+        The N/A option in Metric Qualification appears only when you select a Dynamic By Question metric. It is not available for Static metric types or other metric measurement types.
 
 #### Language
 
@@ -241,7 +236,7 @@ Select the languages to add from the dropdown list.
 
 #### Empathy Score
 
-This measures how well the agent understands and responds to the customer’s situation. It shows the extent of negative sentiment, such as frustration or displeasure, expressed by the customer. A higher score indicates a more empathetic interaction.
+This measures the level of understanding and compassion the agent shows towards the customer’s situation. Provides the extent of empathy, like frustration or displeasure, that a customer has shown (negative sentiment). A higher score indicates a more empathetic interaction.
 
 #### Crutch Word Score
 
@@ -249,62 +244,44 @@ This shows how often the agent uses filler words (for example, umm, uh, and simi
 
 #### Agent Playbook Adherence 
 
-This shows the Agent AI playbook adherence percentage for that interaction.   
+This shows the Agent AI playbook adherence percentage for an interaction.   
 
 #### Kore Evaluation Score
 
 This shows the automated QA score for an interaction, based on the evaluation form assigned to an interaction’s queue.       
 
+#### Filter by Keywords
+
+This lets you search, filter, and review conversations using specific keywords or phrases. You can filter by included or excluded keywords and by speaker, with results linked directly to the QA audit screen.    
+<img src="../conversation-mining/images/keyword-filter.png" alt="Filter by Keywords" title="Filter by Keywords" style="border: 1px solid gray; zoom:80%;">  
+
+The following table explains the keyword inclusion, exclusion, and filtering options for Conversation Mining.
+
+| Category                            | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Select Conditions (AND/OR)**      | Select how the system combines multiple keywords in the Include section:<br> **AND**: All specified keywords must appear in the conversation. <br>**Example**: <br> – **Include**: Billing **AND** frustrated (Both speakers). <br> – **Exclude**: Resolved (Both speakers).<br> **OR**: At least one of the specified keywords must appear somewhere in the conversation.<br>**Example**:<br> – **Include**: Refund **OR** Money Back (Customer only). <br> – **Exclude**: Processed (Agent only), completed (Both speakers). |
+| **Conversation Including Keywords** | Search conversations for specific keywords or exact phrases, with optional speaker filters.<br> **Keyword Input**: Enter a keyword or exact phrase to search.<br> – **Speaker Filter**: Select who mentioned the keyword:<br> – **Agent only**: Count only agent mentions.<br> - **Customer only**: Count only customer mentions.<br> - **Both**: Count mentions by either speaker (agent or customer).<br>**+Add Keyword**: Add up to eight keywords by selecting the +Add Keyword.                                                        |
+| **Conversation Excluding Keywords** | Enter keywords or phrases that must not appear in the conversation. You can also select which Speaker must not mention the keyword. <br> – **Speaker Filter**: Choose who must not mention the keyword (Agent only, Customer only, Both).<br> – **Add Exclusion**: Add up to five exclusion keywords by selecting **+Add Exclude Keyword**. <br>**Note**: <br> – All exclusions use **AND NOT** logic. If any exclusion keyword appears, the system excludes the conversation. <br> – Each row includes a **Remove** option to delete an exclusion keyword.                                 |
+| **Audit Navigation & Filtering**    | – Enables quick filtering and navigation by keyword or QA question.<br>– Supports transcript autoscroll and match relevance filtering.                                                                                                                                                                                                                                                                                                                                                    |
+| **Apply Keywords Action**           | – Select **Apply Keywords** to activate the filters and display the selected keywords.<br> – Select **Apply** to run the search and view results based on all active filters.                                                                                                                                                                                                                                                                                                                 |
+| **Filtered Keywords Interactions**  | The system displays the count of filtered interactions that contain the selected keywords after applying the filters (for example, "Filtered Interactions: 22").                                                                                                                                                                                                                                                                                                                                            |
+
+
 ## Manage Saved Filters
 
-### Apply Filters
+Use the following options to efficiently apply, save, and manage filters on the Conversation Mining dashboard.
 
-* Select **Apply** to save the filter settings. 
-
-* The system stores the applied settings as an **Unsaved Filter** on the **Conversation Mining** dashboard page, even when you select a category filter.   
- <img src="../conversation-mining/images/conversation-mining-unsaved-filter.png" alt="Unsaved Filter" title="Unsaved Filter" style="border: 1px solid gray; zoom:50%;"> 
+* **Apply Filters**: Stores the current settings as an Unsaved Filter on the Conversation Mining dashboard. Use Save & Apply to save and name filters for audit allocation.
 
     !!! Note
 
-        If interactions are not used for audit allocation, you can apply filters without saving. To assign audit allocations, save and name filters for easy reference in future audits.
+        If interactions are not used for audit allocation, you can apply filters without saving.        
 
-### Save Filters
+* **Save Filters**: Lets you name a filter and optionally set it as the default on the Interactions dashboard.
 
-* Select **Save & Apply** to save the selected filter category details and proceed.  
- <img src="../conversation-mining/images/interactions-save-and-apply.png" alt="Save & Apply" title="Save & Apply" style="border: 1px solid gray; zoom:50%;"> 
+* **View Saved Filters**: Shows all saved and their associated unsaved filters. 
 
-* In the **Save Filter** window, enter the Filter Name.
+* **Filtered Interactions**: Displays a real-time count of matching conversations. 
 
-* Enable the **Make this the default view** toggle if required.  
- <img src="../conversation-mining/images/save-filter.png" alt="Save Filter" title="Save Filter" style="border: 1px solid gray; zoom:50%;"> 
-
-* Select **Save & Apply** in the **Save Filter** window to set the **Unsaved Filter** as the default view filter in the **Interactions** dashboard.  
- <img src="../conversation-mining/images/default-view-in-dashboard.png" alt="Default View Filter" title="Default View Filter" style="border: 1px solid gray; zoom:50%;"> 
-
-### View Saved Filters
-
-* Select the set default view filter or any Unsaved Filter dropdown to view all created Saved Filters.  
-
-* The system displays all the Unsaved Filters and their associated Saved Filters.  
-
-### View Filtered Interactions
-
-* Select **Filtered Interactions** to view the real-time count of conversation interactions based on your filter criteria. The system updates this count dynamically whenever you apply or remove filters.      
-<img src="../conversation-mining/images/filtered-interactions.png" alt="Filtered Interactions" title="Filtered Interactions" style="border: 1px solid gray; zoom:80%;"> 
-
-#### Saved Filters Customization Options
-
-<<<<<<< Updated upstream
-When you save filters, the system provides the following customization options:
-=======
-When filters are saved, the following customization options are available:  
->>>>>>> Stashed changes
-
-* **Copy**: Creates a duplicate of the saved filter.
-
-* **Mark as default**: Sets the selected filter as the default each time you open the Call Mining tab.
-
-* **Edit Filter**: Lets you modify the details of a saved filter.
-
-* **Delete Filter**: Removes the selected saved filter permanently.  
-    <img src="../conversation-mining/images/saved-filters.png" alt="Saved Filters" title="Saved Filters" style="border: 1px solid gray; zoom:80%;"> 
+* **Customization Options**: Includes Copy, Mark as Default, Edit, and Delete filters.
+    

@@ -1,4 +1,4 @@
-# Human Node – Pause for Review and Approval
+﻿# Human Node – Pause for Review and Approval
 
 The Human Node introduces a human-in-the-loop capability within automation workflows. It allows workflows to pause and incorporate human judgment into automated processes. Designated users can review, approve, or provide input before the workflow continues, ensuring critical steps are validated, decisions are accurate, and compliance requirements are met. This capability is especially useful when certain decisions cannot be automated and require manual validation, oversight, or confirmation.
 
@@ -27,7 +27,40 @@ The execution behavior depends on the tool’s endpoint configuration:
 
 Built-in mechanisms handle timeouts, duplicate or late responses, and delivery failures to ensure the workflow progresses as configured. This provides visibility and traceability into decisions through the Debug Panel without disrupting the overall flow.
 
-<img src="../images/human_node.png" alt="Human Node" title="Human Node" style="border: 1px solid gray; zoom:60%;">
+<hr>
+
+``` mermaid
+sequenceDiagram
+    autonumber
+
+    participant WF as Workflow Engine
+    participant HN as Human Node
+    participant EP as Configured Endpoint
+    participant RV as Human Reviewer
+
+    WF ->>+ HN: Workflow reaches Human Node
+    HN ->> HN: Build payload<br/>(Input Fields + Reviewer Note)
+    HN ->>+ EP: POST request<br/>(Payload, CallbackURL, Token)
+    EP ->> RV: Deliver review request<br/>(Subject, Message, Input Fields)
+
+    Note over HN, RV: Workflow pauses —<br/>waiting for reviewer response
+
+    alt On Success
+        RV ->> EP: Submit response<br/>(e.g., Approval, Comments)
+        EP ->>- HN: Return response via CallbackURL
+        HN ->> HN: Store response in<br/>context.steps.NodeName.output
+        HN ->>- WF: Continue → Success path
+
+    else On Timeout
+        Note over HN: No response within configured time
+        HN ->> WF: Continue → Terminate or Skip & Continue
+
+    else On Failure
+        EP --x HN: Request delivery error
+        HN ->> WF: Continue → Failure path
+    end
+```
+<hr>
 
 In this document, you’ll learn how to add a Human node to your canvas, configure custom input requests, define reviewer fields, and customize timeout and error-handling behavior.
 
@@ -148,7 +181,7 @@ Once you have configured the Human node and connected it to the workflow, you ca
 
 Depending on the Tool endpoint configuration, the Human node can run in two modes: Sync (Synchronous) or Async (Asynchronous).
 
-#### **Running in Sync Mode**
+#### Running in Sync Mode
 
 In Sync mode, the workflow pauses at the Human node and waits for a reviewer’s response before moving forward. 
 
@@ -240,7 +273,7 @@ Here is a step-by-step execution of the Human node in Sync mode:
 </table>
 
 
-#### **Running in Async Mode**
+#### Running in Async Mode
 
 In Async mode, the workflow does not pause at the Human node. Instead, the workflow sends an immediate acknowledgement and continues execution. The Human node notifies the pre-configured callback URL when the request is sent to the human, when the human’s input is received, and when the final tool output is generated and delivered.the workflow continues immediately, while the reviewer’s input is processed in the background.
 
