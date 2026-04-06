@@ -165,9 +165,7 @@ nav:
   - Pre-built Agents:
     - About Pre-built Agents: pre-built-agents/overview.md
   - Pre-built Solutions:
-    - About Pre-built Solution: pre-built-solutions/overview.md
-    - IT Assist: pre-built-solutions/itassist.md
-    - HR Assist: pre-built-solutions/hrassist.md    
+    - About Pre-built Solution: pre-built-solutions/overview.md   
   - Analytics: 
     - Analytics Overview: analytics/overview.md
     - Dashboard View: analytics/dashboard-view.md
@@ -195,7 +193,6 @@ nav:
       - User Enrollments: user-management/user-enrollments.md
       - Add Users: user-management/managing-your-users.md
       - Manage Groups: user-management/managing-your-groups.md
-      - Enterprise Directory: user-management/enterprise-directory.md
     - Workspace Management:
       - Account Workspace: workspace-management/account-workspace.md
       - Personal Workspace: workspace-management/personal-workspace.md
