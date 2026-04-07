@@ -39,7 +39,7 @@ Create `.env/dev`:
 
 ```bash
 # workspace/.env/dev
-KORE_HOST=https://agent-platform.kore.ai
+KORE_HOST=https://<agent-platform-url>
 APP_API_KEY=your_api_key_from_platform
 TRACING_ENABLED=True
 ```
