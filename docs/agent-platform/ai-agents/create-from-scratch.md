@@ -243,7 +243,7 @@ Conversion notes:
 
 ### Event-based Delegation: 
 
-If a delegation rule is triggered by an *event*, subsequent handling follows the configuration of that event. For example, if an agent handoff event is configured to escalate to a human agent via AI for Service, the delegation triggers the agent handoff process.
+If a delegation rule is triggered by an *event*, subsequent handling follows the configuration of that event. For example, if an agent handoff event is configured to escalate to a human agent via (In)Business Customer Experience, the delegation triggers the agent handoff process.
 
 
 ### Passing Information Between Agents

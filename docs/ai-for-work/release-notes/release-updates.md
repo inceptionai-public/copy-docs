@@ -26,7 +26,7 @@ End users can now choose from an expanded set of feedback categories when submit
 
 **UI Localization and Language Support**
 
-AI for Work now supports multi-language localization. On first login, users can select their preferred language from the language selection module. All static and dynamic UI text updates are applied across the application immediately. Users can change their language preference at any time through the profile icon.
+(In)Business Productivity now supports multi-language localization. On first login, users can select their preferred language from the language selection module. All static and dynamic UI text updates are applied across the application immediately. Users can change their language preference at any time through the profile icon.
 
 Arabic includes full RTL layout support. All UI elements, including the history panel, response area, menus, and icons, realign to RTL automatically.
 
@@ -36,7 +36,7 @@ Arabic includes full RTL layout support. All UI elements, including the history 
 
 **Drag-and-Drop File Upload**
 
-Users can now drag and drop files directly into the AI for Work chat interface, in addition to the existing attachment icon workflow. The drop zone highlights on hover, and the upload initiates automatically once a file is dropped.
+Users can now drag and drop files directly into the (In)Business Productivity chat interface, in addition to the existing attachment icon workflow. The drop zone highlights on hover, and the upload initiates automatically once a file is dropped.
 
 [Learn more :octicons-arrow-right-24:](../getting-started/how-to-use.md)
 

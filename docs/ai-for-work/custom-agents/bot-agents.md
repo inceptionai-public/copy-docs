@@ -1,6 +1,6 @@
 # Bot Agents
 
-Administrators create bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the AI for Service Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
+Administrators create bot agents for users using the bot agent builder, significantly improving overall efficiency. Workflows designed on the (In)Business Customer Experience Platform integrate seamlessly, allowing actions to execute directly when a workflow triggers, eliminating the need for other platforms.
 
 For complex workflows involving multiple system integrations and logic, users build bots using the (In)Business Customer Experience Platform. Users trigger these bots through conversations using the UI or NLP intent, streamlining the entire process.
 
