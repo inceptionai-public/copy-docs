@@ -1,10 +1,10 @@
 # Connect with External Agents
 
-The platform enables integration with external AI agents built on different platforms. To support diverse integration needs, external agents can be connected using either the A2A Protocol or the Kore Agent Protocol (Proxy Agent).
+The platform enables integration with external AI agents built on different platforms. To support diverse integration needs, external agents can be connected using either the A2A Protocol or the Platform Agent Protocol (Proxy Agent).
 
 * **A2A Protocol** provides a standardized agent-to-agent communication model and is recommended when the external agent supports the A2A specification.
 
-* **Kore Agent Protocol** (Proxy Agent) enables integration with external agents that don't support A2A by using a custom request and response mapping layer or a proxy agent. The Proxy Agent functions as an intermediary, effectively relaying communication between the platform and external agents. This approach ensures that protocols are translated while preserving the performance, security, and functional integrity of the existing agent ecosystem.
+* **Platform Agent Protocol** (Proxy Agent) enables integration with external agents that don't support A2A by using a custom request and response mapping layer or a proxy agent. The Proxy Agent functions as an intermediary, effectively relaying communication between the platform and external agents. This approach ensures that protocols are translated while preserving the performance, security, and functional integrity of the existing agent ecosystem.
 
 
 ## Prerequisites
@@ -29,15 +29,15 @@ Enter the following details of the agent.
 **Connection Type**: When configuring an external agent, choose one of the following connection methods:
 
 1. Connect through A2A Protocol - Integrates with external agents that support the A2A protocol standard.
-2. Connect through Kore Agent Protocol - Uses a proxy adapter to translate requests and responses between the platform and external agents.
+2. Connect through Platform Agent Protocol - Uses a proxy adapter to translate requests and responses between the platform and external agents.
 
 ### Connect Through A2A protocol
 
-The A2A (Agent-to-Agent) Protocol client implementation enables Agent Platform to interact with external AI agents that expose their capabilities via the [A2A Protocol](https://a2a-protocol.org/latest/).
+The A2A (Agent-to-Agent) Protocol client implementation enables (In)Agent Platform to interact with external AI agents that expose their capabilities via the [A2A Protocol](https://a2a-protocol.org/latest/).
 
 With this capability, the platform can treat external agents as part of the agent ecosystem and allow the supervisor agent to route requests to them like native agents.
 
-This integration enables organizations to combine Agent platform orchestration with specialized external agents hosted on other platforms.
+This integration enables organizations to combine (In)Agent Platform orchestration with specialized external agents hosted on other platforms.
 
 #### Prerequisites
 
@@ -102,25 +102,25 @@ Enter the test query, provide the values of metadata fields and validate the res
 
 #### Points to Note
 
-1. The Agent Platform can invoke external agents using the A2A protocol, but external agents can't directly invoke native agents created within the platform.
+1. The (In)Agent Platform can invoke external agents using the A2A protocol, but external agents can't directly invoke native agents created within the platform.
 2. The platform communicates with A2A agents only via REST endpoints.
  Communication through JSON-RPC or gRPC methods isn't supported.
 3. In the Adaptive Network orchestration pattern, an external A2A agent can only be configured as the last node in the workflow. External agents cannot further delegate tasks.
 4. Streaming responses are supported when the external A2A agent supports streaming. If streaming is enabled for the application but the external agent doesn't support it, the response is returned as a non-streamed response.
-5. The Agent Platform uses a sessionId to track conversations internally. When interacting with external A2A agents, the platform maps this sessionId to the context_id returned by the external agent, which represents the conversation context as defined by the A2A protocol. Additionally, the task_id returned by the external agent is used to track the lifecycle of a specific task. The platform stores and manages both context_id and task_id during the interaction and includes them in subsequent requests as required by the A2A protocol. However, when the task reaches a terminal state (such as `completed` or `failed`), the Agent Platform clears the stored task_id and doesn't include it in subsequent requests, allowing the external agent to initiate a new task if required.
+5. The (In)Agent Platform uses a sessionId to track conversations internally. When interacting with external A2A agents, the platform maps this sessionId to the context_id returned by the external agent, which represents the conversation context as defined by the A2A protocol. Additionally, the task_id returned by the external agent is used to track the lifecycle of a specific task. The platform stores and manages both context_id and task_id during the interaction and includes them in subsequent requests as required by the A2A protocol. However, when the task reaches a terminal state (such as `completed` or `failed`), the (In)Agent Platform clears the stored task_id and doesn't include it in subsequent requests, allowing the external agent to initiate a new task if required.
 
 ---
 
-### Connect through Kore Agent Protocol
+### Connect through Platform Agent Protocol
 
-The Kore Agent Protocol enables the Agent Platform to integrate with external agents that don't support the A2A standard. This approach uses a Proxy Agent architecture, in which the proxy agent acts as an intermediary that communicates with the external agent via a configurable API.
-The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it's recommended to create an adapter that processes the request from the Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the Kore Agent Protocol. 
+The Platform Agent Protocol enables the (In)Agent Platform to integrate with external agents that don't support the A2A standard. This approach uses a Proxy Agent architecture, in which the proxy agent acts as an intermediary that communicates with the external agent via a configurable API.
+The Proxy Agent sends the request and response to the Eternal Agent in a specific format. The external agent is expected to consume the input and provide the output in this format for seamless integration. If the external agent varies in its request or response formats, it's recommended to create an adapter that processes the request from the Platform Proxy Agent and converts it according to the external agent's specifications. Similarly, the response from the external agent should be formatted as per the Platform Agent Protocol. 
 
 This method is particularly useful when integrating with existing AI services or custom agents that expose REST APIs but do not follow a standardized agent communication protocol.
 
 Once configured, the external agent behaves like any other agent in the platform. The orchestrator can route user requests to it based on its capabilities, enabling it to participate seamlessly in the overall workflow.
 
-The Kore Agent Protocol is recommended when:
+The Platform Agent Protocol is recommended when:
 
 * The external agent does not support the A2A protocol.
 * Developers need full control over request and response mappings.
@@ -274,5 +274,3 @@ If your external agent doesn't follow the expected format, follow the steps list
     * Accept the Platform-defined request structure.
     * Convert it to the format required by your external agent.
     * Reformat the external agent's response to match the Platform’s response structure.
-
-![alt_text](images/externalagents/adapter.png "image_tooltip")

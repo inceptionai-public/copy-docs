@@ -108,7 +108,7 @@ Tools are foundational components that empower agents to perform purposeful acti
 * Creating or updating records
 * Triggering workflows or APIs
 
-Each tool expands the agent’s capabilities and allows it to interact with other applications or services. Agent Platform offers three types of tools:
+Each tool expands the agent’s capabilities and allows it to interact with other applications or services. (In)Agent Platform offers three types of tools:
 
 * Workflow Tools
 * Code Tools

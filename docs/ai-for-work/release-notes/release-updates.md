@@ -111,7 +111,7 @@ This update includes new features and feature enhancements summarized below.
 
 **MCP Server Integration**
 
-(In)Business Productivity now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the Agent platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
+(In)Business Productivity now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the (In)Agent Platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
 
 MCP Server integration provides enhanced connectivity and extensibility, enabling advanced AI orchestration and interoperability with external systems.
 

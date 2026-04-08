@@ -18,7 +18,7 @@ Voice-to-voice models are now supported in the Adaptive Network, enabling seamle
 
 **Complete App Export and Import**
 
-Agent Platform now supports full application export, packaging all components, including workflow tools, into a single file for seamless migration across environments.
+(In)Agent Platform now supports full application export, packaging all components, including workflow tools, into a single file for seamless migration across environments.
 
 The import process includes upfront validation before execution and automatic rollback on failure, ensuring imports either complete fully or not at all. This eliminates the risk of partial or inconsistent application states after a failed import.
 
@@ -34,7 +34,7 @@ Users can configure execution control for pre-processors, choosing whether they 
 
 **Response Processors for Output Transformation**
 
-Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context, including inputs, outputs, and artifacts, all without changing the underlying logic.
+(In)Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context, including inputs, outputs, and artifacts, all without changing the underlying logic.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md#response-processor)
 
@@ -69,7 +69,7 @@ A new AI-assisted App Creation wizard walks users through building an applicatio
 
 **A2A Protocol Support**
 
-Agent Platform now supports the A2A (Agent-to-Agent) Protocol, enabling agentic apps to connect with external A2A-compliant agents without custom adapters. Developers can connect external agents using an A2A server URL. The platform automatically retrieves their details and handles communication translation. External agents can be included in workflows and managed by supervisors like native agents.
+(In)Agent Platform now supports the A2A (Agent-to-Agent) Protocol, enabling agentic apps to connect with external A2A-compliant agents without custom adapters. Developers can connect external agents using an A2A server URL. The platform automatically retrieves their details and handles communication translation. External agents can be included in workflows and managed by supervisors like native agents.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/external-agents.md#connect-through-a2a-protocol)
 
@@ -79,7 +79,7 @@ MCP integration now adds another layer of security in this update:
 
 * Refresh of MCP Server Configuration: Users can refresh the MCP Server configurations to fetch the latest tool definitions, applying silent updates when no changes are detected and flagging impact when tools are affected. 
 * Editable MCP Server Name and URL: The MCP server name and URL can be updated after configuration, eliminating the need to recreate the server when endpoints change.
-* Consistent Tool Naming: MCP tools now keep their original server-defined names in Agent Platform without prefixing with the MCP Server Name. A prefix is added when duplicate tool names are identified across all the tools, including MCP Servers.
+* Consistent Tool Naming: MCP tools now keep their original server-defined names in (In)Agent Platform without prefixing with the MCP Server Name. A prefix is added when duplicate tool names are identified across all the tools, including MCP Servers.
 * Enum Parameter Support: Agentic apps now support enums as parameters for MCP tools.
 
 [Learn more :octicons-arrow-right-24:](../ai-agents/tools/configure-mcp-server.md)
@@ -207,13 +207,13 @@ Workflow Tools created outside an Agentic App and not linked to any app cannot a
 
 **Vertex AI Model Integration**
 
-Agent Platform now offers secure connections to Google Vertex AI-hosted Gemini models (2.5 and 3.0 families). You can configure connections manually or via cURL import with automated credential extraction for both AI Studio and Vertex AI formats. A guided setup includes built-in validation, connection testing, and error handling. The platform stores all credentials securely using encryption. This integration works across Agentic Apps, Workflow Tools, and Prompts.
+(In)Agent Platform now offers secure connections to Google Vertex AI-hosted Gemini models (2.5 and 3.0 families). You can configure connections manually or via cURL import with automated credential extraction for both AI Studio and Vertex AI formats. A guided setup includes built-in validation, connection testing, and error handling. The platform stores all credentials securely using encryption. This integration works across Agentic Apps, Workflow Tools, and Prompts.
 
 [Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-vertex-ai)
 
 **Expanded Model Support**
 
-The Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
+The (In)Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
 
 New models include:
 

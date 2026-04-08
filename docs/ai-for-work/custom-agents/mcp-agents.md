@@ -45,7 +45,7 @@ Each MCP tool requires specific input parameters to function correctly. You conf
 
 ### Input Parameter Types
 
-Agent Platform supports two types of input parameters:
+(In)Agent Platform supports two types of input parameters:
 
 
 #### Static Values

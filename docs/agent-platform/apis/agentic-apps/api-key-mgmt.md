@@ -1,6 +1,6 @@
 # API Key Management 
 
-The following APIs can be used to create, revoke, and manage API keys and scopes for an application in the Agent Platform.
+The following APIs can be used to create, revoke, and manage API keys and scopes for an application in the (In)Agent Platform.
 
 
 ### Prerequisites

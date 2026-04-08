@@ -4,7 +4,7 @@ An Agentic App is a multi-agent application that enables you to build, configure
 
 **Prerequisites**
 
-* You have access to the Agent Platform with appropriate permissions to create and manage apps. 
+* You have access to the (In)Agent Platform with appropriate permissions to create and manage apps. 
 
 * Configure an AI model with tool-calling capabilities. The Platform supports OpenAI, Gemini, Anthropic, and Azure OpenAI models. For more information, see [Add an External Model](../../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"}.
 
