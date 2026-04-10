@@ -140,7 +140,7 @@ To edit an existing Agent status entry, follow these steps:
 
     !!! note "Rename Default Agent Status"
      
-        Administrators can rename default agent status (Available, Away, Busy) to match business terminology, with multilingual support. The system preserves the underlying status behavior and applies the updated labels consistently across the existing and historical data.
+        Administrators can rename default agent status (Available, Away, Busy) to match business terminology, with multilingual support. The system preserves the underlying status behavior and applies the updated labels consistently across the existing and historical data. The system uses system status labels as conditional statements across the codebase, and these labels affect multiple areas of the application. As a result, the system prevents users from creating custom statuses with system-reserved labels. The reserved labels are Available, Away, Busy, Offline, System Busy, System Away, and Login Prep.
 
 3. The Status updated successfully message appears in the window and the modified values reflect in the [Agent Status](../../../console/manage-layout.md#agent-status) widget.  
 
@@ -418,7 +418,24 @@ Administrators can select from the following routing options that complement exi
 `Omit Language in Routing`: When enabled, the system ignores language during routing. Routing continues to consider skill, proficiency, availability, capacity, and other applicable parameters.
 
 When disabled (Default), the system includes language as a routing criterion along with skill, proficiency, availability, and other parameters.  
-<img src="../images/additional-routing-config.png" alt="Additional Routing Configuration" title="Additional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+
+`Last Agent Routing`: Enable Last Agent Routing to route interactions to the last handling agent for a selected channel.
+
+Channels: Voice, Chat, Email
+
+* When enabled, the system assigns the interaction to the last available handling agent.
+* If no last agent exists or the agent is unavailable, the system applies standard routing.
+
+Wait for Last Agent Availability (Optional)
+
+* Configure a wait duration (in seconds) per channel.
+* The system waits for the last agent to become available within the configured time.
+* If the agent remains unavailable, the system applies standard routing.  
+<img src="../images/additional-routing-configuration.png" alt="Additional Routing Configuration" title="Additional Routing Configuration" style="border: 1px solid gray; zoom:80%;">
+
+!!! Note
+
+    Named agent transfers, flow transfers, and advanced/CGR routing override this setting.
 
 ## Enable Dial Tone Until Agent Connects
 

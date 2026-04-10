@@ -8,14 +8,14 @@ This guide walks you through the complete setup process, from initial applicatio
 
 Before you begin the configuration process, ensure you have access to the following:
 
-* Admin credentials for the Agent Platform.
+* Admin credentials for the (In)Agent Platform.
 * OpenAI or Azure OpenAI API credentials.
 * Platform admin panel access with appropriate permissions.
 * Active session tokens for MCP tool authentication.
 
 ## Creating Agentic Application
 
-Before creating the Agentic Search application, you must first configure a model in the Agent Platform. The Agentic Search operates as an agentic application within the Agent Platform. 
+Before creating the Agentic Search application, you must first configure a model in the (In)Agent Platform. The Agentic Search operates as an agentic application within the (In)Agent Platform. 
 
 To download the pre-configured base application package.
 
@@ -57,7 +57,7 @@ First, retrieve the Server URL from your environment.
 3. Copy the Server URL displayed.
 <img src="../images/work-agent-url.png" alt="work-agent-url" title="work-agent-url" style="border: 1px solid gray; zoom:70%;">
 
-Now, create the MCP tool in the Agent Platform.
+Now, create the MCP tool in the (In)Agent Platform.
 
 1. Go to **Tools** > **MCP Tools** > **Create Tool**.
 2. Paste the Server URL you copied from the platform.
@@ -113,11 +113,13 @@ The Data Assistant agent requires access to all configured tools. Open its confi
 
 With your application configured, you'll create a deployable version and establish an environment for production use. The versioning system allows you to maintain multiple configurations and roll back if needed.
 
-1. Go to **Deployment** → **Versions** → **Create Version**.
+1. Go to **Deployment** → **Versions** → **+ New Version**.
+<img src="../images/work-agent-new-version.png" alt="work-agent-version" title="work-agent-version" style="border: 1px solid gray; zoom:70%;">
+
 2. Save the version to capture your current configuration.
 <img src="../images/work-agent-version.png" alt="work-agent-version" title="work-agent-version" style="border: 1px solid gray; zoom:70%;">
 
-1. Navigate to **Deployment** → **Environments** → **Create Environment**.
+1. Navigate to **Deployment** → **Environments** → **+ New Environment**.
 <img src="../images/work-agent-environment.png" alt="work-agent-environment" title="work-agent-environment" style="border: 1px solid gray; zoom:70%;">
 
 2. Deploy your version to the new environment.
@@ -128,7 +130,10 @@ With your application configured, you'll create a deployable version and establi
 Create the API credentials that the Platform uses to communicate with your deployment.
 
 1. Copy the **deployment cURL** from your environment.
-2. Go to **API Scoping** → **Create Scope**.
+2. Go to **API Scoping** → **+ New API Scope**.
+<img src="../images/work-agent-new-api-scope.png" alt="work-agent-api-scope" title="work-agent-api-scope" style="border: 1px solid gray; zoom:70%;">
+
+3. Fill in the required fields.
 <img src="../images/work-agent-api-scope.png" alt="work-agent-api-scope" title="work-agent-api-scope" style="border: 1px solid gray; zoom:70%;">
 
 3. Navigate to **API Keys → Create Key** using your scope.
@@ -170,7 +175,7 @@ In platform, navigate to the Work tab's search interface. Submit a test query th
 1. Open **(In)Business Productivity** → **Search Bar (Work tab)**.
 2. Submit a test query.
 3. Verify the results appear correctly.
-4. Check **Agent Platform** → **Traces** to review the execution flow.
+4. Check **Traces** in (In)Agent Platform to review the execution flow.
 <img src="../images/work-agent-trace.png" alt="work-agent-trace" title="work-agent-trace" style="border: 1px solid gray; zoom:70%;">
 
 The traces show how your query moved through the agent architecture, which tools were invoked, and how the response was generated. Use this diagnostic view to troubleshoot any issues.

@@ -54,7 +54,7 @@ plugins:
         'ai-agents/agentic-apps/code-tools.md': 'ai-agents/tools/code-tools.md'
         'ai-agents/agentic-apps/inline-tools.md': 'ai-agents/tools/code-tools.md'
         'settings/workspaces/workspace-mgmt.md': 'settings/workspaces/workspace-management.md'
-        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'                
+        'settings/security-and-control/encryption-key-mgmt.md': 'settings/security-and-control/encryption-key-management.md'
 extra:
   version:
     provider: mike
@@ -148,11 +148,7 @@ nav:
       - Realtime Multimodal: ai-agents/realtime-multimodal.md
     - Build AI Agents:   
       - Create an Agentic App: ai-agents/agentic-apps/create-app.md
-      - Set up AI Agents:
-          - Overview: ai-agents/create-agent.md
-          - Create Agent From Scratch: ai-agents/create-from-scratch.md
-          - Connect External Agents: ai-agents/external-agents.md
-          - Import from Marketplace:  ai-agents/create-from-marketplace.md
+      - Set up AI Agents: ai-agents/create-agent.md
       - Agent Memory: ai-agents/agentic-apps/memory-stores.md
       - Manage Agents: ai-agents/agent-management.md
       - Manage Agentic App:
@@ -194,18 +190,18 @@ nav:
           - Loop Node: ai-agents/tools/tool-flows/types-of-nodes/loop-node.md  
           - Human Node: ai-agents/tools/tool-flows/types-of-nodes/human-node.md 
           - End Node: ai-agents/tools/tool-flows/types-of-nodes/end-node.md              
-        - Sharing & Permissions: 
-          - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
-        - Tool Endpoint: 
-          - Deploy a Tool: ai-agents/tools/deploy-a-tool.md
-        - Tool Monitor: 
-          - About Tool Monitor: ai-agents/tools/tool-monitor/about-tool-monitor.md
-          - Accessing Tool Monitor: ai-agents/tools/tool-monitor/accessing-tool-monitor.md
-          - Understanding Tool Monitor: ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface.md
+        - Environment Variables: ai-agents/tools/environment-variables.md
+        - Versions: ai-agents/tools/versions.md
         - API Keys: 
           - Create an API Key: ai-agents/tools/create-a-new-api-key.md 
         - Audit Logs:
           - Tool Audit Logs: ai-agents/tools/tool-audit-log.md
+        - Tool Monitor: 
+          - About Tool Monitor: ai-agents/tools/tool-monitor/about-tool-monitor.md
+          - Accessing Tool Monitor: ai-agents/tools/tool-monitor/accessing-tool-monitor.md
+          - Understanding Tool Monitor: ai-agents/tools/tool-monitor/understanding-the-tool-monitor-interface.md
+        - Sharing & Permissions: 
+          - Manage User Roles and Permissions: ai-agents/tools/manage-user-roles-and-permissions.md
         - Configurations:
           - Manage your Tool: ai-agents/tools/configure-a-tool.md
           - Export a Tool: ai-agents/tools/export-a-tool.md
@@ -246,7 +242,7 @@ nav:
       - Initiate Live Agent Handoff from Agentic Apps: ai-agents/agentic-apps/howto/initiate-live-agent-handoff.md
       - Use Metadata passed via APIs in Agentic Apps: ai-agents/agentic-apps/howto/use-metadata.md
       - Real-time Voice Interaction between (In)Business Customer Experience and (In)Agent Platform: ai-agents/agentic-apps/howto/voice-interactions.md
-
+      - Write Effective Instructions: ai-agents/agentic-apps/howto/write-effective-instructions.md
   - Core AI Capabilities: 
     - About Core AI Capabilities: core-ai/overview.md 
     - Models: 
@@ -347,5 +343,44 @@ nav:
       - About Agentic App APIs: apis/agentic-apps/overview.md
       - About Tools APIs: apis/overview.md
       - APIs List: apis/list-of-apis.md
+  - SDK:
+      - Agent Platform SDK Overview: sdk/index.md
+      - Installation: sdk/getting-started/installation.md
+      - Quick Start: sdk/getting-started/quickstart.md
+      - Core Concepts: sdk/getting-started/concepts.md
+      - User Guide:
+        - Building Applications: sdk/guide/building-apps.md
+        - Creating Agents: sdk/guide/creating-agents.md
+        - Working with Tools: sdk/guide/working-with-tools.md
+        - Memory Stores: sdk/guide/memory-stores.md
+        - Prompts and LLM Config: sdk/guide/prompts-llm.md
+        - Custom Orchestration: sdk/guide/orchestration.md
+      - API Reference:
+        - Overview: sdk/api/index.md
+        - Design-Time Models:
+           - Overview: sdk/api/designtime/index.md
+           - App: sdk/api/designtime/app.md
+           - Agent: sdk/api/designtime/agent.md
+           - Tool: sdk/api/designtime/tool.md
+           - LLM Model: sdk/api/designtime/llm_model.md
+           - Prompt: sdk/api/designtime/prompt.md
+           - Memory Store: sdk/api/designtime/memory_store.md
+           - App Configuration: sdk/api/designtime/app_configuration.md
+           - App Namespace: sdk/api/designtime/app_namespace.md
+           - App Variable: sdk/api/designtime/app_variable.md
+           - Icon: sdk/api/designtime/icon.md
+        - Runtime:
+           - Overview: sdk/api/runtime/index.md
+           - RequestContext: sdk/api/runtime/request_context.md
+           - EnvironmentVariables: sdk/api/runtime/environment_variables.md
+           - Memory: sdk/api/runtime/memory.md
+           - Logger: sdk/api/runtime/logger.md
+           - Tracer: sdk/api/runtime/tracer.md
+      - CLI Reference:
+        - CLI Commands: sdk/cli/index.md
+      - Examples:
+        - Banking Assistant: sdk/examples/banking-assistant.md
+        - Multi-Agent Workflow: sdk/examples/multi-agent.md
+      - Contributing: sdk/contributing.md
+      - Changelog: sdk/changelog.md
   - Marketplace: ai-agents/agentic-apps/marketplace.md
-

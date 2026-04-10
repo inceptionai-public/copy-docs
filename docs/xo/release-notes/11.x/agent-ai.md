@@ -2,6 +2,122 @@
 
 This document provides information on the feature updates and enhancements introduced in **Agent AI** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">UI Enhancements</font>
+
+**Pass Metadata Support in Search AI Configuration**
+
+In the newly available Pass Metadata configuration section, you can select Landing Summary, Agent-Customer Chat History, and User Context to pass as metadata. This improves response relevance, personalization, and accuracy without requiring manual query rephrasing. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/linked-services.md/#knowledge-ai).
+
+**Spanish Support for the Agent AI UXO App Language**
+
+Support for Spanish as an App Language is now available via profile menu > app language.
+
+<font size="4">Integration Enhancements</font>
+
+**Custom Field Support for Salesforce Email Channel**
+
+Agent AI integration with the Salesforce Email Channel now supports custom field objects. Salesforce admins can configure custom data in the Agent AI Configuration page by mapping payload keys to Case field API names using a .json file. The system resolves these fields at runtime and sends case data to the Agent AI widget.
+
+**Agent AI integration with Five9 Voice**
+
+Agent AI integration with Five9 Voice supports Automation, Agent Coaching, Agent Playbook, Sentiment Analysis, Transcription, end-of-call summary, and Custom Data. It also supports Secure Custom Data transfer, such as agent name and ID, to the Agent AI widget.
+
+<font size="4">SDK Enhancement</font>
+
+**Headless SDK for Cross-Platform Integration**
+
+The new headless SDK for browser and Node.js environments, with support for standard loading methods, enables message handling, internal transfers, summary generation, and conversation closure through a unified API. It removes UI dependencies and simplifies integrations.
+
+<hr>
+
+## v11.22.1 March 14, 2026
+
+<u>Patch Release </u> 
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">Integration Enhancements</font>
+
+**Open Knowledge Base Articles Within the Salesforce Workspace**
+
+The Agent AI widget in Salesforce now allows agents to access knowledge base (KB) articles directly from the Search tab within a workspace subtab of the current browser session. This keeps agents in the active session, preventing reauthentication prompts or interruptions to the customer interaction.
+
+**Automatic Conversation Summary After Einstein Bot Handoff in Salesforce**
+
+The Agent AI widget in Salesforce now automatically generates a conversation summary when a customer interaction is handed off from Einstein Bot to a live agent. The summary is displayed in the Assist tab, giving agents quick context on the customer's issue and actions already taken — without reviewing the full chat transcript. The summary is also stored in interaction metadata for downstream use.
+
+**Automatic Summary Updates for Email-to-Case in Salesforce**
+
+The Agent AI widget for the Email-to-Case channel in Salesforce now keeps the Assist tab summary up to date with the latest email conversation. When the widget loads, it displays a summary of the existing email thread. As new emails arrive or agents generate or submit a summary, the Assist tab updates to reflect the latest context.
+
+<font size="4">UI Enhancement</font>
+
+**Expand and Collapse Controls for Customer Messages and Agentic NBA Suggestions**
+
+In the Agent AI widget's Assist tab, customer messages and Agentic Next Best Action (NBA) suggestions now include expand and collapse buttons that appear on hover. By default, the messages and the previous suggestions (sent or unsent) are collapsed, while the latest suggestion appears expanded. This prevents messages from automatically collapsing while agents copy suggestion content. 
+
+<hr>
+
+## v11.22.0 February 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below. 
+
+<font size="4">Widget Enhancements</font>
+
+**Feedback for Agentic Copilot Next Best Action Suggestions**
+
+Agents can now give ‘Thumbs Up’ or ‘Thumbs Down’ feedback on Agentic Copilot Next Best Action (NBA) suggestions directly in the Agent AI widget. For negative feedback, agents can select from multiple configurable reasons and add optional comments. Admins can manage the available reasons in Feedback Settings. All feedback is logged and accessible through the Raw Data API to support performance analysis and continuous improvement. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/feedback-settings.md).
+
+**Configurable Summary Sharing for Cold Transfers**
+
+Admins can now choose which conversation summary is shared during cold transfers — either only the latest transferring agent's intermittent summary, or the full conversation, including bot and all participants. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/conversation-events.md).
+
+**Extended Session Closure for Exit Event Workflows**
+
+Agent AI now supports delaying session closure beyond the End of Conversation event, giving agents time to complete workflows configured in Agentic Platform Exit Events before the session closes.
+
+**Configurable Intermittent Summary Generation Limit**
+
+Admins can now configure how many intermittent summaries are generated per agent, up to a maximum of 20. [Learn more :octicons-arrow-right-24:](./../../agentai/configuration/widget-theming-layout-customization.md/#assist-action-menu-layout).
+
+<font size="4">API Enhancements</font>
+
+**Enhanced Raw Data API for Agent Coaching and Playbooks Data**
+
+The Raw Data API now includes additional Agent Coaching and Playbook data, such as playbook type (primary and dynamic), stage and step details, scenario completion status, configuration-based triggers, step execution order, and step adherence validation. It also captures triggered coaching events, actions, and details on action adherence. This enables customers to build custom metrics, create external dashboards, and audit Playbook analytics. [Learn more :octicons-arrow-right-24:](./../../apis/agent-ai/raw-data-api.md).
+
+**Conversation Termination API**
+
+Agent AI uses the Hooks API to notify the system when a conversation terminates, enabling reliable execution of configured post-conversation actions. Invoke this API once at the final termination of the call—whether it ends normally or unexpectedly—to ensure accurate event handling and prevent duplicate processing.
+
+<font size="4">Integration Enhancements</font>
+
+**Direct OAuth Configuration for Email-to-Case Summary Enrichment**
+
+Agent AI administrators can now configure external API access for Email-to-Case summary enrichment using direct OAuth credentials (Client ID and Client Secret), instead of Salesforce Named Credentials. This simplifies setup and removes Salesforce dependencies by enabling OAuth configuration directly within Agent AI. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/salesforce-email-to-case/agentai-integration-with-salesforce-email-to-case.md/#external-api-configuration-for-summary-generation).
+
+**Runtime Bot/App Context Metadata Support for Advanced Search Filtering**
+
+Agent AI now provides runtime access to the full Bot/App context object—including direct context variables, BotUserSession, and app context attributes—and supports passing these values to the Advanced Search API as metaFilters. This enables context-aware and more accurate search results. [Learn more :octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md/#step-4-xo-configuration-optional).
+
+**Real-Time Transcription Support for NICE CXone Softphone in Salesforce**
+
+Agent AI now supports real-time call context initialization and voice transcription for agents using the NICE CXone softphone in Salesforce. When a call is accepted, the widget automatically initializes, retrieves the session identifier, and starts live transcription — enabling real-time assistance and accurate post-call summaries.
+
+**Unified Refresh for Email and Sprout Social Cases in Salesforce**
+
+Enhanced Agent AI “Refresh / Next Best Action” button functionality on Salesforce Case pages now supports both Email- and Sprout Social-originated cases with a single unified refresh action. This improvement ensures that agents receive accurate, context-aware recommendations within the Agent AI widget, regardless of the originating channel.
+
+<hr>
+
 ## v11.21.1 January 31, 2026
 
 <u>Patch Release </u>
@@ -75,7 +191,7 @@ The Raw Data API now displays Custom tab details in addition to Assist tab detai
 
 **Enhanced Hooks API for Internal Transfers**
 
-The Hooks API now maintains accurate agent context—interaction ID, agent identity, and session continuity—during internal call transfers (cold and warm) across all supported third-party desktops, and no valid agent data appears under ‘Anonymous Agent’. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
+The Hooks API now maintains accurate agent context—interaction ID, agent identity, and session continuity—during internal call transfers (cold and warm) across all supported third-party desktops, and no valid agent data appears under ‘Anonymous Agent’. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/webhook-api-for-conversation-events.md)
 
 <font size="4">Integration Enhancements</font>
 
@@ -223,7 +339,7 @@ Amazon Connect’s External Voice Connector now routes inbound voice calls throu
 
 **Hooks API for Internal Transfers**
 
-Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/hooks-api-for-internal-transfers.md)
+Agent AI now supports internal transfer events through the **Hooks API**, reducing reliance on UI socket events. This enhancement enables the internal transfer of data initiated outside the UI to be sent via API payloads, ensuring that all transfers are captured, processed, and displayed in the Agent AI widget. [Learn more :octicons-arrow-right-24:](../../apis/agent-ai/webhook-api-for-conversation-events.md)
 
 <hr>
 
@@ -666,7 +782,7 @@ The Salesforce package now includes a language parameter to support AgentAssist'
 
 **Multi-bot Support for Agent AI Integration with ServiceNow**
 
-Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. [Learn more:octicons-arrow-right-24:](./../../agentai/integration/servicenow/chat-integration-with-servicenow.md#multibot-solution-with-servicenow)
+Multiple bots can be mapped to a queue, region, or other defined criteria within a workspace, enabling agents to manage cases across bots without manual intervention or limitations. 
 
 <hr>
 
@@ -974,7 +1090,7 @@ Key updates:
 
 Third-party applications can now trigger a conversation summary by sending the “agentAssist.endOfConversation” event to Agent AI with the help of a new API.
 
-[Learn more :octicons-arrow-right-24:](../../apis/agent-ai/conversation-summary-trigger-api.md){:target="_blank"}
+[Learn more :octicons-arrow-right-24:](../../apis/agent-ai/webhook-api-for-conversation-events.md){:target="_blank"}
 
 <font size="4">Introduction of Additional languages for Agent AI</font>
 

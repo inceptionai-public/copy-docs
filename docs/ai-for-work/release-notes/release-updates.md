@@ -2,7 +2,100 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent release of the Platform.
 
-## v1.13.0 Dec 16, 2025
+## v1.15.0 March 30, 2026
+
+<u>Major Release</u>
+
+This update includes new features and feature enhancements summarized below.
+
+</font></p><font size="4">New Feature</font>
+
+**Employee Organization Chart**
+
+The Employee Directory now includes an **Organization Chart** tab that displays the organizational hierarchy visually. Expand employee cards to view direct and indirect reports, apply filters, and search for specific employees. The chart automatically focuses and expands to the matched user. Open the full profile view from any card. Zoom, fit preview, collapse, and full-screen controls are also available.
+
+[Learn more :octicons-arrow-right-24:](../employees/organization-chart.md)
+
+**Feedback Management and Email Notifications**
+
+Introducing a dedicated **Feedback** page under **Usage** in the Admin Console. Administrators can now view, filter, and drill into user feedback across all agents and workspaces, with access scoped by role. Account-level admins see all feedback across the account, Workspace Owners see feedback within their workspace, and agent-level access scopes feedback to that specific agent.
+
+End users can now choose from an expanded set of feedback categories when submitting upvote or downvote feedback, including Forgot previous context, Outdated, Wrong formatting, and Other, also to the existing options.
+
+[Learn more :octicons-arrow-right-24:](../analytics/feedback.md)
+
+**UI Localization and Language Support**
+
+(In)Business Productivity now supports multi-language localization. On first login, users can select their preferred language from the language selection module. All static and dynamic UI text updates are applied across the application immediately. Users can change their language preference at any time through the profile icon.
+
+Arabic includes full RTL layout support. All UI elements, including the history panel, response area, menus, and icons, realign to RTL automatically.
+
+[Learn more :octicons-arrow-right-24:](../assist-configuration/language-settings.md)
+
+<font size="4">Feature Enhancement</font>
+
+**Drag-and-Drop File Upload**
+
+Users can now drag and drop files directly into the (In)Business Productivity chat interface, in addition to the existing attachment icon workflow. The drop zone highlights on hover, and the upload initiates automatically once a file is dropped.
+
+[Learn more :octicons-arrow-right-24:](../getting-started/how-to-use.md)
+
+**Scoped Source Selection for Search Agents**
+
+After authentication, users can now select or deselect specific sources, including websites, file uploads, and connectors, in the linked Search AI app when configuring a Search Agent or adding a Search App to Enterprise Knowledge. Previously, all available sources were connected by default. Previously selected sources are retained when editing credentials or sources.
+
+[Learn more :octicons-arrow-right-24:](../custom-agents/search-agents.md/#scoping-sources)
+
+**Search Filters**
+
+Users can now filter search results in the search results panel by Timeline, Created By, and File Type. The Timeline filter supports predefined ranges and a custom date picker. Created By supports multi-user selection with a searchable pop-up, and File Type options populate dynamically based on the current result set.
+
+<hr>
+
+## v1.14.0 March 2, 2026
+
+<u>Major Release</u>
+
+This update includes new features and feature enhancements summarized below.
+
+</font></p><font size="4">New Feature</font>
+
+**Attachment Settings**
+
+Introducing **Attachment Settings** under **Assistant Configurations** in the Admin Console, giving administrators centralized control over file attachment behavior in the compose bar.
+
+Key capabilities include:
+
+* Enable or disable attachments for end users in the compose bar. Attachment uploads require at least one configured LLM model.
+* Select the LLM model used to process uploaded attachments. Model changes take effect immediately.
+* Allow attachments larger than the model context size by enabling RAG-based processing. You can choose between **Model-based RAG**, which uses your configured LLM model to handle retrieval and generation, or **In-house RAG**, which leverages the platform's built-in retrieval pipeline without relying on an external model.
+
+[Learn more :octicons-arrow-right-24:](../assist-configuration/attachment-settings.md)
+
+**Employee Lookup Settings**
+
+Introducing **Lookup Settings** under the new **Employees** section in the Admin Console, giving administrators control over how the AI assistant answers employee-related queries. Administrators can enable or disable Employee Lookup, select a lookup source (Employee Directory, Service Account, or From User Data).
+
+[Learn more :octicons-arrow-right-24:](../employees/lookup-settings.md)
+
+<font size="4">Feature Enhancement</font>
+
+**Centralized Schedulers Tab**
+
+The platform introduces a new **Schedulers** tab under **Agents and Flows**, providing a unified interface for creating and managing all automated schedules. You can now create schedulers for any agent, flow, or mode (Work, Web, AI Model) you have access to, directly from a single location.
+
+[Learn more :octicons-arrow-right-24:](../getting-started/schedule-agents.md)
+
+**Enterprise Directory — Service Account Source**
+
+The Enterprise Directory now supports **Service Accounts (Microsoft, LDAP)** as a data source, in addition to the existing Push API method. Administrators can connect a pre-configured service account to automatically sync employee data from their identity provider, map fields between the source system and the directory, and configure manual or scheduled sync with Daily, Weekly, or Monthly frequency options.
+
+[Learn more :octicons-arrow-right-24:](../employees/directory-configuration.md)
+
+<hr>
+
+
+## v1.13.0 December 16, 2025
 
 <u>Major Release</u>
 
@@ -18,7 +111,7 @@ This update includes new features and feature enhancements summarized below.
 
 **MCP Server Integration**
 
-(In)Business Productivity now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the Agent platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
+(In)Business Productivity now supports Model Context Protocol (MCP) Server integration, enabling you to expose pre-built agents as tools through MCP servers. This powerful capability allows you to use your agents within the Agentic Search app on the (In)Agent Platform, creating a seamless bridge between your existing agent configurations and advanced search capabilities. 
 
 MCP Server integration provides enhanced connectivity and extensibility, enabling advanced AI orchestration and interoperability with external systems.
 
@@ -59,7 +152,7 @@ The HubSpot connector in Work - Agentic Search is optimized for improved query p
 
 <hr>
 
-## v1.12.0 Nov 13, 2025
+## v1.12.0 November 13, 2025
 
 <u>Major Release</u>
 
@@ -73,7 +166,7 @@ Introducing the Enterprise Directory, a centralized employee contact management 
 
 Admins can configure the directory by feeding data through the Push API source. The platform is now enabled with Enterprise Directory capabilities, featuring intelligent search with customizable filters (Department, Designation, First Name, Location), rich contact cards with profile details, and streamlined contact management for enhanced organizational connectivity.
 
-[Learn more :octicons-arrow-right-24:](../user-management/enterprise-directory.md)
+[Learn more :octicons-arrow-right-24:](../employees/directory-configuration.md)
 
 <font size="4">Feature Enhancements</font>
 
@@ -99,7 +192,7 @@ Onboard partner domains without creating an enterprise account of their own. Thi
 
 <hr>
 
-## v1.11.0 Sept 24, 2025
+## v1.11.0 September 24, 2025
 
 <u>Major Release</u>
 
@@ -149,7 +242,7 @@ Enhanced Personal Workspace support agent sharing across all published users. Sh
 <hr>
 
 
-## v1.10.0 Sept 8, 2025
+## v1.10.0 September 8, 2025
 
 <u>Major Release</u>
 
@@ -495,7 +588,6 @@ Key Features:
 * Granular access controls and centralized governance enable secure management of workspace creation and deletion, ensuring clear boundaries between departments.
 * A tiered permission system offers precise control over access, ensuring that team members have the appropriate level of access for their roles and responsibilities.
 * Control agent visibility and target specific user groups or the entire organization. Tailor each workspace with different allowed agent types to maintain information boundaries and ensure compliance.
-* The default workspace within every account includes pre-built solutions optimized for HR, IT, Recruitment, and Analytics, enabling immediate productivity.
 
 [Learn more :octicons-arrow-right-24:](../Administration/workspace.md)
 

@@ -2,6 +2,182 @@
 
 This document provides information on the feature updates and enhancements introduced in **Contact Center AI** of AI for Service (XO) v11.x releases.
 
+## v11.23.0 March 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**From Address Selection in Email Reply**
+
+The system lets agents select a different From address when replying to emails from a configured list. Upon sending the email, the Platform closes the existing session and creates a new session for the selected email address, and preserves the conversation history. It supports threading, reporting, and admin controls. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#emails)
+
+<font size="4">Configuration</font>
+
+**Separate Wait Time Controls for Post-Transfer Conversations**
+
+Conversations now use separate queue wait time controls before and after agent transfer. On the first entry, the initial wait time applies. After a transfer, a dedicated post-transfer timer activates and resets with each subsequent transfer. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#settings)
+
+**Parent and Child Grouping of Permissions**
+
+Two new permissions, in the Monitor Tab, are Profile and Mark Offline. These improve role-based access control and will be enabled by default for all roles except Agent and Custom. [Learn more :octicons-arrow-right-24:](../../user-management/role-management.md#permissions)
+
+**Channel-Based Last Agent (Affinity) Routing**
+
+Last Agent Routing is now available per channel (Voice, Chat, and Email), routing interactions to the last handling agent when available. An optional wait duration holds the interaction before falling back to standard routing; if no wait duration is set, fallback occurs immediately. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/agent-management/agent-management.md#additional-routing-configuration)
+
+<font size="4">Analytics</font>
+
+**Correct Call Status for Agent Interactions with CSAT**
+
+The system now records accurate call-termination status during agent–customer interactions, including CSAT. Calls are marked as User Hangup or Agent Hangup, preventing incorrect classification as Bot Hangup. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#call-status-during-agentcustomer-interaction-with-csat)
+
+**Show Duration Markers in Recordings**
+
+A new account-level setting lets you display either timestamps or elapsed call duration for transcript segments. When duration is selected, each segment shows time relative to the call start instead of the date and time. Timestamps remain the default, and the setting applies to all recordings on reload. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md#conversation-time-display-format)
+
+**Usability Enhancement to View and Navigate Recordings**
+
+The Insights to Logs panel now includes a compact recording overview widget, an expandable full-screen view, and a zoom control, which together improve recording visibility and navigation.
+
+<font size="4">Campaigns</font>
+
+**Add Payload Input for API-Integrated Contact List**
+
+POST-based API-integrated contact lists now support request payload input. The payload field accepts .json file, raw text, or URL-encoded data, with existing validation rules applied. This enables flexible data exchange with external systems without affecting current API configurations. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#create-a-contact-list)
+
+**Agentless Dialers: Disposition Support**
+
+Agentless voice campaigns now support predefined disposition codes for tracking and analytics. The system attaches the selected disposition to the session as a tag and displays it in campaign outcomes and interactions.
+ [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/campaign-management/voice-campaigns.md#agentless-dialer)
+
+**New Dashboard for Proactive Web Campaigns**
+
+A dedicated dashboard for proactive campaigns is now available, with filters for campaign executions and date ranges. Key metrics include impressions, clicks, visitors (unique, anonymous, and logged-in), conversations, and dismissal rate. Visualizations cover time trends, reasons for suppression, conversation split (agent vs. bot), and disposition distribution. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/dashboard/campaign-dashboard.md#proactive-web-campaigns)
+
+<font size="4">API</font>
+
+**Time-Based Queue Reprioritization**
+
+A new public API lets you dynamically update queue priorities, enabling time-based automation via external schedulers. Updates apply immediately, override UI-configured priorities, and influence routing without reassigning active conversations. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/update-queue-priority.md)
+
+<hr>
+
+## v11.22.1 March 14, 2026
+
+<u>Patch Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Configuration</font>
+
+**Expose Queue Array in InQueuesFlow**
+
+The system now exposes a QueuesArray in the InQueuesFlow context to track queue traversal during conversation transfers. The array maintains chronological order and identifies the current target queue. Flows can use this to dynamically override skills based on the destination queue, enabling flexible, intent-based routing. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#queues-array-in-inqueuesflow)
+
+**Custom Translation Update for Lara**
+
+The custom translation engine now supports the laratranslate.com domain to maintain compatibility with the updated Lara translation service. The system also normalizes the multi-utterance separator by converting `&lt;&gt;` to `<>`, ensuring translations are correctly parsed and mapped without affecting existing configurations.
+
+**Queue-Level Automatic Email Acknowledgments**
+
+Queues now support automatic email acknowledgments, configurable under Optional Settings for the Email channel. When enabled, the system sends confirmation emails after receiving a customer message, based on a configurable interval. Acknowledgments are triggered only when a new message arrives, and the interval has elapsed, preventing duplicates. The message editor supports rich text and HTML customization. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md#optional-configuration)
+
+<font size="4">Analytics</font>
+
+**Center-Wide Wallboard-Abandons**
+
+A new Center-Wide Wallboard-Abandons displays conversation-abandonment and queue-activity metrics across all queues. It opens in a new tab, uses a fixed layout, and refreshes every 30 seconds. The wallboard shows center-level and queue-level metrics-including Waiting, With Agent, Abandoned, Timed Out, ACR, Agents, Offered, Answered, Load, and Longest Wait-based on the selected filters. 
+[Learn more :octicons-arrow-right-24:](../../analytics/contact-center/wallboards.md#center-wide-abandoned)
+
+<hr>
+
+## v11.22.0 February 28, 2026
+
+<u>Minor Release</u>
+
+This update includes enhancements and bug fixes. The key enhancements included in this release are summarized below.
+
+<font size="4">Console</font>
+
+**Persistent Virtual Backgrounds for Video Calls**
+
+Agents no longer need to reselect a virtual background before each call. After an agent sets a background, the system retains it across page reloads and sign-in sessions in the same browser and automatically applies it to future calls. Agents can still change the background during a live call. The system now also preloads background assets to reduce preview delays and improve overall performance. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#apply-or-change-a-virtual-background-during-a-video-call)
+
+**Collapsible Email Threading**
+
+Email replies and forwards now display the most recent message by default. Earlier messages are collapsed behind an ellipsis and can be expanded to view the full thread. The system preserves the complete conversation context, maintains correct chronological order, and enforces CC and BCC visibility rules. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#emails)
+
+**Work Bin (Email Parking Lot)**
+
+Agents can park email conversations in a work bin without closing them. This action immediately frees capacity and excludes parked time from Average Handle Time (AHT). When a customer replies, the conversation is reassigned to the last handling agent if available, or routed normally if not. Administrators configure wait times and rerouting rules, while supervisors can manually reassign parked conversations. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#email-work-bin)
+
+**Proactive Connection Monitoring and Agent Alerts**
+
+Agent Desktop now continuously monitors network quality during live calls. It detects threshold breaches—such as high round-trip time or degraded performance—and alerts agents in real time through clear visual indicators and notifications. Each alert includes actionable insights and recommended next steps. The Diagnostics view displays live round-trip metrics, highlights threshold violations, and enables agents to report issues directly from the alert, helping streamline troubleshooting and reduce call disruption. [Learn more :octicons-arrow-right-24:](../../console/manage-layout.md/#proactive-network-monitoring) 
+
+<font size="4">Configuration</font>
+
+**MetaTag Support for Start Flows**
+
+You can now define MetaTags in Start Flows by using utility functions in Script nodes. Set user-, session-, and message-level tags at flow entry and reuse them across automation, conditional, and exit flows for consistent context handling. [Learn more :octicons-arrow-right-24:](../../flows/create-flows.md/#use-metatags-in-start-flows)
+
+**CSAT and Feedback Status Visibility in Interactions**
+
+The Interactions tab now displays a clear visual indicator for each conversation’s survey status, indicating whether a CSAT or Feedback survey was submitted, triggered but not submitted, or not triggered. You can also filter conversations by survey status to quickly audit and validate feedback workflows across supported channels. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#viewing-feedback-scores-submitted-by-users)
+
+**Unified Feedback Support (CSAT, NPS, Like/Dislike)**
+
+The platform now consolidates CSAT, NPS, and Like/Dislike surveys into a single Feedback framework. Administrators can configure one feedback type per channel. Contact Center–only customers use default survey dialogs, while Automation-enabled customers can customize survey flows. The Interactions page provides a unified Feedback status and consistently tracks survey triggers and submissions across all channels. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md/#feedback-surveys)
+
+**Outbound Email Support in All Agent Statuses**
+
+Agents can now send outbound emails in any status—Available, Busy, Away, or custom—when they have the required permissions. A system setting controls this capability and is disabled by default. When enabled, agents can initiate outbound emails even at full capacity, without impacting inbound routing or queue prioritization. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/email-settings.md)
+
+**Add Agent and Customer Names to Chat Transcripts**
+
+Added a 'Show customer and agent names in transcript' toggle under Obscure customer info. When enabled, transcript exports include a new NameOfUser column that displays the agent name, customer name, email address, or phone number—based on availability. This update improves transcript clarity and supports compliance reviews and audits. [Learn more :octicons-arrow-right-24:](../../contactcenter/configurations/settings/obscure-customer-info-in-analytics-interactions.md)
+
+**Out-of-Hours: Queue Override and Loop Protection**
+
+Out-of-hours handling now supports a Route to Queue option that transfers conversations directly to a selected target queue when enabled, bypassing the trigger flow. The system tracks out-of-hours transfers at the conversation level and enforces a configurable maximum. When the limit is reached, the system automatically closes the conversation to prevent repeated queue routing. [Learn more :octicons-arrow-right-24:](../../contactcenter/routing/queues/queue-management.md/#route-to-queue-override-for-out-of-hours)
+
+<font size="4">Analytics</font>
+
+
+**Analytics for Email Handling**
+
+Average Handle Time (AHT) is now calculated from agent acceptance to the earlier of transfer to the Work Bin or completion of after-call work (ACW). A conversation is counted as Answered only when the agent sends a reply, not when the agent accepts it. Dashboards and reports now include Closed, Answered, Closed per hour, and Answered per hour metrics.
+
+**Interactions Dashboard: Recent Search History**
+
+The Interactions search bar now includes an editable dropdown that displays the last 10 search phrases for the current user. You can select a previous search or enter a new one. The system moves new searches to the top of the list and automatically removes duplicates. [Learn more :octicons-arrow-right-24:](../../analytics/overview/conversations.md/#search-conversations)  
+
+**Abandon Rate Update**
+
+The Abandon Rate now follows an industry-standard definition: calls abandoned in queue divided by offered calls, excluding calls abandoned after reaching an agent. This update applies consistently across queue reports, dashboards, wallboards, and SLA calculations. Abandon counts now include only queue abandonments, while existing breakdown views remain unchanged.
+
+<font size="4">Campaigns</font>
+
+
+**Handle Disconnect and Transfer Errors during Agent Handoff**
+
+The system now applies standardized statuses and dispositions for power dialing handoff failures. If a user disconnects before connecting to an agent, the system marks the call as Completed with the disposition User Immediately Disconnected. If an agent transfer fails, the system marks the call as Error with the disposition Agent Transfer Error. These updates appear consistently across dashboards, retry logic, exports, and campaign reports.
+
+**Campaign-Linked Disposition Sets**
+
+You can now mark a disposition set as campaign-linked by using a new toggle. Each queue supports only one campaign-linked disposition set, and campaigns can connect only to queues that have exactly one linked set. During campaign calls, the system shows only the linked disposition set in after-call work (ACW) and synchronizes it with Campaigns. [Learn more :octicons-arrow-right-24:](../../contactcenter/agent-and-supervisors/dispositions/manage-dispositions.md/#add-a-disposition-set)  
+
+<font size="4">API</font>
+
+**Enhanced InteractionDetails API v2**
+
+The InteractionDetails v2 API now supports a direction filter to retrieve conversations by call type: Inbound, Outbound, or Both (default). The API also adds an optional campaignInfo field to selectedFields. When you include this field, the response returns campaign metadata for campaign-originated sessions. If you omit it, the response excludes campaign data. [Learn more :octicons-arrow-right-24:](../../apis/contact-center/get-all-conversations-data-call-details-v2.md) 
+
+<hr>
+
 ## v11.21.1 January 31, 2026
 
 <u>Patch Release</u>
@@ -158,7 +334,7 @@ The Agent Console now includes a confirmation step before sending predefined ema
 
 **Default post-contact Survey Trigger**
 
-The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md#csat-survey) 
+The post-contact survey trigger now appears enabled by default for agents when survey triggering is configured. This change supports higher survey participation and ensures consistent handling across conversations. Agents can turn it off when needed, and existing applications retain their current behavior. [Learn more :octicons-arrow-right-24:](../../console/interacting-with-customers.md) 
 
 **Call History Tab Personalization**
 
@@ -2297,7 +2473,7 @@ The ability to schedule campaigns is extended to Proactive Web Campaigns. [Learn
 
 **Dynamic Retrieval and Reflection of CSV Column Values**
 
-Campaign managers can read, fetch, and display column/field values from a CSV file whenever required. This can be done within the message node in the start flow or by sending the necessary values to the Agent Console during an agent transfer, ensuring these values are reflected in the voice campaign call. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md#dynamic-retrieval-and-reflection-of-csv-column-values)
+Campaign managers can read, fetch, and display column/field values from a CSV file whenever required. This can be done within the message node in the start flow or by sending the necessary values to the Agent Console during an agent transfer, ensuring these values are reflected in the voice campaign call. [Learn more :octicons-arrow-right-24:](../../contactcenter/campaigns/list-management/list-management.md)
 
 <font size="4">Configuration</font>
 

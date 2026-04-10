@@ -17,7 +17,13 @@ This feature is particularly helpful to test various versions of your agent at d
 
 You can import tasks and configurations of a specific agent into a new or existing agent using one of these import types:
 
-* **Full import**: Replaces the existing agent with the imported configurations. The system deletes any additional configurations in the target agent that aren't present in the import definition. The system retains the webhook channel even if it's not present in the import agent definition.
+* **Full import**: During a full import, the existing agent components and configurations in Automation AI are replaced with those from the imported file. Any configurations in the target agent that aren't included in the imported file are removed.<br><br>For the Contact Center AI, only conditional flows are added from the imported file. Other Contact Center–related configurations aren't included in the import process and remain unchanged in the target application.<br><br> However, certain flows are handled differently during a full import:
+
+       * **Start and exit flows (Automation AI)**: These flows from the source agent or application are imported into the target agent. If a flow with the same name already exists in the target agent, it's replaced by the source flow. Any additional start or exit flows that exist only in the target agent and aren't present in the source are retained.
+        
+       * **Conditional flows (Contact Center AI)**: Conditional flows from the source agent or application are imported into the target agent. If a flow with the same name already exists in the target agent, it's replaced by the source flow. Conditional flows that exist only in the target agent and aren't present in the source are retained.
+
+    Additionally, the webhook channel in the target agent is retained even if it's not included in the imported agent definition.
 
     !!! note
 
@@ -64,10 +70,12 @@ To import an AI Agent, follow these steps:
         * Overwrites with models, prompts, and GenAI features from the import file.
         * Retains model configurations if a model exists in both source and target
         * Replaces all feature mappings, custom instructions, guardrails, and DialogGPT.
-        * Preserve existing integrations.
-        * Import XO-GPT integration as-is.
-        * Enable imported features with warnings.
-        * Handle **Azure Open AI by Kore.ai** integration based on token status.
+        * Preserves existing integrations.
+        * Imports XO-GPT integration as-is.
+        * Enables imported features with warnings.
+        * Handles **Azure Open AI by Kore.ai** integration based on token status.
+        * Requires a manual update of the LLM key when importing a DialogGPT-enabled export that uses LLMs (other than XO-GPT) for the application to function as expected.
+
 
 8. If you select **Incremental import**, you can choose which components to import.
 
@@ -205,13 +213,15 @@ To import an AI Agent while creating it, follow these steps:
     <br>
     – Replaces all feature mappings, custom instructions, Guardrail, and DialogGPT.
     <br>
-    – Preserve existing integrations.
+    – Preserves existing integrations.
     <br>
-    – Import XO-GPT integration as-is.
+    – Imports XO-GPT integration as-is.
     <br>
-    – Enable imported features with warnings.
+    – Enables imported features with warnings.
     <br>
-    – Handle "Azure Open AI by Kore.ai" integration based on token status.
+    – Handles "Azure Open AI by Kore.ai" integration based on token status.
+    <br>
+    – Requires a manual update of the LLM key when importing a DialogGPT-enabled export that uses LLMs (other than XO-GPT) for the application to function as expected.
    </td>
   </tr>
 </table>

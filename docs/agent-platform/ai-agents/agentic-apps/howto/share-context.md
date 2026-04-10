@@ -14,7 +14,7 @@ Contextual metadata is transferred from the (In)Agent Platform to (In)Business C
 3. Configure metadata to be passed to (In)Business Customer Experience during the handoff. The event supports two types of parameters:
     * **LLM Collected parameters**: These parameters are automatically gathered by the LLM based on the description of the parameter. For example, if you wish to pass a summary of the conversation or user sentiment.
     * **System-defined parameters**: These parameters are explicitly defined. These parameters can have static values or dynamic values from the context or memory. Some examples are listed below. 
-        * Passing Static value : Add a parameter that indicates the source of information as `Agent Platform`.
+        * Passing Static value : Add a parameter that indicates the source of information as `(In)Agent Platform`.
 
         ```
         "source": "(In)Agent Platform"

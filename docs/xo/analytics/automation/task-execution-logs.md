@@ -1,4 +1,4 @@
-# Task Execution Logs
+﻿# Task Execution Logs
 
 The **Task Execution Logs** feature helps you gain in-depth insights into the task execution-related data and assess your AI Agent’s performance in executing tasks. 
 
@@ -367,7 +367,7 @@ The platform imposes restrictions on the number of log statements retained per A
 * Statements older than 7 days are removed.
 
 
-## **Task Execution Logs Analysis**
+## Task Execution Logs Analysis
 
 The following sections describe more about the options available on the Task Execution Logs page and the analysis of the records captured here.
 
@@ -671,9 +671,19 @@ The following matrix shows the availability of fields on each tab of the Task Ex
   <tr>
    <td>Channel
    </td>
-   <td>X
+   <td>✔
    </td>
-   <td>X
+   <td>✔
+   </td>
+   <td>✔
+   </td>
+   <td>✔
+   </td>
+   <td>✔
+   </td>
+  </tr>
+  <tr>
+   <td>GenAI Features*
    </td>
    <td>X
    </td>
@@ -681,5 +691,13 @@ The following matrix shows the availability of fields on each tab of the Task Ex
    </td>
    <td>✔
    </td>
+   <td>X
+   </td>
+   <td>X
+   </td>
   </tr>
 </table>
+
+
+
+\* GenAI features include Answer Generation, Zero-Shot Model, Rephrase User Query, and Rephrase Responses.

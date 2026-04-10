@@ -2,6 +2,165 @@
 
 This document provides information on the feature updates and enhancements introduced in the recent (In)Agent Platform releases.
 
+## v1.8.0 March 29, 2026
+
+<u> Minor Release </u>
+
+This update includes new features and enhancements summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Voice-to-Voice Support for Adaptive Network**
+
+Voice-to-voice models are now supported in the Adaptive Network, enabling seamless processing of spoken input and generation of spoken responses. This enhances conversational experiences by enabling more natural, real-time voice interactions.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md#orchestrator-configuration)
+
+**Complete App Export and Import**
+
+(In)Agent Platform now supports full application export, packaging all components, including workflow tools, into a single file for seamless migration across environments.
+
+The import process includes upfront validation before execution and automatic rollback on failure, ensuring imports either complete fully or not at all. This eliminates the risk of partial or inconsistent application states after a failed import.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/import.md)
+
+
+**Pre-Processor Execution Control**
+
+Users can configure execution control for pre-processors, choosing whether they run once per session or on every agent invocation. This reduces latency and avoids redundant processing. Existing configurations default to Always Run, ensuring backward compatibility.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agent-management.md#execution-mode)
+
+
+**Response Processors for Output Transformation**
+
+(In)Agent Platform introduces the Response Processor, a new capability that gives full control over how responses are shaped and delivered across channels. This feature enables channel-based, structured responses via templates, allowing you to define the exact response format for each channel. Admins can modify the existing artifacts key to reshape the output on the fly, or update it entirely with a customized structured response tailored to the target channel. Developers can further apply custom formatting, enrichment, and business logic via code, with full access to the response context, including inputs, outputs, and artifacts, all without changing the underlying logic.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/orchestrator.md#response-processor)
+
+<font size="4">AI Safety, Security, and Governance</font>
+
+**Native mTLS Support for OAuth 2.0 Client Credential Auth Profiles**
+
+Users can now securely connect to systems that require mutual TLS (mTLS) without relying on external tools or custom workarounds. OAuth 2.0 Client Credential auth profiles now support mTLS natively, enabling seamless authentication and improving integration reliability. The Platform can present a client certificate for both token requests and API calls, ensuring compatibility with enterprise systems that enforce mTLS.
+
+**Expanded Model Support**
+
+The Platform now supports additional AI models, including:
+
+* OpenAI: gpt-5.3-chat-latest
+* Anthropic: claude-sonnet-4-6
+* Grok Realtime (Available via custom integration)
+
+
+## v1.7.0 March 8, 2026
+
+<u> Minor Release </u>
+
+This update includes new features and enhancements summarized below.
+
+<font size="4">Multi-Agent Orchestration</font>
+
+**Enhanced App Creation Journey**
+
+A new AI-assisted App Creation wizard walks users through building an application in a few simple steps. Users can build from scratch, import from the Marketplace, or provide a few instructions and let AI generate the complete app definition for review. This reduces time-to-value and makes onboarding easier for new users. 
+
+**Note**: This feature is in preview and can be enabled upon request.
+
+**A2A Protocol Support**
+
+(In)Agent Platform now supports the A2A (Agent-to-Agent) Protocol, enabling agentic apps to connect with external A2A-compliant agents without custom adapters. Developers can connect external agents using an A2A server URL. The platform automatically retrieves their details and handles communication translation. External agents can be included in workflows and managed by supervisors like native agents.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/external-agents.md#connect-through-a2a-protocol)
+
+**MCP Enhancements**
+
+MCP integration now adds another layer of security in this update:
+
+* Refresh of MCP Server Configuration: Users can refresh the MCP Server configurations to fetch the latest tool definitions, applying silent updates when no changes are detected and flagging impact when tools are affected. 
+* Editable MCP Server Name and URL: The MCP server name and URL can be updated after configuration, eliminating the need to recreate the server when endpoints change.
+* Consistent Tool Naming: MCP tools now keep their original server-defined names in (In)Agent Platform without prefixing with the MCP Server Name. A prefix is added when duplicate tool names are identified across all the tools, including MCP Servers.
+* Enum Parameter Support: Agentic apps now support enums as parameters for MCP tools.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/configure-mcp-server.md)
+
+
+**Namespace Enhancements**
+
+A default namespace is now automatically associated with every variable. Variables remain part of the default namespace context even when custom namespaces are used, ensuring consistent access and simpler scope management.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/variables.md)
+
+**Selective Tool Response Configuration**
+
+Developers can now extract specific values from tool responses using simple path notation, while still retaining the option to send the complete tool response. This provides greater control over outputs while maintaining backward compatibility.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/create-a-code-tool.md#output-parameters)
+
+
+**Event Configuration Enhancements**
+
+Developers now have greater control over system event messages during agent interactions. Event messages for ‘End of Conversation’ and ‘Agent Handoff’ are now optional, and AI-generated message prompts can be edited directly in the UI. Content, memory, and environment variables are now supported in both custom messages and AI prompts, resolved dynamically at runtime for greater flexibility and personalization.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agentic-apps/settings/events.md)
+
+
+**Agent Activation Control**
+
+Agents can now be temporarily disabled without deleting them. Disabled agents are excluded from runtime orchestration but remain fully editable, with their configuration preserved across versions and environments.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/agent-management.md)
+
+
+
+<font size="4">No-Code & Pro-Code Tools</font>
+
+**Enhanced Workflow Tools Versioning**
+
+Tool versions are now automatically created and deployed as part of the app versioning process. Previously, all app versions used the same version of the workflow tool. If a tool was updated, every app using that tool received the update—whether it was intended or not. Now, each app version keeps its own tool version, created automatically when users create an app version.
+
+Key updates:
+
+* Automatic Version Snapshots: When users create an app version, the workflow tools used in that app are automatically versioned. This captures the complete tool configuration at that moment.
+* Run Multiple Versions: Users can run multiple versions of the same tool simultaneously. For example, v1.0 and v2.0 of a tool can run side by side in different app versions.
+* Keep Apps Independent: Different app versions automatically use their corresponding tool versions. A production app can remain on a stable version while a beta app uses the latest updates.
+
+[Learn more :octicons-arrow-right-24:](../ai-agents/tools/versions.md)
+
+
+<font size="4">AI Engineering Tools</font>
+
+**Expanded Model Support**
+
+The platform now supports additional AI models, giving users greater flexibility in choosing the right model for their use case. New models include:
+
+* **Azure OpenAI**: GPT-Realtime, GPT-Realtime-Mini, GPT-5.1, GPT-5.1-Chat, GPT-5.2, and GPT-5.2-Chat
+* **OpenAI**: gpt-image-1.5
+* **Anthropic**: claude-opus-4.6
+
+[Learn more :octicons-arrow-right-24:](../models/supported-models.md)
+
+**Integration with Microsoft Foundry Model Catalog**
+
+The platform now supports direct integration with the Microsoft Foundry model catalog, enabling users to discover and use models deployed there. Model setup is simplified with a single Target URI and Service Principal–based authentication. Users can browse available projects, view deployed models, and add them as external models without manual API configuration. A new External Credentials section in Settings centralizes authentication details to streamline access and management.
+
+[Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-microsoft-foundry)
+
+<font size="4">Other Improvements</font>
+
+**Centralized SSO and MFA Management Enhancements**
+
+Authentication settings now include a unified interface for configuring Single Sign-On (SSO) and Multi-Factor Authentication (MFA) at the organization level. Administrators can enable or disable SSO, select supported protocols and providers, and exclude specific users from SSO requirements to maintain fallback access.
+
+MFA policies are now context-aware. When SSO is enabled, MFA applies only to excluded users, with SSO users managed by the identity provider. When SSO is disabled, MFA can be enforced organization-wide. Supported MFA methods include authenticator apps (TOTP), SMS, and email.
+
+[Learn more :octicons-arrow-right-24:](../settings/security-and-control/single-sign-on.md)
+
+**Favorite Workspaces for Quick Access**
+
+Users can mark up to three workspaces as favorites, pinning them to the top of the workspace list for quick access and easy switching. 
+
+
 ## v1.6.0 January 31, 2026
 
 <u> Minor Release </u>
@@ -48,13 +207,13 @@ Workflow Tools created outside an Agentic App and not linked to any app cannot a
 
 **Vertex AI Model Integration**
 
-Agent Platform now offers secure connections to Google Vertex AI-hosted Gemini models (2.5 and 3.0 families). You can configure connections manually or via cURL import with automated credential extraction for both AI Studio and Vertex AI formats. A guided setup includes built-in validation, connection testing, and error handling. The platform stores all credentials securely using encryption. This integration works across Agentic Apps, Workflow Tools, and Prompts.
+(In)Agent Platform now offers secure connections to Google Vertex AI-hosted Gemini models (2.5 and 3.0 families). You can configure connections manually or via cURL import with automated credential extraction for both AI Studio and Vertex AI formats. A guided setup includes built-in validation, connection testing, and error handling. The platform stores all credentials securely using encryption. This integration works across Agentic Apps, Workflow Tools, and Prompts.
 
 [Learn more :octicons-arrow-right-24:](../models/external-models/add-an-external-model-using-easy-integration.md#integrate-a-model-from-vertex-ai)
 
 **Expanded Model Support**
 
-The Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
+The (In)Agent Platform now supports additional AI models, giving users greater flexibility in selecting the right model for their use case.
 
 New models include:
 
@@ -321,7 +480,7 @@ The (In)Agent Platform now provides enhanced context handling for conversations 
 
 The Platform now provides a unified interface for testing workflow tools directly within Agentic Apps. Users can view tool details, input parameters, and execute tools within a single, streamlined workflow. The interface includes sample execution capabilities and displays results in a standardized output format.
 
-[Learn more :octicons-arrow-right-24:](../ai-agents/create-agent.md#testing-a-tool)
+[Learn more :octicons-arrow-right-24:](../ai-agents/create-from-scratch.md#testing-a-tool)
 
 
 <font size="4">AI Engineering Tools</font>

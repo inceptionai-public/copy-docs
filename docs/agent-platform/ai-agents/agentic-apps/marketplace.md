@@ -43,7 +43,7 @@ The Marketplace is ideal for professionals seeking rapid prototyping, scalable d
 
 Enhance an existing app by selectively importing specific agents or tools to add new capabilities to your current workflows and create an optimal mix of functionality.
 
-1. Go to [Agentic Apps](https://agent-platform.kore.ai/apps){:target="_blank"}, select an existing app, and choose **Explore Marketplace**. Alternatively, go to the [Marketplace](https://kore.ai/ai-marketplace/){:target="_blank"} and select your existing app.
+1. Go to **Agentic Apps**, select an existing app, and choose **Explore Marketplace**.
 
     <img src="../images/add-agent.png" alt="Add agent" title="Add agent" style="border: 1px solid gray; zoom:80%;">
 
