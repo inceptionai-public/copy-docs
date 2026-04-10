@@ -2,387 +2,402 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://inceptionai.ai/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/home/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/license/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/APIs/authorization/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/Administration/account-hub/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/Administration/overview/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/Administration/workspace/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/analytics/dashboard-view/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/analytics/data-view/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inceptionai.ai/analytics/feedback/</loc>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/analytics/overview/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/announcements/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inceptionai.ai/assist-configuration/attachment-settings/</loc>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/email-template/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/guardrails/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inceptionai.ai/assist-configuration/language-settings/</loc>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/mcp-server/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/orchestration-settings/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/rate-limit/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/assist-configuration/scheduler-settings/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/audit-log/audit-log-api/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/audit-log/audit-log-management/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/channels/microsoft-teams-config/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/channels/microsoft-teams/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/channels/slack-configuration/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/channels/slack-overview/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/agent-creation/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/agent-options/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/agent-testing/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/agent-version/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/agentic-flows/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/alert-task/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/api-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/autonomous-agent/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/bot-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/connect-agentic-app/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/connect-amazon-q/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/connect-search-ai/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/enterprise-knowledge/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/mcp-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/mcp-connections/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/notify-api/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/overview/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/prompt-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/schedule-trigger/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/search-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/work-agent/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/custom-agents/workflow-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inceptionai.ai/employees/directory-configuration/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inceptionai.ai/employees/lookup-settings/</loc>
+         <lastmod>2026-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://inceptionai.ai/employees/organization-chart/</loc>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/getting-started/how-to-access/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/getting-started/how-to-use/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/getting-started/introduction/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/getting-started/marketplace/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/getting-started/schedule-agents/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/getting-started/setup-guide/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/integration/amazon-q/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/llm-configuration/business-rules/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/llm-configuration/general-purpose/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/pre-built-agents/overview/</loc>
-         <lastmod>2026-02-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://inceptionai.ai/pre-built-solutions/hrassist/</loc>
-         <lastmod>2026-02-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://inceptionai.ai/pre-built-solutions/itassist/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/pre-built-solutions/overview/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/release-notes/release-updates/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/aws-enterprise-encryption/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/azure-enterprise-encryption/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/azure-service-accounts/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/data-settings/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/domain-management/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/enterprise-encryption/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/google-cloud-service-accounts/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/oidc/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/saml/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/service-accounts/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/sso-overview/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/security/wsfc/</loc>
-         <lastmod>2026-02-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://inceptionai.ai/user-management/enterprise-directory/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/user-management/managing-your-groups/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/user-management/managing-your-users/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/user-management/user-enrollments/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/workspace-management/account-workspace/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://inceptionai.ai/workspace-management/personal-workspace/</loc>
-         <lastmod>2026-02-11</lastmod>
+         <lastmod>2026-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
